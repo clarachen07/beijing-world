@@ -1,8 +1,9 @@
 # 北京世界 · Beijing World
 
-基于 **OpenStreetMap 开放数据**实时构建的北京 3D 虚拟城市 — 灵感来自 Matt Shumer 的 "Manhattan World"。
+**🌐 在线体验：<https://clarachen07.github.io/beijing-world/>** ·
+**🎬 漫游视频：<https://clarachen07.github.io/beijing-world/video/beijing-world.mp4>**（1080p/30fps · 105s）
 
-![beijing-world](public/og.png)
+基于 **OpenStreetMap 开放数据**实时构建的北京 3D 虚拟城市 — 灵感来自 Matt Shumer 的 "Manhattan World"。
 
 ## ✨ 特性
 
