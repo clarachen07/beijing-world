@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>北京世界 · Beijing World — 3D 虚拟仿真北京</title>
+    <meta name="description" content="基于 OpenStreetMap 开放数据构建的北京 3D 虚拟城市：中轴线、故宫、国贸CBD、鸟巢水立方。数据 © OpenStreetMap contributors (ODbL)。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23161c2a'/%3E%3Cpath d='M6 26V14l4-3v15zM12 26V9l4-3v20zM18 26V16l4-3v13zM24 26V12l2-1v15z' fill='%23e8b64c'/%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="./assets/index-TJUtqTCz.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-DpAW4u5B.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CS4eRmNF.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+
+      <!-- 标题 -->
+      <header id="hud-title" class="hud">
+        <h1>北京世界</h1>
+        <div class="sub">BEIJING&nbsp;WORLD&nbsp;·&nbsp;3D 虚拟仿真北京</div>
+      </header>
+
+      <!-- 地标标签层 -->
+      <div id="labels"></div>
+
+      <!-- 底部控制栏 -->
+      <nav id="hud-controls" class="hud">
+        <div class="seg" id="mode-seg">
+          <button data-mode="tour" class="active" title="自动电影漫游">🎬 电影漫游</button>
+          <button data-mode="fly" title="自由飞行（WASD/方向键 + 鼠标）">✈ 自由飞行</button>
+          <button data-mode="walk" title="第一人称街景（WASD + 鼠标拖动）">🚶 街景漫步</button>
+        </div>
+        <div class="divider"></div>
+        <button id="btn-daynight" title="切换白天/夜景">🌙 夜景</button>
+        <button id="btn-replay" title="重新播放电影漫游">↺ 重播</button>
+        <div class="divider"></div>
+        <a id="btn-video" href="./video/beijing-world.mp4" download="beijing-world.mp4" title="下载漫游视频" style="display:none">⬇ 视频</a>
+      </nav>
+
+      <!-- 加载屏 -->
+      <div id="loading">
+        <div class="box">
+          <div class="glyph">京</div>
+          <h2>北京世界 <span>BEIJING WORLD</span></h2>
+          <p class="tip">基于 OpenStreetMap 开放数据实时构建 3D 北京…</p>
+          <div class="bar"><div id="load-bar"></div></div>
+          <p id="load-detail" class="detail">正在准备…</p>
+        </div>
+      </div>
+
+      <!-- 提示 -->
+      <div id="hint" class="hud">点击地标名称可自动飞往 · 拖动/滚轮随时接管视角</div>
+
+      <!-- 数据署名 -->
+      <footer id="hud-attr" class="hud">
+        数据 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors (ODbL)
+        · <a href="https://x.com/mattshumer_/status/2095609734845927525" target="_blank" rel="noopener">Inspired by Manhattan World</a>
+      </footer>
+    </div>
+  </body>
+</html>
