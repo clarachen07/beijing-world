@@ -1,0 +1,12 @@
+node_modules/
+dist/
+raw/
+video/frames/
+video/beijing-world.mp4
+.DS_Store
+*.log
+shot-*.png
+view-*.png
+chk*.png
+sky*.png
+*.last
