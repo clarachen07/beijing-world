@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { loadCityData } from './loader';
 import { buildCity, type CityRefs } from './city';
 import { buildLandmarks, updateLandmarkNight, type Landmark } from './landmarks';
+import { loadLegacyLandmarks } from './legacy';
 import { Environment } from './environment';
 import { Effects } from './effects';
 import { Traffic } from './cars';
@@ -187,6 +188,15 @@ async function boot() {
   const lm = buildLandmarks();
   landmarks = lm.landmarks;
   scene.add(lm.group);
+
+  // Blender 精细地标（GLB）
+  await loadLegacyLandmarks((frac, label) => {
+    loadBar.style.width = `${(92 + frac * 6).toFixed(0)}%`;
+    loadDetail.textContent = label;
+  }, (def, obj, landmark) => {
+    scene.add(obj);
+    if ((landmark as any)._showLabel !== false) landmarks.push(landmark);
+  });
   createLabels();
 
   traffic = new Traffic(data.carPaths, isVideoMode ? 420 : 360);

@@ -13,6 +13,7 @@
     "video": "node video/record.mjs && node video/encode.mjs"
   },
   "dependencies": {
+    "jpeg-js": "^0.4.4",
     "three": "^0.180.0"
   },
   "devDependencies": {

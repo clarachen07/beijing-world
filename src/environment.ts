@@ -85,7 +85,7 @@ export class Environment {
     const dayFog = new THREE.Color(0xd8c4a8);
     const nightFog = new THREE.Color(0x070b14);
     this.fog.color.copy(dayFog).lerp(nightFog, n);
-    this.fog.density = 0.000034 + n * 0.000016;
+    this.fog.density = 0.000029 + n * 0.000014;
 
     uniforms.uNight.value = n;
   }

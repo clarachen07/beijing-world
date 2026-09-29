@@ -26,9 +26,13 @@ function meshFromDecoded(d: DecodedMesh, mat: THREE.Material): THREE.Mesh {
 export function buildCity(data: LoadedData): CityRefs {
   const group = new THREE.Group();
 
-  // ── 地面 ──（polygonOffset 把地面压向深处，让绿地/水面/道路贴片稳定获胜，消除远距离深度冲突）
+  // ── 地面 ──（烘焙纹理: 真实城市肌理 + polygonOffset 压深防冲突）
+  const texLoader = new THREE.TextureLoader();
+  const groundTex = texLoader.load('./data/ground.jpg');
+  groundTex.colorSpace = THREE.SRGBColorSpace;
+  groundTex.anisotropy = 8;
   const groundMat = new THREE.MeshLambertMaterial({
-    color: 0x97897a,
+    map: groundTex,
     polygonOffset: true,
     polygonOffsetFactor: 3,
     polygonOffsetUnits: 3,
@@ -43,12 +47,19 @@ export function buildCity(data: LoadedData): CityRefs {
         diffuseColor.rgb *= mix(1.0, 0.26, uNight);`
       );
   };
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(26000, 32000), groundMat);
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(16000, 18500), groundMat);
   ground.rotation.x = -Math.PI / 2;
-  ground.position.set(0, 0, 2600);
+  ground.position.set(0, 0, 1250);
   ground.matrixAutoUpdate = false;
   ground.updateMatrix();
   group.add(ground);
+  // 地平线外围底色
+  const outerGround = new THREE.Mesh(new THREE.PlaneGeometry(60000, 60000), new THREE.MeshLambertMaterial({ color: 0x8f8577 }));
+  outerGround.rotation.x = -Math.PI / 2;
+  outerGround.position.set(0, -0.8, 2600);
+  outerGround.matrixAutoUpdate = false;
+  outerGround.updateMatrix();
+  group.add(outerGround);
 
   // ── 建筑分块 ──
   const buildingMat = makeBuildingMaterial();

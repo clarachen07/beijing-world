@@ -47,8 +47,9 @@ export function makeBuildingMaterial(): THREE.MeshLambertMaterial {
           float seed = floor((vWorldPos.x + vWorldPos.z) / 24.0);
           float lit = step(0.62, bhash(cell + vec2(seed * 3.3, seed * 1.7)));
           winEmit = inWin * lit * uNight;
-          // 白天：窗户玻璃微暗
-          diffuseColor.rgb *= mix(1.0, 1.0 - inWin * 0.22, 1.0 - uNight);
+          // 白天: 窗户呈深色玻璃（带天空反射蓝调）
+          vec3 glassDay = diffuseColor.rgb * vec3(0.34, 0.42, 0.5) + vec3(0.05, 0.08, 0.12);
+          diffuseColor.rgb = mix(diffuseColor.rgb, glassDay, inWin * (1.0 - uNight) * 0.85);
           // 夜晚未点亮面略暗
           diffuseColor.rgb *= mix(1.0, 0.82, uNight);
         }`

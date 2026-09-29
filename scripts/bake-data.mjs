@@ -39,23 +39,33 @@ const HEIGHT_OVERRIDE = {
   天安门: 34, 正阳门: 41, 钟楼: 48, 鼓楼: 47, 天安门城楼: 34, 箭楼: 32,
 };
 
-// 地标净空圆（lat, lon, r米）：跳过区域内建筑/树（程序化地标替代）
+// 地标净空圆（lat, lon, r米）: 坐标来自 OSM 真实数据, 程序化/GLB 地标替代
 const CLEAR_CIRCLES = [
-  [39.8822, 116.4066, 110], // 祈年殿
-  [39.9929, 116.3966, 210], // 鸟巢
-  [39.9934, 116.3903, 130], // 水立方
-  [39.9043, 116.3832, 90],  // 国家大剧院
-  [39.9133, 116.4114, 55],  // 中国尊
-  [39.9087, 116.4610, 45],  // 国贸三期
-  [39.9153, 116.4642, 130], // 央视大楼
-  [39.9918, 116.3866, 55],  // 奥林匹克塔
-  [39.9906, 116.3902, 30],  // 玲珑塔
-  [39.9087, 116.3976, 90],  // 天安门
-  [39.8988, 116.3983, 80],  // 前门/箭楼
-  [39.9410, 116.3902, 90],  // 钟鼓楼
-  [39.8727, 116.3980, 60],  // 永定门
-  [39.9252, 116.3959, 90],  // 景山万春亭
-  [39.9255, 116.3888, 75],  // 北海白塔
+  [39.91582, 116.39078, 78],  // 太和殿
+  [39.91395, 116.39088, 40],  // 太和门
+  [39.91229, 116.391, 76],    // 午门
+  [39.92092, 116.39057, 44],  // 神武门
+  [39.9137, 116.39518, 40],   // 东华门
+  [39.91337, 116.38669, 40],  // 西华门
+  [39.9123, 116.3863, 32], [39.9123, 116.3951, 32],   // 角楼
+  [39.9209, 116.3863, 32], [39.9209, 116.3951, 32],   // 角楼
+  [39.9072, 116.3911, 105],   // 天安门
+  [39.89918, 116.39153, 64],  // 正阳门
+  [39.89797, 116.39164, 44],  // 箭楼
+  [39.87106, 116.39309, 55],  // 永定门
+  [39.9403, 116.3893, 55],    // 鼓楼
+  [39.9417, 116.3893, 50],    // 钟楼
+  [39.88225, 116.40662, 105], // 祈年殿
+  [39.90333, 116.38357, 90],  // 国家大剧院
+  [39.91157, 116.46014, 55],  // 中国尊
+  [39.9086, 116.4599, 45],    // 国贸三期
+  [39.9153, 116.4642, 130],   // 央视大楼
+  [39.9929, 116.3966, 210],   // 鸟巢
+  [39.99155, 116.3842, 130],  // 水立方
+  [40.00655, 116.3879, 55],   // 奥林匹克塔
+  [39.9934, 116.3902, 30],    // 玲珑塔
+  [39.9254, 116.3908, 55],    // 景山万春亭
+  [39.9255, 116.3889, 70],    // 北海白塔
 ];
 const inClearCircle = (lat, lon) =>
   CLEAR_CIRCLES.some(([clat, clon, r]) => {
@@ -333,8 +343,7 @@ async function main() {
     pedestrian: { w: 11, y: 0.42, c: hex(0x83756a) },
   };
   let roadEls = [];
-  for (let i = 0; i < 6; i++) roadEls = roadEls.concat(await load(`roads_${i}`));
-  // 道路网格
+  for (let i = 0; i < 6; i++) roadEls = roadEls.concat(await load(`roads_${i}`));  // 道路网格
   const roadMesh = { pos: [], col: [], idx: [] };
   // 主干道车流路径
   const carPaths = [];
@@ -369,11 +378,17 @@ async function main() {
     }
   };
   let roadCount = 0;
+  const plazaRings = []; // 封闭步行广场环（ addPolygon 定义后处理 ）
   for (const el of roadEls) {
     if (el.type !== 'way' || !el.tags?.highway || !el.geometry) continue;
     const cls = ROAD_CLASS[el.tags.highway];
     if (!cls) continue;
     let pts = el.geometry.map((g) => toXZ(g.lat, g.lon));
+    if (el.tags.highway === 'pedestrian' && pts.length > 3 &&
+        Math.hypot(pts[0][0] - pts[pts.length - 1][0], pts[0][1] - pts[pts.length - 1][1]) < 3) {
+      const ring = dedupe(pts.slice(0, -1), 1.5);
+      if (ring.length >= 3) { plazaRings.push(ring); continue; }
+    }
     pts = dedupe(pts, 2.0);
     if (pts.length < 2) continue;
     const layer = Math.max(0, Math.min(4, parseInt(el.tags.layer || '0', 10) || 0));
@@ -399,6 +414,109 @@ async function main() {
     }
   }
   stats.roads = roadCount;
+
+  // ═══ 2.5 胡同院落填充（二环内沿街生成合院建筑，解决"废墟感"）═══
+  console.log('■ 胡同院落填充');
+  const oldCity = ZONES.oldCity;
+  const inOldCity = (x, z) => {
+    const lat = ORIGIN.lat - z / M_LAT, lon = ORIGIN.lon + x / M_LON;
+    return inZone(oldCity, lat, lon);
+  };
+  // 占用网格（24m 格）: OSM 建筑足迹 bbox 占位 + 净空圆
+  const occ = new Set();
+  const occKey = (x, z) => `${Math.floor(x / 24)},${Math.floor(z / 24)}`;
+  for (const el of buildings) {
+    if (el.type !== 'way' || !el.geometry || el.geometry.length < 4) continue;
+    if (!(el.tags?.building || el.tags?.['building:part'])) continue;
+    let minX = Infinity, maxX = -Infinity, minZ = Infinity, maxZ = -Infinity;
+    let clat = 0, clon = 0;
+    for (const g of el.geometry) {
+      const [x, z] = toXZ(g.lat, g.lon);
+      if (x < minX) minX = x; if (x > maxX) maxX = x;
+      if (z < minZ) minZ = z; if (z > maxZ) maxZ = z;
+      clat += g.lat; clon += g.lon;
+    }
+    clat /= el.geometry.length; clon /= el.geometry.length;
+    if (inClearCircle(clat, clon)) continue;
+    for (let gx = Math.floor(minX / 24); gx <= Math.floor(maxX / 24); gx++)
+      for (let gz = Math.floor(minZ / 24); gz <= Math.floor(maxZ / 24); gz++)
+        occ.add(`${gx},${gz}`);
+  }
+  let infillCount = 0;
+  for (const el of roadEls) {
+    if (el.type !== 'way' || !el.tags?.highway || !el.geometry) continue;
+    const cls = el.tags.highway;
+    if (!['residential', 'unclassified', 'living_street', 'service', 'tertiary'].includes(cls)) continue;
+    let pts = dedupe(el.geometry.map((g) => toXZ(g.lat, g.lon)), 2.0);
+    if (pts.length < 2) continue;
+    // 只处理老城内为主的部分
+    if (!pts.some((p) => inOldCity(p[0], p[1]))) continue;
+    const halfW = (ROAD_CLASS[cls]?.w || 9) / 2 + 4.2;
+    let acc = 6;
+    for (let i = 1; i < pts.length && infillCount < 48000; i++) {
+      const [x0, z0] = pts[i - 1], [x1, z1] = pts[i];
+      const dx = x1 - x0, dz = z1 - z0;
+      const len = Math.hypot(dx, dz);
+      if (len < 0.5) continue;
+      const ux = dx / len, uz = dz / len;
+      let s = 0;
+      while (s < len && infillCount < 48000) {
+        const step = 13 + hash01(i * 31.7 + s * 3.1) * 9;
+        if (s + step > len) break;
+        s += step;
+        const cx = x0 + ux * s, cz = z0 + uz * s;
+        if (!inOldCity(cx, cz)) continue;
+        for (const side of (hash01(cx * 0.37 + cz) > 0.5 ? [1, -1] : [-1, 1])) {
+          const off = halfW + 2.5 + hash01(cx + cz + side) * 3.0;
+          const bx = cx - uz * off * side, bz = cz + ux * off * side;
+          const key = occKey(bx, bz);
+          if (occ.has(key)) continue;
+          occ.add(key);
+          if (inClearCircle(ORIGIN.lat - bz / M_LAT, ORIGIN.lon + bx / M_LON)) { occ.delete(key); continue; }
+          // 院落建筑: 沿街向长 8-15, 进深 6-10, 高 4-9 (少量 2 层)
+          const along = 8 + hash01(bx * 1.3 + bz * 2.1) * 7;
+          const deep = 6 + hash01(bx * 2.7 + bz) * 3.5;
+          const hgt = hash01(bz * 1.9 + bx * 0.7) > 0.82 ? 7.5 + hash01(bx) * 2 : 4.5 + hash01(bx + 5) * 2.5;
+          const wallCol = PAL.hutongWall[Math.floor(hash01(bx * 3.1 + bz * 7.7) * PAL.hutongWall.length) % PAL.hutongWall.length];
+          const roofCol = jitter(PAL.hutongRoof, hash01(bx * 9.1 + bz * 1.3), 12);
+          // 轴对齐近似 (避免旋转三角化的复杂性): 取长边朝向
+          const alongX = Math.abs(ux) > Math.abs(uz);
+          const sx = alongX ? along : deep;
+          const sz = alongX ? deep : along;
+          const { c, key: ckey } = getCell(bx, bz);
+          const vb = c.pos.length / 3;
+          // 简化: 只生成墙+屋顶盒 (8 顶点 12 三角)
+          const x0b = bx - sx / 2, x1b = bx + sx / 2, z0b = bz - sz / 2, z1b = bz + sz / 2;
+          const corners = [[x0b, z0b], [x1b, z0b], [x1b, z1b], [x0b, z1b]];
+          // 墙 (4 面)
+          for (let wi = 0; wi < 4; wi++) {
+            const [ax, az] = corners[wi], [bxx, bzz] = corners[(wi + 1) % 4];
+            const b0 = c.pos.length / 3;
+            c.pos.push(ax - c.ox, 0, az - c.oz); c.col.push(...wallCol.map((v) => Math.round(v * 0.7)));
+            c.pos.push(bxx - c.ox, 0, bzz - c.oz); c.col.push(...wallCol.map((v) => Math.round(v * 0.7)));
+            c.pos.push(bxx - c.ox, hgt, bzz - c.oz); c.col.push(...wallCol);
+            c.pos.push(ax - c.ox, hgt, az - c.oz); c.col.push(...wallCol);
+            c.idx.push(b0, b0 + 1, b0 + 2, b0, b0 + 2, b0 + 3);
+          }
+          // 屋顶
+          {
+            const f = [];
+            for (const [px, pz] of corners) f.push(px, pz);
+            const tris = earcut(f);
+            const rb = c.pos.length / 3;
+            for (let ri = 0; ri < 4; ri++) {
+              c.pos.push(corners[ri][0] - c.ox, hgt, corners[ri][1] - c.oz);
+              c.col.push(...roofCol);
+            }
+            for (const ti of tris) c.idx.push(rb + ti);
+          }
+          infillCount++;
+        }
+      }
+    }
+  }
+  stats.infill = infillCount;
+  console.log(`  院落填充: ${infillCount}`);
 
   // ═══ 3. 水系与绿地 ═══
   console.log('■ 水系与绿地');
@@ -590,6 +708,16 @@ const addPolygon = (mesh, rings, col) => {
   }
   stats.water = waterCount; stats.green = greenCount;
 
+  // ═══ 3.5 步行广场 → 铺装面片（天安门广场等）═══
+  const plazaPolys = [];
+  for (const ring of plazaRings) {
+    if (addPolygon(roadMesh, [ring], hex(0x9a938a))) {
+      plazaPolys.push(ring);
+      roadCount++;
+    }
+  }
+  console.log(`  广场面片: ${plazaPolys.length}`);
+
   // ═══ 4. 铁路 ═══
   console.log('■ 铁路');
   const railEls = await load('rail');
@@ -713,6 +841,120 @@ const addPolygon = (mesh, rings, col) => {
     await writeFile(path.join(OUT, 'b/cars.bin.gz'), gz);
     manifest.cars = { file: 'b/cars.bin.gz', count: paths.length };
     console.log(`  车流路径: ${paths.length}`);
+  }
+
+  // ═══ 7. 地面纹理烘焙（城市肌理: 街区+建筑足迹+绿地+水面+道路）═══
+  console.log('■ 地面纹理烘焙');
+  {
+    const GW = 4096, GH = 4736; // x ∈ [-8000,8000], z ∈ [-8000,10500]
+    const X0 = -8000, Z0 = -8000, SXm = 16000 / GW, SZm = 18500 / GH;
+    const px = Buffer.alloc(GW * GH * 3);
+    const setPx = (wx, wz, r, g, b) => {
+      const ix = Math.floor((wx - X0) / SXm), iz = Math.floor((wz - Z0) / SZm);
+      if (ix < 0 || ix >= GW || iz < 0 || iz >= GH) return;
+      const o = (iz * GW + ix) * 3;
+      px[o] = r; px[o + 1] = g; px[o + 2] = b;
+    };
+    // 1) 底色街区
+    for (let iz = 0; iz < GH; iz++) {
+      for (let ix = 0; ix < GW; ix++) {
+        const wx = X0 + ix * SXm, wz = Z0 + iz * SZm;
+        const h = hash01(wx * 0.011 + wz * 0.017);
+        const v = 150 + Math.floor(h * 24);
+        const o = (iz * GW + ix) * 3;
+        px[o] = v; px[o + 1] = v - 7; px[o + 2] = v - 16;
+      }
+    }
+    const fillPoly = (ring, r, g, b, jitterAmt = 0) => {
+      let minX = Infinity, maxX = -Infinity, minZ = Infinity, maxZ = -Infinity;
+      for (const [x, z] of ring) {
+        if (x < minX) minX = x; if (x > maxX) maxX = x;
+        if (z < minZ) minZ = z; if (z > maxZ) maxZ = z;
+      }
+      const ix0 = Math.max(0, Math.floor((minX - X0) / SXm) - 1), ix1 = Math.min(GW - 1, Math.ceil((maxX - X0) / SXm) + 1);
+      const iz0 = Math.max(0, Math.floor((minZ - Z0) / SZm) - 1), iz1 = Math.min(GH - 1, Math.ceil((maxZ - Z0) / SZm) + 1);
+      for (let iz = iz0; iz <= iz1; iz++) {
+        for (let ix = ix0; ix <= ix1; ix++) {
+          const wx = X0 + ix * SXm, wz = Z0 + iz * SZm;
+          let inside = false;
+          for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+            const [xi, zi] = ring[i], [xj, zj] = ring[j];
+            if (zi > wz !== zj > wz && wx < ((xj - xi) * (wz - zi)) / (zj - zi) + xi) inside = !inside;
+          }
+          if (!inside) continue;
+          const h = jitterAmt ? (hash01(wx * 0.05 + wz * 0.08) - 0.5) * jitterAmt : 0;
+          setPx(wx, wz, Math.max(0, Math.min(255, r + h)), Math.max(0, Math.min(255, g + h)), Math.max(0, Math.min(255, b + h)));
+        }
+      }
+    };
+    const thickLine = (x0, z0, x1, z1, halfWm, r, g, b) => {
+      const minX = Math.min(x0, x1) - halfWm, maxX = Math.max(x0, x1) + halfWm;
+      const minZ = Math.min(z0, z1) - halfWm, maxZ = Math.max(z0, z1) + halfWm;
+      const ix0 = Math.max(0, Math.floor((minX - X0) / SXm)), ix1 = Math.min(GW - 1, Math.ceil((maxX - X0) / SXm));
+      const iz0 = Math.max(0, Math.floor((minZ - Z0) / SZm)), iz1 = Math.min(GH - 1, Math.ceil((maxZ - Z0) / SZm));
+      const dx = x1 - x0, dz = z1 - z0;
+      const len2 = dx * dx + dz * dz || 1;
+      for (let iz = iz0; iz <= iz1; iz++) {
+        for (let ix = ix0; ix <= ix1; ix++) {
+          const wx = X0 + ix * SXm, wz = Z0 + iz * SZm;
+          let t = ((wx - x0) * dx + (wz - z0) * dz) / len2;
+          t = Math.max(0, Math.min(1, t));
+          const cx = x0 + dx * t, cz = z0 + dz * t;
+          if (Math.hypot(wx - cx, wz - cz) <= halfWm) setPx(wx, wz, r, g, b);
+        }
+      }
+    };
+    // 2) 建筑足迹（深一号, 伪造覆盖率与阴影感）
+    let painted = 0;
+    for (const el of buildings) {
+      if (el.type !== 'way' || !el.geometry || el.geometry.length < 4) continue;
+      if (!(el.tags?.building || el.tags?.['building:part'])) continue;
+      const ring = el.geometry.map((g2) => toXZ(g2.lat, g2.lon));
+      fillPoly(ring, 132, 124, 112, 10);
+      painted++;
+    }
+    // 3) 绿地 / 水面 / 广场
+    for (const [ring, col] of greenPolys.map((r) => [r, [92, 122, 70]])) fillPoly(ring, ...col, 14);
+    for (const ring of plazaPolys) fillPoly(ring, 158, 152, 142, 8);
+    // 水面需要重取 — 从 water mesh 顶点反推太贵, 直接重画主要面: 用 wgEls 再次遍历
+    for (const el of wgEls) {
+      const t = el.tags || {};
+      const isWater = t.natural === 'water' || ['riverbank', 'dock'].includes(t.waterway) || t.water;
+      const isWaterway = ['river', 'canal', 'stream'].includes(t.waterway);
+      if (!isWater && !isWaterway) continue;
+      if (el.type === 'way' && el.geometry) {
+        const ring = el.geometry.map((g2) => toXZ(g2.lat, g2.lon));
+        if (isWaterway && !isWater) {
+          for (let i = 1; i < ring.length; i++) thickLine(ring[i - 1][0], ring[i - 1][1], ring[i][0], ring[i][1], 11, 42, 84, 122);
+        } else fillPoly(ring, 42, 84, 122, 6);
+      } else if (el.type === 'relation' && el.members) {
+        for (const m of el.members) {
+          if (m.role === 'outer' && m.geometry) fillPoly(m.geometry.map((g2) => toXZ(g2.lat, g2.lon)), 42, 84, 122, 6);
+        }
+      }
+    }
+    // 4) 道路（深色沥青, 与街区对比）
+    for (const el of roadEls) {
+      if (el.type !== 'way' || !el.tags?.highway || !el.geometry) continue;
+      const cls = ROAD_CLASS[el.tags.highway];
+      if (!cls) continue;
+      const c = cls.c;
+      const pts = el.geometry.map((g2) => toXZ(g2.lat, g2.lon));
+      for (let i = 1; i < pts.length; i++) {
+        thickLine(pts[i - 1][0], pts[i - 1][1], pts[i][0], pts[i][1], cls.w / 2 + 1.2, Math.max(20, c[0] - 6), Math.max(20, c[1] - 6), Math.max(22, c[2] - 6));
+      }
+    }
+    // 5) 铁路
+    for (const el of railEls) {
+      if (el.type !== 'way' || !el.geometry) continue;
+      const pts = el.geometry.map((g2) => toXZ(g2.lat, g2.lon));
+      for (let i = 1; i < pts.length; i++) thickLine(pts[i - 1][0], pts[i - 1][1], pts[i][0], pts[i][1], 4, 70, 72, 76);
+    }
+    const jpeg = (await import('jpeg-js')).default;
+    const enc = jpeg.encode({ data: px, width: GW, height: GH }, 82);
+    await writeFile(path.join(OUT, 'ground.jpg'), enc.data);
+    manifest.ground = { file: 'ground.jpg', w: GW, h: GH, x0: X0, z0: Z0, spanX: 16000, spanZ: 18500 };
+    console.log(`  ground.jpg ${(enc.data.length / 1048576).toFixed(1)} MB, 建筑 ${painted} 足迹`);
   }
 
   await writeFile(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 1));

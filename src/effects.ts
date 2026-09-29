@@ -24,8 +24,8 @@ export class Effects {
   }
 
   update(nightT: number) {
-    this.bloom.strength = 0.28 + nightT * 0.65;
-    this.bloom.threshold = 0.86 - nightT * 0.3;
+    this.bloom.strength = 0.26 + nightT * 0.42;
+    this.bloom.threshold = 0.86 - nightT * 0.26;
   }
 
   render(dt: number) {
