@@ -30,12 +30,14 @@ export function buildCity(data: LoadedData): CityRefs {
   const texLoader = new THREE.TextureLoader();
   const groundTex = texLoader.load('./data/ground.jpg');
   groundTex.colorSpace = THREE.SRGBColorSpace;
-  groundTex.anisotropy = 8;
+  groundTex.anisotropy = 16; // GL 驱动会自动钳制到硬件上限
+  groundTex.generateMipmaps = true;
+  groundTex.minFilter = THREE.LinearMipmapLinearFilter;
   const groundMat = new THREE.MeshLambertMaterial({
     map: groundTex,
     polygonOffset: true,
-    polygonOffsetFactor: 3,
-    polygonOffsetUnits: 3,
+    polygonOffsetFactor: 8,
+    polygonOffsetUnits: 8,
   });
   groundMat.onBeforeCompile = (shader) => {
     shader.uniforms.uNight = uniforms.uNight;
@@ -47,16 +49,17 @@ export function buildCity(data: LoadedData): CityRefs {
         diffuseColor.rgb *= mix(1.0, 0.26, uNight);`
       );
   };
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(16000, 18500), groundMat);
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(16000, 20100), groundMat);
   ground.rotation.x = -Math.PI / 2;
-  ground.position.set(0, 0, 1250);
+  ground.position.set(0, 0, 450);
   ground.matrixAutoUpdate = false;
   ground.updateMatrix();
   group.add(ground);
-  // 地平线外围底色
+  // 地平线外围底色（沉到 -30m：polygonOffset 梯队在远距离会把纹理地面推深数米，
+  // 底色若在 -0.8 会反过来盖住纹理地面/绿地，形成"绿色阴影"和沙色地面）
   const outerGround = new THREE.Mesh(new THREE.PlaneGeometry(60000, 60000), new THREE.MeshLambertMaterial({ color: 0x8f8577 }));
   outerGround.rotation.x = -Math.PI / 2;
-  outerGround.position.set(0, -0.8, 2600);
+  outerGround.position.set(0, -30, 2600);
   outerGround.matrixAutoUpdate = false;
   outerGround.updateMatrix();
   group.add(outerGround);
@@ -99,8 +102,8 @@ export function buildCity(data: LoadedData): CityRefs {
     const trunkGeo = new THREE.CylinderGeometry(0.32, 0.5, 2.8, 5);
     trunkGeo.translate(0, 1.4, 0);
     const canopyGeo = new THREE.IcosahedronGeometry(3.1, 1);
-    canopyGeo.scale(1, 1.2, 1);
-    canopyGeo.translate(0, 5.6, 0);
+    canopyGeo.scale(1, 1.15, 1);
+    canopyGeo.translate(0, 4.4, 0);
 
     const trunkMat = new THREE.MeshLambertMaterial({ color: 0x5d4a38, flatShading: true });
     const canopyMat = new THREE.MeshLambertMaterial({ color: 0x3e6b30, flatShading: true });
@@ -116,7 +119,7 @@ export function buildCity(data: LoadedData): CityRefs {
       const x = data.trees[i * 3], z = data.trees[i * 3 + 1], sc = data.trees[i * 3 + 2];
       p.set(x, 0, z);
       q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), (i * 2.399) % (Math.PI * 2));
-      s.set(sc / 4, sc / 4, sc / 4);
+      s.set(sc / 5.5, sc / 5.5, sc / 5.5);
       m.compose(p, q, s);
       trunks.setMatrixAt(i, m);
       canopies.setMatrixAt(i, m);

@@ -49,7 +49,7 @@ export function makeBuildingMaterial(): THREE.MeshLambertMaterial {
           winEmit = inWin * lit * uNight;
           // 白天: 窗户呈深色玻璃（带天空反射蓝调）
           vec3 glassDay = diffuseColor.rgb * vec3(0.34, 0.42, 0.5) + vec3(0.05, 0.08, 0.12);
-          diffuseColor.rgb = mix(diffuseColor.rgb, glassDay, inWin * (1.0 - uNight) * 0.85);
+          diffuseColor.rgb = mix(diffuseColor.rgb, glassDay, inWin * (1.0 - uNight) * 0.6);
           // 夜晚未点亮面略暗
           diffuseColor.rgb *= mix(1.0, 0.82, uNight);
         }`
@@ -68,8 +68,8 @@ export function makeRoadMaterial(): THREE.MeshLambertMaterial {
     vertexColors: true,
     flatShading: true,
     polygonOffset: true,
-    polygonOffsetFactor: -1,
-    polygonOffsetUnits: -1,
+    polygonOffsetFactor: -4,
+    polygonOffsetUnits: -4,
   });
   mat.onBeforeCompile = (shader) => {
     shader.uniforms.uNight = uniforms.uNight;
@@ -91,8 +91,8 @@ export function makeWaterMaterial(): THREE.MeshPhongMaterial {
     shininess: 120,
     specular: new THREE.Color(0x88aacc),
     polygonOffset: true,
-    polygonOffsetFactor: 1,
-    polygonOffsetUnits: 1,
+    polygonOffsetFactor: 2,
+    polygonOffsetUnits: 2,
   });
 }
 
@@ -101,8 +101,8 @@ export function makeGreenMaterial(): THREE.MeshLambertMaterial {
     vertexColors: true,
     flatShading: true,
     polygonOffset: true,
-    polygonOffsetFactor: 2,
-    polygonOffsetUnits: 2,
+    polygonOffsetFactor: 4,
+    polygonOffsetUnits: 4,
   });
   mat.onBeforeCompile = (shader) => {
     shader.uniforms.uNight = uniforms.uNight;

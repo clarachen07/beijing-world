@@ -327,20 +327,20 @@ async function main() {
   // ═══ 2. 道路 ═══
   console.log('■ 道路处理');
   const ROAD_CLASS = {
-    motorway: { w: 46, y: 0.85, c: hex(0x2c2f34) },
-    motorway_link: { w: 13, y: 0.75, c: hex(0x2c2f34) },
-    trunk: { w: 38, y: 0.8, c: hex(0x2e3136) },
-    trunk_link: { w: 12, y: 0.7, c: hex(0x2e3136) },
-    primary: { w: 29, y: 0.7, c: hex(0x33363b) },
-    primary_link: { w: 11, y: 0.65, c: hex(0x33363b) },
-    secondary: { w: 23, y: 0.62, c: hex(0x393c42) },
-    secondary_link: { w: 10, y: 0.6, c: hex(0x393c42) },
-    tertiary: { w: 17, y: 0.55, c: hex(0x3f434a) },
-    residential: { w: 11, y: 0.5, c: hex(0x45484f) },
-    unclassified: { w: 9, y: 0.48, c: hex(0x45484f) },
-    living_street: { w: 8, y: 0.46, c: hex(0x4d4c48) },
-    service: { w: 6, y: 0.44, c: hex(0x4c4f55) },
-    pedestrian: { w: 11, y: 0.42, c: hex(0x83756a) },
+    motorway: { w: 46, y: 1.55, c: hex(0x2c2f34) },
+    motorway_link: { w: 13, y: 1.45, c: hex(0x2c2f34) },
+    trunk: { w: 38, y: 1.5, c: hex(0x2e3136) },
+    trunk_link: { w: 12, y: 1.4, c: hex(0x2e3136) },
+    primary: { w: 29, y: 1.4, c: hex(0x33363b) },
+    primary_link: { w: 11, y: 1.35, c: hex(0x33363b) },
+    secondary: { w: 23, y: 1.32, c: hex(0x393c42) },
+    secondary_link: { w: 10, y: 1.3, c: hex(0x393c42) },
+    tertiary: { w: 17, y: 1.25, c: hex(0x3f434a) },
+    residential: { w: 11, y: 1.2, c: hex(0x45484f) },
+    unclassified: { w: 9, y: 1.18, c: hex(0x45484f) },
+    living_street: { w: 8, y: 1.16, c: hex(0x4d4c48) },
+    service: { w: 6, y: 1.14, c: hex(0x4c4f55) },
+    pedestrian: { w: 11, y: 1.12, c: hex(0x83756a) },
   };
   let roadEls = [];
   for (let i = 0; i < 6; i++) roadEls = roadEls.concat(await load(`roads_${i}`));  // 道路网格
@@ -461,9 +461,11 @@ async function main() {
       const ux = dx / len, uz = dz / len;
       let s = 0;
       while (s < len && infillCount < 48000) {
-        const step = 13 + hash01(i * 31.7 + s * 3.1) * 9;
+        const step = 11 + hash01(i * 31.7 + s * 3.1) * 17; // 11-28m 步长, 打破规律行
         if (s + step > len) break;
         s += step;
+        if (hash01(s * 7.7 + i * 1.3) > 0.72) continue; // 28% 空缺: 院落间留空地/树
+        
         const cx = x0 + ux * s, cz = z0 + uz * s;
         if (!inOldCity(cx, cz)) continue;
         for (const side of (hash01(cx * 0.37 + cz) > 0.5 ? [1, -1] : [-1, 1])) {
@@ -474,11 +476,11 @@ async function main() {
           occ.add(key);
           if (inClearCircle(ORIGIN.lat - bz / M_LAT, ORIGIN.lon + bx / M_LON)) { occ.delete(key); continue; }
           // 院落建筑: 沿街向长 8-15, 进深 6-10, 高 4-9 (少量 2 层)
-          const along = 8 + hash01(bx * 1.3 + bz * 2.1) * 7;
-          const deep = 6 + hash01(bx * 2.7 + bz) * 3.5;
-          const hgt = hash01(bz * 1.9 + bx * 0.7) > 0.82 ? 7.5 + hash01(bx) * 2 : 4.5 + hash01(bx + 5) * 2.5;
+          const along = 6.5 + hash01(bx * 1.3 + bz * 2.1) * 11;
+          const deep = 5 + hash01(bx * 2.7 + bz) * 5.5;
+          const hgt = hash01(bz * 1.9 + bx * 0.7) > 0.8 ? 7.5 + hash01(bx) * 3.5 : 3.8 + hash01(bx + 5) * 3.5;
           const wallCol = PAL.hutongWall[Math.floor(hash01(bx * 3.1 + bz * 7.7) * PAL.hutongWall.length) % PAL.hutongWall.length];
-          const roofCol = jitter(PAL.hutongRoof, hash01(bx * 9.1 + bz * 1.3), 12);
+          const roofCol = [Math.round((PAL.hutongRoof[0] + wallCol[0]) / 2), Math.round((PAL.hutongRoof[1] + wallCol[1]) / 2), Math.round((PAL.hutongRoof[2] + wallCol[2]) / 2)];
           // 轴对齐近似 (避免旋转三角化的复杂性): 取长边朝向
           const alongX = Math.abs(ux) > Math.abs(uz);
           const sx = alongX ? along : deep;
@@ -527,8 +529,8 @@ async function main() {
   const greenPolys = []; // [ring] 用于树种散布
   const WATER_C = hex(0x2a5f8a), WATER2 = hex(0x234f76);
   const GREEN_C = {
-    park: hex(0x527a3f), forest: hex(0x3f6531), grass: hex(0x5d8548),
-    scrub: hex(0x4a6f38), pitch: hex(0x4d7c46), garden: hex(0x5c8544), cemetery: hex(0x4c6b40), beach: hex(0xcbb98a),
+    park: hex(0x446b33), forest: hex(0x365628), grass: hex(0x4f7439),
+    scrub: hex(0x3f6230), pitch: hex(0x426f3a), garden: hex(0x4d7238), cemetery: hex(0x406034), beach: hex(0xcbb98a),
   };
 function pointInRing(p, ring) {
   let inside = false;
@@ -539,16 +541,18 @@ function pointInRing(p, ring) {
   return inside;
 }
 
-/** Sutherland–Hodgman 裁剪：把环裁剪到城市范围（防止关系多边形拖出几十公里的长条） */
+/** Sutherland–Hodgman 裁剪：把环裁剪到城市范围（防止关系多边形拖出几十公里的长条）
+ * 严格防零除与 NaN —— NaN 顶点会被 GPU 渲染成从原点辐射的巨大三角（"绿色阴影"元凶） */
 function clipRing(ring) {
-  const X = 8000, ZN = -8000, ZS = 10500;
+  const X = 8000, ZN = -9600, ZS = 9300; // 北界覆盖奥森(数据北缘-9170), 南界收到数据边缘+余量
   const planes = [
-    { inside: (p) => p[0] >= -X, inter: (a, b) => { const t = (-X - a[0]) / (b[0] - a[0]); return [-X, a[1] + t * (b[1] - a[1])]; } },
-    { inside: (p) => p[0] <= X, inter: (a, b) => { const t = (X - a[0]) / (b[0] - a[0]); return [X, a[1] + t * (b[1] - a[1])]; } },
-    { inside: (p) => p[1] >= ZN, inter: (a, b) => { const t = (ZN - a[1]) / (b[1] - a[1]); return [a[0] + t * (b[0] - a[0]), ZN]; } },
-    { inside: (p) => p[1] <= ZS, inter: (a, b) => { const t = (ZS - a[1]) / (b[1] - a[1]); return [a[0] + t * (b[0] - a[0]), ZS]; } },
+    { inside: (p) => p[0] >= -X, inter: (a, b) => { const d = b[0] - a[0]; if (Math.abs(d) < 1e-9) return null; const t = (-X - a[0]) / d; return [-X, a[1] + t * (b[1] - a[1])]; } },
+    { inside: (p) => p[0] <= X, inter: (a, b) => { const d = b[0] - a[0]; if (Math.abs(d) < 1e-9) return null; const t = (X - a[0]) / d; return [X, a[1] + t * (b[1] - a[1])]; } },
+    { inside: (p) => p[1] >= ZN, inter: (a, b) => { const d = b[1] - a[1]; if (Math.abs(d) < 1e-9) return null; const t = (ZN - a[1]) / d; return [a[0] + t * (b[0] - a[0]), ZN]; } },
+    { inside: (p) => p[1] <= ZS, inter: (a, b) => { const d = b[1] - a[1]; if (Math.abs(d) < 1e-9) return null; const t = (ZS - a[1]) / d; return [a[0] + t * (b[0] - a[0]), ZS]; } },
   ];
-  let out = ring;
+  const finite = (p) => p && Number.isFinite(p[0]) && Number.isFinite(p[1]);
+  let out = ring.filter(finite);
   for (const pl of planes) {
     const inp = out;
     out = [];
@@ -556,10 +560,11 @@ function clipRing(ring) {
       const cur = inp[i], prev = inp[(i + inp.length - 1) % inp.length];
       const cIn = pl.inside(cur), pIn = pl.inside(prev);
       if (cIn) {
-        if (!pIn) out.push(pl.inter(prev, cur));
+        if (!pIn) { const ip = pl.inter(prev, cur); if (finite(ip)) out.push(ip); }
         out.push(cur);
       } else if (pIn) {
-        out.push(pl.inter(prev, cur));
+        const ip = pl.inter(prev, cur);
+        if (finite(ip)) out.push(ip);
       }
     }
     if (!out.length) break;
@@ -568,7 +573,7 @@ function clipRing(ring) {
 }
 /** 环是否与城市范围有交集（丢弃 relation 带出的远端几何） */
 function ringInExtent(ring) {
-  const X = 8000, ZN = -8000, ZS = 10500;
+  const X = 8000, ZN = -9600, ZS = 9300;
   let minX = Infinity, maxX = -Infinity, minZ = Infinity, maxZ = -Infinity;
   for (const [x, z] of ring) {
     if (x < minX) minX = x; if (x > maxX) maxX = x;
@@ -579,7 +584,7 @@ function ringInExtent(ring) {
 
 function clipPolylineRuns(pts) {
   // 把折线裁剪进城市窗口，返回若干段（每段 ≥2 点）
-  const X = 8000, ZN = -8000, ZS = 10500;
+  const X = 8000, ZN = -9600, ZS = 9300;
   const inside = (p) => p[0] >= -X && p[0] <= X && p[1] >= ZN && p[1] <= ZS;
   const intersect = (a, b) => {
     let lo = a.slice(), hi = b.slice();
@@ -626,15 +631,28 @@ const addPolygon = (mesh, rings, col) => {
       holesIdx.push(flat.length / 2);
       for (const [x, z] of hole) flat.push(x, z);
     }
+    // 顶点有限性校验
+    for (let k = 0; k < flat.length; k++) if (!Number.isFinite(flat[k])) return false;
     const tris = earcut(flat, holesIdx.length ? holesIdx : undefined);
     if (!tris.length) return false;
+    const nv = flat.length / 2;
+    for (const ti of tris) if (ti >= nv) return false; // 索引越界防护
     const vb = mesh.pos.length / 3;
-    for (let i = 0; i < flat.length / 2; i++) {
-      mesh.pos.push(flat[i * 2], mesh === waterMesh ? 0.5 : 0.3, flat[i * 2 + 1]);
+    for (let i = 0; i < nv; i++) {
+      mesh.pos.push(flat[i * 2], mesh === waterMesh ? 1.0 : 0.6, flat[i * 2 + 1]);
       mesh.col.push(col[0], col[1], col[2]);
     }
     for (const ti of tris) mesh.idx.push(vb + ti);
     return true;
+  };
+  /** 写盘前的网格体检: 拒绝非有限顶点/越界索引 */
+  const meshSanity = (name, mesh) => {
+    let bad = 0;
+    for (let k = 0; k < mesh.pos.length; k++) if (!Number.isFinite(mesh.pos[k])) bad++;
+    const nv = mesh.pos.length / 3;
+    for (const ti of mesh.idx) if (ti >= nv) bad++;
+    if (bad) console.log(`  ⚠ ${name}: ${bad} 个异常值已跳过写入`);
+    return bad === 0;
   };
 
   let waterCount = 0, greenCount = 0;
@@ -663,7 +681,7 @@ const addPolygon = (mesh, rings, col) => {
         const pts = dedupe(ring, 2);
         const width = { river: 26, canal: 14, stream: 6 }[t.waterway] || 10;
         for (const run of clipPolylineRuns(pts)) {
-          pushStrip(run, width / 2, 0.5, WATER_C, waterMesh);
+          pushStrip(run, width / 2, 1.0, WATER_C, waterMesh);
           waterCount++;
         }
         continue;
@@ -726,7 +744,7 @@ const addPolygon = (mesh, rings, col) => {
     const pts = dedupe(el.geometry.map((g) => toXZ(g.lat, g.lon)), 2.5);
     if (pts.length < 2) continue;
     const layer = Math.max(0, Math.min(4, parseInt(el.tags?.layer || '0', 10) || 0));
-    pushStrip(pts, 3.2, 0.4 + (el.tags?.bridge ? layer * 6 : 0), hex(0x2f3236), roadMesh);
+    pushStrip(pts, 3.2, 1.0 + (el.tags?.bridge ? layer * 6 : 0), hex(0x2f3236), roadMesh);
   }
 
   // ═══ 5. 树木 ═══
@@ -741,7 +759,7 @@ const addPolygon = (mesh, rings, col) => {
   // 公园内散布
   const areas = greenPolys.map((r) => polygonArea(r));
   const totalArea = areas.reduce((s, a) => s + a, 0);
-  const SCATTER = 26000;
+  const SCATTER = 17000;
   if (totalArea > 0) {
     greenPolys.forEach((ring, idx) => {
       const n = Math.floor((areas[idx] / totalArea) * SCATTER);
@@ -785,7 +803,8 @@ const addPolygon = (mesh, rings, col) => {
     ci++;
   }
   const emitMesh = async (name, mesh) => {
-    if (!mesh.idx.length) {
+    if (!mesh.idx.length || !meshSanity(name, mesh)) {
+      if (mesh.idx.length) console.log(`  ⚠ ${name} 网格未通过体检, 已跳过`);
       manifest[name] = { file: '', v: 0, i: 0 };
       return;
     }
@@ -846,8 +865,8 @@ const addPolygon = (mesh, rings, col) => {
   // ═══ 7. 地面纹理烘焙（城市肌理: 街区+建筑足迹+绿地+水面+道路）═══
   console.log('■ 地面纹理烘焙');
   {
-    const GW = 4096, GH = 4736; // x ∈ [-8000,8000], z ∈ [-8000,10500]
-    const X0 = -8000, Z0 = -8000, SXm = 16000 / GW, SZm = 18500 / GH;
+    const GW = 4096, GH = 5146; // x ∈ [-8000,8000], z ∈ [-9600,10500]
+    const X0 = -8000, Z0 = -9600, SXm = 16000 / GW, SZm = 20100 / GH;
     const px = Buffer.alloc(GW * GH * 3);
     const setPx = (wx, wz, r, g, b) => {
       const ix = Math.floor((wx - X0) / SXm), iz = Math.floor((wz - Z0) / SZm);
@@ -855,6 +874,16 @@ const addPolygon = (mesh, rings, col) => {
       const o = (iz * GW + ix) * 3;
       px[o] = r; px[o + 1] = g; px[o + 2] = b;
     };
+
+    const checkGreen = (stage) => {
+      let c = 0, first = -1;
+      for (let k = 0; k < GW * GH; k++) {
+        if (px[k * 3] < 30 && px[k * 3 + 1] > 100 && px[k * 3 + 2] < 40) { c++; if (first < 0) first = k; }
+      }
+      if (c > 1000) console.log(`  ⚠ [${stage}] 纯绿像素 ${c} 首个@${first} (iz=${Math.floor(first / GW)}, ix=${first % GW})`);
+      else console.log(`  ✓ [${stage}] 无纯绿污染 (${c})`);
+    };
+
     // 1) 底色街区
     for (let iz = 0; iz < GH; iz++) {
       for (let ix = 0; ix < GW; ix++) {
@@ -904,18 +933,62 @@ const addPolygon = (mesh, rings, col) => {
         }
       }
     };
-    // 2) 建筑足迹（深一号, 伪造覆盖率与阴影感）
+    checkGreen('底色');
+    // 2) 建筑足迹（与底色 55% 混合, 低对比防止远景缩小采样 moiré 条纹）
     let painted = 0;
+    const fillPolyC = (ring, r, g, b, jitterAmt, alpha) => {
+      let minX = Infinity, maxX = -Infinity, minZ = Infinity, maxZ = -Infinity;
+      for (const [x, z] of ring) {
+        if (x < minX) minX = x; if (x > maxX) maxX = x;
+        if (z < minZ) minZ = z; if (z > maxZ) maxZ = z;
+      }
+      const ix0 = Math.max(0, Math.floor((minX - X0) / SXm) - 1), ix1 = Math.min(GW - 1, Math.ceil((maxX - X0) / SXm) + 1);
+      const iz0 = Math.max(0, Math.floor((minZ - Z0) / SZm) - 1), iz1 = Math.min(GH - 1, Math.ceil((maxZ - Z0) / SZm) + 1);
+      for (let iz = iz0; iz <= iz1; iz++) {
+        for (let ix = ix0; ix <= ix1; ix++) {
+          const wx = X0 + ix * SXm, wz = Z0 + iz * SZm;
+          let inside = false;
+          for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+            const [xi, zi] = ring[i], [xj, zj] = ring[j];
+            if (zi > wz !== zj > wz && wx < ((xj - xi) * (wz - zi)) / (zj - zi) + xi) inside = !inside;
+          }
+          if (!inside) continue;
+          const h = jitterAmt ? (hash01(wx * 0.05 + wz * 0.08) - 0.5) * jitterAmt : 0;
+          const o = (iz * GW + ix) * 3;
+          px[o] = Math.max(0, Math.min(255, Math.round(px[o] * (1 - alpha) + (r + h) * alpha)));
+          px[o + 1] = Math.max(0, Math.min(255, Math.round(px[o + 1] * (1 - alpha) + (g + h) * alpha)));
+          px[o + 2] = Math.max(0, Math.min(255, Math.round(px[o + 2] * (1 - alpha) + (b + h) * alpha)));
+        }
+      }
+    };
     for (const el of buildings) {
       if (el.type !== 'way' || !el.geometry || el.geometry.length < 4) continue;
       if (!(el.tags?.building || el.tags?.['building:part'])) continue;
       const ring = el.geometry.map((g2) => toXZ(g2.lat, g2.lon));
-      fillPoly(ring, 132, 124, 112, 10);
+      fillPolyC(ring, 112, 106, 100, 8, 0.5);
       painted++;
     }
-    // 3) 绿地 / 水面 / 广场
-    for (const [ring, col] of greenPolys.map((r) => [r, [92, 122, 70]])) fillPoly(ring, ...col, 14);
-    for (const ring of plazaPolys) fillPoly(ring, 158, 152, 142, 8);
+    checkGreen('建筑足迹后');
+    // 3) 绿地 / 水面 / 广场（环先裁剪到数据范围, 防止数据外出现大片纯色）
+    const paintStat = [];
+    for (let gi = 0; gi < greenPolys.length; gi++) {
+      const cr = clipRing(greenPolys[gi]);
+      if (cr.length < 3) continue;
+      const before = JSON.stringify([px[0], px[100000], px[500000]]);
+      let cnt = 0;
+      // 包装 fillPoly 统计: 直接内联计数
+      let minX = Infinity, maxX = -Infinity, minZ = Infinity, maxZ = -Infinity;
+      for (const [x, z] of cr) { if (x < minX) minX = x; if (x > maxX) maxX = x; if (z < minZ) minZ = z; if (z > maxZ) maxZ = z; }
+      fillPoly(cr, 64, 100, 48, 14);
+      paintStat.push({ gi, w: Math.round((maxX - minX) / 100) / 10, h: Math.round((maxZ - minZ) / 100) / 10, zMax: Math.round(maxZ) });
+    }
+    paintStat.sort((a, b) => b.w * b.h - a.w * a.h);
+    console.log('  最大绿地绘制包络:', JSON.stringify(paintStat.slice(0, 5)));
+    for (const ring of plazaPolys) {
+      const cr = clipRing(ring);
+      if (cr.length >= 3) fillPoly(cr, 158, 152, 142, 8);
+    }
+    checkGreen('绿地水面广场后');
     // 水面需要重取 — 从 water mesh 顶点反推太贵, 直接重画主要面: 用 wgEls 再次遍历
     for (const el of wgEls) {
       const t = el.tags || {};
@@ -925,14 +998,23 @@ const addPolygon = (mesh, rings, col) => {
       if (el.type === 'way' && el.geometry) {
         const ring = el.geometry.map((g2) => toXZ(g2.lat, g2.lon));
         if (isWaterway && !isWater) {
-          for (let i = 1; i < ring.length; i++) thickLine(ring[i - 1][0], ring[i - 1][1], ring[i][0], ring[i][1], 11, 42, 84, 122);
-        } else fillPoly(ring, 42, 84, 122, 6);
+          for (const run of clipPolylineRuns(dedupe(ring, 2))) {
+            for (let i = 1; i < run.length; i++) thickLine(run[i - 1][0], run[i - 1][1], run[i][0], run[i][1], 11, 42, 84, 122);
+          }
+        } else {
+          const cr = clipRing(ring);
+          if (cr.length >= 3) fillPoly(cr, 42, 84, 122, 6);
+        }
       } else if (el.type === 'relation' && el.members) {
         for (const m of el.members) {
-          if (m.role === 'outer' && m.geometry) fillPoly(m.geometry.map((g2) => toXZ(g2.lat, g2.lon)), 42, 84, 122, 6);
+          if (m.role === 'outer' && m.geometry) {
+            const cr = clipRing(m.geometry.map((g2) => toXZ(g2.lat, g2.lon)));
+            if (cr.length >= 3) fillPoly(cr, 42, 84, 122, 6);
+          }
         }
       }
     }
+    checkGreen('水面后');
     // 4) 道路（深色沥青, 与街区对比）
     for (const el of roadEls) {
       if (el.type !== 'way' || !el.tags?.highway || !el.geometry) continue;
@@ -941,19 +1023,47 @@ const addPolygon = (mesh, rings, col) => {
       const c = cls.c;
       const pts = el.geometry.map((g2) => toXZ(g2.lat, g2.lon));
       for (let i = 1; i < pts.length; i++) {
-        thickLine(pts[i - 1][0], pts[i - 1][1], pts[i][0], pts[i][1], cls.w / 2 + 1.2, Math.max(20, c[0] - 6), Math.max(20, c[1] - 6), Math.max(22, c[2] - 6));
+        const rr = Math.max(28, Math.round(c[0] * 0.75 + 118 * 0.25));
+        const gg = Math.max(28, Math.round(c[1] * 0.75 + 110 * 0.25));
+        const bb = Math.max(30, Math.round(c[2] * 0.75 + 102 * 0.25));
+        thickLine(pts[i - 1][0], pts[i - 1][1], pts[i][0], pts[i][1], cls.w / 2 + 1.2, rr, gg, bb);
       }
     }
+    checkGreen('道路后');
     // 5) 铁路
     for (const el of railEls) {
       if (el.type !== 'way' || !el.geometry) continue;
       const pts = el.geometry.map((g2) => toXZ(g2.lat, g2.lon));
       for (let i = 1; i < pts.length; i++) thickLine(pts[i - 1][0], pts[i - 1][1], pts[i][0], pts[i][1], 4, 70, 72, 76);
     }
+    checkGreen('铁路后');
+    // 轻度 3×3 盒滤波：软化硬边, 进一步抑制远景 moiré
+    {
+      const src = Buffer.from(px);
+      for (let iz = 1; iz < GH - 1; iz++) {
+        for (let ix = 1; ix < GW - 1; ix++) {
+          const o = (iz * GW + ix) * 3;
+          for (let c = 0; c < 3; c++) {
+            let sum = 0;
+            for (let dz = -1; dz <= 1; dz++) for (let dx = -1; dx <= 1; dx++) sum += src[o + (dz * GW + dx) * 3 + c];
+            px[o + c] = Math.round(sum / 9);
+          }
+        }
+      }
+    }
+    checkGreen('模糊后');
     const jpeg = (await import('jpeg-js')).default;
-    const enc = jpeg.encode({ data: px, width: GW, height: GH }, 82);
+    // jpeg-js encode 期望 RGBA(4通道): 把 RGB 缓冲展开为 RGBA
+    const rgba = Buffer.alloc(GW * GH * 4);
+    for (let k = 0; k < GW * GH; k++) {
+      rgba[k * 4] = px[k * 3];
+      rgba[k * 4 + 1] = px[k * 3 + 1];
+      rgba[k * 4 + 2] = px[k * 3 + 2];
+      rgba[k * 4 + 3] = 255;
+    }
+    const enc = jpeg.encode({ data: rgba, width: GW, height: GH }, 82);
     await writeFile(path.join(OUT, 'ground.jpg'), enc.data);
-    manifest.ground = { file: 'ground.jpg', w: GW, h: GH, x0: X0, z0: Z0, spanX: 16000, spanZ: 18500 };
+    manifest.ground = { file: 'ground.jpg', w: GW, h: GH, x0: X0, z0: Z0, spanX: 16000, spanZ: 20100 };
     console.log(`  ground.jpg ${(enc.data.length / 1048576).toFixed(1)} MB, 建筑 ${painted} 足迹`);
   }
 

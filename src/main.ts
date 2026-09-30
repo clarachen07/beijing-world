@@ -237,6 +237,7 @@ async function boot() {
       camera.position.set(pos[0], pos[1], pos[2]);
       camera.lookAt(look[0], look[1], look[2]);
       effects.render(1 / 30);
+      updateLabels();
     },
   };
   // 调试句柄

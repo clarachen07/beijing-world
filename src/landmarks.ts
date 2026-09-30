@@ -68,26 +68,84 @@ function mkWallRing(): { g: THREE.Group; a: THREE.Vector3 } {
   return { g, a: new THREE.Vector3(0, 40, 0) };
 }
 
-/** 景山山脊 + 万春亭 */
+/** 景山：单一平滑山脊网格（真实山形, 非圆锥拼盘）+ 满山树木 */
 function mkJingshan(): { g: THREE.Group; a: THREE.Vector3 } {
   const g = new THREE.Group();
-  const cones: [number, number, number][] = [
-    [170, 24, 130], [150, 34, 40], [130, 45, -40], [150, 32, -120], [170, 22, -200],
-  ];
-  for (const [r, h, oz] of cones) {
-    const c = new THREE.Mesh(new THREE.ConeGeometry(r, h, 14), M.hill);
-    c.scale.set(1.15, 1, 0.72);
-    c.position.set(0, h / 2, oz);
-    g.add(c);
+  // 山脊: 沿南北轴的钟形山体, 东西宽 420m, 南北长 900m, 峰值 45m
+  const NX = 36, NZ = 60;
+  const LEN_X = 210, LEN_Z = 450; // 半长轴
+  const verts: number[] = [];
+  const faces: number[] = [];
+  const bell = (t: number) => Math.exp(-t * t * 3.2); // 轴向包络
+  for (let iz = 0; iz <= NZ; iz++) {
+    const tz = iz / NZ;
+    const z = (tz - 0.5) * 2 * LEN_Z; // -450..450
+    for (let ix = 0; ix <= NX; ix++) {
+      const tx = ix / NX;
+      const x = (tx - 0.5) * 2 * LEN_X;
+      const rx = 1 - Math.pow((tx - 0.5) * 2, 2); // 椭圆截面
+      const rz = 1 - Math.pow((tz - 0.5) * 2, 2);
+      const rr = Math.max(0, Math.min(rx, rz));
+      const env = bell((tz - 0.42) * 2.2); // 峰在偏北
+      const h = 45 * env * Math.pow(rr, 1.4) + 2.5 * rr;
+      verts.push(x, h, z);
+    }
   }
+  for (let iz = 0; iz < NZ; iz++) {
+    for (let ix = 0; ix < NX; ix++) {
+      const a = iz * (NX + 1) + ix;
+      const b = a + 1;
+      const c = a + NX + 1;
+      const d = c + 1;
+      faces.push(a, c, d, b);
+    }
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(verts, 3));
+  geo.setIndex(faces);
+  geo.computeVertexNormals();
+  const hill = new THREE.Mesh(geo, new THREE.MeshLambertMaterial({ color: 0x54683b }));
+  g.add(hill);
+  // 满山树木（贴坡面）
+  const treeVerts: number[] = [];
+  const treeIdx: number[] = [];
+  const pushTree = (x: number, y: number, z: number, s: number) => {
+    const base = treeVerts.length / 3;
+    for (let i = 0; i < 6; i++) {
+      const a = (i / 6) * Math.PI * 2;
+      treeVerts.push(x + Math.cos(a) * s * 0.4, y, z + Math.sin(a) * s * 0.4);
+    }
+    treeVerts.push(x, y + s, z);
+    for (let i = 0; i < 6; i++) treeIdx.push(base + i, base + 6, base + (i + 1) % 6);
+  };
+  const heightAt = (tx: number, tz: number) => {
+    const rx = 1 - Math.pow((tx - 0.5) * 2, 2);
+    const rz = 1 - Math.pow((tz - 0.5) * 2, 2);
+    const rr = Math.max(0, Math.min(rx, rz));
+    const env = bell((tz - 0.42) * 2.2);
+    return 45 * env * Math.pow(rr, 1.4) + 2.5 * rr;
+  };
+  for (let i = 0; i < 620; i++) {
+    const tx = ((i * 0.757) % 1) * 0.86 + 0.07;
+    const tz = ((i * 0.473) % 1) * 0.9 + 0.05;
+    const x = (tx - 0.5) * 2 * LEN_X;
+    const z = (tz - 0.5) * 2 * LEN_Z;
+    pushTree(x, heightAt(tx, tz) - 0.5, z, 4.5 + ((i * 1.37) % 1) * 4);
+  }
+  const treeGeo = new THREE.BufferGeometry();
+  treeGeo.setAttribute('position', new THREE.Float32BufferAttribute(treeVerts, 3));
+  treeGeo.setIndex(treeIdx);
+  treeGeo.computeVertexNormals();
+  g.add(new THREE.Mesh(treeGeo, new THREE.MeshLambertMaterial({ color: 0x33532a, flatShading: true })));
+  // 万春亭（峰顶）
   const top = new THREE.Group();
   top.add(box(16, 5, 16, M.red));
   top.add(box(20, 3.5, 20, M.gold, 0, 5));
   top.add(box(10, 4, 10, M.red, 0, 8.5));
   top.add(pyramid(13, 4.5, 13, M.gold, 0, 12.5));
-  top.position.set(0, 44, -40);
+  top.position.set(0, 45, -180 * 0 + (0.42 - 0.5) * 2 * LEN_Z);
   g.add(top);
-  return { g, a: new THREE.Vector3(0, 66, -40) };
+  return { g, a: new THREE.Vector3(0, 60, (0.42 - 0.5) * 2 * LEN_Z) };
 }
 
 /** 北海白塔 (覆钵式) */
