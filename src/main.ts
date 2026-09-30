@@ -166,6 +166,11 @@ function onResize() {
 window.addEventListener('resize', onResize);
 
 // ── 启动 ──
+// Service Worker: 二次访问秒开（仅生产部署, 本地 dev 不启用）
+if ('serviceWorker' in navigator && !['localhost', '127.0.0.1'].includes(location.hostname)) {
+  navigator.serviceWorker.register('./sw.js').catch(() => { });
+}
+
 async function boot() {
   // 视频渲染模式：?video=1（隐藏控制 UI，保留标题与地标标签）
   const isVideoMode = new URLSearchParams(location.search).has('video');

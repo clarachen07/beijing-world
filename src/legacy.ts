@@ -6,6 +6,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { latLonToLocal } from './geo';
+import { resolveAsset } from './loader';
 import { uniforms } from './materials';
 import type { Landmark } from './landmarks';
 
@@ -98,7 +99,7 @@ export function loadLegacyLandmarks(
       (def) =>
         new Promise<void>((resolve) => {
           loader.load(
-            `./models/legacy/${def.file}.glb`,
+            resolveAsset(`./models/legacy/${def.file}.glb`),
             (gltf) => {
               const obj = gltf.scene;
               const [x, z] = latLonToLocal(def.lat, def.lon);
@@ -129,6 +130,35 @@ export function loadLegacyLandmarks(
             },
             undefined,
             (err) => {
+              // CDN 失败 → 回退同源重试一次
+              if (!String(err).includes('file://')) {
+                loader.load(`./models/legacy/${def.file}.glb`, (g2) => {
+                  const obj = g2.scene;
+                  const [x, z] = latLonToLocal(def.lat, def.lon);
+                  obj.position.set(x, 0, z);
+                  if (def.rotDeg) obj.rotation.y = (def.rotDeg * Math.PI) / 180;
+                  obj.traverse((o) => {
+                    if ((o as THREE.Mesh).isMesh) {
+                      const mesh = o as THREE.Mesh;
+                      const mats = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
+                      mats.forEach(enhanceMaterial);
+                    }
+                  });
+                  onEach(def, obj, {
+                    name: def.name, en: def.en,
+                    anchor: new THREE.Vector3(x, def.labelH, z),
+                    focus: def.focus, group: obj as THREE.Group, _showLabel: true,
+                  } as any);
+                  done++;
+                  onProgress(done / items.length, `加载精细地标 ${done}/${items.length}`);
+                  resolve();
+                }, undefined, () => {
+                  console.warn(`地标模型 ${def.file} 加载失败`);
+                  done++;
+                  resolve();
+                });
+                return;
+              }
               console.warn(`地标模型 ${def.file} 加载失败`, err);
               done++;
               resolve();

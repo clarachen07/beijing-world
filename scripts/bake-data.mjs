@@ -185,15 +185,26 @@ function pickColor(tags, id, lat, lon, isRoof) {
 }
 
 // ═══════════════════════════════════════════════════════
-function writeMesh(chunk) {
-  // chunk: { pos: number[], col: number[], idx: number[] } → Buffer
+function writeMesh(chunk, mode = 'f32') {
+  // chunk: { pos, col, idx } → Buffer; mode: f32 | i16c (建筑, 块相对 0.2m) | i16w (世界 0.5m)
   const vCount = chunk.pos.length / 3;
   const iCount = chunk.idx.length;
-  const buf = Buffer.alloc(8 + vCount * 15 + iCount * 4);
+  const posBytes = mode === 'f32' ? vCount * 12 : vCount * 6;
+  const buf = Buffer.alloc(8 + posBytes + vCount * 3 + iCount * 4);
   let off = 0;
   buf.writeUInt32LE(vCount, off); off += 4;
   buf.writeUInt32LE(iCount, off); off += 4;
-  for (let i = 0; i < chunk.pos.length; i++, off += 4) buf.writeFloatLE(chunk.pos[i], off);
+  if (mode === 'f32') {
+    for (let i = 0; i < chunk.pos.length; i++, off += 4) buf.writeFloatLE(chunk.pos[i], off);
+  } else {
+    const scale = mode === 'i16c' ? 0.2 : 0.5;
+    for (let k = 0; k < vCount; k++) {
+      for (let a = 0; a < 3; a++) {
+        const val = Math.max(-32767, Math.min(32767, Math.round(chunk.pos[k * 3 + a] / scale)));
+        buf.writeInt16LE(val, off); off += 2;
+      }
+    }
+  }
   for (let i = 0; i < chunk.col.length; i++, off += 1) buf.writeUInt8(chunk.col[i], off);
   for (let i = 0; i < chunk.idx.length; i++, off += 4) buf.writeUInt32LE(chunk.idx[i], off);
   return buf;
@@ -794,11 +805,11 @@ const addPolygon = (mesh, rings, col) => {
   for (const key of chunkKeys) {
     const c = cells.get(key);
     if (!c.idx.length) continue;
-    const buf = writeMesh(c);
+    const buf = writeMesh(c, 'i16c');
     const gz = await gzip(buf);
     const file = `b/b${String(ci).padStart(2, '0')}.bin.gz`;
     await writeFile(path.join(OUT, file), gz);
-    manifest.buildings.chunks.push({ file, ox: c.ox, oz: c.oz, v: c.pos.length / 3, i: c.idx.length });
+    manifest.buildings.chunks.push({ file, ox: c.ox, oz: c.oz, v: c.pos.length / 3, i: c.idx.length, q: 'i16c' });
     console.log(`  ${file}: ${c.pos.length / 3} verts, ${(gz.length / 1048576).toFixed(2)} MB`);
     ci++;
   }
@@ -808,11 +819,11 @@ const addPolygon = (mesh, rings, col) => {
       manifest[name] = { file: '', v: 0, i: 0 };
       return;
     }
-    const buf = writeMesh(mesh);
+    const buf = writeMesh(mesh, 'i16w');
     const gz = await gzip(buf);
     const file = `b/${name}.bin.gz`;
     await writeFile(path.join(OUT, file), gz);
-    manifest[name] = { file, v: mesh.pos.length / 3, i: mesh.idx.length };
+    manifest[name] = { file, v: mesh.pos.length / 3, i: mesh.idx.length, q: 'i16w' };
     console.log(`  ${file}: ${mesh.pos.length / 3} verts, ${(gz.length / 1048576).toFixed(2)} MB`);
   };
   await emitMesh('roads', roadMesh);
@@ -824,10 +835,10 @@ const addPolygon = (mesh, rings, col) => {
     const lampMesh = { pos: lamps, col: [], idx: [] };
     for (let i = 0; i < lamps.length / 3; i++) lampMesh.col.push(255, 214, 150);
     if (lamps.length) {
-      const buf = writeMesh(lampMesh);
+      const buf = writeMesh(lampMesh, 'i16w');
       const gz = await gzip(buf);
       await writeFile(path.join(OUT, 'b/streetlights.bin.gz'), gz);
-      manifest.streetlights = { file: 'b/streetlights.bin.gz', v: lamps.length / 3, i: 0 };
+      manifest.streetlights = { file: 'b/streetlights.bin.gz', v: lamps.length / 3, i: 0, q: 'i16w' };
       console.log(`  路灯点: ${lamps.length / 3}`);
     } else manifest.streetlights = { file: '', v: 0, i: 0 };
   }
@@ -1061,7 +1072,7 @@ const addPolygon = (mesh, rings, col) => {
       rgba[k * 4 + 2] = px[k * 3 + 2];
       rgba[k * 4 + 3] = 255;
     }
-    const enc = jpeg.encode({ data: rgba, width: GW, height: GH }, 82);
+    const enc = jpeg.encode({ data: rgba, width: GW, height: GH }, 72);
     await writeFile(path.join(OUT, 'ground.jpg'), enc.data);
     manifest.ground = { file: 'ground.jpg', w: GW, h: GH, x0: X0, z0: Z0, spanX: 16000, spanZ: 20100 };
     console.log(`  ground.jpg ${(enc.data.length / 1048576).toFixed(1)} MB, 建筑 ${painted} 足迹`);

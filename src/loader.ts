@@ -18,6 +18,7 @@ export interface MeshChunk {
   i: number;
   ox?: number;
   oz?: number;
+  q?: 'f32' | 'i16c' | 'i16w';
 }
 
 export interface Manifest {
@@ -64,18 +65,77 @@ async function maybeGunzip(buf: ArrayBuffer): Promise<ArrayBuffer> {
   return out.buffer;
 }
 
-function decodeMesh(buffer: ArrayBuffer): DecodedMesh {
+type MeshMode = 'f32' | 'i16c' | 'i16w';
+
+function decodeMesh(buffer: ArrayBuffer, mode: MeshMode = 'f32'): DecodedMesh {
   const dv = new DataView(buffer);
   let off = 0;
   const vCount = dv.getUint32(off, true); off += 4;
   const iCount = dv.getUint32(off, true); off += 4;
-  // 用 slice 拷贝以保证字节对齐（顶点区 15B/个不对齐）
-  const positions = new Float32Array(buffer.slice(off, off + vCount * 12)); off += vCount * 12;
+  const scale = mode === 'i16c' ? 0.2 : 0.5;
+  const positions = new Float32Array(vCount * 3);
+  if (mode === 'f32') {
+    const src = new Float32Array(buffer, off, vCount * 3);
+    positions.set(src);
+    off += vCount * 12;
+  } else {
+    for (let k = 0; k < vCount * 3; k++) positions[k] = dv.getInt16(off + k * 2, true) * scale;
+    off += vCount * 6;
+  }
   const colorBytes = new Uint8Array(buffer.slice(off, off + vCount * 3)); off += vCount * 3;
   const indices = new Uint32Array(buffer.slice(off, off + iCount * 4));
   const colors = new Float32Array(vCount * 3);
   for (let i = 0; i < vCount * 3; i++) colors[i] = colorBytes[i] / 255;
   return { positions, colors, indices };
+}
+
+// ── 下载线路: 同源优先, 慢则切换 jsDelivr CDN 镜像（国内可达性）──
+// 按 commit SHA 精确引用: 镜像内容永远与本页 JS 版本一致（jsDelivr 分支缓存有滞后）
+const JSD_REF = (typeof __DEPLOY_SHA__ !== 'undefined' && __DEPLOY_SHA__) || 'gh-pages';
+const JSD_BASES = [
+  `https://cdn.jsdelivr.net/gh/clarachen07/beijing-world@${JSD_REF}`,
+  `https://fastly.jsdelivr.net/gh/clarachen07/beijing-world@${JSD_REF}`,
+];
+let route: 'origin' | 'jsd' = 'origin';
+let probed = false;
+
+async function fetchWithTimeout(url: string, ms: number): Promise<Response> {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), ms);
+  try {
+    return await fetch(url, { signal: ctrl.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+export function resolveAsset(path: string): string {
+  if (route === 'jsd') return JSD_BASES[0] + path.replace(/^\.\/|^\//, '/');
+  return path;
+}
+
+async function fetchAsset(path: string): Promise<Response> {
+  if (!probed) {
+    probed = true;
+    try {
+      const res = await fetchWithTimeout(path, 3500);
+      if (res.ok) return res;
+    } catch { /* 同源超时/失败 → 走镜像 */ }
+    route = 'jsd';
+  }
+  if (route === 'origin') return fetch(path);
+  let lastErr: unknown = null;
+  for (const base of JSD_BASES) {
+    try {
+      const res = await fetch(base + path);
+      if (res.ok) return res;
+      lastErr = new Error(`HTTP ${res.status}`);
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  // 镜像全失败 → 回退同源
+  return fetch(path);
 }
 
 export interface LoadedData {
@@ -93,7 +153,7 @@ export async function loadCityData(
   onProgress: (frac: number, label: string) => void
 ): Promise<LoadedData> {
   onProgress(0.02, '读取城市档案…');
-  const res = await fetch('./data/manifest.json');
+  const res = await fetchAsset('./data/manifest.json');
   if (!res.ok) throw new Error(`manifest.json 加载失败 (${res.status})`);
   const manifest: Manifest = await res.json();
 
@@ -112,7 +172,7 @@ export async function loadCityData(
 
   await Promise.all(
     files.map(async ({ key, chunk }) => {
-      const r = await fetch(`./data/${chunk.file}`);
+      const r = await fetchAsset(`./data/${chunk.file}`);
       if (!r.ok) throw new Error(`${chunk.file} 加载失败 (${r.status})`);
       const buf = await r.arrayBuffer();
       const raw = await maybeGunzip(buf);
@@ -127,13 +187,13 @@ export async function loadCityData(
   );
 
   onProgress(0.93, '构建建筑几何…');
-  const buildings: DecodedMesh[] = manifest.buildings.chunks.map((_, i) =>
-    decodeMesh(results.get(`b${i}`)!)
+  const buildings: DecodedMesh[] = manifest.buildings.chunks.map((c, i) =>
+    decodeMesh(results.get(`b${i}`)!, (c.q as MeshMode) || 'f32')
   );
-  const roads = decodeMesh(results.get('roads')!);
-  const water = decodeMesh(results.get('water')!);
-  const green = decodeMesh(results.get('green')!);
-  const streetlights = decodeMesh(results.get('streetlights')!);
+  const roads = decodeMesh(results.get('roads')!, (manifest.roads.q as MeshMode) || 'f32');
+  const water = decodeMesh(results.get('water')!, (manifest.water.q as MeshMode) || 'f32');
+  const green = decodeMesh(results.get('green')!, (manifest.green.q as MeshMode) || 'f32');
+  const streetlights = decodeMesh(results.get('streetlights')!, (manifest.streetlights.q as MeshMode) || 'f32');
 
   // 树木
   const treeBuf = results.get('trees')!;
