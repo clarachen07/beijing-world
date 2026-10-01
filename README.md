@@ -1,42 +1,45 @@
-# 北京世界 · Beijing World
+# Beijing World · 北京世界
 
-**🌐 在线体验：<https://clarachen07.github.io/beijing-world/>** ·
-**🎬 漫游视频：<https://clarachen07.github.io/beijing-world/video/beijing-world.mp4>**（1080p/30fps · 105s）
+**🌐 Live demo: <https://clarachen07.github.io/beijing-world/>** ·
+**🎬 Cinematic tour video: <https://clarachen07.github.io/beijing-world/video/beijing-world.mp4>** (1080p/30fps · 105s)
 
-基于 **OpenStreetMap 开放数据**实时构建的北京 3D 虚拟城市 — 灵感来自 Matt Shumer 的 "Manhattan World"。
+English | [中文](README.zh-CN.md)
 
-## ✨ 特性
+A near-real-time 3D virtual simulation of Beijing built entirely from **OpenStreetMap open data** — inspired by Matt Shumer's "Manhattan World".
 
-- 🏙️ **真实数据**：约 3.6 万栋建筑（真实 OSM 轮廓+高度）、道路网、水系（护城河/什刹海/北海）、绿地公园
-- 🏯 **17 个程序化地标**：故宫红墙金顶、天坛祈年殿、中国尊（528m）、央视"大裤衩"、鸟巢、水立方、国家大剧院、钟鼓楼、北海白塔……
-- 🌗 **昼夜切换**：黄昏金色电影光照 ↔ 夜景（程序化楼宇亮灯、路灯、车流光带、bloom 泛光）
-- 🎬 **四种视角**：电影漫游（沿中轴线：永定门→天安门→故宫→景山→钟鼓楼→奥园→CBD）、自由飞行（WASD+QE）、第一人称街景、点击地标自动飞往
-- 🚗 活的城市：主干道实例化车流、公园树木、街道路灯
-- ⚡ 纯静态站点：数据构建期烘焙为 gzip 二进制，运行时零 API 依赖
+## ✨ Features
 
-## 🚀 本地运行
+- 🏙️ **Real data**: ~36,000 buildings (real OSM footprints + inferred heights), road network, waterways (moats / Shichahai / Beihai), parks and plazas
+- 🏯 **20 procedurally-modeled landmarks** (Blender → glTF): Forbidden City (Taihe Dian, Meridian Gate, corner towers, gates), Temple of Heaven, Tiananmen, Zhengyangmen, Yongdingmen, Drum & Bell Towers, China Zun (528 m), CCTV HQ, Bird's Nest, Water Cube, National Grand Theatre, China World Tower…
+- 🌗 **Day / Night**: golden-hour cinematic lighting ↔ night mode (procedural window lights, street lamps, traffic light trails, bloom)
+- 🎬 **Four camera modes**: cinematic tour (along the Central Axis: Yongdingmen → Tiananmen → Forbidden City → Jingshan → Olympic Park → CBD), free flight (WASD + QE), first-person street walk, click-a-landmark-to-fly
+- 🚗 A living city: instanced traffic on arteries, park trees, street lamps, plaza paving
+- ⚡ Pure static site: data is baked to gzipped binaries at build time — zero API calls at runtime
+- 📦 **Performance**: Int16 vertex quantization, Service Worker caching (second visit loads in seconds), jsDelivr CDN mirror race for first loads
+
+## 🚀 Run locally
 
 ```bash
 npm install
-npm run fetch:data   # 下载 OSM 数据（~15 分钟，可断点续传）
-npm run bake         # 烘焙二进制
+npm run fetch:data   # download OSM data (~15 min, resumable)
+npm run bake         # bake binaries (buildings/roads/water/green/trees/ground texture)
 npm run dev          # http://localhost:5173
 ```
 
-构建与部署：
+Build & deploy:
 
 ```bash
-npm run build        # 产物在 dist/
-npm run video        # 生成 video/frames 帧序列 + public/video/beijing-world.mp4（需本机 Chrome）
+npm run build        # output in dist/
+npm run video        # render frames + encode public/video/beijing-world.mp4 (needs local Chrome)
 ```
 
-## 🗺️ 数据与致谢
+## 🗺️ Data & credits
 
-- 建筑/道路/水系/绿地：© [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors，ODbL 许可
-- Overpass API：overpass-api.de 及各公共镜像
-- 渲染：[Three.js](https://threejs.org/) · 构建：[Vite](https://vitejs.dev/)
-- 灵感：[@mattshumer_ 的 Manhattan World](https://x.com/mattshumer_/status/2095609734845927525)
+- Buildings / roads / water / greenery: © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, ODbL license
+- Overpass API: overpass-api.de and public mirrors
+- Rendering: [Three.js](https://threejs.org/) · Build: [Vite](https://vitejs.dev/) · Landmark models: Blender
+- Inspiration: ["Manhattan World" by @mattshumer_](https://x.com/mattshumer_/status/2095609734845927525)
 
-## 📐 覆盖范围
+## 📐 Coverage
 
-二环老城（故宫/中轴线/什刹海/天坛）+ 国贸 CBD + 奥林匹克公园，约 12.8 × 18.3 km。
+Second-Ring old city (Forbidden City / Central Axis / Shichahai / Temple of Heaven) + Guomao CBD + Olympic Park, ~12.8 × 18.3 km.
