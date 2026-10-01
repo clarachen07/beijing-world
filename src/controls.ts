@@ -60,8 +60,9 @@ export class CameraControl {
       const dy = e.clientY - this.lastY;
       this.lastX = e.clientX;
       this.lastY = e.clientY;
-      this.yaw -= dx * 0.0032;
-      this.pitch = Math.max(-1.45, Math.min(1.45, this.pitch - dy * 0.0028));
+      // 抓取世界式: 拖右画面右移(相机左转), 拖下画面下移(相机上仰)
+      this.yaw += dx * 0.0032;
+      this.pitch = Math.max(-1.45, Math.min(1.45, this.pitch + dy * 0.0028));
       if (Math.abs(dx) + Math.abs(dy) > 1) this.manual();
     });
     dom.addEventListener('pointerup', () => { this.dragging = false; });

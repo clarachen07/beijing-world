@@ -500,7 +500,8 @@ async function main() {
           const vb = c.pos.length / 3;
           // 简化: 只生成墙+屋顶盒 (8 顶点 12 三角)
           const x0b = bx - sx / 2, x1b = bx + sx / 2, z0b = bz - sz / 2, z1b = bz + sz / 2;
-          const corners = [[x0b, z0b], [x1b, z0b], [x1b, z1b], [x0b, z1b]];
+          // 负鞋面积绕向 (墙法线朝外/屋顶朝上, 与 normalizeRing 约定一致)
+          const corners = [[x0b, z0b], [x0b, z1b], [x1b, z1b], [x1b, z0b]];
           // 墙 (4 面)
           for (let wi = 0; wi < 4; wi++) {
             const [ax, az] = corners[wi], [bxx, bzz] = corners[(wi + 1) % 4];
