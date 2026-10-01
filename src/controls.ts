@@ -63,13 +63,24 @@ export class CameraControl {
       // 抓取世界式: 拖右画面右移(相机左转), 拖下画面下移(相机上仰)
       this.yaw += dx * 0.0032;
       this.pitch = Math.max(-1.45, Math.min(1.45, this.pitch + dy * 0.0028));
+      if (this.flyT < 1) {
+        // 飞行途中拖拽 = 用户接管: 取消飞行并同步到当前相机位
+        this.flyT = 1;
+        this.pos.copy(this.camera.position);
+        this.vel.set(0, 0, 0);
+      }
       if (Math.abs(dx) + Math.abs(dy) > 1) this.manual();
     });
     dom.addEventListener('pointerup', () => { this.dragging = false; });
     dom.addEventListener('wheel', (e) => {
       if (this.mode === 'fly') {
+        if (this.flyT < 1) {
+          this.flyT = 1;
+          this.pos.copy(this.camera.position);
+        }
         const fwd = this.forward();
         this.pos.addScaledVector(fwd, -e.deltaY * 0.6);
+        this.camera.position.copy(this.pos);
         this.manual();
       }
     }, { passive: true });
@@ -145,6 +156,14 @@ export class CameraControl {
       this.camera.position.lerpVectors(this.flyFrom, this.flyTarget, k);
       const look = new THREE.Vector3().lerpVectors(this.flyLookFrom, this.flyLookTo, k);
       this.camera.lookAt(look);
+      if (this.flyT >= 1) {
+        // 落位: 同步内部状态, 否则下一帧 fly 模式会把相机复制回起飞点 ("跳回远景"根因)
+        this.pos.copy(this.camera.position);
+        const d = look.clone().sub(this.camera.position).normalize();
+        this.yaw = Math.atan2(-d.x, -d.z);
+        this.pitch = Math.asin(Math.max(-1, Math.min(1, d.y)));
+        this.vel.set(0, 0, 0);
+      }
       return;
     }
 
