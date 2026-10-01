@@ -53,6 +53,12 @@ export class CameraControl {
       this.lastX = e.clientX;
       this.lastY = e.clientY;
       dom.setPointerCapture(e.pointerId);
+      if (this.flyT < 1) {
+        // 飞行中按下 = 接管: 取消飞行, 内部位置同步到当前相机
+        this.flyT = 1;
+        this.pos.copy(this.camera.position);
+        this.vel.set(0, 0, 0);
+      }
     });
     dom.addEventListener('pointermove', (e) => {
       if (!this.dragging) return;
@@ -69,9 +75,15 @@ export class CameraControl {
         this.pos.copy(this.camera.position);
         this.vel.set(0, 0, 0);
       }
-      if (Math.abs(dx) + Math.abs(dy) > 1) this.manual();
+      if (Math.abs(dx) + Math.abs(dy) > 1) {
+        this.debug.clicks++;
+        this.manual();
+      }
     });
-    dom.addEventListener('pointerup', () => { this.dragging = false; });
+    // pointerup 可能发生在标签/DOM 其他元素上(按下画布、松开标签), 必须在 window 层收尾
+    window.addEventListener('pointerup', () => { this.dragging = false; });
+    window.addEventListener('pointercancel', () => { this.dragging = false; });
+    window.addEventListener('blur', () => { this.dragging = false; });
     dom.addEventListener('wheel', (e) => {
       if (this.mode === 'fly') {
         if (this.flyT < 1) {
@@ -127,8 +139,11 @@ export class CameraControl {
     return this.camera.position.clone().addScaledVector(t, 100);
   }
 
+  debug = { flyToCalls: 0, clicks: 0 };
+
   /** 点击地标飞往 */
   flyTo(anchor: THREE.Vector3, focus: number) {
+    this.debug.flyToCalls++;
     this.setMode('fly');
     const dist = Math.max(180, focus * 0.75);
     // 从当前相机方向的反方向观察地标

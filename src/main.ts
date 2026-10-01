@@ -48,7 +48,17 @@ function createLabels() {
     const el = document.createElement('div');
     el.className = 'landmark-label';
     el.innerHTML = `<div class="name">${lm.name}</div><div class="en">${lm.en}</div><div class="dot"></div>`;
-    el.addEventListener('click', () => {
+    // 点击检测用 pointerdown/up 配对: 漫游时标签持续移动, 原生 click 会因
+    // down/up 目标不一致(标签滑走)而丢失; 6px 内的按下-松开视为点击
+    let downAt: { x: number; y: number } | null = null;
+    el.addEventListener('pointerdown', (e) => {
+      downAt = { x: e.clientX, y: e.clientY };
+    });
+    window.addEventListener('pointerup', (e) => {
+      if (!downAt) return;
+      const moved = Math.hypot(e.clientX - downAt.x, e.clientY - downAt.y);
+      downAt = null;
+      if (moved > 6) return;
       controls.flyTo(lm.anchor, lm.focus);
       if (mode === 'tour') setMode('fly');
     });
@@ -246,7 +256,7 @@ async function boot() {
     },
   };
   // 调试句柄
-  (window as any).__dbg = { scene, env, camera, city, effects, renderer, THREE };
+  (window as any).__dbg = { scene, env, camera, city, effects, renderer, THREE, controls };
 
   animate();
 }
