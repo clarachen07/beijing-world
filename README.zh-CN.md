@@ -2,7 +2,7 @@
 
 以真实开放轮廓构建四环内及外围500米缓冲，保留奥林匹克公园扩展。默认进入故宫鸟瞰，可切换自由飞行、电影漫游与街景漫步。普通建筑缺失高度与立面采用有来源的推断；地标根据图纸、官方尺寸和照片重建。这不是全城街景级摄影测量。
 
-[English](README.md) · [架构与数据生产](docs/architecture.md) · [本轮验收报告](docs/acceptance.md)
+[在线体验](https://clarachen07.github.io/beijing-world/) · [发布记录](docs/deployment.md) · [English](README.md) · [架构与数据生产](docs/architecture.md) · [本轮验收报告](docs/acceptance.md)
 
 ## 本地体验
 
@@ -53,7 +53,7 @@ npm run check:models
 
 ## 发布包与视频
 
-`npm run build` 生成 `dist/`，包含资源哈希、来源页面和独立发布版本的离线缓存。沿用 GitHub Pages 目标；本轮完成本地发布包，未上传生产。`VITE_ASSET_BASE` 可指定静态资源根；源码镜像使用同一提交的 `public/` 路径，工作区有未提交变更时默认禁用旧提交回退。
+`npm run build` 生成 `dist/`，包含资源哈希、来源页面和独立发布版本的离线缓存。沿用 GitHub Pages 目标；本轮发布包已上线；发布提交及线上检查见发布记录。`VITE_ASSET_BASE` 可指定静态资源根；源码镜像使用同一提交的 `public/` 路径，工作区有未提交变更时默认禁用旧提交回退。
 
 `npm run video` 先捕获确定性帧再编码，临时文件在 `artifacts/video/`；现有视频继续保留，内容属于上一版，未声称是本轮模型的新演示。旧 `dist/` 的部署 Git 仓库已迁至 `.deployment/gh-pages/`，保留完整历史。
 

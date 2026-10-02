@@ -1,0 +1,965 @@
+{
+  "startedAt": "2026-10-02T14:39:05.876Z",
+  "baseURL": "https://clarachen07.github.io/beijing-world/",
+  "browser": "Chrome/154.0.8037.93",
+  "profiles": [
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "checks": [
+        {
+          "name": "boot and default browse",
+          "passed": true,
+          "durationMs": 13679,
+          "detail": {
+            "position": [
+              -1127.0928298197998,
+              1150,
+              4283.978799999499
+            ]
+          }
+        },
+        {
+          "name": "left drag pans without rotating",
+          "passed": true,
+          "durationMs": 273,
+          "detail": {
+            "movementM": 133.6615087347855
+          }
+        },
+        {
+          "name": "right drag rotates",
+          "passed": true,
+          "durationMs": 242,
+          "detail": {
+            "rotationRadians": 0.551287521893418
+          }
+        },
+        {
+          "name": "wheel zoom keeps its target",
+          "passed": true,
+          "durationMs": 165,
+          "detail": {
+            "beforeM": 1561.3867054673801,
+            "afterM": 1423.6819100667367
+          }
+        },
+        {
+          "name": "continuous landmarks and pointer takeover",
+          "passed": true,
+          "durationMs": 284,
+          "detail": {
+            "before": {
+              "position": [
+                -1790.1901961036112,
+                1188.1096964870078,
+                4162.554634144914
+              ],
+              "rotation": [
+                -0.4764149996325962,
+                0.010688243566689504,
+                0.005792092166848777,
+                0.8791364861287827
+              ],
+              "mode": "browse",
+              "flying": true,
+              "groundM": null
+            },
+            "after": {
+              "position": [
+                -1790.1901961036112,
+                1188.1096964870078,
+                4162.554634144914
+              ],
+              "rotation": [
+                -0.4764149996325962,
+                0.010688243566689504,
+                0.005792092166848777,
+                0.8791364861287827
+              ],
+              "mode": "browse",
+              "flying": false,
+              "groundM": null
+            }
+          }
+        },
+        {
+          "name": "tour keyboard takeover",
+          "passed": true,
+          "durationMs": 202,
+          "detail": {
+            "before": {
+              "position": [
+                -1783.521159621043,
+                1206.0287701589782,
+                4304.59757737809
+              ],
+              "rotation": [
+                -0.4730672751686474,
+                0.01040994090006571,
+                0.005590122896709752,
+                0.8809470681153142
+              ],
+              "mode": "tour",
+              "flying": true,
+              "groundM": null
+            },
+            "after": {
+              "position": [
+                -1783.521159621043,
+                1206.0287701589782,
+                4304.59757737809
+              ],
+              "rotation": [
+                -0.4730672751686474,
+                0.01040994090006571,
+                0.005590122896709752,
+                0.8809470681153142
+              ],
+              "mode": "fly",
+              "flying": false,
+              "groundM": null
+            }
+          }
+        },
+        {
+          "name": "walk preparation freezes moving views and respects later requests",
+          "passed": true,
+          "durationMs": 9817,
+          "detail": [
+            {
+              "source": "landmark",
+              "before": {
+                "position": [
+                  -1782.7945730874058,
+                  1188.5966510947183,
+                  4286.507028863854
+                ],
+                "rotation": [
+                  -0.46870727774774096,
+                  0.00983308989358871,
+                  0.005217850549290692,
+                  0.8832834042169545
+                ],
+                "mode": "fly",
+                "flying": true
+              },
+              "after": {
+                "position": [
+                  -1782.7945730874058,
+                  1188.5966510947183,
+                  4286.507028863854
+                ],
+                "rotation": [
+                  -0.46870727774774096,
+                  0.00983308989358871,
+                  0.005217850549290692,
+                  0.8832834042169545
+                ],
+                "mode": "browse",
+                "flying": false
+              },
+              "latestMode": "browse"
+            },
+            {
+              "source": "tour",
+              "before": {
+                "position": [
+                  -2005.7476701058517,
+                  109.19221839374612,
+                  1452.9538518122927
+                ],
+                "rotation": [
+                  -0.07060215307589637,
+                  0.037341803250510903,
+                  0.0026448703985581527,
+                  0.9968018511076423
+                ],
+                "mode": "tour",
+                "flying": true
+              },
+              "after": {
+                "position": [
+                  -2005.7476701058517,
+                  109.19221839374612,
+                  1452.9538518122927
+                ],
+                "rotation": [
+                  -0.07060215307589637,
+                  0.037341803250510903,
+                  0.0026448703985581527,
+                  0.9968018511076423
+                ],
+                "mode": "browse",
+                "flying": false
+              },
+              "latestMode": "fly"
+            }
+          ]
+        },
+        {
+          "name": "rapid mode requests retain the latest intent",
+          "passed": false,
+          "durationMs": 45100,
+          "error": "Waiting failed: 45000ms exceeded"
+        },
+        {
+          "name": "street descent allows takeover without dropping",
+          "passed": true,
+          "durationMs": 40,
+          "detail": {
+            "before": {
+              "position": [
+                -1127.258960880336,
+                1150.1196351690703,
+                4287.626157741753
+              ],
+              "rotation": [
+                -0.38712658732755245,
+                0.2480502557256558,
+                0.10895746295726556,
+                0.8813242010091835
+              ],
+              "mode": "walk",
+              "flying": true,
+              "groundM": 1.5447438857333917
+            },
+            "after": {
+              "position": [
+                -1127.258960880336,
+                1150.1196351690703,
+                4287.626157741753
+              ],
+              "rotation": [
+                -0.38712658732755245,
+                0.2480502557256558,
+                0.10895746295726556,
+                0.8813242010091835
+              ],
+              "mode": "fly",
+              "flying": false,
+              "groundM": 1.5447438857333917
+            }
+          }
+        },
+        {
+          "name": "loaded safe street landing",
+          "passed": true,
+          "durationMs": 1624,
+          "detail": {
+            "position": [
+              -1127.258960880336,
+              3.244743885733442,
+              4287.626157741753
+            ],
+            "groundM": 1.5447438857333917
+          }
+        },
+        {
+          "name": "blur clears held keys pointers and momentum",
+          "passed": true,
+          "durationMs": 852
+        },
+        {
+          "name": "visibility clears held keys",
+          "passed": true,
+          "durationMs": 582
+        },
+        {
+          "name": "tour end holds and explicit replay returns smoothly",
+          "passed": true,
+          "durationMs": 2084,
+          "detail": {
+            "endPosition": [
+              426.7079870007458,
+              1750.0000000000002,
+              -55.56600000026447
+            ],
+            "initialReplayMovementM": 0
+          }
+        },
+        {
+          "name": "capture resume keeps the externally placed pose",
+          "passed": false,
+          "durationMs": 3783,
+          "error": "Failed to fetch\nd3 (https://clarachen07.github.io/beijing-world/assets/index-kvYwi1c0.js:1:6390)"
+        },
+        {
+          "name": "WebGL context recovers without camera drift",
+          "passed": true,
+          "durationMs": 1415
+        },
+        {
+          "name": "no uncaught runtime errors or unexpected reloads",
+          "passed": true,
+          "durationMs": 0
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "failedRequests": [
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/2a9bd07a0b40032226a9.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/66be1958f6f486b8e474.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/dce969f3d41614e056cb.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/32f496951a83080ac309.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/de59c41c830db78fd563.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/62393dcb1a8afb78242d.bin.gz",
+          "error": "net::ERR_FAILED"
+        }
+      ],
+      "assetErrors": [],
+      "navigations": [
+        "https://clarachen07.github.io/beijing-world/"
+      ],
+      "initial": {
+        "position": [
+          -1127.0928298197998,
+          1150,
+          4283.978799999499
+        ],
+        "rotation": [
+          -0.3871763558556337,
+          0.2481813440595309,
+          0.10903755561635202,
+          0.8812555255953674
+        ],
+        "target": [
+          -1678.2449035525187,
+          0,
+          3383.057141013323
+        ],
+        "mode": "browse",
+        "flying": false,
+        "tourT": 0,
+        "finished": false
+      },
+      "build": {
+        "cityRevision": "1d91e09a9c2e8b214a4d",
+        "scripts": [
+          "https://clarachen07.github.io/beijing-world/assets/index-kvYwi1c0.js"
+        ]
+      },
+      "metrics": {
+        "frames": 4354,
+        "p95": 16.799999999995634,
+        "p50": 16.69999999999709,
+        "p99": 16.80000000000291,
+        "max": 166.6999999999971,
+        "over50ms": 3,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 110,
+          "textures": 103
+        },
+        "render": {
+          "frame": 510,
+          "calls": 129,
+          "triangles": 389026,
+          "points": 240,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 14,
+          "pending": 16,
+          "visible": 3,
+          "meshBytes": 29541841,
+          "triangles": 286160,
+          "failed": 2
+        },
+        "landmarks": {
+          "cached": 13,
+          "pending": 44,
+          "failed": 0,
+          "visible": 13
+        },
+        "quality": 0
+      }
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "checks": [
+        {
+          "name": "boot and default browse",
+          "passed": true,
+          "durationMs": 1205,
+          "detail": {
+            "position": [
+              -1127.0928298197998,
+              1150,
+              4283.978799999499
+            ]
+          }
+        },
+        {
+          "name": "single touch pans without rotating",
+          "passed": true,
+          "durationMs": 415,
+          "detail": {
+            "movementM": 88.01160668250377
+          }
+        },
+        {
+          "name": "two touches zoom and rotate",
+          "passed": true,
+          "durationMs": 416,
+          "detail": {
+            "beforeM": 1561.3867054673804,
+            "afterM": 926.2463507009886,
+            "rotationRadians": 0.1610127630757254
+          }
+        },
+        {
+          "name": "continuous landmarks and pointer takeover",
+          "passed": true,
+          "durationMs": 278,
+          "detail": {
+            "before": {
+              "position": [
+                -1532.1759145261447,
+                752.573366007573,
+                3858.0316345484844
+              ],
+              "rotation": [
+                -0.446900930197089,
+                0.20057664036232345,
+                0.10355147955769137,
+                0.865635986435033
+              ],
+              "mode": "browse",
+              "flying": true,
+              "groundM": null
+            },
+            "after": {
+              "position": [
+                -1532.1759145261447,
+                752.573366007573,
+                3858.0316345484844
+              ],
+              "rotation": [
+                -0.446900930197089,
+                0.20057664036232345,
+                0.10355147955769137,
+                0.865635986435033
+              ],
+              "mode": "browse",
+              "flying": false,
+              "groundM": null
+            }
+          }
+        },
+        {
+          "name": "tour keyboard takeover",
+          "passed": true,
+          "durationMs": 165,
+          "detail": {
+            "before": {
+              "position": [
+                -1530.5749088567525,
+                779.0852326486277,
+                4006.250352387228
+              ],
+              "rotation": [
+                -0.44455107182955345,
+                0.19612416287601006,
+                0.10041932992257682,
+                0.8682313144832317
+              ],
+              "mode": "tour",
+              "flying": true,
+              "groundM": null
+            },
+            "after": {
+              "position": [
+                -1530.5749088567525,
+                779.0852326486277,
+                4006.250352387228
+              ],
+              "rotation": [
+                -0.44455107182955345,
+                0.19612416287601006,
+                0.10041932992257682,
+                0.8682313144832317
+              ],
+              "mode": "fly",
+              "flying": false,
+              "groundM": null
+            }
+          }
+        },
+        {
+          "name": "walk preparation freezes moving views and respects later requests",
+          "passed": true,
+          "durationMs": 27179,
+          "detail": [
+            {
+              "source": "landmark",
+              "before": {
+                "position": [
+                  -1532.0862642515535,
+                  770.6062286695097,
+                  3994.255836675979
+                ],
+                "rotation": [
+                  -0.4407648558700647,
+                  0.19415909880608812,
+                  0.09827062386100612,
+                  0.8708452621830227
+                ],
+                "mode": "fly",
+                "flying": true
+              },
+              "after": {
+                "position": [
+                  -1532.0862642515535,
+                  770.6062286695097,
+                  3994.255836675979
+                ],
+                "rotation": [
+                  -0.4407648558700647,
+                  0.19415909880608812,
+                  0.09827062386100612,
+                  0.8708452621830227
+                ],
+                "mode": "browse",
+                "flying": false
+              },
+              "latestMode": "browse"
+            },
+            {
+              "source": "tour",
+              "before": {
+                "position": [
+                  -1974.8028698198686,
+                  109.24934632218154,
+                  1449.5320966177055
+                ],
+                "rotation": [
+                  -0.07042840032145148,
+                  0.0787617634336879,
+                  0.005578376993404601,
+                  0.9943868999333693
+                ],
+                "mode": "tour",
+                "flying": true
+              },
+              "after": {
+                "position": [
+                  -1974.8028698198686,
+                  109.24934632218154,
+                  1449.5320966177055
+                ],
+                "rotation": [
+                  -0.07042840032145148,
+                  0.0787617634336879,
+                  0.005578376993404601,
+                  0.9943868999333693
+                ],
+                "mode": "browse",
+                "flying": false
+              },
+              "latestMode": "fly"
+            }
+          ]
+        },
+        {
+          "name": "rapid mode requests retain the latest intent",
+          "passed": true,
+          "durationMs": 1488
+        },
+        {
+          "name": "street descent allows takeover without dropping",
+          "passed": true,
+          "durationMs": 30,
+          "detail": {
+            "before": {
+              "position": [
+                -1127.2579722475762,
+                1148.6470756007814,
+                4287.604452605231
+              ],
+              "rotation": [
+                -0.3870546265667689,
+                0.24805996794178498,
+                0.10893760257343983,
+                0.8813555282084131
+              ],
+              "mode": "walk",
+              "flying": true,
+              "groundM": 1.5448339831076545
+            },
+            "after": {
+              "position": [
+                -1127.2579722475762,
+                1148.6470756007814,
+                4287.604452605231
+              ],
+              "rotation": [
+                -0.3870546265667689,
+                0.24805996794178498,
+                0.10893760257343983,
+                0.8813555282084131
+              ],
+              "mode": "fly",
+              "flying": false,
+              "groundM": 1.5448339831076545
+            }
+          }
+        },
+        {
+          "name": "loaded safe street landing",
+          "passed": true,
+          "durationMs": 1636,
+          "detail": {
+            "position": [
+              -1127.2579722475762,
+              3.2448339831075828,
+              4287.604452605231
+            ],
+            "groundM": 1.5448339831076545
+          }
+        },
+        {
+          "name": "blur clears held keys pointers and momentum",
+          "passed": true,
+          "durationMs": 830
+        },
+        {
+          "name": "visibility clears held keys",
+          "passed": true,
+          "durationMs": 552
+        },
+        {
+          "name": "tour end holds and explicit replay returns smoothly",
+          "passed": true,
+          "durationMs": 2082,
+          "detail": {
+            "endPosition": [
+              426.7079870007458,
+              1750.0000000000002,
+              -55.56600000026447
+            ],
+            "initialReplayMovementM": 0
+          }
+        },
+        {
+          "name": "capture resume keeps the externally placed pose",
+          "passed": false,
+          "durationMs": 12674,
+          "error": "Failed to fetch\nd3 (https://clarachen07.github.io/beijing-world/assets/index-kvYwi1c0.js:1:6390)"
+        },
+        {
+          "name": "WebGL context recovers without camera drift",
+          "passed": true,
+          "durationMs": 1230
+        },
+        {
+          "name": "no uncaught runtime errors or unexpected reloads",
+          "passed": true,
+          "durationMs": 0
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "failedRequests": [
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/b82409fd1013c768bbb9.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/fd894ae3f3eb67362d85.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/58488c9960048bca4d42.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/13a30da0f7bc32cdb856.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/39962ca3e6862907d50d.bin.gz",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://clarachen07.github.io/beijing-world/data/tiles/44d35bc572ac9f84e2df.bin.gz",
+          "error": "net::ERR_FAILED"
+        }
+      ],
+      "assetErrors": [],
+      "navigations": [
+        "https://clarachen07.github.io/beijing-world/"
+      ],
+      "initial": {
+        "position": [
+          -1127.0928298197998,
+          1150,
+          4283.978799999499
+        ],
+        "rotation": [
+          -0.3871763558556337,
+          0.2481813440595309,
+          0.10903755561635202,
+          0.8812555255953674
+        ],
+        "target": [
+          -1678.2449035525187,
+          0,
+          3383.057141013323
+        ],
+        "mode": "browse",
+        "flying": false,
+        "tourT": 0,
+        "finished": false
+      },
+      "build": {
+        "cityRevision": "1d91e09a9c2e8b214a4d",
+        "scripts": [
+          "https://clarachen07.github.io/beijing-world/assets/index-kvYwi1c0.js"
+        ]
+      },
+      "metrics": {
+        "frames": 2211,
+        "p95": 16.799999999999272,
+        "p50": 16.69999999999891,
+        "p99": 16.80000000000291,
+        "max": 116.70000000000437,
+        "over50ms": 2,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 92,
+          "textures": 14
+        },
+        "render": {
+          "frame": 515,
+          "calls": 124,
+          "triangles": 170513,
+          "points": 120,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 8,
+          "pending": 9,
+          "visible": 1,
+          "meshBytes": 21407957,
+          "triangles": 122416,
+          "failed": 3
+        },
+        "landmarks": {
+          "cached": 33,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Mobile uses real Chrome touch events on an emulated viewport; it does not measure a physical phone GPU."
+  ],
+  "mobileTestPage": {
+    "url": "https://clarachen07.github.io/beijing-world/qa.html",
+    "profile": "browser_emulation",
+    "checks": [
+      {
+        "name": "start focuses the scene and advances the real tour",
+        "passed": true,
+        "durationMs": 2439,
+        "detail": {
+          "iframeFocused": true,
+          "sceneFocused": true,
+          "tourT": 0.00523809523809524
+        }
+      },
+      {
+        "name": "stopping exports an honest incomplete run and observed version",
+        "passed": true,
+        "durationMs": 274,
+        "detail": {
+          "status": "stopped",
+          "elapsedMs": 2532.5,
+          "protocolValid": false,
+          "secureContext": true,
+          "serviceWorkerControlled": true,
+          "cityRevision": "1d91e09a9c2e8b214a4d"
+        }
+      },
+      {
+        "name": "manual walk reaches the main product button and prepares a safe landing",
+        "passed": true,
+        "durationMs": 1758,
+        "detail": {
+          "mainProductClicks": 1,
+          "mode": "walk",
+          "heightAboveGroundM": 1.7,
+          "frameFocused": true,
+          "wrapperStatus": "已通过主产品按钮请求漫步模式，请观察实际响应。漫步会先准备附近地面。",
+          "setup": "Returned to the observed initial camera before requesting walk through the test-page product button."
+        }
+      }
+    ],
+    "pageErrors": [],
+    "passed": true,
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "userAgentData": {
+        "brands": [
+          {
+            "brand": "Chromium",
+            "version": "154"
+          },
+          {
+            "brand": "Google Chrome",
+            "version": "154"
+          },
+          {
+            "brand": "Not A(Brand",
+            "version": "99"
+          }
+        ],
+        "mobile": false,
+        "platform": "macOS"
+      },
+      "platform": "MacIntel",
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "maxTouchPoints": 1,
+      "hardwareConcurrency": 10,
+      "deviceMemoryGiB": 16,
+      "timezone": "America/Los_Angeles",
+      "screen": {
+        "width": 390,
+        "height": 844,
+        "orientation": {
+          "type": "portrait-primary",
+          "angle": 0
+        }
+      },
+      "wrapperViewport": {
+        "width": 390,
+        "height": 844,
+        "devicePixelRatio": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        }
+      },
+      "sceneViewport": {
+        "width": 390,
+        "height": 844,
+        "devicePixelRatio": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        }
+      },
+      "webgl": {
+        "contextType": "WebGL2RenderingContext",
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "shadingLanguage": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+        "vendor": "WebKit",
+        "renderer": "WebKit WebGL",
+        "unmaskedVendor": "Google Inc. (Apple)",
+        "unmaskedRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+        "unmaskedInfoAvailable": true,
+        "contextAttributes": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        },
+        "drawingBuffer": {
+          "width": 390,
+          "height": 844
+        },
+        "canvasCss": {
+          "width": 390,
+          "height": 844
+        },
+        "pixelRatio": 1,
+        "maxTextureSize": 16384,
+        "maxRenderbufferSize": 16384,
+        "contextLost": false
+      },
+      "connection": {
+        "effectiveType": "4g",
+        "downlink": 1.65,
+        "rtt": 100,
+        "saveData": false
+      },
+      "secureContext": true,
+      "serviceWorkerAvailable": true,
+      "sceneServiceWorkerControlled": true
+    },
+    "version": {
+      "city": {
+        "revision": "1d91e09a9c2e8b214a4d"
+      },
+      "bundleURL": "https://clarachen07.github.io/beijing-world/assets/index-kvYwi1c0.js",
+      "release": {
+        "url": "https://clarachen07.github.io/beijing-world/release.json",
+        "status": "read",
+        "revision": "f379c023976b7b0f93a8",
+        "resources": 13019,
+        "totalBytes": 155313110,
+        "observedAt": "2026-10-02T14:41:25.587Z",
+        "etag": "\"6abfc081-5a\""
+      },
+      "note": "Observed release metadata, actual loaded bundle URL, and loaded city revision are separate evidence; cached shell consistency is not assumed."
+    }
+  },
+  "completedAt": "2026-10-02T14:41:30.253Z",
+  "passed": false
+}
