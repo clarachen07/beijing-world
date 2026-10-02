@@ -1,0 +1,33 @@
+{
+  "model": "shenwumen",
+  "view": "southeast",
+  "projection": "orthographic",
+  "locationMeters": [
+    48.0,
+    -72.0,
+    54.5
+  ],
+  "targetMeters": [
+    0.0,
+    0.0,
+    15.5
+  ],
+  "orthographicScaleMeters": 111.0,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -30.0,
+      -12.5,
+      0.0
+    ],
+    [
+      30.0,
+      12.5,
+      31.0
+    ]
+  ]
+}

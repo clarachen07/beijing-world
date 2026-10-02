@@ -1,0 +1,1621 @@
+{
+  "generatedAt": "2026-10-02T12:23:04.792Z",
+  "assetVersion": "d3bd20956b7d",
+  "method": "Final GLB Meshopt decoded by NodeIO; normalized POSITION elements transformed by exported node world matrix; triangle components rejoined by identical position to recover physical parts despite UV/normal seams. Expected dimensions are independent primary-source constants, not registry.heightM. Only near LOD is used for architectural measurement.",
+  "coordinateFrame": "GLTF local metre coordinates: X east, Y up, Z south; elevation/placement transform intentionally excluded",
+  "tolerancePercent": 2,
+  "sources": {
+    "taihe": {
+      "title": "故宫博物院：太和殿（杨玉良）",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1602/T00092_00.pdf",
+      "page": 1,
+      "verifiedAt": "2026-10-02",
+      "values": {
+        "eastWestBodyM": 63.96,
+        "northSouthBodyM": 37.17,
+        "ridgeHeightM": 35.05,
+        "includingChiwenHeightM": 37.44
+      },
+      "definitionNote": "Publication names east-west/north-south building dimensions but does not give survey endpoints or distinguish column-axis from outside-column dimensions."
+    },
+    "taiheBase": {
+      "title": "故宫博物院：明清北京城的建造（建筑形制章节）",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1564/T00016_00.pdf",
+      "printedPage": 16,
+      "verifiedAt": "2026-10-02",
+      "values": {
+        "altarHeightM": 8.13,
+        "bodyHeightM": 26.92
+      },
+      "definitionNote": "The text gives a three-tier 前三殿 altar of total height 8.13m. It describes the shared terrace layout, not a survey of this reconstructed rectangular footprint."
+    },
+    "qinianDetailed": {
+      "title": "北京市公园管理中心：祈年殿",
+      "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "publishedAt": "2019-12-11",
+      "verifiedAt": "2026-10-02",
+      "values": {
+        "hallAboveAltarHeightM": 31.6,
+        "altarHeightM": 5.2,
+        "totalHeightM": 36.8,
+        "lowerDiameterM": 90.3,
+        "middleDiameterM": 79.3,
+        "upperDiameterM": 68.2,
+        "dragonWellColumnHeightM": 19.2,
+        "dragonWellColumnDiameterM": 1.2
+      }
+    },
+    "qinianCurrent": {
+      "title": "天坛公园：祈年殿",
+      "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "verifiedAt": "2026-10-02",
+      "values": {
+        "outerColumnRingDiameterApproxM": 24,
+        "overallHeightApproxM": 38
+      },
+      "definitionNote": "Diameter refers explicitly to spaces between outer-eave columns; total height is approximate."
+    },
+    "qinianSummary": {
+      "title": "北京市公园管理中心：天坛的主体建筑：祈年殿",
+      "url": "https://gygl.beijing.gov.cn/whgy/whgy_wsgc/201912/t20191206_885633.html",
+      "publishedAt": "2019-04-16",
+      "verifiedAt": "2026-10-02",
+      "values": {
+        "diameterM": 32,
+        "altarHeightM": 6,
+        "hallHeightAsDescribedM": 38
+      },
+      "definitionNote": "Text says 殿高38米; it does not explicitly identify that value as height including the separately stated 6m altar. 32m is not labelled with roof-eave survey endpoints. Using it as the largest roof diameter is an architectural inference, not verified measurement equivalence."
+    },
+    "cctvHeight": {
+      "title": "Turner Construction: CCTV Headquarters",
+      "url": "https://www.turnerconstruction.com/projects/china-central-television-headquarters-cctv",
+      "verifiedAt": "2026-10-02",
+      "values": {
+        "heightM": 234
+      }
+    },
+    "cctvCantilever": {
+      "title": "OMA: CCTV Headquarters",
+      "url": "https://www.oma.com/projects/cctv-headquarters",
+      "verifiedAt": "2026-10-02",
+      "values": {
+        "cantileverM": 75
+      },
+      "definitionNote": "The project page gives 75m but no surveyed endpoints, axis or support-face definition for mapping to this model."
+    }
+  },
+  "assets": [
+    {
+      "model": "taihedian",
+      "path": "public/models/landmarks/taihedian-f26baf8a1d.glb",
+      "sha256": "f26baf8a1d8c5290e0b51177dc85b42578b0ed215d9f9aa17088c7d19f2fe0cb",
+      "boundsGLTFMetres": {
+        "min": [
+          -41.5,
+          -0.000405,
+          -30.379971
+        ],
+        "max": [
+          41.5,
+          37.440404,
+          30.379971
+        ]
+      }
+    },
+    {
+      "model": "qiniandian",
+      "path": "public/models/landmarks/qiniandian-fc98b3a600.glb",
+      "sha256": "fc98b3a6005beffa48c53742c8823343dfa612b277a53de8d6f8626cffdb81d0",
+      "boundsGLTFMetres": {
+        "min": [
+          -47.549999,
+          -0.000645,
+          -47.549999
+        ],
+        "max": [
+          47.549999,
+          36.800648,
+          47.549999
+        ]
+      }
+    },
+    {
+      "model": "cctv",
+      "path": "public/models/landmarks/cctv-ca277f3a57.glb",
+      "sha256": "ca277f3a57151189d626d66d375d6e48dbb04b629f5055c194e687f4bc62da50",
+      "boundsGLTFMetres": {
+        "min": [
+          -64.759049,
+          0,
+          -60.255894
+        ],
+        "max": [
+          65.256027,
+          234,
+          66.759823
+        ]
+      }
+    }
+  ],
+  "checks": [
+    {
+      "model": "taihedian",
+      "part": "east-west body column axes",
+      "source": "https://www.dpm.org.cn/Uploads/pdf/1602/T00092_00.pdf",
+      "sourcePart": "东西长（柱轴解释未独立核准）",
+      "expectedM": 63.96,
+      "actualM": 63.960433,
+      "relativeErrorPercent": 0.000677,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "measurement_definition_unverified",
+      "definitionVerified": false,
+      "controlPointsGLTFMetres": [
+        [
+          -31.980216,
+          8.129375,
+          18.58552
+        ],
+        [
+          31.980216,
+          8.129375,
+          18.58552
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -32.510254,
+              8.129375,
+              18.055483
+            ],
+            "max": [
+              -31.450179,
+              16.599848,
+              19.115558
+            ]
+          }
+        },
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            1584,
+            1585,
+            1586,
+            1587,
+            1588,
+            1589,
+            1590,
+            1591,
+            1592,
+            1593,
+            1594,
+            1595
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              31.450179,
+              8.129375,
+              18.055483
+            ],
+            "max": [
+              32.510254,
+              16.599848,
+              19.115558
+            ]
+          }
+        }
+      ],
+      "notes": "Measured centres of exported circular columns. Text alone cannot establish that its body dimensions refer to these same axes."
+    },
+    {
+      "model": "taihedian",
+      "part": "north-south body column axes",
+      "source": "https://www.dpm.org.cn/Uploads/pdf/1602/T00092_00.pdf",
+      "sourcePart": "南北宽（柱轴解释未独立核准）",
+      "expectedM": 37.17,
+      "actualM": 37.171041,
+      "relativeErrorPercent": 0.002801,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "measurement_definition_unverified",
+      "definitionVerified": false,
+      "controlPointsGLTFMetres": [
+        [
+          -31.980216,
+          8.129375,
+          -18.58552
+        ],
+        [
+          -31.980216,
+          8.129375,
+          18.58552
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -32.510254,
+              8.129375,
+              -19.115558
+            ],
+            "max": [
+              -31.450179,
+              16.599848,
+              -18.055483
+            ]
+          }
+        },
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -32.510254,
+              8.129375,
+              18.055483
+            ],
+            "max": [
+              -31.450179,
+              16.599848,
+              19.115558
+            ]
+          }
+        }
+      ],
+      "notes": "Measured centres of exported circular columns. Text alone cannot establish that its body dimensions refer to these same axes."
+    },
+    {
+      "model": "taihedian",
+      "part": "three-tier altar height",
+      "source": "https://www.dpm.org.cn/Uploads/pdf/1564/T00016_00.pdf",
+      "sourcePart": "台基高",
+      "expectedM": 8.13,
+      "actualM": 8.12978,
+      "relativeErrorPercent": 0.002707,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          0,
+          -0.000405,
+          0
+        ],
+        [
+          0,
+          8.129375,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 8,
+          "firstAccessorVertexIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -41.5,
+              -0.000405,
+              -27.499908
+            ],
+            "max": [
+              41.5,
+              2.709943,
+              27.499908
+            ]
+          }
+        },
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 8,
+          "firstAccessorVertexIndices": [
+            2712,
+            2713,
+            2714,
+            2715,
+            2716,
+            2717,
+            2718,
+            2719
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -39.500168,
+              2.709943,
+              -25.500076
+            ],
+            "max": [
+              39.500168,
+              5.420292,
+              25.500076
+            ]
+          }
+        },
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 8,
+          "firstAccessorVertexIndices": [
+            5280,
+            5281,
+            5282,
+            5283,
+            5284,
+            5285,
+            5286,
+            5287
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -37.500336,
+              5.420292,
+              -23.500244
+            ],
+            "max": [
+              37.500336,
+              8.129375,
+              23.500244
+            ]
+          }
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "model": "taihedian",
+      "part": "upper roof ridge above ground",
+      "source": "https://www.dpm.org.cn/Uploads/pdf/1602/T00092_00.pdf",
+      "sourcePart": "殿地面至正脊",
+      "expectedM": 35.05,
+      "actualM": 35.05089,
+      "relativeErrorPercent": 0.002538,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          0,
+          -0.000405,
+          0
+        ],
+        [
+          -14.999374,
+          35.050484,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "glazed_gold",
+          "primitiveIndex": 4,
+          "uniquePositionCount": 1109,
+          "firstAccessorVertexIndices": [
+            3192,
+            3193,
+            3194,
+            3195,
+            3196,
+            3199,
+            3200,
+            3202,
+            3203,
+            3206,
+            3207,
+            3209
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -27.007233,
+              25.384418,
+              -14.514298
+            ],
+            "max": [
+              27.007233,
+              35.050484,
+              14.514298
+            ]
+          }
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "model": "taihedian",
+      "part": "height including chiwen ornament",
+      "source": "https://www.dpm.org.cn/Uploads/pdf/1602/T00092_00.pdf",
+      "sourcePart": "高（包括正吻卷尾）",
+      "expectedM": 37.44,
+      "actualM": 37.440809,
+      "relativeErrorPercent": 0.002162,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          0,
+          -0.000405,
+          0
+        ],
+        [
+          0,
+          37.440404,
+          0
+        ]
+      ],
+      "partEvidence": [],
+      "notes": ""
+    },
+    {
+      "model": "qiniandian",
+      "part": "lower altar disc diameter",
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "sourcePart": "下层径",
+      "expectedM": 90.3,
+      "actualM": 90.299577,
+      "relativeErrorPercent": 0.000468,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          -45.149789,
+          -0.000645,
+          0
+        ],
+        [
+          45.149789,
+          -0.000645,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 192,
+          "firstAccessorVertexIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -45.149789,
+              -0.000645,
+              -45.149789
+            ],
+            "max": [
+              45.149789,
+              1.733485,
+              45.149789
+            ]
+          }
+        }
+      ],
+      "notes": "Diameter of the marble disc itself, excluding radial stairs, balusters and handrails."
+    },
+    {
+      "model": "qiniandian",
+      "part": "middle altar disc diameter",
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "sourcePart": "中层径",
+      "expectedM": 79.3,
+      "actualM": 79.299822,
+      "relativeErrorPercent": 0.000225,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          -39.649911,
+          1.733485,
+          0
+        ],
+        [
+          39.649911,
+          1.733485,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 192,
+          "firstAccessorVertexIndices": [
+            4760,
+            4761,
+            4762,
+            4763,
+            4764,
+            4765,
+            4766,
+            4767,
+            4768,
+            4769,
+            4770,
+            4771
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -39.649911,
+              1.733485,
+              -39.649911
+            ],
+            "max": [
+              39.649911,
+              3.466164,
+              39.649911
+            ]
+          }
+        }
+      ],
+      "notes": "Diameter of the marble disc itself, excluding radial stairs, balusters and handrails."
+    },
+    {
+      "model": "qiniandian",
+      "part": "upper altar disc diameter",
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "sourcePart": "上层径",
+      "expectedM": 68.2,
+      "actualM": 68.201387,
+      "relativeErrorPercent": 0.002034,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          -34.100694,
+          3.466164,
+          0
+        ],
+        [
+          34.100694,
+          3.466164,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 192,
+          "firstAccessorVertexIndices": [
+            9207,
+            9208,
+            9209,
+            9210,
+            9211,
+            9212,
+            9213,
+            9214,
+            9215,
+            9216,
+            9217,
+            9218
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -34.100694,
+              3.466164,
+              -34.100694
+            ],
+            "max": [
+              34.100694,
+              5.200295,
+              34.100694
+            ]
+          }
+        }
+      ],
+      "notes": "Diameter of the marble disc itself, excluding radial stairs, balusters and handrails."
+    },
+    {
+      "model": "qiniandian",
+      "part": "three-tier altar height",
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "sourcePart": "3层殿基合计高",
+      "expectedM": 5.2,
+      "actualM": 5.20094,
+      "relativeErrorPercent": 0.018075,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          0,
+          -0.000645,
+          0
+        ],
+        [
+          0,
+          5.200295,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 192,
+          "firstAccessorVertexIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -45.149789,
+              -0.000645,
+              -45.149789
+            ],
+            "max": [
+              45.149789,
+              1.733485,
+              45.149789
+            ]
+          }
+        },
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 192,
+          "firstAccessorVertexIndices": [
+            4760,
+            4761,
+            4762,
+            4763,
+            4764,
+            4765,
+            4766,
+            4767,
+            4768,
+            4769,
+            4770,
+            4771
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -39.649911,
+              1.733485,
+              -39.649911
+            ],
+            "max": [
+              39.649911,
+              3.466164,
+              39.649911
+            ]
+          }
+        },
+        {
+          "material": "carved_marble",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 192,
+          "firstAccessorVertexIndices": [
+            9207,
+            9208,
+            9209,
+            9210,
+            9211,
+            9212,
+            9213,
+            9214,
+            9215,
+            9216,
+            9217,
+            9218
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -34.100694,
+              3.466164,
+              -34.100694
+            ],
+            "max": [
+              34.100694,
+              5.200295,
+              34.100694
+            ]
+          }
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "model": "qiniandian",
+      "part": "hall above altar height",
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "sourcePart": "祈年殿殿高",
+      "expectedM": 31.6,
+      "actualM": 31.600354,
+      "relativeErrorPercent": 0.001119,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          0,
+          5.200295,
+          0
+        ],
+        [
+          0,
+          36.800648,
+          0
+        ]
+      ],
+      "partEvidence": [],
+      "notes": ""
+    },
+    {
+      "model": "qiniandian",
+      "part": "overall height including altar",
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "sourcePart": "通高",
+      "expectedM": 36.8,
+      "actualM": 36.801293,
+      "relativeErrorPercent": 0.003515,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          0,
+          -0.000645,
+          0
+        ],
+        [
+          0,
+          36.800648,
+          0
+        ]
+      ],
+      "partEvidence": [],
+      "notes": ""
+    },
+    {
+      "model": "qiniandian",
+      "part": "outer eave column-axis ring diameter",
+      "source": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "sourcePart": "外檐柱间直径约",
+      "expectedM": 24,
+      "actualM": 24.000654,
+      "relativeErrorPercent": 0.002726,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          -12.000327,
+          9.74241,
+          0
+        ],
+        [
+          12.000327,
+          9.74241,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            2160,
+            2161,
+            2162,
+            2163,
+            2164,
+            2165,
+            2166,
+            2167,
+            2168,
+            2169,
+            2170,
+            2171
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -12.40012,
+              5.200295,
+              -0.400519
+            ],
+            "max": [
+              -11.600534,
+              14.284526,
+              0.400519
+            ]
+          }
+        },
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            1728,
+            1729,
+            1730,
+            1731,
+            1732,
+            1733,
+            1734,
+            1735,
+            1736,
+            1737,
+            1738,
+            1739
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              11.600534,
+              5.200295,
+              -0.400519
+            ],
+            "max": [
+              12.40012,
+              14.284526,
+              0.400519
+            ]
+          }
+        }
+      ],
+      "notes": "Source says approximately 24m; measured between centres of opposing exported outer columns."
+    },
+    {
+      "model": "qiniandian",
+      "part": "central dragon-well column height",
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "sourcePart": "龙井柱高",
+      "expectedM": 19.2,
+      "actualM": 19.200233,
+      "relativeErrorPercent": 0.001214,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          3.400056,
+          5.200295,
+          0
+        ],
+        [
+          3.999383,
+          24.400528,
+          -0.599327
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            576,
+            577,
+            578,
+            579,
+            580,
+            581,
+            582,
+            583,
+            584,
+            585,
+            586,
+            587
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              3.400056,
+              5.200295,
+              -0.599327
+            ],
+            "max": [
+              4.600162,
+              24.400528,
+              0.599327
+            ]
+          }
+        },
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            648,
+            649,
+            650,
+            651,
+            652,
+            653,
+            654,
+            655,
+            656,
+            657,
+            658,
+            659
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -0.599327,
+              5.200295,
+              -4.600162
+            ],
+            "max": [
+              0.599327,
+              24.400528,
+              -3.400056
+            ]
+          }
+        },
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            720,
+            721,
+            722,
+            723,
+            724,
+            725,
+            726,
+            727,
+            728,
+            729,
+            730,
+            731
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -4.600162,
+              5.200295,
+              -0.599327
+            ],
+            "max": [
+              -3.400056,
+              24.400528,
+              0.599327
+            ]
+          }
+        },
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            792,
+            793,
+            794,
+            795,
+            796,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            803
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -0.599327,
+              5.200295,
+              3.400056
+            ],
+            "max": [
+              0.599327,
+              24.400528,
+              4.600162
+            ]
+          }
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "model": "qiniandian",
+      "part": "central dragon-well column diameter",
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "sourcePart": "龙井柱直径",
+      "expectedM": 1.2,
+      "actualM": 1.200105,
+      "relativeErrorPercent": 0.008772,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          3.400056,
+          5.200295,
+          0
+        ],
+        [
+          4.600162,
+          5.200295,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "wood_red",
+          "primitiveIndex": 1,
+          "uniquePositionCount": 24,
+          "firstAccessorVertexIndices": [
+            576,
+            577,
+            578,
+            579,
+            580,
+            581,
+            582,
+            583,
+            584,
+            585,
+            586,
+            587
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              3.400056,
+              5.200295,
+              -0.599327
+            ],
+            "max": [
+              4.600162,
+              24.400528,
+              0.599327
+            ]
+          }
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "model": "qiniandian",
+      "part": "largest blue roof eave diameter",
+      "source": "https://gygl.beijing.gov.cn/whgy/whgy_wsgc/201912/t20191206_885633.html",
+      "sourcePart": "所述直径（未定义测量边界）",
+      "expectedM": 32,
+      "actualM": 32.000872,
+      "relativeErrorPercent": 0.002726,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "measurement_definition_unverified",
+      "definitionVerified": false,
+      "controlPointsGLTFMetres": [
+        [
+          -16.000436,
+          14.435446,
+          0
+        ],
+        [
+          16.000436,
+          14.435446,
+          0
+        ]
+      ],
+      "partEvidence": [
+        {
+          "material": "glazed_blue",
+          "primitiveIndex": 4,
+          "uniquePositionCount": 2160,
+          "firstAccessorVertexIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            11,
+            12,
+            15,
+            17,
+            19
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -16.000436,
+              14.315,
+              -16.000436
+            ],
+            "max": [
+              16.000436,
+              18.23457,
+              16.000436
+            ]
+          }
+        }
+      ],
+      "notes": "The 32m institutional text does not explicitly define roof edge or column face. Geometric value is measured; exact source-part correspondence remains an inference."
+    },
+    {
+      "model": "cctv",
+      "part": "overall structural envelope height",
+      "source": "https://www.turnerconstruction.com/projects/china-central-television-headquarters-cctv",
+      "sourcePart": "headquarters height",
+      "expectedM": 234,
+      "actualM": 234,
+      "relativeErrorPercent": 0,
+      "tolerancePercent": 2,
+      "numericalCheck": "pass",
+      "status": "pass",
+      "definitionVerified": true,
+      "controlPointsGLTFMetres": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          234,
+          0
+        ]
+      ],
+      "partEvidence": [],
+      "notes": ""
+    },
+    {
+      "model": "cctv",
+      "part": "free cantilever length",
+      "source": "https://www.oma.com/projects/cctv-headquarters",
+      "sourcePart": "75-metre cantilever",
+      "expectedM": 75,
+      "actualM": null,
+      "relativeErrorPercent": null,
+      "tolerancePercent": 2,
+      "status": "not_verified",
+      "definitionVerified": false,
+      "controlPointsGLTFMetres": [],
+      "partEvidence": [
+        {
+          "material": "glass_curtainwall",
+          "primitiveIndex": 0,
+          "uniquePositionCount": 8,
+          "firstAccessorVertexIndices": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ],
+          "boundsGLTFMetres": {
+            "min": [
+              -12.99868,
+              190.866359,
+              -38.999722
+            ],
+            "max": [
+              62.999367,
+              233.789331,
+              9.000736
+            ]
+          }
+        }
+      ],
+      "notes": "The 76m length of the complete upper north block includes its tower overlap and cannot verify the 75m free cantilever. No independently matched support face and cantilever endpoint are available; no <=2% claim is made."
+    }
+  ],
+  "observations": [
+    {
+      "model": "taihedian",
+      "part": "outer-column envelope east-west",
+      "actualM": 65.020508,
+      "publishedBodyM": 63.96,
+      "numericalErrorIfOutsideFacesWereIntendedPercent": 1.658081,
+      "acceptance": "Source endpoint definition unavailable; this alternative is not silently discarded."
+    },
+    {
+      "model": "taihedian",
+      "part": "outer-column envelope north-south",
+      "actualM": 38.231117,
+      "publishedBodyM": 37.17,
+      "numericalErrorIfOutsideFacesWereIntendedPercent": 2.854766,
+      "acceptance": "Source endpoint definition unavailable; this alternative is not silently discarded."
+    },
+    {
+      "model": "cctv",
+      "part": "complete upper north block, including tower overlap",
+      "actualM": 75.998047,
+      "notEquivalentTo": "75m free cantilever",
+      "controlPointsGLTFMetres": [
+        [
+          -12.99868,
+          190.866359,
+          -38.999722
+        ],
+        [
+          62.999367,
+          190.866359,
+          9.000736
+        ]
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "model": "qiniandian",
+      "chosen": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "chosenOverallM": 36.8,
+      "chosenAltarM": 5.2,
+      "alternate": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "alternateOverallApproxM": 38,
+      "alternateAltarSource": "https://gygl.beijing.gov.cn/whgy/whgy_wsgc/201912/t20191206_885633.html",
+      "alternateAltarM": 6,
+      "alternateHallHeightAsDescribedM": 38,
+      "alternateHeightIncludesAltar": null,
+      "notes": "Detailed 31.6m hall + 5.2m altar defines the model. The current official park gives total height approximately 38m. The older summary separately states altar 6m and 殿高38m without an explicit total-height definition. These remain conflicting/ambiguous evidence, not equal measured values."
+    }
+  ],
+  "geospatialAcceptance": {
+    "targetHorizontalErrorM": 3,
+    "independentSurveyedControlPointsAvailable": false,
+    "status": "not_accepted_as_surveyed",
+    "placements": [
+      {
+        "id": "taihedian",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9158956,
+        "registeredLongitude": 116.39081395,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "qiniandian",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.8822505,
+        "registeredLongitude": 116.4066236,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "tiananmen",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.907338550000006,
+        "registeredLongitude": 116.39126485,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "zhengyangmen",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.89918435,
+        "registeredLongitude": 116.39161775,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "jianlou",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.8979717,
+        "registeredLongitude": 116.39165885,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "yongdingmen",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.871061850000004,
+        "registeredLongitude": 116.39311269999999,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "wumen",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9121195,
+        "registeredLongitude": 116.39100005,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "shenwumen",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.92092505,
+        "registeredLongitude": 116.39057435,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "donghuamen",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9137057,
+        "registeredLongitude": 116.39520175,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "xihuamen",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9134298,
+        "registeredLongitude": 116.38671395,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "taihemen",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.913967799999995,
+        "registeredLongitude": 116.39088805,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "jiaolou-sw",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.912306400000006,
+        "registeredLongitude": 116.3867259,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "jiaolou-se",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9126282,
+        "registeredLongitude": 116.39525574999999,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "jiaolou-nw",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.92077915,
+        "registeredLongitude": 116.38632695000001,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "jiaolou-ne",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.921098400000005,
+        "registeredLongitude": 116.39484575,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "gulou",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.939349899999996,
+        "registeredLongitude": 116.3897445,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "zhonglou",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9410217,
+        "registeredLongitude": 116.38964025000001,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "chinazun",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.91150105,
+        "registeredLongitude": 116.46023565,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "guomao3",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.91097545,
+        "registeredLongitude": 116.45236545,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "cctv",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9138124,
+        "registeredLongitude": 116.4579664,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "birdnest",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.99141485,
+        "registeredLongitude": 116.39028669999999,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "watercube",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9915785,
+        "registeredLongitude": 116.38417255,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "ncpa",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.90334165,
+        "registeredLongitude": 116.38354724999999,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "white-dagoba",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9244219,
+        "registeredLongitude": 116.38302254999999,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "monument",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.90319705,
+        "registeredLongitude": 116.39142465,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "olympic-tower",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 40.006550649999994,
+        "registeredLongitude": 116.387873,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "linglong",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.99596775,
+        "registeredLongitude": 116.38776354999999,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "yonghegong",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9467,
+        "registeredLongitude": 116.41096,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "confucius-guozijian",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9453,
+        "registeredLongitude": 116.4077,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "ditan",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.951456500000006,
+        "registeredLongitude": 116.40978799999999,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "ritan",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.914472149999995,
+        "registeredLongitude": 116.43813315,
+        "registeredOriginIsNotAccuracyEvidence": true
+      },
+      {
+        "id": "yuetan",
+        "surveyed": false,
+        "independentControlPointCount": 0,
+        "registeredLatitude": 39.9165317,
+        "registeredLongitude": 116.345811,
+        "registeredOriginIsNotAccuracyEvidence": true
+      }
+    ],
+    "notes": "All 32 placements have OSM mapping/coordinate provenance, but no independent surveyed control points. They have not passed measured <=3m accuracy acceptance."
+  },
+  "summary": {
+    "definedChecksPassed": 13,
+    "definedChecksFailed": 0,
+    "unresolvedChecks": 4,
+    "overallArchitecturalAndSurveyAcceptance": "partial; unresolved source endpoint definitions and 75m cantilever; no surveyed 3m acceptance"
+  }
+}

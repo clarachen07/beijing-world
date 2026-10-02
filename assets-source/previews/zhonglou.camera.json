@@ -1,0 +1,33 @@
+{
+  "model": "zhonglou",
+  "view": "southeast",
+  "projection": "orthographic",
+  "locationMeters": [
+    38.31999969482422,
+    -57.480003356933594,
+    55.084999084472656
+  ],
+  "targetMeters": [
+    0.0,
+    0.0,
+    23.950000762939453
+  ],
+  "orthographicScaleMeters": 88.61500549316406,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -17.149999618530273,
+      -16.0,
+      0.0
+    ],
+    [
+      17.149999618530273,
+      16.0,
+      47.900001525878906
+    ]
+  ]
+}

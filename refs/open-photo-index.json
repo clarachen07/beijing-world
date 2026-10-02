@@ -1,0 +1,2169 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-10-02",
+  "policy": {
+    "allowedLicenses": [
+      "CC0",
+      "Public domain",
+      "CC BY",
+      "CC BY-SA"
+    ],
+    "verification": "Only selected file-level records are counted; category/search matches alone are not accepted. Direction inferred from camera GPS is marked as inference. This is a reference inventory, not photogrammetry or surveyed model validation.",
+    "downloads": "No photographs downloaded or embedded by this index."
+  },
+  "photos": [
+    {
+      "ids": [
+        "taihedian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_Forbidden_City.jpg",
+      "author": "Radosław Botev; licensor Fundacja Nomos",
+      "license": "CC BY 3.0 PL",
+      "capturedAt": "2009-07-16",
+      "view": "exterior overview",
+      "resolution": [
+        2237,
+        992
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "taihedian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:20200110_Hall_of_Supreme_Harmony_roof_art-3.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0 1.0",
+      "capturedAt": "2020-01-10",
+      "view": "roof ornament detail",
+      "resolution": [
+        5760,
+        3840
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "wumen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_IMG_4295_Meridian_Gate.jpg",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-07-10",
+      "view": "northwest-facing gate overview",
+      "resolution": [
+        3965,
+        2937
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "jiaolou-nw"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Corner_Tower_of_the_Forbidden_City%2C_Beijing.jpg",
+      "author": "Zheng Zhou",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2019-08-17",
+      "view": "northwest corner tower",
+      "resolution": [
+        4032,
+        3024
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "qiniandian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2013-04-27",
+      "view": "three-eave exterior",
+      "resolution": [
+        2560,
+        2382
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "qiniandian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_02.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2024-09-16",
+      "view": "portrait exterior",
+      "resolution": [
+        1783,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "tiananmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Tiananmen_Tower_Gate%2C_Forbidden_City%2C_Beijing.jpg",
+      "author": "Steven Kevil",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-03-28",
+      "view": "front elevation",
+      "resolution": [
+        5095,
+        2865
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "zhengyangmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E9%98%B3%E9%97%A8%E5%9F%8E%E6%A5%BC_2024-05-15.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 4.0",
+      "capturedAt": "2024-05-15",
+      "view": "gate tower; not a survey of the arrow tower",
+      "resolution": [
+        1707,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "white-dagoba"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beihai_Park_IMG_4410_Beihai_Lake_-_Jade_Island_-_white_dagoba.jpg",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-07-10",
+      "view": "island/lake panorama",
+      "resolution": [
+        10066,
+        3808
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "birdnest"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:20200109_Beijing_National_Stadium-15.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0 1.0",
+      "capturedAt": "2020-01-09",
+      "view": "steel lattice exterior",
+      "resolution": [
+        5760,
+        3840
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "birdnest"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_National_Stadium_at_night.jpg",
+      "author": "Alex Needham",
+      "license": "Public domain dedication by author",
+      "capturedAt": "2008-08-19",
+      "view": "night exterior",
+      "resolution": [
+        1936,
+        1288
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "cctv"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_Beijing_-_Flickr.jpg",
+      "author": "Bjarke Liboriussen",
+      "license": "CC BY 2.0",
+      "capturedAt": "2012-06-03",
+      "view": "new CCTV headquarters inclined loop",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "gulou",
+        "zhonglou"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2016-08-22",
+      "view": "view from south of both towers",
+      "resolution": [
+        3264,
+        2448
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "yonghegong"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple%2C_Peking.jpg",
+      "author": "US Ambassador to the People’s Republic of China",
+      "license": "Public domain, US Department of State official work",
+      "capturedAt": "2023-11-11",
+      "view": "Hall of Ten Thousand Happinesses",
+      "resolution": [
+        2016,
+        1512
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "confucius-guozijian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:BeijingConfuciusTemple1.jpg",
+      "author": "docsdl",
+      "license": "CC BY 2.0",
+      "capturedAt": "2007-09-01",
+      "view": "Confucius Temple exterior",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "taihemen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_at_the_Forbidden_City.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2024-05-15",
+      "view": "front courtyard elevation",
+      "resolution": [
+        2560,
+        1707
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "ids": [
+        "ditan"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Altar_for_animal_sacrifice_at_the_Temple_of_Earth_in_Beijing.jpg",
+      "fileTitle": "File:Altar for animal sacrifice at the Temple of Earth in Beijing.jpg",
+      "author": "Bridget Coila",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+      "capturedAt": "2009",
+      "view": "园区祭牲辅助坛；不能当作方泽坛的尺寸依据",
+      "resolution": [
+        2000,
+        1333
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=42619632&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "ditan"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Erdaltar_01.jpg",
+      "fileTitle": "File:Erdaltar 01.jpg",
+      "author": "Leeluv",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": null,
+      "view": "地坛建筑外观；精确子建筑及拍摄日期未记录",
+      "resolution": [
+        3766,
+        2520
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=15510195&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "missingMetadata": [
+        "拍摄日期没有记录；不以上传日期冒充"
+      ]
+    },
+    {
+      "ids": [
+        "ritan"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_Sun_Temple_Park.jpg",
+      "fileTitle": "File:Beijing Sun Temple Park.jpg",
+      "author": "kevindooley",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2007-06-01",
+      "view": "日坛公园环境；准确朝向未记录",
+      "resolution": [
+        12601,
+        1315
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=6769785&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "ritan"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:The_Pavilion_of_Animal_Sacrifice(Temple_of_the_Sun).JPG",
+      "fileTitle": "File:The Pavilion of Animal Sacrifice(Temple of the Sun).JPG",
+      "author": "Dirrival",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2009-07-18",
+      "view": "日坛宰牲亭；园区附属建筑",
+      "resolution": [
+        2592,
+        1944
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7332212&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "yuetan"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Bell_Tower(Temple_of_Moon).JPG",
+      "fileTitle": "File:Bell Tower(Temple of Moon).JPG",
+      "author": "Dirrival",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2009-07-11",
+      "view": "月坛钟楼外观",
+      "resolution": [
+        1944,
+        2592
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7298622&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "yuetan"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Bell_Tower2(Temple_of_Moon).JPG",
+      "fileTitle": "File:Bell Tower2(Temple of Moon).JPG",
+      "author": "Dirrival",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2009-07-14",
+      "view": "月坛钟楼另一文件；不同方位尚待像素核对",
+      "resolution": [
+        1944,
+        2592
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7298638&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "yuetan"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_Wall(Temple_of_Moon).JPG",
+      "fileTitle": "File:Temple Wall(Temple of Moon).JPG",
+      "author": "Dirrival",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2009-07-14",
+      "view": "月坛重建坛墙",
+      "resolution": [
+        1944,
+        2592
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7301425&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "shenwumen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_from_the_Jingshan_Temple_-_panoramio.jpg",
+      "fileTitle": "File:·˙·ChinaUli2010·.· Beijing - Shenwu Gate from the Jingshan Temple - panoramio.jpg",
+      "author": "·˙·ChinaUli2010·.·",
+      "license": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+      "capturedAt": "Taken on 11 January 2010",
+      "view": "从景山看神武门；北侧高视角，标题明确",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=53375764&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.923241,
+        "lon": 116.390778
+      }
+    },
+    {
+      "ids": [
+        "shenwumen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_of_the_Forbidden_Town_-_panoramio_(1).jpg",
+      "fileTitle": "File:·˙·ChinaUli2010·.· Beijing - Shenwu Gate of the Forbidden Town - panoramio (1).jpg",
+      "author": "·˙·ChinaUli2010·.·",
+      "license": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+      "capturedAt": "Taken on 11 January 2010",
+      "view": "神武门近景；相机在门北侧，方位由GPS推断",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=53375793&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.921371,
+        "lon": 116.390511
+      }
+    },
+    {
+      "ids": [
+        "donghuamen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:East_Glorious_Gate_(Forbidden_City)2022.jpg",
+      "fileTitle": "File:East Glorious Gate (Forbidden City)2022.jpg",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2022-03-27 11:47:06",
+      "view": "东华门外观；相机在门东侧，方位由GPS推断",
+      "resolution": [
+        3318,
+        1868
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=116441974&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.913758,
+        "lon": 116.396263
+      }
+    },
+    {
+      "ids": [
+        "donghuamen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:East_Glorious_Gate_2015_August.jpg",
+      "fileTitle": "File:East Glorious Gate 2015 August.jpg",
+      "author": "Morio",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "9 August 2015, Beijing, China",
+      "view": "东华门外观；准确方位未记录",
+      "resolution": [
+        3840,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=54826620&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "xihuamen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:West_Glorious_Gate_(20220213150635).jpg",
+      "fileTitle": "File:West Glorious Gate (20220213150635).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2022-02-13 15:06:35",
+      "view": "西华门近景；相机在门西侧，方位由GPS推断",
+      "resolution": [
+        7140,
+        4760
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=115243624&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.913417,
+        "lon": 116.386069
+      }
+    },
+    {
+      "ids": [
+        "xihuamen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:West_Glorious_Gate_(20220213150647).jpg",
+      "fileTitle": "File:West Glorious Gate (20220213150647).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2022-02-13 15:06:47",
+      "view": "西华门入口近景；与前图机位略有区别，未当作背面证据",
+      "resolution": [
+        3954,
+        2665
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=115243625&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.913447,
+        "lon": 116.386156
+      }
+    },
+    {
+      "ids": [
+        "olympic-tower"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:20200109_Beijing_Olympic_Tower-3.jpg",
+      "fileTitle": "File:20200109 Beijing Olympic Tower-3.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0",
+      "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "capturedAt": "9 January 2020, 15:07",
+      "view": "奥林匹克塔地面近景；相机在西侧，方位由GPS推断",
+      "resolution": [
+        3840,
+        5760
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=128284679&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 40.00677,
+        "lon": 116.3866
+      }
+    },
+    {
+      "ids": [
+        "olympic-tower"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Olympic_Park_Observation_Tower,_Beijing.jpg",
+      "fileTitle": "File:Olympic Park Observation Tower, Beijing.jpg",
+      "author": "Yu Lou",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2016-02-06",
+      "view": "奥林匹克塔远景；相机在东侧，方位由GPS推断",
+      "resolution": [
+        2257,
+        3406
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=51196657&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 40.006634,
+        "lon": 116.395513
+      }
+    },
+    {
+      "ids": [
+        "linglong"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:%E7%8E%B2%E7%8F%91%E5%A1%94_Linglong_Tower_-_panoramio.jpg",
+      "fileTitle": "File:玲珑塔 Linglong Tower - panoramio.jpg",
+      "author": "Weixi Zeng",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "Taken on 22 July 2012",
+      "view": "奥园玲珑塔；相机在西南侧，方位由GPS推断",
+      "resolution": [
+        3240,
+        4320
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=54883959&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.995008,
+        "lon": 116.387386
+      }
+    },
+    {
+      "ids": [
+        "linglong"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:%E7%94%B5%E8%A7%86%E8%BD%AC%E6%92%AD%E5%A1%94_-_panoramio.jpg",
+      "fileTitle": "File:电视转播塔 - panoramio.jpg",
+      "author": "wuqiang_beijing",
+      "license": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+      "capturedAt": "Taken on 18 May 2008",
+      "view": "奥园转播塔；相机在东南侧，方位由GPS推断，区别于奥林匹克塔",
+      "resolution": [
+        1200,
+        800
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=49621534&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.995008,
+        "lon": 116.39122
+      }
+    },
+    {
+      "ids": [
+        "watercube"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Beijing_National_Aquatics_Center_(Water_Cube)_(4475631690).jpg",
+      "fileTitle": "File:Lascar The Beijing National Aquatics Center (Water Cube) (4475631690).jpg",
+      "author": "Jorge Láscar from Australia",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2008-11-24 19:51",
+      "view": "水立方外观；相机在西侧，方位由GPS推断",
+      "resolution": [
+        3216,
+        2136
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=31952224&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.991588,
+        "lon": 116.383409
+      }
+    },
+    {
+      "ids": [
+        "watercube"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Water_Cube_(red_dots_version)_%26_Bird%27s_Nest.jpg",
+      "fileTitle": "File:Water Cube (red dots version) & Bird's Nest.jpg",
+      "author": "Alberto Alerigi",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2008-01-02 03:43:50",
+      "view": "水立方和鸟巢夜景；2008年装饰不能代表当前常态",
+      "resolution": [
+        3264,
+        2448
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=4820118&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "guomao3"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:China_World_Trade_Center_3a_and_3b_(20240315171104).jpg",
+      "fileTitle": "File:China World Trade Center 3a and 3b (20240315171104).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2024-03-15 17:11:04",
+      "view": "国贸三期3A和3B；相机在东侧，须区分两座塔楼",
+      "resolution": [
+        7148,
+        4765
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=146532058&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.911286,
+        "lon": 116.458983
+      }
+    },
+    {
+      "ids": [
+        "guomao3"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:China_World_Trade_Center_III.jpg",
+      "fileTitle": "File:China World Trade Center III.jpg",
+      "author": "Ian Holton from Beijing, China",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2008-09-01 10:58",
+      "view": "国贸三期3A；相机在东南侧，方位由GPS推断",
+      "resolution": [
+        2592,
+        3888
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=4737654&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.907843,
+        "lon": 116.456665
+      }
+    },
+    {
+      "ids": [
+        "yonghegong"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple_entrance.jpg",
+      "fileTitle": "File:Yonghe Temple entrance.jpg",
+      "author": "Charlie fong冯成",
+      "license": "Public domain",
+      "licenseURL": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple_entrance.jpg",
+      "capturedAt": "2009-01",
+      "view": "雍和宫南入口牌坊；不同于万福阁",
+      "resolution": [
+        2700,
+        1800
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=6316559&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.943875,
+        "lon": 116.410297
+      }
+    },
+    {
+      "ids": [
+        "confucius-guozijian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Guozijian_building_1.jpg",
+      "fileTitle": "File:Guozijian building 1.jpg",
+      "author": "Peiyu Liu",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+      "capturedAt": "2009-03-16",
+      "view": "国子监辟雍殿；不同于孔庙主体",
+      "resolution": [
+        3968,
+        2232
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=8046674&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "confucius-guozijian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E5%AD%90%E7%9B%91_%E5%8C%97%E4%BA%AC.jpg",
+      "fileTitle": "File:国子监 北京.jpg",
+      "author": "Charlie fong冯成",
+      "license": "Public domain",
+      "licenseURL": "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E5%AD%90%E7%9B%91_%E5%8C%97%E4%BA%AC.jpg",
+      "capturedAt": "2009-01",
+      "view": "国子监入口",
+      "resolution": [
+        3000,
+        2000
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=5752844&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.943994,
+        "lon": 116.406678
+      }
+    },
+    {
+      "ids": [
+        "ncpa"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:National_Centre_for_the_Performing_Arts.jpg",
+      "fileTitle": "File:National Centre for the Performing Arts.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2024-05-15 10:14:32",
+      "view": "国家大剧院北侧外观；方位由GPS推断",
+      "resolution": [
+        2560,
+        1707
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=163852250&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.904393,
+        "lon": 116.384893
+      }
+    },
+    {
+      "ids": [
+        "ncpa"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:National_Centre_for_the_Performing_Arts_in_2026_-_2.jpg",
+      "fileTitle": "File:National Centre for the Performing Arts in 2026 - 2.jpg",
+      "author": "Renek78",
+      "license": "CC0",
+      "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "capturedAt": "2026-09-06 19:57:18",
+      "view": "国家大剧院南侧夜景；方位由GPS推断",
+      "resolution": [
+        4096,
+        2304
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=199744174&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.901908,
+        "lon": 116.384083
+      }
+    },
+    {
+      "ids": [
+        "monument"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Monument_to_the_People%27s_Heroes,_Beijing,_from_southwest.jpg",
+      "fileTitle": "File:Monument to the People's Heroes, Beijing, from southwest.jpg",
+      "author": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2014-03-29",
+      "view": "人民英雄纪念碑西南视角，文件名明确",
+      "resolution": [
+        5663,
+        3272
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=32215714&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "monument"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Monument_to_the_People%27s_Heroes_in_Beijing,_18_April_2011.jpg",
+      "fileTitle": "File:Monument to the People's Heroes in Beijing, 18 April 2011.jpg",
+      "author": "Huangdan2060",
+      "license": "CC0",
+      "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "capturedAt": "2011-04-18 22:30:50",
+      "view": "人民英雄纪念碑外观；准确方位未记录",
+      "resolution": [
+        4000,
+        3000
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=68177848&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "jiaolou-sw"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_-_Southwest_Tower_-_panoramio.jpg",
+      "fileTitle": "File:Forbidden City - Southwest Tower - panoramio.jpg",
+      "author": "Ytse-Jam",
+      "license": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+      "capturedAt": "Taken on 25 February 2007",
+      "view": "故宫西南角楼；相机在西南侧，方位由GPS推断",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=52511404&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.912115,
+        "lon": 116.386371
+      }
+    },
+    {
+      "ids": [
+        "jiaolou-sw"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:South-western_corner_tower_of_the_Forbidden_City.jpg",
+      "fileTitle": "File:South-western corner tower of the Forbidden City.jpg",
+      "author": "EditQ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2023-05-24",
+      "view": "故宫西南角楼外观；准确朝向未记录",
+      "resolution": [
+        3000,
+        4000
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=132378219&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "jiaolou-se"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_2006_2-3.jpg",
+      "fileTitle": "File:Beijing 2006 2-3.jpg",
+      "author": "G41rn8",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2006",
+      "view": "故宫东南角楼；文件说明明确，不替代其他角楼",
+      "resolution": [
+        2592,
+        1944
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=45613090&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "jiaolou-se"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Southeast_corner_tower_of_Forbidden_City_and_Beijing_eastern_skyline_(20241127133425).jpg",
+      "fileTitle": "File:Southeast corner tower of Forbidden City and Beijing eastern skyline (20241127133425).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2024-11-27 13:34:25",
+      "view": "从午门附近向东看东南角楼及天际线；方位由GPS推断",
+      "resolution": [
+        6801,
+        4534
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=155877543&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.912472,
+        "lon": 116.391603
+      }
+    },
+    {
+      "ids": [
+        "jiaolou-ne"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:North-eastern_corner_tower_(Forbidden_City)_2015_September.jpg",
+      "fileTitle": "File:North-eastern corner tower (Forbidden City) 2015 September.jpg",
+      "author": "Morio",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "27 September 2015, Beijing, China",
+      "view": "故宫东北角楼外观",
+      "resolution": [
+        3840,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=54826780&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "jiaolou-ne"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:North-eastern_corner_tower_of_the_Forbidden_City_1.jpg",
+      "fileTitle": "File:North-eastern corner tower of the Forbidden City 1.jpg",
+      "author": "EditQ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2023-06-13",
+      "view": "故宫东北角楼另一外观文件；不同朝向待核对",
+      "resolution": [
+        3741,
+        2457
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=137254125&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "jiaolou-nw"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_northwest_corner_tower_and_moat.jpg",
+      "fileTitle": "File:Forbidden City northwest corner tower and moat.jpg",
+      "author": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2014-03-30",
+      "view": "从护城河对面步道看西北角楼；文件说明明确",
+      "resolution": [
+        6048,
+        4032
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=33300645&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "yongdingmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Yongdingmen,_Beijing.jpg",
+      "fileTitle": "File:Yongdingmen, Beijing.jpg",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2021-02-15 16:45:11",
+      "view": "永定门重建城楼当前外观；2021年",
+      "resolution": [
+        4000,
+        3000
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=100438065&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "ids": [
+        "chinazun"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:China_Zun.jpg",
+      "fileTitle": "File:China Zun.jpg",
+      "author": "維基小霸王",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2019-07-23 17:31:31",
+      "view": "中国尊2019年外观；相机在西南侧，方位由GPS推断",
+      "resolution": [
+        4608,
+        3456
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=81204482&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.90675,
+        "lon": 116.458679
+      }
+    },
+    {
+      "ids": [
+        "zhengyangmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Qian_Men_IMG_4273_Zhengyang_Gate_Arrow_Tower.jpg",
+      "fileTitle": "File:Qian Men IMG 4273 Zhengyang Gate Arrow Tower.jpg",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2017-07-10 10:08:58",
+      "view": "正阳门城楼南立面；原文件标题误称箭楼，实际像素显示三重檐、石阳台和双阶梯，无箭窗",
+      "resolution": [
+        4032,
+        3024
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=61774083&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.898564,
+        "lon": 116.391753
+      },
+      "objectAssignmentCorrection": {
+        "previousId": "jianlou",
+        "correctedId": "zhengyangmen",
+        "verifiedAt": "2026-10-02",
+        "evidence": "Actual photo pixels inspected: central stone balcony, double stairs and three roof eaves identify the Zhengyangmen gatehouse. Misleading file titles are rejected; camera coordinates alone do not establish a sightline."
+      }
+    },
+    {
+      "ids": [
+        "zhengyangmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_(4476344474).jpg",
+      "fileTitle": "File:Lascar The Qianmen archery tower - Tiananmen Square (4476344474).jpg",
+      "author": "Jorge Láscar from Australia",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2008-11-24 06:22",
+      "view": "正阳门城楼南立面；原文件标题误称箭楼，实际像素显示三重檐、石阳台和双阶梯，无箭窗",
+      "resolution": [
+        3216,
+        2136
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=31952211&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.897987,
+        "lon": 116.391552
+      },
+      "objectAssignmentCorrection": {
+        "previousId": "jianlou",
+        "correctedId": "zhengyangmen",
+        "verifiedAt": "2026-10-02",
+        "evidence": "Actual photo pixels inspected: central stone balcony, double stairs and three roof eaves identify the Zhengyangmen gatehouse. Misleading file titles are rejected; camera coordinates alone do not establish a sightline."
+      }
+    },
+    {
+      "ids": [
+        "taihemen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_20160826-3.jpg",
+      "fileTitle": "File:Gate of Supreme Harmony 20160826-3.jpg",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2016-08-26 13:13:59",
+      "view": "太和门近距离外观；相机 GPS 在门南侧（方位为 GPS 推断，尚未逐立面标定）。",
+      "resolution": [
+        3241,
+        2431
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=52233761&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+      "cameraLocation": {
+        "lat": 39.913383,
+        "lon": 116.390931
+      }
+    },
+    {
+      "ids": [
+        "wumen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_-_Meridian_Gate_View_from_North.jpg",
+      "fileTitle": "File:Forbidden City - Meridian Gate View from North.jpg",
+      "author": "Steven Kevil",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2017-03-28 09:19:38",
+      "view": "午门北立面，原始照片描述明确为 View from North，补充既有南侧视图。",
+      "resolution": [
+        5312,
+        2988
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=58579966&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "ids": [
+        "zhengyangmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Zhengyangmen_gatehouse.jpg",
+      "fileTitle": "File:Zhengyangmen gatehouse.jpg",
+      "author": "TarnishedPath",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2019-02-02 13:16:15",
+      "view": "正阳门城楼外观，原始描述明确 gate tower；不冒充南面的箭楼，具体拍摄方位未标注。",
+      "resolution": [
+        3769,
+        2827
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=158612254&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "ids": [
+        "yongdingmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Yongdinggate.jpg",
+      "fileTitle": "File:Yongdinggate.jpg",
+      "author": "Charlie fong冯成",
+      "license": "Public domain",
+      "licenseURL": null,
+      "capturedAt": "10/2/2009",
+      "view": "重建后的永定门与广场；相机 GPS 在门东南侧（方位为 GPS 推断）。原始拍摄日期 10/2/2009 月日顺序不明确，保留原值。",
+      "resolution": [
+        4465,
+        2251
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7985422&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+      "cameraLocation": {
+        "lat": 39.869922,
+        "lon": 116.393739
+      },
+      "missingMetadata": [
+        "拍摄日期 10/2/2009 的月日顺序不明确，未转换为推断日期"
+      ]
+    },
+    {
+      "ids": [
+        "zhonglou"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_2006_1-15.jpg",
+      "fileTitle": "File:Beijing 2006 1-15.jpg",
+      "author": "G41rn8",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2006",
+      "view": "钟楼南立面，原始描述明确从鼓楼阳台向北拍摄，补充地面组合视图。",
+      "resolution": [
+        1728,
+        2095
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=45556574&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "ids": [
+        "white-dagoba"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beihai_Park,_Beijing_(5062734513).jpg",
+      "fileTitle": "File:Beihai Park, Beijing (5062734513).jpg",
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2010-10-08 13:13",
+      "view": "琼华岛白塔与登塔阶梯的近距离视图；相机 GPS 在塔南侧（方位为 GPS 推断），补充既有湖面全景。",
+      "resolution": [
+        1800,
+        1350
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=24200961&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+      "cameraLocation": {
+        "lat": 39.924115,
+        "lon": 116.382969
+      }
+    },
+    {
+      "ids": [
+        "gulou"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower.jpg",
+      "fileTitle": "File:Beijing Drum Tower.jpg",
+      "author": "Toadspike",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2023-06",
+      "view": "鼓楼北立面；原始描述明确从钟楼拍摄鼓楼后部，补充既有鼓楼南侧视图。",
+      "resolution": [
+        4032,
+        3024
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=139785664&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "ids": [
+        "tiananmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:North_end_of_Tiananmen_Square_and_Tiananmen_Gate.jpg",
+      "fileTitle": "File:North end of Tiananmen Square and Tiananmen Gate.jpg",
+      "author": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2014-03-29",
+      "view": "从天安门广场向北看天安门城楼的广角环境与轴线视图；原始描述明确，仍缺北立面和东西侧精确标定。",
+      "resolution": [
+        4854,
+        2034
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=32204922&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "ids": [
+        "chinazun"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:CITIC_Tower_2021.jpg",
+      "fileTitle": "File:CITIC Tower 2021.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2021-10-16 13:27:12",
+      "view": "已建成的中国尊窄幅外观；文件名与逐文件分类为 China Zun，说明另外记录了背景中的飞机，拍摄方位未标注。",
+      "resolution": [
+        886,
+        1576
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=121871780&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "ids": [
+        "cctv"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_1.jpg",
+      "fileTitle": "File:CCTV Headquarters 1.jpg",
+      "author": "EditQ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2023-06-10",
+      "view": "央视总部已建成外观（2023年）；逐文件标题、说明和分类均匹配 CCTV Headquarters，具体方位未标注，补充2012年资料。",
+      "resolution": [
+        4000,
+        3000
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=135576749&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "ids": [
+        "birdnest"
+      ],
+      "fileTitle": "File:Beijing Olympics Birds Nest Roof.jpg",
+      "author": "Tom Nguyen",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "capturedAt": "2008-08-22",
+      "view": "inside stadium: roof, seating and track; descriptive metadata confirmed, pixels not yet reviewed",
+      "resolution": [
+        4368,
+        2912
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_Olympics_Birds_Nest_Roof.jpg",
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference candidate only; no photo pixels embedded or redistributed",
+      "downloaded": false,
+      "verificationScope": "file-description author/licence/date/view metadata checked; no calibrated facade or roof survey",
+      "pixelViewsVerified": false
+    },
+    {
+      "ids": [
+        "birdnest"
+      ],
+      "fileTitle": "File:Beijing China Beijing-National-Stadium-03.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "capturedAt": "2009-06-02",
+      "view": "exterior roof/steel detail; descriptive metadata confirmed, pixels not yet reviewed",
+      "resolution": [
+        3901,
+        2601
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_China_Beijing-National-Stadium-03.jpg",
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference candidate only; no photo pixels embedded or redistributed",
+      "downloaded": false,
+      "verificationScope": "file-description author/licence/date/view metadata checked; no calibrated facade or roof survey",
+      "pixelViewsVerified": false
+    }
+  ],
+  "coverage": [
+    {
+      "id": "taihedian",
+      "name": "太和殿",
+      "siteLocation": {
+        "lat": 39.9158956,
+        "lon": 116.39081395
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_Forbidden_City.jpg",
+        "https://commons.wikimedia.org/wiki/File:20200110_Hall_of_Supreme_Harmony_roof_art-3.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "qiniandian",
+      "name": "祈年殿",
+      "siteLocation": {
+        "lat": 39.8822505,
+        "lon": 116.4066236
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests.jpg",
+        "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_02.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "tiananmen",
+      "name": "天安门",
+      "siteLocation": {
+        "lat": 39.907338550000006,
+        "lon": 116.39126485
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Tiananmen_Tower_Gate%2C_Forbidden_City%2C_Beijing.jpg",
+        "https://commons.wikimedia.org/wiki/File:North_end_of_Tiananmen_Square_and_Tiananmen_Gate.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "zhengyangmen",
+      "name": "正阳门",
+      "siteLocation": {
+        "lat": 39.89918435,
+        "lon": 116.39161775
+      },
+      "fileCount": 4,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E9%98%B3%E9%97%A8%E5%9F%8E%E6%A5%BC_2024-05-15.jpg",
+        "https://commons.wikimedia.org/wiki/File:Qian_Men_IMG_4273_Zhengyang_Gate_Arrow_Tower.jpg",
+        "https://commons.wikimedia.org/wiki/File:Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_(4476344474).jpg",
+        "https://commons.wikimedia.org/wiki/File:Zhengyangmen_gatehouse.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "jianlou",
+      "name": "前门箭楼",
+      "siteLocation": {
+        "lat": 39.8979717,
+        "lon": 116.39165885
+      },
+      "fileCount": 0,
+      "urls": [],
+      "hasTwoFiles": false,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收",
+        "没有匹配箭楼的有效文件；两份误名城楼照片已排除，需要正确箭楼多视角资料"
+      ]
+    },
+    {
+      "id": "yongdingmen",
+      "name": "永定门",
+      "siteLocation": {
+        "lat": 39.871061850000004,
+        "lon": 116.39311269999999
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Yongdingmen,_Beijing.jpg",
+        "https://commons.wikimedia.org/wiki/File:Yongdinggate.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "wumen",
+      "name": "午门",
+      "siteLocation": {
+        "lat": 39.9121195,
+        "lon": 116.39100005
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Forbidden_City_IMG_4295_Meridian_Gate.jpg",
+        "https://commons.wikimedia.org/wiki/File:Forbidden_City_-_Meridian_Gate_View_from_North.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "shenwumen",
+      "name": "神武门",
+      "siteLocation": {
+        "lat": 39.92092505,
+        "lon": 116.39057435
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_from_the_Jingshan_Temple_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_of_the_Forbidden_Town_-_panoramio_(1).jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "donghuamen",
+      "name": "东华门",
+      "siteLocation": {
+        "lat": 39.9137057,
+        "lon": 116.39520175
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:East_Glorious_Gate_(Forbidden_City)2022.jpg",
+        "https://commons.wikimedia.org/wiki/File:East_Glorious_Gate_2015_August.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "xihuamen",
+      "name": "西华门",
+      "siteLocation": {
+        "lat": 39.9134298,
+        "lon": 116.38671395
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:West_Glorious_Gate_(20220213150635).jpg",
+        "https://commons.wikimedia.org/wiki/File:West_Glorious_Gate_(20220213150647).jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "taihemen",
+      "name": "太和门",
+      "siteLocation": {
+        "lat": 39.913967799999995,
+        "lon": 116.39088805
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_at_the_Forbidden_City.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_20160826-3.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "jiaolou-sw",
+      "name": "故宫角楼",
+      "siteLocation": {
+        "lat": 39.912306400000006,
+        "lon": 116.3867259
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Forbidden_City_-_Southwest_Tower_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:South-western_corner_tower_of_the_Forbidden_City.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "jiaolou-se",
+      "name": "故宫东南角楼",
+      "siteLocation": {
+        "lat": 39.9126282,
+        "lon": 116.39525574999999
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Beijing_2006_2-3.jpg",
+        "https://commons.wikimedia.org/wiki/File:Southeast_corner_tower_of_Forbidden_City_and_Beijing_eastern_skyline_(20241127133425).jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "jiaolou-nw",
+      "name": "故宫西北角楼",
+      "siteLocation": {
+        "lat": 39.92077915,
+        "lon": 116.38632695000001
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Corner_Tower_of_the_Forbidden_City%2C_Beijing.jpg",
+        "https://commons.wikimedia.org/wiki/File:Forbidden_City_northwest_corner_tower_and_moat.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "jiaolou-ne",
+      "name": "故宫东北角楼",
+      "siteLocation": {
+        "lat": 39.921098400000005,
+        "lon": 116.39484575
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:North-eastern_corner_tower_(Forbidden_City)_2015_September.jpg",
+        "https://commons.wikimedia.org/wiki/File:North-eastern_corner_tower_of_the_Forbidden_City_1.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "gulou",
+      "name": "鼓楼",
+      "siteLocation": {
+        "lat": 39.939349899999996,
+        "lon": 116.3897445
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+        "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "zhonglou",
+      "name": "钟楼",
+      "siteLocation": {
+        "lat": 39.9410217,
+        "lon": 116.38964025000001
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+        "https://commons.wikimedia.org/wiki/File:Beijing_2006_1-15.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "chinazun",
+      "name": "中国尊",
+      "siteLocation": {
+        "lat": 39.91150105,
+        "lon": 116.46023565
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:China_Zun.jpg",
+        "https://commons.wikimedia.org/wiki/File:CITIC_Tower_2021.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "guomao3",
+      "name": "国贸三期",
+      "siteLocation": {
+        "lat": 39.91097545,
+        "lon": 116.45236545
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:China_World_Trade_Center_3a_and_3b_(20240315171104).jpg",
+        "https://commons.wikimedia.org/wiki/File:China_World_Trade_Center_III.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "cctv",
+      "name": "央视大楼",
+      "siteLocation": {
+        "lat": 39.9138124,
+        "lon": 116.4579664
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_Beijing_-_Flickr.jpg",
+        "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_1.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "birdnest",
+      "name": "鸟巢",
+      "siteLocation": {
+        "lat": 39.99141485,
+        "lon": 116.39028669999999
+      },
+      "fileCount": 4,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:20200109_Beijing_National_Stadium-15.jpg",
+        "https://commons.wikimedia.org/wiki/File:Beijing_National_Stadium_at_night.jpg",
+        "https://commons.wikimedia.org/wiki/File:Beijing_Olympics_Birds_Nest_Roof.jpg",
+        "https://commons.wikimedia.org/wiki/File:Beijing_China_Beijing-National-Stadium-03.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "watercube",
+      "name": "水立方",
+      "siteLocation": {
+        "lat": 39.9915785,
+        "lon": 116.38417255
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Lascar_The_Beijing_National_Aquatics_Center_(Water_Cube)_(4475631690).jpg",
+        "https://commons.wikimedia.org/wiki/File:Water_Cube_(red_dots_version)_%26_Bird%27s_Nest.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "ncpa",
+      "name": "国家大剧院",
+      "siteLocation": {
+        "lat": 39.90334165,
+        "lon": 116.38354724999999
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:National_Centre_for_the_Performing_Arts.jpg",
+        "https://commons.wikimedia.org/wiki/File:National_Centre_for_the_Performing_Arts_in_2026_-_2.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "white-dagoba",
+      "name": "北海白塔",
+      "siteLocation": {
+        "lat": 39.9244219,
+        "lon": 116.38302254999999
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Beihai_Park_IMG_4410_Beihai_Lake_-_Jade_Island_-_white_dagoba.jpg",
+        "https://commons.wikimedia.org/wiki/File:Beihai_Park,_Beijing_(5062734513).jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "monument",
+      "name": "人民英雄纪念碑",
+      "siteLocation": {
+        "lat": 39.90319705,
+        "lon": 116.39142465
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Monument_to_the_People%27s_Heroes,_Beijing,_from_southwest.jpg",
+        "https://commons.wikimedia.org/wiki/File:Monument_to_the_People%27s_Heroes_in_Beijing,_18_April_2011.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "olympic-tower",
+      "name": "奥林匹克塔",
+      "siteLocation": {
+        "lat": 40.006550649999994,
+        "lon": 116.387873
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:20200109_Beijing_Olympic_Tower-3.jpg",
+        "https://commons.wikimedia.org/wiki/File:Olympic_Park_Observation_Tower,_Beijing.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "linglong",
+      "name": "玲珑塔",
+      "siteLocation": {
+        "lat": 39.99596775,
+        "lon": 116.38776354999999
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:%E7%8E%B2%E7%8F%91%E5%A1%94_Linglong_Tower_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E7%94%B5%E8%A7%86%E8%BD%AC%E6%92%AD%E5%A1%94_-_panoramio.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "yonghegong",
+      "name": "雍和宫",
+      "siteLocation": {
+        "lat": 39.9467,
+        "lon": 116.41096
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Yonghe_Temple%2C_Peking.jpg",
+        "https://commons.wikimedia.org/wiki/File:Yonghe_Temple_entrance.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "confucius-guozijian",
+      "name": "孔庙 · 国子监",
+      "siteLocation": {
+        "lat": 39.9453,
+        "lon": 116.4077
+      },
+      "fileCount": 3,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:BeijingConfuciusTemple1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Guozijian_building_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E5%AD%90%E7%9B%91_%E5%8C%97%E4%BA%AC.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "ditan",
+      "name": "地坛",
+      "siteLocation": {
+        "lat": 39.951456500000006,
+        "lon": 116.40978799999999
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Altar_for_animal_sacrifice_at_the_Temple_of_Earth_in_Beijing.jpg",
+        "https://commons.wikimedia.org/wiki/File:Erdaltar_01.jpg"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "ritan",
+      "name": "日坛",
+      "siteLocation": {
+        "lat": 39.914472149999995,
+        "lon": 116.43813315
+      },
+      "fileCount": 2,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Beijing_Sun_Temple_Park.jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Pavilion_of_Animal_Sacrifice(Temple_of_the_Sun).JPG"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    },
+    {
+      "id": "yuetan",
+      "name": "月坛公园",
+      "siteLocation": {
+        "lat": 39.9165317,
+        "lon": 116.345811
+      },
+      "fileCount": 3,
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Bell_Tower(Temple_of_Moon).JPG",
+        "https://commons.wikimedia.org/wiki/File:Bell_Tower2(Temple_of_Moon).JPG",
+        "https://commons.wikimedia.org/wiki/File:Temple_Wall(Temple_of_Moon).JPG"
+      ],
+      "hasTwoFiles": true,
+      "surveyedMultiviewVerified": false,
+      "missingViews": [
+        "逐立面像素核对与相机方位/尺寸标定尚未完成；照片数量不等于模型已实测验收"
+      ]
+    }
+  ],
+  "missingFiles": [],
+  "rejectedMatches": [
+    {
+      "subject": "olympic-tower",
+      "candidate": "Category:Olympic Tower",
+      "reason": "Manhattan New York tower, not Beijing Olympic Park Observation Tower"
+    },
+    {
+      "subject": "donghuamen",
+      "candidate": "File:Donghua Gate night market.jpg",
+      "reason": "Night market, not the gate building"
+    },
+    {
+      "subject": "donghuamen",
+      "candidate": "Donghua Gate dismounting steles",
+      "reason": "Ancillary monument, not gate facade coverage"
+    },
+    {
+      "subject": "ditan",
+      "candidate": "Dental assistants / Fangze Cui",
+      "reason": "Person name match; no relation to Beijing altar"
+    },
+    {
+      "subject": "watercube",
+      "candidate": "Foreign animal disease report / Northern Region news PDFs",
+      "reason": "Irrelevant search matches"
+    },
+    {
+      "subject": "gulou",
+      "candidate": "View from Beijing Drum Tower series",
+      "reason": "Camera is on drum tower; title alone cannot prove the tower itself is depicted"
+    },
+    {
+      "subject": "yongdingmen",
+      "candidate": "Bus/car photographs at Yongdingmen",
+      "reason": "Vehicles near the site cannot establish building facade coverage"
+    },
+    {
+      "id": "jianlou",
+      "url": "https://commons.wikimedia.org/wiki/File:Qian_Men_IMG_4273_Zhengyang_Gate_Arrow_Tower.jpg",
+      "reason": "File title labels Arrow Tower, but actual pixels depict the three-eave Zhengyangmen gatehouse. Reassigned to zhengyangmen; not accepted as arrow-tower evidence."
+    },
+    {
+      "id": "jianlou",
+      "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_(4476344474).jpg",
+      "reason": "File title labels Archery Tower, but actual pixels depict the three-eave Zhengyangmen gatehouse. Reassigned to zhengyangmen; not accepted as arrow-tower evidence."
+    }
+  ]
+}

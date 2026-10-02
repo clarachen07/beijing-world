@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "origin": {
+    "lat": 39.9475,
+    "lon": 116.41
+  },
+  "projection": {
+    "type": "local-equirectangular",
+    "metresPerDegreeLat": 111132
+  },
+  "scope": "Beijing Fourth Ring Road interior with 500m visual buffer and existing Olympic landmarks extension",
+  "scopeBufferM": 500,
+  "fetchBounds": [
+    116.2,
+    39.78,
+    116.55,
+    40.03
+  ],
+  "extensionBounds": [
+    116.372,
+    39.986,
+    116.408,
+    40.015
+  ],
+  "tileSizes": [
+    500,
+    2000,
+    8000
+  ],
+  "overtureRelease": "2026-09-23.1",
+  "boundaryFile": "coverage/fourth-ring.geojson",
+  "terrain": {
+    "sampleStepM": 50,
+    "smoothingRadiusM": 150,
+    "datum": "EGM2008",
+    "referenceHeightM": 45
+  },
+  "imagery": {
+    "product": "S2B_50TMK_20260923_0_L2A",
+    "resolutionM": 10,
+    "date": "2026-09-23",
+    "visualHref": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/50/T/MK/2026/9/S2B_50TMK_20260923_0_L2A/TCI.tif",
+    "sceneCloudPercent": 0.00212
+  },
+  "allowSyntheticBuildings": false,
+  "worldBounds": [
+    -12609.087781064587,
+    -7501.41000000108,
+    6788.497899790149,
+    13627.767554908987
+  ]
+}

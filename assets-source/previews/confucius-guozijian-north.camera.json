@@ -1,0 +1,33 @@
+{
+  "model": "confucius-guozijian",
+  "view": "north",
+  "projection": "orthographic",
+  "locationMeters": [
+    27.56237030029297,
+    358.1076965332031,
+    111.82769775390625
+  ],
+  "targetMeters": [
+    1.0749855041503906,
+    4.942554473876953,
+    12.5
+  ],
+  "orthographicScaleMeters": 408.3471984863281,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -109.28911590576172,
+      -85.58918762207031,
+      0.0
+    ],
+    [
+      111.4390869140625,
+      95.47429656982422,
+      25.0
+    ]
+  ]
+}

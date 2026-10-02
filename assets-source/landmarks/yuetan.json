@@ -1,0 +1,232 @@
+{
+  "id": "yuetan",
+  "model": "yuetan",
+  "name": "月坛公园",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9165317,
+    "longitude": 116.345811,
+    "rotationDegrees": 0,
+    "elevationRelativeTo45mDatum": 4.048,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/606113402",
+      "url": "https://www.openstreetmap.org/way/606113402",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/663760762",
+      "url": "https://www.openstreetmap.org/way/663760762",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/663761011",
+      "url": "https://www.openstreetmap.org/way/663761011",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/671411992",
+      "url": "https://www.openstreetmap.org/way/671411992",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "yuetan-footprint-0",
+      "longitude": 116.345724,
+      "latitude": 39.9165883,
+      "source": "https://www.openstreetmap.org/way/606113402",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yuetan-footprint-1",
+      "longitude": 116.3457365,
+      "latitude": 39.9164654,
+      "source": "https://www.openstreetmap.org/way/606113402",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yuetan-footprint-2",
+      "longitude": 116.345898,
+      "latitude": 39.9164751,
+      "source": "https://www.openstreetmap.org/way/606113402",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yuetan-footprint-3",
+      "longitude": 116.3458854,
+      "latitude": 39.916598,
+      "source": "https://www.openstreetmap.org/way/606113402",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.beijing.gov.cn/renwen/rwzyd/lyjq/3A/ytgy/202210/t20221020_2840205.html",
+    "https://www.openstreetmap.org/way/606113402",
+    "https://www.openstreetmap.org/way/663760762",
+    "https://www.openstreetmap.org/way/663761011",
+    "https://www.openstreetmap.org/way/671411992"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bell_Tower(Temple_of_Moon).JPG",
+      "fileTitle": "File:Bell Tower(Temple of Moon).JPG",
+      "author": "Dirrival",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2009-07-11",
+      "view": "月坛钟楼外观",
+      "resolution": [
+        1944,
+        2592
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7298622&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bell_Tower2(Temple_of_Moon).JPG",
+      "fileTitle": "File:Bell Tower2(Temple of Moon).JPG",
+      "author": "Dirrival",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2009-07-14",
+      "view": "月坛钟楼另一文件；不同方位尚待像素核对",
+      "resolution": [
+        1944,
+        2592
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7298638&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_Wall(Temple_of_Moon).JPG",
+      "fileTitle": "File:Temple Wall(Temple of Moon).JPG",
+      "author": "Dirrival",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2009-07-14",
+      "view": "月坛重建坛墙",
+      "resolution": [
+        1944,
+        2592
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7301425&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://www.beijing.gov.cn/renwen/rwzyd/lyjq/3A/ytgy/202210/t20221020_2840205.html",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 11,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/yuetan.blend",
+    "lod": {
+      "near": "./models/landmarks/yuetan-09d8fdf60a.glb",
+      "medium": "./models/landmarks/yuetan-medium-6184a77b7a.glb",
+      "far": "./models/landmarks/yuetan-far-ea2927a2e1.glb",
+      "distancesM": [
+        800,
+        2800
+      ]
+    },
+    "collision": "./models/landmarks/yuetan-collision-2f31b56434.glb"
+  },
+  "limitations": [
+    "Current verified bell tower and courtyard footprints only; exact historic altar footprint has not been verified and is not invented."
+  ],
+  "architecturalApproximation": {
+    "observedForm": "Two completed Bell Tower angles show two green tiled eaves, red masonry, an upper closed window and an open central ground arch.",
+    "implemented": "The already mapped Bell Tower now has two green roofs, red arched masonry and an open ground passage shared by render and collision. Other three buildings, mapped locations and11m maximum remain unchanged.",
+    "inferred": [
+      "3.8m podium,3m arch width/1.8m spring, upper room and green roof part heights",
+      "Part dimensions, paint and unshown elevations are architectural inference rather than survey"
+    ],
+    "notClaimed": [
+      "Fabrication CAD or measured per-member copy",
+      "Complete facade/pixel registration or independent3m survey acceptance"
+    ]
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Bell_Tower(Temple_of_Moon).JPG",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Frontal Bell Tower: two green eaves, red masonry and clear through-arch."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Bell_Tower2(Temple_of_Moon).JPG",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Oblique Bell Tower view supports the same two eaves and masonry passage; no other park buildings covered."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/yuetan.png",
+    "postFixGeometryReport": "tests/reports/model-form.json",
+    "wholeFacadeSurveyed": false,
+    "detailSourcePreview": "assets-source/previews/yuetan-yuetan-clock.png"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:4173",
+  "startedAt": "2026-10-02T12:45:37.064Z",
+  "checks": [
+    {
+      "name": "fatal manifest 404 offers a working retry",
+      "passed": true
+    },
+    {
+      "name": "corrupt city download is rejected and a fresh boot retries it",
+      "passed": true
+    },
+    {
+      "name": "hung response times out and boot retry remains usable",
+      "passed": true
+    },
+    {
+      "name": "one failed landmark keeps the city usable and can be retried",
+      "passed": true
+    },
+    {
+      "name": "cached scene boots offline and uses a versioned resource cache",
+      "passed": true
+    },
+    {
+      "name": "worker activation removes a prior release cache",
+      "passed": true
+    }
+  ],
+  "hangTimeoutMs": 15103,
+  "offlineCacheNames": [
+    "beijing-world-f379c023976b7b0f93a8"
+  ],
+  "releaseRevision": "f379c023976b7b0f93a8",
+  "activationCacheNames": [
+    "beijing-world-f379c023976b7b0f93a8"
+  ],
+  "completedAt": "2026-10-02T12:46:01.856Z",
+  "passed": true
+}

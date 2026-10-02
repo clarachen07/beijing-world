@@ -1,0 +1,261 @@
+{
+  "id": "zhengyangmen",
+  "model": "zhengyangmen",
+  "name": "正阳门",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.89918435,
+    "longitude": 116.39161775,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": -0.973,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/25109960",
+      "url": "https://www.openstreetmap.org/way/25109960",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "zhengyangmen-footprint-0",
+      "longitude": 116.3909733,
+      "latitude": 39.8992711,
+      "source": "https://www.openstreetmap.org/way/25109960",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "zhengyangmen-footprint-1",
+      "longitude": 116.390978,
+      "latitude": 39.8991266,
+      "source": "https://www.openstreetmap.org/way/25109960",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "zhengyangmen-footprint-2",
+      "longitude": 116.3909797,
+      "latitude": 39.8990733,
+      "source": "https://www.openstreetmap.org/way/25109960",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "zhengyangmen-footprint-3",
+      "longitude": 116.3922622,
+      "latitude": 39.8990976,
+      "source": "https://www.openstreetmap.org/way/25109960",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/10856451/2020082814592768170.pdf",
+    "https://www.openstreetmap.org/way/25109960"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E9%98%B3%E9%97%A8%E5%9F%8E%E6%A5%BC_2024-05-15.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 4.0",
+      "capturedAt": "2024-05-15",
+      "view": "gate tower; not a survey of the arrow tower",
+      "resolution": [
+        1707,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Qian_Men_IMG_4273_Zhengyang_Gate_Arrow_Tower.jpg",
+      "fileTitle": "File:Qian Men IMG 4273 Zhengyang Gate Arrow Tower.jpg",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2017-07-10 10:08:58",
+      "view": "正阳门城楼南立面；原文件标题误称箭楼，实际像素显示三重檐、石阳台和双阶梯，无箭窗",
+      "resolution": [
+        4032,
+        3024
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=61774083&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.898564,
+        "lon": 116.391753
+      },
+      "objectAssignmentCorrection": {
+        "previousId": "jianlou",
+        "correctedId": "zhengyangmen",
+        "verifiedAt": "2026-10-02",
+        "evidence": "Actual photo pixels inspected: central stone balcony, double stairs and three roof eaves identify the Zhengyangmen gatehouse. Misleading file titles are rejected; camera coordinates alone do not establish a sightline."
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_(4476344474).jpg",
+      "fileTitle": "File:Lascar The Qianmen archery tower - Tiananmen Square (4476344474).jpg",
+      "author": "Jorge Láscar from Australia",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2008-11-24 06:22",
+      "view": "正阳门城楼南立面；原文件标题误称箭楼，实际像素显示三重檐、石阳台和双阶梯，无箭窗",
+      "resolution": [
+        3216,
+        2136
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=31952211&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.897987,
+        "lon": 116.391552
+      },
+      "objectAssignmentCorrection": {
+        "previousId": "jianlou",
+        "correctedId": "zhengyangmen",
+        "verifiedAt": "2026-10-02",
+        "evidence": "Actual photo pixels inspected: central stone balcony, double stairs and three roof eaves identify the Zhengyangmen gatehouse. Misleading file titles are rejected; camera coordinates alone do not establish a sightline."
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Zhengyangmen_gatehouse.jpg",
+      "fileTitle": "File:Zhengyangmen gatehouse.jpg",
+      "author": "TarnishedPath",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2019-02-02 13:16:15",
+      "view": "正阳门城楼外观，原始描述明确 gate tower；不冒充南面的箭楼，具体拍摄方位未标注。",
+      "resolution": [
+        3769,
+        2827
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=158612254&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738081/gzdt53/10856451/2020082814592768170.pdf",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "podium",
+      "widthM": 95,
+      "depthM": 31.45,
+      "heightM": 14.7
+    },
+    {
+      "part": "main hall",
+      "widthM": 36.7,
+      "depthM": 16.5
+    },
+    {
+      "part": "overall",
+      "heightM": 43.65
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 43.65,
+    "heightEvidence": "primary textual height, export envelope calibrated",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/zhengyangmen.blend",
+    "lod": {
+      "near": "./models/landmarks/zhengyangmen-4fb912c6a2.glb",
+      "medium": "./models/landmarks/zhengyangmen-medium-a379f13e6d.glb",
+      "far": "./models/landmarks/zhengyangmen-far-f00cfa9cfa.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/zhengyangmen-collision-e556e450f4.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "architecturalApproximation": {
+    "observedForm": "Accepted gatehouse views, including both corrected misnamed Arrow Tower files, show a grey brick podium below three dark eaves and a red upper hall.",
+    "implemented": "Changed the podium material from red plaster to grey brick; three eaves, registered43.65m height, mapped position and all envelope dimensions remain unchanged.",
+    "inferred": [
+      "Brick texture/mortar and fine masonry detail",
+      "Part dimensions are sourced envelope data rather than independent photographic measurement"
+    ],
+    "notClaimed": [
+      "Fabrication CAD or measured per-member copy",
+      "Complete facade/pixel registration or independent3m survey acceptance"
+    ]
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Qian_Men_IMG_4273_Zhengyang_Gate_Arrow_Tower.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Actual subject is Zhengyangmen gatehouse: grey podium, central stone balcony, paired stairs and three dark eaves; original title is misleading."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_(4476344474).jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Night gatehouse with central balcony, paired stairs and three eaves; rejected as an Arrow Tower reference."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/zhengyangmen.png",
+    "postFixGeometryReport": "tests/reports/model-form.json",
+    "wholeFacadeSurveyed": false
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "model": "confucius-guozijian",
+  "view": "southeast",
+  "focus": "biyong",
+  "projection": "orthographic",
+  "locationMeters": [
+    -32.84668731689453,
+    -20.14821434020996,
+    30.402856826782227
+  ],
+  "targetMeters": [
+    -59.188663482666016,
+    19.3647518157959,
+    9.0
+  ],
+  "orthographicScaleMeters": 60.91582107543945,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -109.28911590576172,
+      -85.58918762207031,
+      0.0
+    ],
+    [
+      111.4390869140625,
+      95.47429656982422,
+      25.0
+    ]
+  ]
+}

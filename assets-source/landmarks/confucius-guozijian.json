@@ -1,0 +1,357 @@
+{
+  "id": "confucius-guozijian",
+  "model": "confucius-guozijian",
+  "name": "孔庙 · 国子监",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9453,
+    "longitude": 116.4077,
+    "rotationDegrees": 0,
+    "elevationRelativeTo45mDatum": 2.17,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/227782228",
+      "url": "https://www.openstreetmap.org/way/227782228",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/227782229",
+      "url": "https://www.openstreetmap.org/way/227782229",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/227782231",
+      "url": "https://www.openstreetmap.org/way/227782231",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463288",
+      "url": "https://www.openstreetmap.org/way/371463288",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463294",
+      "url": "https://www.openstreetmap.org/way/371463294",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463295",
+      "url": "https://www.openstreetmap.org/way/371463295",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463296",
+      "url": "https://www.openstreetmap.org/way/371463296",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463297",
+      "url": "https://www.openstreetmap.org/way/371463297",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463298",
+      "url": "https://www.openstreetmap.org/way/371463298",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463299",
+      "url": "https://www.openstreetmap.org/way/371463299",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463300",
+      "url": "https://www.openstreetmap.org/way/371463300",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463301",
+      "url": "https://www.openstreetmap.org/way/371463301",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463302",
+      "url": "https://www.openstreetmap.org/way/371463302",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463304",
+      "url": "https://www.openstreetmap.org/way/371463304",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463307",
+      "url": "https://www.openstreetmap.org/way/371463307",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463308",
+      "url": "https://www.openstreetmap.org/way/371463308",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463309",
+      "url": "https://www.openstreetmap.org/way/371463309",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463310",
+      "url": "https://www.openstreetmap.org/way/371463310",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463311",
+      "url": "https://www.openstreetmap.org/way/371463311",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463316",
+      "url": "https://www.openstreetmap.org/way/371463316",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/371463317",
+      "url": "https://www.openstreetmap.org/way/371463317",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269155",
+      "url": "https://www.openstreetmap.org/way/384269155",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/727049979",
+      "url": "https://www.openstreetmap.org/way/727049979",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/727049980",
+      "url": "https://www.openstreetmap.org/way/727049980",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/727050377",
+      "url": "https://www.openstreetmap.org/way/727050377",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/727050378",
+      "url": "https://www.openstreetmap.org/way/727050378",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1271745598",
+      "url": "https://www.openstreetmap.org/way/1271745598",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "confucius-guozijian-footprint-0",
+      "longitude": 116.4081539,
+      "latitude": 39.9446776,
+      "source": "https://www.openstreetmap.org/way/227782228",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "confucius-guozijian-footprint-1",
+      "longitude": 116.4081542,
+      "latitude": 39.9446485,
+      "source": "https://www.openstreetmap.org/way/227782228",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "confucius-guozijian-footprint-2",
+      "longitude": 116.408155,
+      "latitude": 39.9445702,
+      "source": "https://www.openstreetmap.org/way/227782228",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "confucius-guozijian-footprint-3",
+      "longitude": 116.4081553,
+      "latitude": 39.9445368,
+      "source": "https://www.openstreetmap.org/way/227782228",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/copyright"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:BeijingConfuciusTemple1.jpg",
+      "author": "docsdl",
+      "license": "CC BY 2.0",
+      "capturedAt": "2007-09-01",
+      "view": "Confucius Temple exterior",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Guozijian_building_1.jpg",
+      "fileTitle": "File:Guozijian building 1.jpg",
+      "author": "Peiyu Liu",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+      "capturedAt": "2009-03-16",
+      "view": "国子监辟雍殿；不同于孔庙主体",
+      "resolution": [
+        3968,
+        2232
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=8046674&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E5%AD%90%E7%9B%91_%E5%8C%97%E4%BA%AC.jpg",
+      "fileTitle": "File:国子监 北京.jpg",
+      "author": "Charlie fong冯成",
+      "license": "Public domain",
+      "licenseURL": "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E5%AD%90%E7%9B%91_%E5%8C%97%E4%BA%AC.jpg",
+      "capturedAt": "2009-01",
+      "view": "国子监入口",
+      "resolution": [
+        3000,
+        2000
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=5752844&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.943994,
+        "lon": 116.406678
+      }
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 25,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/confucius-guozijian.blend",
+    "lod": {
+      "near": "./models/landmarks/confucius-guozijian-5fc1c3771f.glb",
+      "medium": "./models/landmarks/confucius-guozijian-medium-fc49e6d8fc.glb",
+      "far": "./models/landmarks/confucius-guozijian-far-f5149c6900.glb",
+      "distancesM": [
+        800,
+        2800
+      ]
+    },
+    "collision": "./models/landmarks/confucius-guozijian-collision-a6806f2977.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "architecturalApproximation": {
+    "observedForm": "Guozijian Biyong has two golden pyramidal eaves and a round gold finial; the separate Confucius Temple photo shows a gate, not the Dacheng Hall.",
+    "implemented": "Biyong has two separated pyramidal roof layers, an intermediate upper room and a spherical finial. Other mapped compound footprints and registered25m maximum remain unchanged.",
+    "inferred": [
+      "Biyong part heights, upper-room widths, roof pitch and finial diameter",
+      "Moat, bridges, paintwork and unshown halls are not fully reconstructed or surveyed"
+    ],
+    "notClaimed": [
+      "Fabrication CAD or measured per-member copy",
+      "Complete facade/pixel registration or independent3m survey acceptance"
+    ]
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Guozijian_building_1.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Frontal Biyong: two pyramidal eaves, golden spherical finial, columns and stone balustrade."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:BeijingConfuciusTemple1.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Tree-occluded gate with Confucius statue, single roof and white steps; not a view of the Dacheng Hall."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/confucius-guozijian.png",
+    "postFixGeometryReport": "tests/reports/model-form.json",
+    "wholeFacadeSurveyed": false,
+    "detailSourcePreview": "assets-source/previews/confucius-guozijian-biyong.png"
+  }
+}

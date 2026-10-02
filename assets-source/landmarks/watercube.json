@@ -1,0 +1,211 @@
+{
+  "id": "watercube",
+  "model": "watercube",
+  "name": "水立方",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9915785,
+    "longitude": 116.38417255,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": 0.674,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/29201257",
+      "url": "https://www.openstreetmap.org/way/29201257",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "watercube-footprint-0",
+      "longitude": 116.3830753,
+      "latitude": 39.9923586,
+      "source": "https://www.openstreetmap.org/way/29201257",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "watercube-footprint-1",
+      "longitude": 116.3831654,
+      "latitude": 39.9907301,
+      "source": "https://www.openstreetmap.org/way/29201257",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "watercube-footprint-2",
+      "longitude": 116.3852698,
+      "latitude": 39.9907984,
+      "source": "https://www.openstreetmap.org/way/29201257",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "watercube-footprint-3",
+      "longitude": 116.3851797,
+      "latitude": 39.9924269,
+      "source": "https://www.openstreetmap.org/way/29201257",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.arup.com/projects/national-aquatics-center-water-cube/",
+    "https://www.openstreetmap.org/way/29201257",
+    "https://architectureau.com/articles/practice-23/",
+    "https://yuandacn.com/index.php/en/projects-cn-2/101-domestic/beijing/219-national-swimming-center-2.html"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Beijing_National_Aquatics_Center_(Water_Cube)_(4475631690).jpg",
+      "fileTitle": "File:Lascar The Beijing National Aquatics Center (Water Cube) (4475631690).jpg",
+      "author": "Jorge Láscar from Australia",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2008-11-24 19:51",
+      "view": "水立方外观；相机在西侧，方位由GPS推断",
+      "resolution": [
+        3216,
+        2136
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=31952224&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.991588,
+        "lon": 116.383409
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Water_Cube_(red_dots_version)_%26_Bird%27s_Nest.jpg",
+      "fileTitle": "File:Water Cube (red dots version) & Bird's Nest.jpg",
+      "author": "Alberto Alerigi",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2008-01-02 03:43:50",
+      "view": "水立方和鸟巢夜景；2008年装饰不能代表当前常态",
+      "resolution": [
+        3264,
+        2448
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=4820118&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://www.arup.com/projects/national-aquatics-center-water-cube/",
+      "author": "Arup; facade and interior photographs credited © Ben McMillian; hero photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "whole building envelope",
+      "widthM": 177,
+      "depthM": 177,
+      "heightM": 31,
+      "source": "https://architectureau.com/articles/practice-23/"
+    },
+    {
+      "part": "largest described ETFE pillow span",
+      "upToM": 9,
+      "source": "https://architectureau.com/articles/practice-23/",
+      "notes": "This is the largest described pillow, not a universal 3–7m range."
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 31,
+    "heightEvidence": "primary textual height, export envelope calibrated",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/watercube.blend",
+    "lod": {
+      "near": "./models/landmarks/watercube-fa6b682d47.glb",
+      "medium": "./models/landmarks/watercube-medium-5163b30b4d.glb",
+      "far": "./models/landmarks/watercube-far-85398552c7.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/watercube-collision-65ec487222.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "architecturalApproximation": {
+    "sourceFacts": "Arup engineer Tristram Carfrae describes177×177×31m,about4000 inflated ETFE pillows,some spanning9m,and repeated seven roof/fifteen wall types in a Weaire-Phelan foam structure.",
+    "material": "Original irregular Voronoi-derived pillow/seam/colour/roughness/tangent-normal material,32m UV repeat with about six cells across (~5.3m representative cell). No external photo pixels embedded.",
+    "groundStorey": "Two open photographs were actually viewed: a daylight exterior and the2008 illuminated facade. Both show a recessed glazed entrance storey and pale columns beneath the ETFE facade; these architectural layers are now present. The4.2m entrance-storey height,1.8m recess,12m pale-column spacing and extension around unshown elevations are inferred rather than surveyed.",
+    "notClaimed": [
+      "Exact as-built Weaire-Phelan panel layout or seven roof/fifteen wall-type repetition",
+      "Verified universal3–7m cell-size range",
+      "Surveyed inflation depth or per-panel colour",
+      "Exact ETFE transmission or film-thickness optics",
+      "Measured entrance-storey height, recess or complete four-elevation glazing pattern"
+    ],
+    "visualVerification": "Macro-scale colour seams and pillow normals were rebaked for this model. Actual open-photo pixels subsequently resolved the missing recessed glazed ground storey, which was added while retaining177×177×31m. Source-preview comparison recorded separately."
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Beijing_National_Aquatics_Center_(Water_Cube)_(4475631690).jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Daylight exterior: irregular inflated ETFE cells, seams, recessed glazed entrance strip and pale columns; not surveyed dimensions or every elevation."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Water_Cube_(red_dots_version)_%26_Bird's_Nest.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "2008 night facade: entrance-storey recession and pale columns; coloured event lighting is historical and is not treated as normal current colour."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/watercube.png",
+    "wholeFacadeSurveyed": false
+  }
+}

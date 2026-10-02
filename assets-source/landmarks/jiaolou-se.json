@@ -1,0 +1,490 @@
+{
+  "id": "jiaolou-se",
+  "model": "jiaolou",
+  "name": "故宫东南角楼",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9126282,
+    "longitude": 116.39525574999999,
+    "rotationDegrees": 90,
+    "elevationRelativeTo45mDatum": 1.183,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/638700719",
+      "url": "https://www.openstreetmap.org/way/638700719",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700456",
+      "url": "https://www.openstreetmap.org/way/638700456",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700457",
+      "url": "https://www.openstreetmap.org/way/638700457",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700458",
+      "url": "https://www.openstreetmap.org/way/638700458",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700459",
+      "url": "https://www.openstreetmap.org/way/638700459",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700460",
+      "url": "https://www.openstreetmap.org/way/638700460",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700461",
+      "url": "https://www.openstreetmap.org/way/638700461",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700462",
+      "url": "https://www.openstreetmap.org/way/638700462",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700463",
+      "url": "https://www.openstreetmap.org/way/638700463",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700466",
+      "url": "https://www.openstreetmap.org/way/638700466",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700476",
+      "url": "https://www.openstreetmap.org/way/638700476",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700486",
+      "url": "https://www.openstreetmap.org/way/638700486",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700489",
+      "url": "https://www.openstreetmap.org/way/638700489",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700490",
+      "url": "https://www.openstreetmap.org/way/638700490",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700491",
+      "url": "https://www.openstreetmap.org/way/638700491",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700492",
+      "url": "https://www.openstreetmap.org/way/638700492",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700493",
+      "url": "https://www.openstreetmap.org/way/638700493",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700494",
+      "url": "https://www.openstreetmap.org/way/638700494",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700495",
+      "url": "https://www.openstreetmap.org/way/638700495",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700496",
+      "url": "https://www.openstreetmap.org/way/638700496",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700498",
+      "url": "https://www.openstreetmap.org/way/638700498",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700499",
+      "url": "https://www.openstreetmap.org/way/638700499",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700502",
+      "url": "https://www.openstreetmap.org/way/638700502",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700506",
+      "url": "https://www.openstreetmap.org/way/638700506",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700507",
+      "url": "https://www.openstreetmap.org/way/638700507",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700508",
+      "url": "https://www.openstreetmap.org/way/638700508",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700509",
+      "url": "https://www.openstreetmap.org/way/638700509",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700510",
+      "url": "https://www.openstreetmap.org/way/638700510",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700511",
+      "url": "https://www.openstreetmap.org/way/638700511",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700512",
+      "url": "https://www.openstreetmap.org/way/638700512",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700513",
+      "url": "https://www.openstreetmap.org/way/638700513",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700514",
+      "url": "https://www.openstreetmap.org/way/638700514",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700515",
+      "url": "https://www.openstreetmap.org/way/638700515",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700516",
+      "url": "https://www.openstreetmap.org/way/638700516",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700520",
+      "url": "https://www.openstreetmap.org/way/638700520",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700533",
+      "url": "https://www.openstreetmap.org/way/638700533",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700545",
+      "url": "https://www.openstreetmap.org/way/638700545",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700561",
+      "url": "https://www.openstreetmap.org/way/638700561",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700582",
+      "url": "https://www.openstreetmap.org/way/638700582",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700599",
+      "url": "https://www.openstreetmap.org/way/638700599",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700612",
+      "url": "https://www.openstreetmap.org/way/638700612",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700632",
+      "url": "https://www.openstreetmap.org/way/638700632",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700649",
+      "url": "https://www.openstreetmap.org/way/638700649",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700667",
+      "url": "https://www.openstreetmap.org/way/638700667",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700682",
+      "url": "https://www.openstreetmap.org/way/638700682",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700698",
+      "url": "https://www.openstreetmap.org/way/638700698",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700731",
+      "url": "https://www.openstreetmap.org/way/638700731",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638700740",
+      "url": "https://www.openstreetmap.org/way/638700740",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/156146468",
+      "url": "https://www.openstreetmap.org/way/156146468",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "jiaolou-se-footprint-0",
+      "longitude": 116.3952272,
+      "latitude": 39.9126517,
+      "source": "https://www.openstreetmap.org/way/638700719",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "jiaolou-se-footprint-1",
+      "longitude": 116.3952288,
+      "latitude": 39.9126035,
+      "source": "https://www.openstreetmap.org/way/638700719",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "jiaolou-se-footprint-2",
+      "longitude": 116.3952843,
+      "latitude": 39.9126047,
+      "source": "https://www.openstreetmap.org/way/638700719",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "jiaolou-se-footprint-3",
+      "longitude": 116.3952827,
+      "latitude": 39.9126529,
+      "source": "https://www.openstreetmap.org/way/638700719",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/way/638700719",
+    "https://www.openstreetmap.org/way/638700456",
+    "https://www.openstreetmap.org/way/638700457",
+    "https://www.openstreetmap.org/way/638700458",
+    "https://www.openstreetmap.org/way/638700459",
+    "https://www.openstreetmap.org/way/638700460",
+    "https://www.openstreetmap.org/way/638700461",
+    "https://www.openstreetmap.org/way/638700462",
+    "https://www.openstreetmap.org/way/638700463",
+    "https://www.openstreetmap.org/way/638700466",
+    "https://www.openstreetmap.org/way/638700476",
+    "https://www.openstreetmap.org/way/638700486",
+    "https://www.openstreetmap.org/way/638700489",
+    "https://www.openstreetmap.org/way/638700490",
+    "https://www.openstreetmap.org/way/638700491",
+    "https://www.openstreetmap.org/way/638700492",
+    "https://www.openstreetmap.org/way/638700493",
+    "https://www.openstreetmap.org/way/638700494",
+    "https://www.openstreetmap.org/way/638700495",
+    "https://www.openstreetmap.org/way/638700496",
+    "https://www.openstreetmap.org/way/638700498",
+    "https://www.openstreetmap.org/way/638700499",
+    "https://www.openstreetmap.org/way/638700502",
+    "https://www.openstreetmap.org/way/638700506",
+    "https://www.openstreetmap.org/way/638700507",
+    "https://www.openstreetmap.org/way/638700508",
+    "https://www.openstreetmap.org/way/638700509",
+    "https://www.openstreetmap.org/way/638700510",
+    "https://www.openstreetmap.org/way/638700511",
+    "https://www.openstreetmap.org/way/638700512",
+    "https://www.openstreetmap.org/way/638700513",
+    "https://www.openstreetmap.org/way/638700514",
+    "https://www.openstreetmap.org/way/638700515",
+    "https://www.openstreetmap.org/way/638700516",
+    "https://www.openstreetmap.org/way/638700520",
+    "https://www.openstreetmap.org/way/638700533",
+    "https://www.openstreetmap.org/way/638700545",
+    "https://www.openstreetmap.org/way/638700561",
+    "https://www.openstreetmap.org/way/638700582",
+    "https://www.openstreetmap.org/way/638700599",
+    "https://www.openstreetmap.org/way/638700612",
+    "https://www.openstreetmap.org/way/638700632",
+    "https://www.openstreetmap.org/way/638700649",
+    "https://www.openstreetmap.org/way/638700667",
+    "https://www.openstreetmap.org/way/638700682",
+    "https://www.openstreetmap.org/way/638700698",
+    "https://www.openstreetmap.org/way/638700731",
+    "https://www.openstreetmap.org/way/638700740",
+    "https://www.openstreetmap.org/way/156146468"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_2006_2-3.jpg",
+      "fileTitle": "File:Beijing 2006 2-3.jpg",
+      "author": "G41rn8",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2006",
+      "view": "故宫东南角楼；文件说明明确，不替代其他角楼",
+      "resolution": [
+        2592,
+        1944
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=45613090&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Southeast_corner_tower_of_Forbidden_City_and_Beijing_eastern_skyline_(20241127133425).jpg",
+      "fileTitle": "File:Southeast corner tower of Forbidden City and Beijing eastern skyline (20241127133425).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2024-11-27 13:34:25",
+      "view": "从午门附近向东看东南角楼及天际线；方位由GPS推断",
+      "resolution": [
+        6801,
+        4534
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=155877543&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.912472,
+        "lon": 116.391603
+      }
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 27.5,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/jiaolou.blend",
+    "lod": {
+      "near": "./models/landmarks/jiaolou-faddeda35f.glb",
+      "medium": "./models/landmarks/jiaolou-medium-991bb710e5.glb",
+      "far": "./models/landmarks/jiaolou-far-bffa376a76.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/jiaolou-collision-598bebbe97.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

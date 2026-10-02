@@ -1,0 +1,33 @@
+{
+  "model": "wumen",
+  "view": "north",
+  "projection": "orthographic",
+  "locationMeters": [
+    15.119999885559082,
+    172.09469604492188,
+    74.5
+  ],
+  "targetMeters": [
+    0.0,
+    -29.505313873291016,
+    17.799999237060547
+  ],
+  "orthographicScaleMeters": 233.10000610351562,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -63.0,
+      -74.52359008789062,
+      0.0
+    ],
+    [
+      63.0,
+      15.512962341308594,
+      35.599998474121094
+    ]
+  ]
+}

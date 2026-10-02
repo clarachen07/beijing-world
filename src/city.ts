@@ -1,148 +1,137 @@
-/**
- * 城市网格装配：加载的数据 → three.js 场景对象
- */
 import * as THREE from 'three';
-import type { LoadedData, DecodedMesh } from './loader';
-import { makeBuildingMaterial, makeRoadMaterial, makeWaterMaterial, makeGreenMaterial, makeStreetlightMaterial, uniforms } from './materials';
+import type { DecodedMesh, DecodedTile, Bounds, MeshLayer } from './data';
+import { fetchAssetBytes } from './asset-fetch';
+import { makeBuildingMaterial, makeRoofMaterial, makeRoadMaterial, makeWaterMaterial, makeGreenMaterial, makeStreetlightMaterial, uniforms } from './materials';
 
-export interface CityRefs {
-  group: THREE.Group;
-  streetlightMat: THREE.PointsMaterial;
-  waterMat: THREE.MeshPhongMaterial;
-  greenMat: THREE.MeshLambertMaterial;
-  chunkMeshes: THREE.Mesh[];
+interface TextureEntry { texture: THREE.Texture; references: number; ready: Promise<void>; controller: AbortController }
+/** Ground images may be shared by near/far meshes; unload only after the last user. */
+class TexturePool {
+  private entries = new Map<string, TextureEntry>();
+  acquire(file: string): TextureEntry {
+    const existing = this.entries.get(file);
+    if (existing) { existing.references++; return existing; }
+    const texture = new THREE.Texture();
+    texture.colorSpace = THREE.SRGBColorSpace; texture.anisotropy = 4;
+    texture.minFilter = THREE.LinearMipmapLinearFilter;
+    const entry: TextureEntry = { texture, references: 1, ready: Promise.resolve(), controller:new AbortController() };
+    entry.ready = fetchAssetBytes(`data/${file}`,{signal:entry.controller.signal}).then(async bytes => {
+      const bitmap = await createImageBitmap(new Blob([bytes]), { imageOrientation: 'flipY' });
+      if (this.entries.get(file) !== entry) { bitmap.close(); return; }
+      texture.image = bitmap; texture.flipY = false; texture.needsUpdate = true;
+    });
+    this.entries.set(file, entry); return entry;
+  }
+  release(file: string) {
+    const entry = this.entries.get(file); if (!entry || --entry.references > 0) return;
+    entry.controller.abort(); entry.texture.dispose(); (entry.texture.image as ImageBitmap | undefined)?.close?.(); this.entries.delete(file);
+  }
+  dispose() { for (const [file, entry] of this.entries) { entry.references = 1; this.release(file); } }
 }
 
-function meshFromDecoded(d: DecodedMesh, mat: THREE.Material): THREE.Mesh {
-  const geo = new THREE.BufferGeometry();
-  geo.setAttribute('position', new THREE.BufferAttribute(d.positions, 3));
-  geo.setAttribute('color', new THREE.BufferAttribute(d.colors, 3));
-  geo.setIndex(new THREE.BufferAttribute(d.indices, 1));
-  const mesh = new THREE.Mesh(geo, mat);
-  mesh.matrixAutoUpdate = false;
-  return mesh;
-}
-
-export function buildCity(data: LoadedData): CityRefs {
-  const group = new THREE.Group();
-
-  // ── 地面 ──（烘焙纹理: 真实城市肌理 + polygonOffset 压深防冲突）
-  const texLoader = new THREE.TextureLoader();
-  const groundTex = texLoader.load('./data/ground.jpg');
-  groundTex.colorSpace = THREE.SRGBColorSpace;
-  groundTex.anisotropy = 16; // GL 驱动会自动钳制到硬件上限
-  groundTex.generateMipmaps = true;
-  groundTex.minFilter = THREE.LinearMipmapLinearFilter;
-  const groundMat = new THREE.MeshLambertMaterial({
-    map: groundTex,
-    polygonOffset: true,
-    polygonOffsetFactor: 8,
-    polygonOffsetUnits: 8,
-  });
-  groundMat.onBeforeCompile = (shader) => {
-    shader.uniforms.uNight = uniforms.uNight;
-    shader.fragmentShader = shader.fragmentShader
-      .replace('#include <common>', `#include <common>\nuniform float uNight;`)
-      .replace(
-        '#include <color_fragment>',
-        `#include <color_fragment>
-        diffuseColor.rgb *= mix(1.0, 0.26, uNight);`
-      );
+export class CityMaterials {
+  readonly layers = {
+    buildings: makeBuildingMaterial(), roofs: makeRoofMaterial(), roads: makeRoadMaterial(), water: makeWaterMaterial(),
+    green: makeGreenMaterial(), streetlights: makeStreetlightMaterial(),
   };
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(16000, 20100), groundMat);
-  ground.rotation.x = -Math.PI / 2;
-  ground.position.set(0, 0, 450);
-  ground.matrixAutoUpdate = false;
-  ground.updateMatrix();
-  group.add(ground);
-  // 地平线外围底色（沉到 -30m：polygonOffset 梯队在远距离会把纹理地面推深数米，
-  // 底色若在 -0.8 会反过来盖住纹理地面/绿地，形成"绿色阴影"和沙色地面）
-  const outerGround = new THREE.Mesh(new THREE.PlaneGeometry(60000, 60000), new THREE.MeshLambertMaterial({ color: 0x8f8577 }));
-  outerGround.rotation.x = -Math.PI / 2;
-  outerGround.position.set(0, -30, 2600);
-  outerGround.matrixAutoUpdate = false;
-  outerGround.updateMatrix();
-  group.add(outerGround);
-
-  // ── 建筑分块 ──
-  const buildingMat = makeBuildingMaterial();
-  const chunkMeshes: THREE.Mesh[] = [];
-  data.manifest.buildings.chunks.forEach((chunk, i) => {
-    const mesh = meshFromDecoded(data.buildings[i], buildingMat);
-    mesh.position.set(chunk.ox ?? 0, 0, chunk.oz ?? 0);
-    mesh.updateMatrix();
-    mesh.frustumCulled = true;
-    // 计算包围球（供视锥剔除）
-    mesh.geometry.computeBoundingSphere();
-    group.add(mesh);
-    chunkMeshes.push(mesh);
-  });
-
-  // ── 道路 ──
-  const roadMat = makeRoadMaterial();
-  const roads = meshFromDecoded(data.roads, roadMat);
-  roads.geometry.computeBoundingSphere();
-  group.add(roads);
-
-  // ── 水面 ──
-  const waterMat = makeWaterMaterial();
-  const water = meshFromDecoded(data.water, waterMat);
-  water.geometry.computeBoundingSphere();
-  group.add(water);
-
-  // ── 绿地 ──
-  const greenMat = makeGreenMaterial();
-  const green = meshFromDecoded(data.green, greenMat);
-  green.geometry.computeBoundingSphere();
-  group.add(green);
-
-  // ── 树木（实例化）──
-  const treeCount = data.trees.length / 3;
-  if (treeCount > 0) {
-    const trunkGeo = new THREE.CylinderGeometry(0.32, 0.5, 2.8, 5);
-    trunkGeo.translate(0, 1.4, 0);
-    const canopyGeo = new THREE.IcosahedronGeometry(3.1, 1);
-    canopyGeo.scale(1, 1.15, 1);
-    canopyGeo.translate(0, 4.4, 0);
-
-    const trunkMat = new THREE.MeshLambertMaterial({ color: 0x5d4a38, flatShading: true });
-    const canopyMat = new THREE.MeshLambertMaterial({ color: 0x3e6b30, flatShading: true });
-
-    const trunks = new THREE.InstancedMesh(trunkGeo, trunkMat, treeCount);
-    const canopies = new THREE.InstancedMesh(canopyGeo, canopyMat, treeCount);
-    const m = new THREE.Matrix4();
-    const q = new THREE.Quaternion();
-    const s = new THREE.Vector3();
-    const p = new THREE.Vector3();
-    const col = new THREE.Color();
-    for (let i = 0; i < treeCount; i++) {
-      const x = data.trees[i * 3], z = data.trees[i * 3 + 1], sc = data.trees[i * 3 + 2];
-      p.set(x, 0, z);
-      q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), (i * 2.399) % (Math.PI * 2));
-      s.set(sc / 5.5, sc / 5.5, sc / 5.5);
-      m.compose(p, q, s);
-      trunks.setMatrixAt(i, m);
-      canopies.setMatrixAt(i, m);
-      const g = 0.7 + ((i * 0.618) % 1) * 0.6;
-      col.setRGB(0.15 * g, 0.33 * g, 0.11 * g);
-      canopies.setColorAt(i, col);
-    }
-    trunks.instanceMatrix.needsUpdate = true;
-    canopies.instanceMatrix.needsUpdate = true;
-    trunks.frustumCulled = false;
-    canopies.frustumCulled = false;
-    group.add(trunks, canopies);
+  readonly trunk = new THREE.MeshLambertMaterial({ color: 0x75654b, flatShading: true });
+  readonly canopy = new THREE.MeshLambertMaterial({ color: 0x56704b, flatShading: true });
+  readonly textures = new TexturePool();
+  update(night: number) { this.layers.streetlights.opacity = night * 0.85; }
+  dispose() {
+    for (const material of Object.values(this.layers)) { if (material instanceof THREE.PointsMaterial) material.map?.dispose(); material.dispose(); }
+    this.trunk.dispose(); this.canopy.dispose(); this.textures.dispose();
   }
-
-  // ── 路灯 ──
-  const streetlightMat = makeStreetlightMaterial();
-  if (data.streetlights.positions.length > 0) {
-    const geo = new THREE.BufferGeometry();
-    geo.setAttribute('position', new THREE.BufferAttribute(data.streetlights.positions.slice(), 3));
-    const points = new THREE.Points(geo, streetlightMat);
-    points.frustumCulled = false;
-    group.add(points);
-  }
-
-  return { group, streetlightMat, waterMat, greenMat, chunkMeshes };
 }
+
+export interface CityTile {
+  group: THREE.Group; triangles: number; bytes: number; ready: Promise<void>; dispose(): void;
+}
+function geometryFromDecoded(mesh: DecodedMesh) {
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.BufferAttribute(mesh.positions, 3));
+  geometry.setAttribute('color', new THREE.BufferAttribute(mesh.colors, 3, true));
+  if (mesh.indices.length) geometry.setIndex(new THREE.BufferAttribute(mesh.indices, 1));
+  geometry.computeBoundingSphere(); return geometry;
+}
+
+export function buildCityTile(data: DecodedTile, materials: CityMaterials, mobile = false): CityTile {
+  const { descriptor } = data; const group = new THREE.Group();
+  group.name = `tile:${descriptor.id}`; group.position.set(descriptor.ox, 0, descriptor.oz);
+  group.matrixAutoUpdate = false; group.updateMatrix();
+  const geometries: THREE.BufferGeometry[] = [], ownMaterials: THREE.Material[] = [];
+  let triangles = 0, bytes = 0, textureFile: string | undefined;
+  const imageJobs: Promise<void>[] = [];
+  for (const [key, mesh] of Object.entries(data.meshes)) {
+    const geometry = geometryFromDecoded(mesh!); geometries.push(geometry);
+    const object = key === 'streetlights'
+      ? new THREE.Points(geometry, materials.layers.streetlights)
+      : new THREE.Mesh(geometry, materials.layers[key as Exclude<MeshLayer, 'streetlights'>]);
+    object.matrixAutoUpdate = false; object.updateMatrix();
+    group.add(object); triangles += mesh!.indices.length / 3;
+    bytes += mesh!.positions.byteLength + mesh!.colors.byteLength + mesh!.indices.byteLength;
+  }
+  if (data.ground) {
+    const geometry = geometryFromDecoded(data.ground); geometries.push(geometry); geometry.computeVertexNormals();
+    const material = new THREE.MeshLambertMaterial({ color: 0xb9b6a5, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 });
+    const image = descriptor.ground?.texture;
+    if (image) {
+      textureFile = image.file;
+      const entry = materials.textures.acquire(image.file);
+      const uv = new Float32Array(data.ground.positions.length / 3 * 2);
+      const [x0, z0, x1, z1] = image.bounds;
+      for (let i = 0; i < uv.length / 2; i++) {
+        uv[i * 2] = (data.ground.positions[i * 3] + descriptor.ox - x0) / (x1 - x0);
+        uv[i * 2 + 1] = 1 - (data.ground.positions[i * 3 + 2] + descriptor.oz - z0) / (z1 - z0);
+      }
+      geometry.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+      imageJobs.push(entry.ready.then(() => { material.map = entry.texture; material.color.setHex(0xffffff); material.needsUpdate = true; }));
+    }
+    material.onBeforeCompile = shader => {
+      shader.uniforms.uNight = uniforms.uNight;
+      shader.fragmentShader = shader.fragmentShader.replace('#include <common>', '#include <common>\nuniform float uNight;')
+        .replace('#include <color_fragment>', '#include <color_fragment>\ndiffuseColor.rgb *= mix(1.0, 0.25, uNight);');
+    };
+    ownMaterials.push(material); group.add(new THREE.Mesh(geometry, material)); triangles += data.ground.indices.length / 3;
+    bytes += data.ground.positions.byteLength + data.ground.colors.byteLength + data.ground.indices.byteLength;
+  }
+  if (data.trees?.length && descriptor.lod === 0) {
+    const count = Math.ceil(data.trees.length / 3 / (mobile ? 2 : 1));
+    const trunkGeometry = new THREE.CylinderGeometry(0.25, 0.4, 2.6, 4); trunkGeometry.translate(0, 1.3, 0);
+    const crownGeometry = new THREE.IcosahedronGeometry(2.8, 0); crownGeometry.scale(1, 1.2, 1); crownGeometry.translate(0, 4.2, 0);
+    geometries.push(trunkGeometry, crownGeometry);
+    const trunks = new THREE.InstancedMesh(trunkGeometry, materials.trunk, count);
+    const crowns = new THREE.InstancedMesh(crownGeometry, materials.canopy, count);
+    const matrix = new THREE.Matrix4(), position = new THREE.Vector3(), scale = new THREE.Vector3(), rotation = new THREE.Quaternion();
+    const terrain = data.ground;
+    const heightAt = (x: number, z: number) => {
+      if (!terrain) return 0;
+      let distance = Infinity, height = 0;
+      for (let i = 0; i < terrain.positions.length; i += 3) {
+        const d = (x - terrain.positions[i]) ** 2 + (z - terrain.positions[i + 2]) ** 2;
+        if (d < distance) { distance = d; height = terrain.positions[i + 1]; }
+      }
+      return height;
+    };
+    for (let i = 0; i < count; i++) {
+      const source = i * (mobile ? 2 : 1) * 3;
+      const x = data.trees[source], z = data.trees[source + 1], s = data.trees[source + 2] / 5.5;
+      position.set(x, heightAt(x, z), z); scale.setScalar(s); rotation.setFromAxisAngle(THREE.Object3D.DEFAULT_UP, i * 2.399);
+      matrix.compose(position, rotation, scale); trunks.setMatrixAt(i, matrix); crowns.setMatrixAt(i, matrix);
+    }
+    trunks.instanceMatrix.needsUpdate = true; crowns.instanceMatrix.needsUpdate = true;
+    trunks.computeBoundingSphere(); crowns.computeBoundingSphere(); group.add(trunks, crowns);
+    triangles += count * ((trunkGeometry.index?.count ?? 0) + (crownGeometry.index?.count ?? crownGeometry.attributes.position.count)) / 3;
+    bytes += count * 2 * 64;
+  }
+  let disposed = false;
+  return { group, triangles, bytes, ready: Promise.all(imageJobs).then(() => undefined),
+    dispose() {
+      if (disposed) return; disposed = true; group.removeFromParent();
+      for (const geometry of geometries) geometry.dispose();
+      for (const material of ownMaterials) material.dispose();
+      if (textureFile) materials.textures.release(textureFile);
+      group.clear();
+    } };
+}
+
+export function tileBox(bounds: Bounds) { return new THREE.Box3(new THREE.Vector3(bounds[0], -100, bounds[1]), new THREE.Vector3(bounds[2], 700, bounds[3])); }

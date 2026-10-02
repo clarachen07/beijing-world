@@ -1,0 +1,249 @@
+{
+  "generatedAt": "2026-10-02T12:57:04.963Z",
+  "summaries": [
+    {
+      "profile": "desktop",
+      "id": "cctv",
+      "reason": "Original automated SE view intersected China Zun and did not represent CCTV; replaced with the inspected west view.",
+      "scope": "Only this 5-second view and its screenshot were remeasured. Other 11 views, original cold load, 180-second route, determinism, resource visits, overall long tasks and completion timestamp remain unchanged.",
+      "startedAt": "2026-10-02T12:56:53.112Z",
+      "completedAt": "2026-10-02T12:56:58.318Z",
+      "durationSeconds": 5.0025,
+      "release": {
+        "revision": "f379c023976b7b0f93a8",
+        "resources": 13019,
+        "totalBytes": 155313110
+      },
+      "identity": {
+        "city": "1d91e09a9c2e8b214a4d",
+        "bundle": "http://127.0.0.1:4173/assets/index-kvYwi1c0.js",
+        "devicePixelRatio": 1,
+        "viewport": [
+          1440,
+          900
+        ]
+      },
+      "pose": {
+        "pos": [
+          3443.5291975272107,
+          342.35,
+          3843.7703632000416
+        ],
+        "look": [
+          4093.5291975272107,
+          121.05000000000001,
+          3743.7703632000416
+        ],
+        "view": "west"
+      },
+      "screenshot": "artifacts/qa/desktop-view-03-cctv.png",
+      "longTasks": [],
+      "errors": [],
+      "retainedSectionsSHA256": "70983abfe6e4209fe84b73cf9f4110fa7999560850b9ee837bdbc1b88453e135",
+      "otherViewsSHA256": "f76de2fa026354b6045b0200eb35dcd8ea84cbe7a6dc384b3152df0a619324de",
+      "previousView": {
+        "id": "cctv",
+        "pos": [
+          4313.22919752721,
+          412.25,
+          4031.070363200042
+        ],
+        "look": [
+          4093.5291975272103,
+          85.95,
+          3743.7703632000416
+        ],
+        "frames": 300,
+        "p95": 16.700000000000728,
+        "p50": 16.69999999999709,
+        "p99": 16.799999999999272,
+        "max": 16.80000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 598,
+          "textures": 139
+        },
+        "render": {
+          "frame": 2246,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 93,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 67085066,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      "metrics": {
+        "frames": 300,
+        "p95": 16.700000000000728,
+        "p50": 16.699999999999818,
+        "p99": 16.80000000000109,
+        "max": 16.80000000000109,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 630,
+          "textures": 136
+        },
+        "render": {
+          "frame": 1098,
+          "calls": 172,
+          "triangles": 118122,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 112,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 58190443,
+          "triangles": 149099,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      }
+    },
+    {
+      "profile": "mobile",
+      "id": "cctv",
+      "reason": "Original automated SE view intersected China Zun and did not represent CCTV; replaced with the inspected west view.",
+      "scope": "Only this 5-second view and its screenshot were remeasured. Other 11 views, original cold load, 180-second route, determinism, resource visits, overall long tasks and completion timestamp remain unchanged.",
+      "startedAt": "2026-10-02T12:56:59.659Z",
+      "completedAt": "2026-10-02T12:57:04.845Z",
+      "durationSeconds": 5.0025,
+      "release": {
+        "revision": "f379c023976b7b0f93a8",
+        "resources": 13019,
+        "totalBytes": 155313110
+      },
+      "identity": {
+        "city": "1d91e09a9c2e8b214a4d",
+        "bundle": "http://127.0.0.1:4173/assets/index-kvYwi1c0.js",
+        "devicePixelRatio": 2,
+        "viewport": [
+          390,
+          844
+        ]
+      },
+      "pose": {
+        "pos": [
+          3443.5291975272107,
+          342.35,
+          3843.7703632000416
+        ],
+        "look": [
+          4093.5291975272107,
+          121.05000000000001,
+          3743.7703632000416
+        ],
+        "view": "west"
+      },
+      "screenshot": "artifacts/qa/mobile-view-03-cctv.png",
+      "longTasks": [],
+      "errors": [],
+      "retainedSectionsSHA256": "201179b62bc20a8dc79b5a10623a2f111a6b60f7a0d0f8ef25386e7646e81d52",
+      "otherViewsSHA256": "ff27f9786134d27d980687b197e03e0a99bb18471c0089166fe72fb61cae29ee",
+      "previousView": {
+        "id": "cctv",
+        "pos": [
+          4313.22919752721,
+          412.25,
+          4031.070363200042
+        ],
+        "look": [
+          4093.5291975272103,
+          85.95,
+          3743.7703632000416
+        ],
+        "frames": 300,
+        "p95": 16.700000000000728,
+        "p50": 16.69999999999891,
+        "p99": 16.799999999999272,
+        "max": 16.80000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 275,
+          "textures": 69
+        },
+        "render": {
+          "frame": 3331,
+          "calls": 73,
+          "triangles": 278562,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 46,
+          "pending": 0,
+          "visible": 16,
+          "meshBytes": 42097950,
+          "triangles": 266607,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 33,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      "metrics": {
+        "frames": 300,
+        "p95": 16.799999999999727,
+        "p50": 16.699999999999818,
+        "p99": 16.800000000000182,
+        "max": 16.800000000000182,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 138,
+          "textures": 28
+        },
+        "render": {
+          "frame": 1111,
+          "calls": 37,
+          "triangles": 83572,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 15,
+          "pending": 0,
+          "visible": 6,
+          "meshBytes": 27233382,
+          "triangles": 68809,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 33,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      }
+    }
+  ]
+}

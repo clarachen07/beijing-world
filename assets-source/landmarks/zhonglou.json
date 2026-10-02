@@ -1,0 +1,177 @@
+{
+  "id": "zhonglou",
+  "model": "zhonglou",
+  "name": "钟楼",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9410217,
+    "longitude": 116.38964025000001,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": 5.355,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/425993664",
+      "url": "https://www.openstreetmap.org/way/425993664",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "zhonglou-footprint-0",
+      "longitude": 116.389446,
+      "latitude": 39.9411773,
+      "source": "https://www.openstreetmap.org/way/425993664",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "zhonglou-footprint-1",
+      "longitude": 116.3894468,
+      "latitude": 39.9411241,
+      "source": "https://www.openstreetmap.org/way/425993664",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "zhonglou-footprint-2",
+      "longitude": 116.3894492,
+      "latitude": 39.9409635,
+      "source": "https://www.openstreetmap.org/way/425993664",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "zhonglou-footprint-3",
+      "longitude": 116.3894506,
+      "latitude": 39.9408628,
+      "source": "https://www.openstreetmap.org/way/425993664",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/way/425993664"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2016-08-22",
+      "view": "view from south of both towers",
+      "resolution": [
+        3264,
+        2448
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_2006_1-15.jpg",
+      "fileTitle": "File:Beijing 2006 1-15.jpg",
+      "author": "G41rn8",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2006",
+      "view": "钟楼南立面，原始描述明确从鼓楼阳台向北拍摄，补充地面组合视图。",
+      "resolution": [
+        1728,
+        2095
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=45556574&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 47.9,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/zhonglou.blend",
+    "lod": {
+      "near": "./models/landmarks/zhonglou-5e60cb1b76.glb",
+      "medium": "./models/landmarks/zhonglou-medium-27338b3453.glb",
+      "far": "./models/landmarks/zhonglou-far-648048f731.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/zhonglou-collision-985f9be723.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "architecturalApproximation": {
+    "observedForm": "Grey-brick podium and upper bell room, two grey/green roof layers, a large central upper arch and smaller side arch windows.",
+    "implemented": "Independent grey-brick arched room, central open arch and recessed closed side shutters; two dark tiled eaves with green edges. Render/collision share masonry.",
+    "inferred": [
+      "24m podium and24.8m upper-room floor datum",
+      "Arch dimensions, shutter recess, stairs and roof part proportions"
+    ],
+    "notClaimed": [
+      "Full facade survey, camera registration or independently verified part dimensions",
+      "Centimetre or3m geospatial acceptance"
+    ]
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Beijing_2006_1-15.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Close frontal Bell Tower: masonry room, two eaves, central large arch and smaller side arches."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Bell Tower in distant axial background only."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/zhonglou.png",
+    "postFixGeometryReport": "tests/reports/model-gates.json",
+    "wholeFacadeSurveyed": false
+  }
+}

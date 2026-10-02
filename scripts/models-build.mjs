@@ -1,0 +1,20 @@
+/** Reproducible offline rebuild: verified local reference data, then export and validate. */
+import {spawn} from 'node:child_process';
+import {access} from 'node:fs/promises';
+const blender=process.env.BLENDER_BIN??(process.platform==='darwin'?'/Applications/Blender.app/Contents/MacOS/Blender':'blender');
+const run=(command,args)=>new Promise((resolve,reject)=>{const p=spawn(command,args,{stdio:'inherit'});p.on('error',reject);p.on('exit',code=>code?reject(new Error(`${command} exited ${code}`)):resolve());});
+await access('raw/geospatial/osm.geojson');
+for(const script of ['models-parks','models-registry'])await run(process.execPath,[`scripts/${script}.mjs`]);
+await run(blender,['-b','-P','blender/build_all.py']);
+await run(blender,['-b','-P','blender/models_lods.py']);
+await run(process.execPath,['scripts/models-optimize.mjs']);
+await run(process.execPath,['scripts/models-fingerprint.mjs']);
+await run(process.execPath,['scripts/models-provenance.mjs']);
+await run(process.execPath,['scripts/models-validate.mjs']);
+await run(process.execPath,['scripts/models-dimensions.mjs']);
+await run(process.execPath,['scripts/models-olympic-validate.mjs']);
+await run(process.execPath,['scripts/models-facade-validate.mjs']);
+await run(process.execPath,['scripts/models-gates-validate.mjs']);
+await run(process.execPath,['scripts/models-form-validate.mjs']);
+await run(blender,['-b','-P','blender/preview.py','--','taihedian','qiniandian','cctv']);
+console.log('All model assets exported, compressed, fingerprinted, validated and reference-rendered.');

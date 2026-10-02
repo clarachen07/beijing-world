@@ -11,3 +11,10 @@ chk*.png
 sky*.png
 *.last
 public/video/pass*
+.venv-data/
+tools/bin/
+artifacts/
+__pycache__/
+*.pyc
+assets-source/**/*.blend1
+.deployment/

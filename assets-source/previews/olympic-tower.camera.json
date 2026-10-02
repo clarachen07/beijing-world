@@ -1,0 +1,34 @@
+{
+  "model": "olympic-tower",
+  "view": "southeast",
+  "focus": null,
+  "projection": "orthographic",
+  "locationMeters": [
+    198.681396484375,
+    -296.1600036621094,
+    283.82000732421875
+  ],
+  "targetMeters": [
+    1.2413902282714844,
+    0.0,
+    123.4000015258789
+  ],
+  "orthographicScaleMeters": 456.58001708984375,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -21.51721954345703,
+      -23.36373519897461,
+      0.0
+    ],
+    [
+      24.0,
+      23.36373519897461,
+      246.8000030517578
+    ]
+  ]
+}

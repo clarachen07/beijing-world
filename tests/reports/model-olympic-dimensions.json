@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-10-02T12:23:04.959Z",
+  "assetVersion": "d3bd20956b7d",
+  "errors": [],
+  "method": "NodeIO decoded normalized final GLB vertices transformed by world matrices; envelope, projected high steel opening intersections and32 roof-hole samples perLOD. Published primary dimensions are separate constants. This is geometry validation, not surveyed geospatial or per-member fabrication accuracy.",
+  "watercubeMaterial": {
+    "source": "https://architectureau.com/articles/practice-23/",
+    "measuredEnvelopeM": [
+      177,
+      177,
+      31
+    ],
+    "representativeCellScaleM": 5.333333333333333,
+    "cellScaleAcceptance": "inferred visual representative; actual largest described span9m, no verified universal3–7m range",
+    "exactAsBuiltWeairePhelanLayoutVerified": false
+  },
+  "assets": [
+    {
+      "model": "birdnest",
+      "level": "near",
+      "path": "public/models/landmarks/birdnest-dc2e916fea.glb",
+      "boundsGLTFMetres": {
+        "min": [
+          -166.19981,
+          -0.0012,
+          -146.70551
+        ],
+        "max": [
+          166.20265,
+          69.0012,
+          146.70177
+        ]
+      },
+      "envelopeXYZMetres": [
+        332.40247,
+        69.0024,
+        293.40729
+      ],
+      "expectedXYZMetres": [
+        333,
+        69,
+        294
+      ],
+      "envelopeErrorPercent": [
+        0.17944,
+        0.00348,
+        0.2016
+      ],
+      "openingSource": "https://www.engineering.org.cn/sscae/CN/1160100327263363612",
+      "openingPart": "central elliptical opening, projected closest high steel boundary on long/short axes",
+      "structuralRoofHoleM": [
+        185.29903,
+        127.50112
+      ],
+      "expectedRoofHoleM": [
+        185.3,
+        127.5
+      ],
+      "roofHoleErrorPercent": [
+        0.00052,
+        0.00088
+      ],
+      "membraneOpeningSamplesClear": 32,
+      "membraneInnerEdgeM": [
+        186.49787,
+        128.69857
+      ],
+      "turfLongXShortZMetres": [
+        110.0011,
+        72.00008
+      ],
+      "turfSource": "https://www.n-s.cn/article_8f40ed628459423285ef875561413fb1.html",
+      "orientationDegrees": 86.29
+    },
+    {
+      "model": "birdnest",
+      "level": "medium",
+      "path": "public/models/landmarks/birdnest-medium-f8983ab067.glb",
+      "boundsGLTFMetres": {
+        "min": [
+          -166.19981,
+          -0.0012,
+          -146.70551
+        ],
+        "max": [
+          166.20265,
+          69.0012,
+          146.70177
+        ]
+      },
+      "envelopeXYZMetres": [
+        332.40247,
+        69.0024,
+        293.40729
+      ],
+      "expectedXYZMetres": [
+        333,
+        69,
+        294
+      ],
+      "envelopeErrorPercent": [
+        0.17944,
+        0.00348,
+        0.2016
+      ],
+      "openingSource": "https://www.engineering.org.cn/sscae/CN/1160100327263363612",
+      "openingPart": "central elliptical opening, projected closest high steel boundary on long/short axes",
+      "structuralRoofHoleM": [
+        185.29903,
+        127.50112
+      ],
+      "expectedRoofHoleM": [
+        185.3,
+        127.5
+      ],
+      "roofHoleErrorPercent": [
+        0.00052,
+        0.00088
+      ],
+      "membraneOpeningSamplesClear": 32,
+      "membraneInnerEdgeM": [
+        186.49787,
+        128.69857
+      ],
+      "turfLongXShortZMetres": [
+        110.0011,
+        72.00008
+      ],
+      "turfSource": "https://www.n-s.cn/article_8f40ed628459423285ef875561413fb1.html",
+      "orientationDegrees": 86.29
+    },
+    {
+      "model": "birdnest",
+      "level": "far",
+      "path": "public/models/landmarks/birdnest-far-7dff0eac0a.glb",
+      "boundsGLTFMetres": {
+        "min": [
+          -166.19981,
+          -0.0009,
+          -146.70239
+        ],
+        "max": [
+          166.19981,
+          69.0009,
+          146.70239
+        ]
+      },
+      "envelopeXYZMetres": [
+        332.39963,
+        69.00181,
+        293.40478
+      ],
+      "expectedXYZMetres": [
+        333,
+        69,
+        294
+      ],
+      "envelopeErrorPercent": [
+        0.18029,
+        0.00262,
+        0.20246
+      ],
+      "openingSource": "https://www.engineering.org.cn/sscae/CN/1160100327263363612",
+      "openingPart": "central elliptical opening, projected closest high steel boundary on long/short axes",
+      "structuralRoofHoleM": [
+        185.30275,
+        127.50654
+      ],
+      "expectedRoofHoleM": [
+        185.3,
+        127.5
+      ],
+      "roofHoleErrorPercent": [
+        0.00148,
+        0.00513
+      ],
+      "membraneOpeningSamplesClear": 32,
+      "membraneInnerEdgeM": [
+        186.39195,
+        128.54492
+      ],
+      "turfLongXShortZMetres": [
+        109.99509,
+        72.00453
+      ],
+      "turfSource": "https://www.n-s.cn/article_8f40ed628459423285ef875561413fb1.html",
+      "orientationDegrees": 86.29
+    },
+    {
+      "model": "watercube",
+      "level": "near",
+      "path": "public/models/landmarks/watercube-fa6b682d47.glb",
+      "boundsGLTFMetres": {
+        "min": [
+          -88.5,
+          -0.0004,
+          -88.5
+        ],
+        "max": [
+          88.5,
+          31.0004,
+          88.5
+        ]
+      },
+      "envelopeXYZMetres": [
+        177,
+        31.00079,
+        177
+      ],
+      "expectedXYZMetres": [
+        177,
+        31,
+        177
+      ],
+      "envelopeErrorPercent": [
+        0,
+        0.00256,
+        0
+      ]
+    },
+    {
+      "model": "watercube",
+      "level": "medium",
+      "path": "public/models/landmarks/watercube-medium-5163b30b4d.glb",
+      "boundsGLTFMetres": {
+        "min": [
+          -88.5,
+          -0.0004,
+          -88.5
+        ],
+        "max": [
+          88.5,
+          31.0004,
+          88.5
+        ]
+      },
+      "envelopeXYZMetres": [
+        177,
+        31.00079,
+        177
+      ],
+      "expectedXYZMetres": [
+        177,
+        31,
+        177
+      ],
+      "envelopeErrorPercent": [
+        0,
+        0.00256,
+        0
+      ]
+    },
+    {
+      "model": "watercube",
+      "level": "far",
+      "path": "public/models/landmarks/watercube-far-85398552c7.glb",
+      "boundsGLTFMetres": {
+        "min": [
+          -88.5,
+          -0.0004,
+          -88.5
+        ],
+        "max": [
+          88.5,
+          31.0004,
+          88.5
+        ]
+      },
+      "envelopeXYZMetres": [
+        177,
+        31.00079,
+        177
+      ],
+      "expectedXYZMetres": [
+        177,
+        31,
+        177
+      ],
+      "envelopeErrorPercent": [
+        0,
+        0.00256,
+        0
+      ]
+    }
+  ]
+}

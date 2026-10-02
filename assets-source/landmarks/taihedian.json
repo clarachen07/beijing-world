@@ -1,0 +1,169 @@
+{
+  "id": "taihedian",
+  "model": "taihedian",
+  "name": "太和殿",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9158956,
+    "longitude": 116.39081395,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": 1.712,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/638449347",
+      "url": "https://www.openstreetmap.org/way/638449347",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "taihedian-footprint-0",
+      "longitude": 116.3904162,
+      "latitude": 39.9160659,
+      "source": "https://www.openstreetmap.org/way/638449347",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "taihedian-footprint-1",
+      "longitude": 116.3904259,
+      "latitude": 39.9157864,
+      "source": "https://www.openstreetmap.org/way/638449347",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "taihedian-footprint-2",
+      "longitude": 116.3904264,
+      "latitude": 39.9157712,
+      "source": "https://www.openstreetmap.org/way/638449347",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "taihedian-footprint-3",
+      "longitude": 116.3904285,
+      "latitude": 39.9157094,
+      "source": "https://www.openstreetmap.org/way/638449347",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.dpm.org.cn/Uploads/pdf/1602/T00092_00.pdf",
+    "https://www.dpm.org.cn/explore/building/236465.html",
+    "https://www.dpm.org.cn/building/talk/223525.html",
+    "https://www.openstreetmap.org/way/638449347"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_Forbidden_City.jpg",
+      "author": "Radosław Botev; licensor Fundacja Nomos",
+      "license": "CC BY 3.0 PL",
+      "capturedAt": "2009-07-16",
+      "view": "exterior overview",
+      "resolution": [
+        2237,
+        992
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:20200110_Hall_of_Supreme_Harmony_roof_art-3.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0 1.0",
+      "capturedAt": "2020-01-10",
+      "view": "roof ornament detail",
+      "resolution": [
+        5760,
+        3840
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1602/T00092_00.pdf",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "source-stated hall body; column-axis versus outside-face endpoints unresolved",
+      "widthM": 63.96,
+      "depthM": 37.17,
+      "measurementDefinitionVerified": false
+    },
+    {
+      "part": "ridge above ground",
+      "heightM": 35.05
+    },
+    {
+      "part": "including ridge ornament",
+      "heightM": 37.44
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 37.44,
+    "heightEvidence": "primary textual height, export envelope calibrated",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/taihedian.blend",
+    "lod": {
+      "near": "./models/landmarks/taihedian-f26baf8a1d.glb",
+      "medium": "./models/landmarks/taihedian-medium-a3c51904e5.glb",
+      "far": "./models/landmarks/taihedian-far-90379b8328.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/taihedian-collision-5c071cf705.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

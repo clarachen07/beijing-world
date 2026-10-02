@@ -1,0 +1,33 @@
+{
+  "model": "yongdingmen",
+  "view": "southeast",
+  "projection": "orthographic",
+  "locationMeters": [
+    23.22234535217285,
+    -34.833518981933594,
+    31.868154525756836
+  ],
+  "targetMeters": [
+    -4.76837158203125e-07,
+    0.0,
+    13.0
+  ],
+  "orthographicScaleMeters": 53.7016716003418,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -14.51396656036377,
+      -9.022294044494629,
+      0.0
+    ],
+    [
+      14.513965606689453,
+      9.022294044494629,
+      26.0
+    ]
+  ]
+}

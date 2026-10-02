@@ -1,244 +1,98 @@
-/**
- * 地标系统：坐标全部对齐 OSM 真实数据。
- * 精细模型（故宫各殿/城楼/现代地标）由 legacy.ts 从 Blender GLB 加载；
- * 这里只保留程序化的：故宫城墙环、景山、北海白塔、纪念碑、奥林匹克塔、玲珑塔。
- */
+/** Permanent landscape geometry. Architectural landmarks share the model manager. */
 import * as THREE from 'three';
-import { latLonToLocal } from './geo';
-
+import { latLonToLocal, hash01 } from './geo';
 export interface Landmark {
+  id?: string;
   name: string;
   en: string;
   anchor: THREE.Vector3;
+  lookAnchor?: THREE.Vector3;
   focus: number;
   group: THREE.Group;
   showLabel?: boolean;
 }
-
-// ── 夜间自发光材质注册表 ──
-export const nightEmissives: { mat: THREE.MeshLambertMaterial; color: THREE.Color; intensity: number }[] = [];
-
-function glowMat(color: number, emissive: number, intensity: number, opts: Partial<THREE.MeshLambertMaterialParameters> = {}) {
-  const mat = new THREE.MeshLambertMaterial({ color, ...opts });
-  nightEmissives.push({ mat, color: new THREE.Color(emissive), intensity });
-  return mat;
+export const nightEmissives: {mat:THREE.MeshStandardMaterial;color:THREE.Color;intensity:number}[] = [];
+export function updateLandmarkNight(t:number) {
+  for (const e of nightEmissives) e.mat.emissive.copy(e.color).multiplyScalar(t*e.intensity);
 }
-
-const M = {
-  red: new THREE.MeshLambertMaterial({ color: 0x8c211b, flatShading: true }),
-  gold: glowMat(0xc79118, 0x6a4408, 0.5, { flatShading: true }),
-  goldBright: glowMat(0xd9a52e, 0x8a5a10, 0.8, { flatShading: true }),
-  glass: glowMat(0x7f98ab, 0x1c262e, 0.35, { flatShading: true }),
-  silver: new THREE.MeshPhongMaterial({ color: 0xb4bac0, shininess: 90, specular: 0x99aabb, flatShading: true }),
-  white: new THREE.MeshLambertMaterial({ color: 0xe8e4da, flatShading: true }),
-  hill: new THREE.MeshLambertMaterial({ color: 0x4f6b39, flatShading: true }),
-};
-
-function box(w: number, h: number, d: number, mat: THREE.Material, x = 0, y = 0, z = 0): THREE.Mesh {
-  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
-  m.position.set(x, y + h / 2, z);
-  return m;
+function box(w:number,h:number,d:number,material:THREE.Material,x=0,y=0,z=0) {
+  const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),material);m.position.set(x,y+h/2,z);return m;
 }
-function cyl(r: number, h: number, mat: THREE.Material, x = 0, y = 0, z = 0, seg = 20): THREE.Mesh {
-  const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, seg), mat);
-  m.position.set(x, y + h / 2, z);
-  return m;
-}
-function pyramid(w: number, h: number, d: number, mat: THREE.Material, x = 0, y = 0, z = 0): THREE.Mesh {
-  const m = new THREE.Mesh(new THREE.ConeGeometry(0.5, h, 4), mat);
-  m.rotation.y = Math.PI / 4;
-  m.scale.set(w, 1, d);
-  m.position.set(x, y + h / 2, z);
-  return m;
-}
-
-/** 故宫城墙环 (753×955m, 中心 39.9166N 116.3907E) */
-function mkWallRing(): { g: THREE.Group; a: THREE.Vector3 } {
-  const g = new THREE.Group();
-  const wallH = 9.6, t = 5;
-  const w = 753, d = 955; // 东西 × 南北
-  const walls: [number, number, number, number][] = [
-    [w, t, 0, -d / 2], [w, t, 0, d / 2],
-    [t, d, -w / 2, 0], [t, d, w / 2, 0],
-  ];
-  for (const [ww, dd, ox, oz] of walls) {
-    g.add(box(ww, wallH, dd, M.red, ox, 0, oz));
-    g.add(box(ww + 1.2, 1.0, dd + 1.2, M.gold, ox, wallH, oz));
-  }
-  return { g, a: new THREE.Vector3(0, 40, 0) };
-}
-
-/** 景山：单一平滑山脊网格（真实山形, 非圆锥拼盘）+ 满山树木 */
-function mkJingshan(): { g: THREE.Group; a: THREE.Vector3 } {
-  const g = new THREE.Group();
-  // 山脊: 沿南北轴的钟形山体, 东西宽 420m, 南北长 900m, 峰值 45m
-  const NX = 36, NZ = 60;
-  const LEN_X = 210, LEN_Z = 450; // 半长轴
-  const verts: number[] = [];
-  const faces: number[] = [];
-  const bell = (t: number) => Math.exp(-t * t * 3.2); // 轴向包络
-  for (let iz = 0; iz <= NZ; iz++) {
-    const tz = iz / NZ;
-    const z = (tz - 0.5) * 2 * LEN_Z; // -450..450
-    for (let ix = 0; ix <= NX; ix++) {
-      const tx = ix / NX;
-      const x = (tx - 0.5) * 2 * LEN_X;
-      const rx = 1 - Math.pow((tx - 0.5) * 2, 2); // 椭圆截面
-      const rz = 1 - Math.pow((tz - 0.5) * 2, 2);
-      const rr = Math.max(0, Math.min(rx, rz));
-      const env = bell((tz - 0.42) * 2.2); // 峰在偏北
-      const h = 45 * env * Math.pow(rr, 1.4) + 2.5 * rr;
-      verts.push(x, h, z);
+function wallRing() {
+  const group=new THREE.Group();group.name='Palace perimeter with gate openings';
+  const red=new THREE.MeshStandardMaterial({color:0x842e23,roughness:.9});
+  const cap=new THREE.MeshStandardMaterial({color:0x77786e,roughness:.95});
+  const width=753,depth=955,height=9.6,thickness=6;
+  // Gate mouths stay open; no solid cross-city walls through the four real portals.
+  for (const side of [-1,1]) {
+    const gap=side===1?128:62;
+    const span=(width-gap)/2;
+    for (const sign of [-1,1]) {
+      const x=sign*(gap/2+span/2),z=side*depth/2;
+      group.add(box(span,height,thickness,red,x,0,z),box(span,.4,thickness+.3,cap,x,height,z));
     }
+    const northSpan=depth/2+160-35,southSpan=depth/2-160-35;
+    const x=side*width/2;
+    group.add(box(thickness,height,northSpan,red,x,0,-depth/2+northSpan/2));
+    group.add(box(thickness,height,southSpan,red,x,0,depth/2-southSpan/2));
   }
-  for (let iz = 0; iz < NZ; iz++) {
-    for (let ix = 0; ix < NX; ix++) {
-      const a = iz * (NX + 1) + ix;
-      const b = a + 1;
-      const c = a + NX + 1;
-      const d = c + 1;
-      faces.push(a, c, d, b);
-    }
-  }
-  const geo = new THREE.BufferGeometry();
-  geo.setAttribute('position', new THREE.Float32BufferAttribute(verts, 3));
-  geo.setIndex(faces);
-  geo.computeVertexNormals();
-  const hill = new THREE.Mesh(geo, new THREE.MeshLambertMaterial({ color: 0x54683b }));
-  g.add(hill);
-  // 满山树木（贴坡面）
-  const treeVerts: number[] = [];
-  const treeIdx: number[] = [];
-  const pushTree = (x: number, y: number, z: number, s: number) => {
-    const base = treeVerts.length / 3;
-    for (let i = 0; i < 6; i++) {
-      const a = (i / 6) * Math.PI * 2;
-      treeVerts.push(x + Math.cos(a) * s * 0.4, y, z + Math.sin(a) * s * 0.4);
-    }
-    treeVerts.push(x, y + s, z);
-    for (let i = 0; i < 6; i++) treeIdx.push(base + i, base + 6, base + (i + 1) % 6);
+  return group;
+}
+function pavilion(material:THREE.Material,wood:THREE.Material) {
+  const g=new THREE.Group();const columns=new THREE.InstancedMesh(new THREE.CylinderGeometry(.3,.3,5,8),wood,8);
+  const matrix=new THREE.Matrix4();
+  for(let i=0;i<8;i++){const a=i*Math.PI/4;matrix.makeTranslation(Math.cos(a)*4.2,2.5,Math.sin(a)*4.2);columns.setMatrixAt(i,matrix);}
+  g.add(columns);
+  const profile=[new THREE.Vector2(5.8,5.2),new THREE.Vector2(5.3,5.3),new THREE.Vector2(3.7,6.5),new THREE.Vector2(2.5,8),new THREE.Vector2(.2,10.2)];
+  g.add(new THREE.Mesh(new THREE.LatheGeometry(profile,8),material));return g;
+}
+function jingshan(groundHeight?: (x:number,z:number)=>number, originX=0, originZ=0, ground=0) {
+  const group=new THREE.Group();group.name='Jingshan east-west ridge';
+  const nx=64,nz=36,halfX=235,halfZ=145;
+  const positions:number[]=[],indices:number[]=[];
+  // Five-peaked east-west ridge, zero at its boundary; elevation relative to city ground.
+  const height=(x:number,z:number)=>{
+    if(groundHeight)return groundHeight(originX+x,originZ+z)-ground;
+    const boundary=Math.max(0,1-(x/halfX)**2)*Math.max(0,1-(z/halfZ)**2);
+    const peaks=[[-150,23],[-80,31],[0,45.7],[80,31],[150,23]];
+    const ridge=Math.max(...peaks.map(([p,h])=>h*Math.exp(-(((x-p)/65)**2))));
+    return boundary**.35*ridge*Math.exp(-((z/halfZ)**2)*2.4);
   };
-  const heightAt = (tx: number, tz: number) => {
-    const rx = 1 - Math.pow((tx - 0.5) * 2, 2);
-    const rz = 1 - Math.pow((tz - 0.5) * 2, 2);
-    const rr = Math.max(0, Math.min(rx, rz));
-    const env = bell((tz - 0.42) * 2.2);
-    return 45 * env * Math.pow(rr, 1.4) + 2.5 * rr;
-  };
-  for (let i = 0; i < 620; i++) {
-    const tx = ((i * 0.757) % 1) * 0.86 + 0.07;
-    const tz = ((i * 0.473) % 1) * 0.9 + 0.05;
-    const x = (tx - 0.5) * 2 * LEN_X;
-    const z = (tz - 0.5) * 2 * LEN_Z;
-    pushTree(x, heightAt(tx, tz) - 0.5, z, 4.5 + ((i * 1.37) % 1) * 4);
+  for(let iz=0;iz<=nz;iz++)for(let ix=0;ix<=nx;ix++){
+    const x=(ix/nx-.5)*halfX*2,z=(iz/nz-.5)*halfZ*2;positions.push(x,height(x,z),z);
   }
-  const treeGeo = new THREE.BufferGeometry();
-  treeGeo.setAttribute('position', new THREE.Float32BufferAttribute(treeVerts, 3));
-  treeGeo.setIndex(treeIdx);
-  treeGeo.computeVertexNormals();
-  g.add(new THREE.Mesh(treeGeo, new THREE.MeshLambertMaterial({ color: 0x33532a, flatShading: true })));
-  // 万春亭（峰顶）
-  const top = new THREE.Group();
-  top.add(box(16, 5, 16, M.red));
-  top.add(box(20, 3.5, 20, M.gold, 0, 5));
-  top.add(box(10, 4, 10, M.red, 0, 8.5));
-  top.add(pyramid(13, 4.5, 13, M.gold, 0, 12.5));
-  top.position.set(0, 45, -180 * 0 + (0.42 - 0.5) * 2 * LEN_Z);
-  g.add(top);
-  return { g, a: new THREE.Vector3(0, 60, (0.42 - 0.5) * 2 * LEN_Z) };
-}
-
-/** 北海白塔 (覆钵式) */
-function mkWhiteDagoba(): { g: THREE.Group; a: THREE.Vector3 } {
-  const g = new THREE.Group();
-  const c = new THREE.Mesh(new THREE.ConeGeometry(60, 32, 12), M.hill);
-  c.position.y = 16;
-  g.add(c);
-  g.add(cyl(9, 3, M.white, 0, 32, 0, 20));
-  const dome = new THREE.Mesh(new THREE.SphereGeometry(8.2, 20, 14), M.white);
-  dome.scale.y = 1.15;
-  dome.position.y = 41;
-  g.add(dome);
-  const tip = new THREE.Mesh(new THREE.ConeGeometry(3.4, 12, 14), M.white);
-  tip.position.y = 53;
-  g.add(tip);
-  g.add(cyl(0.4, 7, M.goldBright, 0, 62, 0, 6));
-  return { g, a: new THREE.Vector3(0, 76, 0) };
-}
-
-/** 人民英雄纪念碑 */
-function mkMonument(): { g: THREE.Group; a: THREE.Vector3 } {
-  const g = new THREE.Group();
-  g.add(box(32, 3, 32, M.white));
-  const ob = new THREE.Mesh(new THREE.CylinderGeometry(4.2, 5.5, 36, 4), M.white);
-  ob.rotation.y = Math.PI / 4;
-  ob.position.y = 21;
-  g.add(ob);
-  g.add(pyramid(8, 3, 8, M.gold, 0, 39));
-  return { g, a: new THREE.Vector3(0, 48, 0) };
-}
-
-/** 奥林匹克塔 (五塔环抱 246m) */
-function mkOlympicTower(): { g: THREE.Group; a: THREE.Vector3 } {
-  const g = new THREE.Group();
-  const H = 218;
-  const up = new THREE.Vector3(0, 1, 0);
-  for (let i = 0; i < 5; i++) {
-    const a = (i / 5) * Math.PI * 2;
-    const bx = Math.cos(a) * 20, bz = Math.sin(a) * 20;
-    const tx = Math.cos(a) * 7, tz = Math.sin(a) * 7;
-    const dir = new THREE.Vector3(tx - bx, H, tz - bz);
-    const len = dir.length();
-    const m = new THREE.Mesh(new THREE.CylinderGeometry(4.5, 7, len, 8), M.glass);
-    m.position.set((bx + tx) / 2, H / 2, (bz + tz) / 2);
-    m.quaternion.setFromUnitVectors(up, dir.normalize());
-    g.add(m);
+  for(let iz=0;iz<nz;iz++)for(let ix=0;ix<nx;ix++){
+    const a=iz*(nx+1)+ix,b=a+1,c=a+nx+1,d=c+1;
+    indices.push(a,c,b,b,c,d); // Two triangles per cell; old four-index quads corrupted topology.
   }
-  for (const [r, y] of [[13, 190], [10, 150], [8, 100]] as const) g.add(cyl(r, 3.4, M.glass, 0, y, 0, 16));
-  g.add(cyl(0.9, 30, M.silver, 0, 218, 0, 6));
-  return { g, a: new THREE.Vector3(0, 215, 0) };
-}
-
-/** 玲珑塔 */
-function mkLinglong(): { g: THREE.Group; a: THREE.Vector3 } {
-  const g = new THREE.Group();
-  const H = 128;
-  const body = new THREE.Mesh(new THREE.BoxGeometry(22, H, 22), M.glass);
-  body.position.y = H / 2 + 4;
-  g.add(body);
-  g.add(box(30, 4, 30, M.silver, 0, 0));
-  g.add(cyl(0.6, 14, M.silver, 0, H + 4, 0, 6));
-  return { g, a: new THREE.Vector3(0, 140, 0) };
-}
-
-export function buildLandmarks(): { group: THREE.Group; landmarks: Landmark[] } {
-  const root = new THREE.Group();
-  const landmarks: Landmark[] = [];
-  const add = (name: string, en: string, lat: number, lon: number, mk: () => { g: THREE.Group; a: THREE.Vector3 }, focus: number, showLabel = true) => {
-    const { g, a } = mk();
-    const [x, z] = latLonToLocal(lat, lon);
-    g.position.set(x, 0, z);
-    root.add(g);
-    if (showLabel) landmarks.push({ name, en, anchor: new THREE.Vector3(x + a.x, a.y, z + a.z), focus, group: g });
-  };
-
-  add('故宫', 'THE FORBIDDEN CITY', 39.9166, 116.3907, mkWallRing, 1400);
-  add('景山', 'JINGSHAN PARK', 39.92435, 116.39008, mkJingshan, 400);
-  add('北海白塔', 'WHITE DAGOBA', 39.9255, 116.3889, mkWhiteDagoba, 200);
-  add('人民英雄纪念碑', 'MONUMENT TO THE PEOPLE HEROES', 39.9046, 116.3913, mkMonument, 90);
-  add('奥林匹克塔', 'OLYMPIC TOWER', 40.00655, 116.3879, mkOlympicTower, 380);
-  add('玲珑塔', 'LINGLONG TOWER', 39.9934, 116.3902, mkLinglong, 220);
-  // 什刹海（仅标签）
-  {
-    const [x, z] = latLonToLocal(39.94, 116.386);
-    landmarks.push({ name: '什刹海', en: 'SHICHAHAI LAKES', anchor: new THREE.Vector3(x, 12, z), focus: 500, group: new THREE.Group() });
+  const terrain=new THREE.BufferGeometry();terrain.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));terrain.setIndex(indices);terrain.computeVertexNormals();terrain.computeBoundingSphere();
+  if(!groundHeight)group.add(new THREE.Mesh(terrain,new THREE.MeshStandardMaterial({color:0x65714b,roughness:1})));
+  else terrain.dispose(); // The geospatial terrain already supplies this surface and its real imagery.
+  const trees=new THREE.InstancedMesh(new THREE.ConeGeometry(2.8,8,7),new THREE.MeshStandardMaterial({color:0x3f6038,roughness:1}),650);
+  const matrix=new THREE.Matrix4();let count=0;
+  for(let i=0;i<900&&count<650;i++){
+    const x=(hash01(i+11)*2-1)*halfX*.93,z=(hash01(i+197)*2-1)*halfZ*.93;
+    if(Math.abs(z)<13&&[-150,-80,0,80,150].some(px=>Math.abs(px-x)<13))continue;
+    const scale=.65+hash01(i+300)*.65;matrix.compose(new THREE.Vector3(x,height(x,z)+4*scale,z),new THREE.Quaternion(),new THREE.Vector3(scale,scale,scale));trees.setMatrixAt(count++,matrix);
   }
-
-  return { group: root, landmarks };
+  trees.count=count;trees.computeBoundingSphere();group.add(trees);
+  const roof=new THREE.MeshStandardMaterial({color:0xb9913d,roughness:.4,metalness:.1});const timber=new THREE.MeshStandardMaterial({color:0x913f2b,roughness:.75});
+  for(const x of [-150,-80,0,80,150]){const p=pavilion(roof,timber);p.position.set(x,height(x,0),0);group.add(p);}
+  return group;
 }
-
-export function updateLandmarkNight(t: number) {
-  for (const e of nightEmissives) {
-    e.mat.emissive.copy(e.color).multiplyScalar(t * e.intensity);
+export function buildLandmarks(options: {groundHeight?: (x:number,z:number)=>number} = {}): {group:THREE.Group;landmarks:Landmark[];dispose:()=>void} {
+  const group=new THREE.Group();group.name='Historic landscape';const landmarks:Landmark[]=[];
+  function add(id:string,name:string,en:string,lat:number,lon:number,obj:THREE.Group,labelH:number,focus:number){
+    const [x,z]=latLonToLocal(lat,lon),ground=options.groundHeight?.(x,z)??0;obj.position.set(x,ground,z);group.add(obj);
+    landmarks.push({id,name,en,anchor:new THREE.Vector3(x,labelH+ground,z),lookAnchor:new THREE.Vector3(x,labelH*.55+ground,z),focus,group:obj,showLabel:true});
   }
+  add('forbidden-city','故宫','THE FORBIDDEN CITY',39.9166,116.3907,wallRing(),42,1400);
+  const [jx,jz]=latLonToLocal(39.92355,116.39008),jg=options.groundHeight?.(jx,jz)??0;
+  add('jingshan','景山','JINGSHAN PARK',39.92355,116.39008,jingshan(options.groundHeight,jx,jz,jg),options.groundHeight?13:58,440);
+  add('shichahai','什刹海','SHICHAHAI LAKES',39.94,116.386,new THREE.Group(),12,500);
+  return {group,landmarks,dispose(){
+    const materials=new Set<THREE.Material>(),geometries=new Set<THREE.BufferGeometry>();
+    group.traverse(o=>{const mesh=o as THREE.Mesh;if(!mesh.isMesh)return;geometries.add(mesh.geometry);(Array.isArray(mesh.material)?mesh.material:[mesh.material]).forEach(m=>materials.add(m));});
+    geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());group.removeFromParent();nightEmissives.length=0;
+  }};
 }

@@ -1,0 +1,109 @@
+
+> beijing-world@1.0.0 check
+> npm run typecheck && npm test && npm run check:assets && npm run check:models && npm run build
+
+
+> beijing-world@1.0.0 typecheck
+> tsc --noEmit
+
+
+> beijing-world@1.0.0 test
+> node --import tsx --test tests/*.test.ts tests/*.test.mjs
+
+✔ quantized meshes decode unaligned indices and reject truncation, oversized counts and out-of-range indices (0.695125ms)
+✔ asset URL maps source assets under public without dot-path mistakes (0.116833ms)
+✔ checksum fallback on phone LAN HTTP matches SHA-256 for short and multi-block assets (7.298375ms)
+✔ shared queue caps concurrency and promptly cancels a queued obsolete request (0.3905ms)
+✔ timeout covers response body and caller cancellation (49.049417ms)
+✔ content-addressed downloads reject corruption before it reaches the decoder (7.523791ms)
+✔ transport gzip decoding is recognized even when the mesh vertex count starts with 0x1f (2.742459ms)
+✔ traffic is independent of seek order and rendering frequency (0.414208ms)
+✔ manifest rejects invalid hierarchy and missing children (0.199ms)
+✔ hierarchical screen error selects fine near tiles and coarse distant tiles (0.70825ms)
+✔ ground sampler interpolates and rejects corrupted grids (0.077417ms)
+✔ one WGS84 metre registry defines all 32 real placements (1.869083ms)
+✔ real corrected tower heights and shared corner model are retained (0.09775ms)
+✔ all immutable runtime files and honest evidence manifests exist (34.180583ms)
+✔ browse starts without changing an existing camera pose (2.083167ms)
+✔ movement input interrupts a landmark transition with its current complete pose (0.842292ms)
+✔ a mode change cancels a transition and notifies exactly once per actual mode change (1.111375ms)
+✔ the tour clamps at its exact end and replay begins with a smooth transition (5.086666ms)
+✔ free movement integration is identical at 30 and 60 FPS (3.122542ms)
+✔ clearing input stops a held movement key without residual drift (0.823042ms)
+✔ capture resume adopts the complete external pose and stops old navigation (0.325542ms)
+✔ walk cannot start without loaded ground, and uses real walk/run speeds (2.8205ms)
+✔ walking stops at unloaded boundaries and leaves walk safely if the active tile is removed (0.427083ms)
+✔ entering walk from above descends smoothly before street movement (1.331167ms)
+✔ input and mode changes cancel street descent while preserving altitude and heading (0.814042ms)
+✔ an unloaded landing is cancelled before it can drop onto missing ground (0.204458ms)
+✔ a landmark collider arriving during descent cancels the unsafe landing in place (1.143083ms)
+✔ safe landing avoids buildings and water while preserving true courtyards (0.81825ms)
+✔ islands remain dry inside water outer rings and invalid holes are rejected (0.275083ms)
+✔ capsule collision stops crossing walls and model interiors are not safe spawns (1.753875ms)
+✔ walking crosses a high arch while landing avoids its roof and low ceilings stay blocked (1.995417ms)
+✔ ground interpolation is accurate and invalid elevation cannot unlock walking (0.095417ms)
+✔ label occlusion sees nearby walls, ignores the last three meters, and releases unloaded blockers (0.127583ms)
+✔ the densest real tile stays bounded and retains every exact face across the whole tile (104.163958ms)
+✔ coincident wide planes remain exact even when a tree stops splitting at its root (2.07925ms)
+✔ optional roof meshes pass the fallback and actual decoder worker transfer protocol (10.820625ms)
+✔ roof geometry contributes to tile budgets and is released without disposing shared roof material (6.723209ms)
+✔ a failed ground image can be retried without retaining its rejected shared texture (14.697375ms)
+✔ intentional tile disposal cancels a ground image without raising a retry warning (1.198875ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 266.161458
+
+> beijing-world@1.0.0 check:assets
+> node scripts/validate-assets.mjs
+
+资产完整性通过：1575 城市分块、12889 数据资源、32 地标注册，88.9 MiB
+
+> beijing-world@1.0.0 check:models
+> node scripts/models-validate.mjs && node scripts/models-dimensions.mjs && node scripts/models-olympic-validate.mjs && node scripts/models-facade-validate.mjs && node scripts/models-gates-validate.mjs && node scripts/models-form-validate.mjs
+
+Validated 116 GLBs: zero errors, grounded metre scales, real PBR maps, smaller far LODs.
+{"definedChecksPassed":13,"definedChecksFailed":0,"unresolvedChecks":4,"overallArchitecturalAndSurveyAcceptance":"partial; unresolved source endpoint definitions and 75m cantilever; no surveyed 3m acceptance"}
+taihedian: east-west body column axes: 63.960433 / 63.96 m; 0.000677%; measurement_definition_unverified
+taihedian: north-south body column axes: 37.171041 / 37.17 m; 0.002801%; measurement_definition_unverified
+taihedian: three-tier altar height: 8.12978 / 8.13 m; 0.002707%; pass
+taihedian: upper roof ridge above ground: 35.05089 / 35.05 m; 0.002538%; pass
+taihedian: height including chiwen ornament: 37.440809 / 37.44 m; 0.002162%; pass
+qiniandian: lower altar disc diameter: 90.299577 / 90.3 m; 0.000468%; pass
+qiniandian: middle altar disc diameter: 79.299822 / 79.3 m; 0.000225%; pass
+qiniandian: upper altar disc diameter: 68.201387 / 68.2 m; 0.002034%; pass
+qiniandian: three-tier altar height: 5.20094 / 5.2 m; 0.018075%; pass
+qiniandian: hall above altar height: 31.600354 / 31.6 m; 0.001119%; pass
+qiniandian: overall height including altar: 36.801293 / 36.8 m; 0.003515%; pass
+qiniandian: outer eave column-axis ring diameter: 24.000654 / 24 m; 0.002726%; pass
+qiniandian: central dragon-well column height: 19.200233 / 19.2 m; 0.001214%; pass
+qiniandian: central dragon-well column diameter: 1.200105 / 1.2 m; 0.008772%; pass
+qiniandian: largest blue roof eave diameter: 32.000872 / 32 m; 0.002726%; measurement_definition_unverified
+cctv: overall structural envelope height: 234 / 234 m; 0%; pass
+cctv: free cantilever length: unknown / 75 m; unknown%; not_verified
+{"errors":[],"assets":[{"model":"birdnest","level":"near","envelope":[332.40247,69.0024,293.40729],"hole":[185.29903,127.50112],"turf":[110.0011,72.00008]},{"model":"birdnest","level":"medium","envelope":[332.40247,69.0024,293.40729],"hole":[185.29903,127.50112],"turf":[110.0011,72.00008]},{"model":"birdnest","level":"far","envelope":[332.39963,69.00181,293.40478],"hole":[185.30275,127.50654],"turf":[109.99509,72.00453]},{"model":"watercube","level":"near","envelope":[177,31.00079,177]},{"model":"watercube","level":"medium","envelope":[177,31.00079,177]},{"model":"watercube","level":"far","envelope":[177,31.00079,177]}]}
+{"errors":[],"assets":[{"model":"cctv","level":"near","path":"public/models/landmarks/cctv-ca277f3a57.glb","cantileverSoffitSteelTriangles":903,"cantileverEastFaceSteelTriangles":1612},{"model":"cctv","level":"medium","path":"public/models/landmarks/cctv-medium-9668827718.glb","cantileverSoffitSteelTriangles":664,"cantileverEastFaceSteelTriangles":981},{"model":"watercube","level":"near","path":"public/models/landmarks/watercube-fa6b682d47.glb","pillowShellBoundsGLTF":{"min":[-88.5,4.199484237189855,-88.5],"max":[88.5,31.000396740623188,88.5]},"recessedGlazingBoundsGLTF":{"min":[-86.70120853297526,-0.0003967406231879522,-86.70120853297526],"max":[86.70120853297526,4.199484237189855,86.70120853297526]},"paleColumnBoundsGLTF":{"min":[-88.5,-0.0003967406231879522,-88.5],"max":[88.5,4.199484237189855,88.5]},"dimensionsInferred":{"groundStoreyHeightM":4.2,"recessM":1.8,"columnSpacingM":12}},{"model":"watercube","level":"medium","path":"public/models/landmarks/watercube-medium-5163b30b4d.glb","pillowShellBoundsGLTF":{"min":[-88.5,4.199484237189855,-88.5],"max":[88.5,31.000396740623188,88.5]},"recessedGlazingBoundsGLTF":{"min":[-86.70120853297526,-0.0003967406231879522,-86.70120853297526],"max":[86.70120853297526,4.199484237189855,86.70120853297526]},"paleColumnBoundsGLTF":{"min":[-88.5,-0.0003967406231879522,-88.5],"max":[88.5,4.199484237189855,88.5]},"dimensionsInferred":{"groundStoreyHeightM":4.2,"recessM":1.8,"columnSpacingM":12}}]}
+{"errors":[],"assets":[{"model":"yongdingmen","level":"near","roofLayers":3,"portalChecks":0},{"model":"yongdingmen","level":"medium","roofLayers":3,"portalChecks":0},{"model":"yongdingmen","level":"collision","portalChecks":0},{"model":"wumen","level":"near","portalChecks":12},{"model":"wumen","level":"medium","portalChecks":12},{"model":"wumen","level":"collision","portalChecks":12},{"model":"shenwumen","level":"near","portalChecks":3},{"model":"shenwumen","level":"medium","portalChecks":3},{"model":"shenwumen","level":"collision","portalChecks":3},{"model":"gulou","level":"near","roofLayers":3,"portalChecks":0},{"model":"gulou","level":"medium","roofLayers":3,"portalChecks":0},{"model":"gulou","level":"collision","portalChecks":0},{"model":"zhonglou","level":"near","roofLayers":2,"portalChecks":6},{"model":"zhonglou","level":"medium","roofLayers":2,"portalChecks":6},{"model":"zhonglou","level":"collision","portalChecks":6}]}
+{"errors":[],"registrationCount":32,"registrationUnchanged":true,"unrelatedUniqueAssetsUnchanged":96,"assets":[{"model":"confucius-guozijian","level":"near","passed":true,"checks":2},{"model":"confucius-guozijian","level":"medium","passed":true,"checks":2},{"model":"yuetan","level":"near","passed":true,"checks":12},{"model":"yuetan","level":"medium","passed":true,"checks":12},{"model":"yuetan","level":"collision","passed":true,"checks":10},{"model":"zhengyangmen","level":"near","passed":true,"checks":11},{"model":"zhengyangmen","level":"medium","passed":true,"checks":11},{"model":"linglong","level":"near","passed":true,"checks":8},{"model":"linglong","level":"medium","passed":true,"checks":8},{"model":"olympic-tower","level":"near","passed":true,"checks":22},{"model":"olympic-tower","level":"medium","passed":true,"checks":22}]}
+
+> beijing-world@1.0.0 build
+> node scripts/build.mjs
+
+资产完整性通过：1575 城市分块、12889 数据资源、32 地标注册，88.9 MiB
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 53 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/assets/decode.worker-CxzzSVa6.js    1.77 kB
+dist/index.html                          3.82 kB │ gzip:   1.95 kB
+dist/assets/index-CUnMNSRK.css           7.15 kB │ gzip:   2.26 kB
+dist/assets/sha2-0dmcoPFZ.js             5.19 kB │ gzip:   2.59 kB
+dist/assets/index-kvYwi1c0.js          688.07 kB │ gzip: 128.53 kB
+dist/assets/three-BgMGqtJM.js          704.77 kB │ gzip: 181.72 kB
+✓ built in 3.65s
+可复现发布包 f379c023976b7b0f93a8：13019 项静态资源

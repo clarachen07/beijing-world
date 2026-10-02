@@ -1,0 +1,37 @@
+{
+  "taskOwned": true,
+  "purpose": "Matched CCTV before screenshot; temporary baseline reconstruction",
+  "sourceRevision": "f96678556b2ff780f434809f34a827bc54132a9e",
+  "extractedPaths": [
+    "index.html",
+    "package.json",
+    "vite.config.ts",
+    "tsconfig.json",
+    "src",
+    "public/data",
+    "public/models/legacy",
+    "public/sw.js"
+  ],
+  "toolchain": "Current workspace installed Vite/Three dependencies; no package installation",
+  "originalRenderPosePresent": true,
+  "createdAt": "2026-10-02T12:45:29.675504+00:00",
+  "builtAt": "2026-10-02T12:46:10.242063+00:00",
+  "url": "http://127.0.0.1:5174/",
+  "previewSession": 1862,
+  "toolchainVersions": {
+    "vite": "7.3.6",
+    "three": "0.180.0"
+  },
+  "bundle": "assets/index-C7pa6Ag3.js",
+  "sourceCodePatched": false,
+  "assetHashes": {
+    "src/main.ts": "3669b361b2ba1494dfa07bce8c3b9f2aeaa25accebd6ae5e09d7ea202ac13e18",
+    "src/legacy.ts": "258c7577c1dcc288bbd6d0d2609988627071847b55dc6cdc41fddd9146ddec74",
+    "public/data/manifest.json": "a21bd2ffa3228c3ba7bb120aa7de7fc13966d2b263b55847eb85d150776b89e4",
+    "public/models/legacy/cctv.glb": "7cd35033ff3ea603f7ff5a7dc5ed43e1fc8e0473be0e9a6de38840deaa56fbf8"
+  },
+  "verification": "HTTP index includes baseline bundle; served CCTV GLB matches archived local bytes; no browser/GPU started",
+  "scope": "Temporary reconstruction for visual comparison, not original toolchain or original performance measurement.",
+  "temporaryBaselineRemovedAt": "2026-10-02T12:58:52.902032+00:00",
+  "temporaryBaselineRemoved": true
+}

@@ -1,0 +1,32 @@
+{
+  "model": "taihedian",
+  "projection": "orthographic",
+  "locationMeters": [
+    66.4000015258789,
+    -99.5999984741211,
+    72.66999816894531
+  ],
+  "targetMeters": [
+    0.0,
+    0.0,
+    18.719999313354492
+  ],
+  "orthographicScaleMeters": 153.5500030517578,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -41.5,
+      -30.380001068115234,
+      0.0
+    ],
+    [
+      41.5,
+      30.380001068115234,
+      37.439998626708984
+    ]
+  ]
+}

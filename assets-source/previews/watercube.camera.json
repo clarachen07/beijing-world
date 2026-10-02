@@ -1,0 +1,33 @@
+{
+  "model": "watercube",
+  "view": "southeast",
+  "projection": "orthographic",
+  "locationMeters": [
+    141.60000610351562,
+    -212.39999389648438,
+    130.5500030517578
+  ],
+  "targetMeters": [
+    0.0,
+    0.0,
+    15.5
+  ],
+  "orthographicScaleMeters": 327.45001220703125,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -88.5,
+      -88.5,
+      0.0
+    ],
+    [
+      88.5,
+      88.5,
+      31.0
+    ]
+  ]
+}

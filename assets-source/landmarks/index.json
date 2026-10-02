@@ -1,0 +1,262 @@
+{
+  "verifiedAt": "2026-10-02",
+  "placements": [
+    {
+      "id": "taihedian",
+      "manifest": "assets-source/landmarks/taihedian.json",
+      "verifiedDimensionCount": 3,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "qiniandian",
+      "manifest": "assets-source/landmarks/qiniandian.json",
+      "verifiedDimensionCount": 7,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "tiananmen",
+      "manifest": "assets-source/landmarks/tiananmen.json",
+      "verifiedDimensionCount": 1,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "zhengyangmen",
+      "manifest": "assets-source/landmarks/zhengyangmen.json",
+      "verifiedDimensionCount": 3,
+      "photoReferenceCount": 4,
+      "linkedReferenceCount": 5,
+      "surveyed": false
+    },
+    {
+      "id": "jianlou",
+      "manifest": "assets-source/landmarks/jianlou.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 0,
+      "linkedReferenceCount": 1,
+      "surveyed": false
+    },
+    {
+      "id": "yongdingmen",
+      "manifest": "assets-source/landmarks/yongdingmen.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "wumen",
+      "manifest": "assets-source/landmarks/wumen.json",
+      "verifiedDimensionCount": 3,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "shenwumen",
+      "manifest": "assets-source/landmarks/shenwumen.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "donghuamen",
+      "manifest": "assets-source/landmarks/donghuamen.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "xihuamen",
+      "manifest": "assets-source/landmarks/xihuamen.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "taihemen",
+      "manifest": "assets-source/landmarks/taihemen.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "jiaolou-sw",
+      "manifest": "assets-source/landmarks/jiaolou-sw.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "jiaolou-se",
+      "manifest": "assets-source/landmarks/jiaolou-se.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "jiaolou-nw",
+      "manifest": "assets-source/landmarks/jiaolou-nw.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "jiaolou-ne",
+      "manifest": "assets-source/landmarks/jiaolou-ne.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "gulou",
+      "manifest": "assets-source/landmarks/gulou.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "zhonglou",
+      "manifest": "assets-source/landmarks/zhonglou.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "chinazun",
+      "manifest": "assets-source/landmarks/chinazun.json",
+      "verifiedDimensionCount": 1,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "guomao3",
+      "manifest": "assets-source/landmarks/guomao3.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "cctv",
+      "manifest": "assets-source/landmarks/cctv.json",
+      "verifiedDimensionCount": 2,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "birdnest",
+      "manifest": "assets-source/landmarks/birdnest.json",
+      "verifiedDimensionCount": 5,
+      "photoReferenceCount": 4,
+      "linkedReferenceCount": 5,
+      "surveyed": false
+    },
+    {
+      "id": "watercube",
+      "manifest": "assets-source/landmarks/watercube.json",
+      "verifiedDimensionCount": 2,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "ncpa",
+      "manifest": "assets-source/landmarks/ncpa.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "white-dagoba",
+      "manifest": "assets-source/landmarks/white-dagoba.json",
+      "verifiedDimensionCount": 1,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "monument",
+      "manifest": "assets-source/landmarks/monument.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "olympic-tower",
+      "manifest": "assets-source/landmarks/olympic-tower.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "linglong",
+      "manifest": "assets-source/landmarks/linglong.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "yonghegong",
+      "manifest": "assets-source/landmarks/yonghegong.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 2,
+      "surveyed": false
+    },
+    {
+      "id": "confucius-guozijian",
+      "manifest": "assets-source/landmarks/confucius-guozijian.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 3,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "ditan",
+      "manifest": "assets-source/landmarks/ditan.json",
+      "verifiedDimensionCount": 2,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "ritan",
+      "manifest": "assets-source/landmarks/ritan.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 2,
+      "linkedReferenceCount": 3,
+      "surveyed": false
+    },
+    {
+      "id": "yuetan",
+      "manifest": "assets-source/landmarks/yuetan.json",
+      "verifiedDimensionCount": 0,
+      "photoReferenceCount": 3,
+      "linkedReferenceCount": 4,
+      "surveyed": false
+    }
+  ],
+  "licenseNotes": "Original source-model and texture work follows the project owner’s distribution policy. OSM-derived geometry retains attribution; externally linked photographs retain their individual licenses."
+}

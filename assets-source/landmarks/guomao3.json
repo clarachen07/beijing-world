@@ -1,0 +1,168 @@
+{
+  "id": "guomao3",
+  "model": "guomao3",
+  "name": "国贸三期",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.91097545,
+    "longitude": 116.45236545,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": -6.057,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/116944490",
+      "url": "https://www.openstreetmap.org/way/116944490",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "guomao3-footprint-0",
+      "longitude": 116.4520556,
+      "latitude": 39.9112376,
+      "source": "https://www.openstreetmap.org/way/116944490",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "guomao3-footprint-1",
+      "longitude": 116.4520569,
+      "latitude": 39.9107124,
+      "source": "https://www.openstreetmap.org/way/116944490",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "guomao3-footprint-2",
+      "longitude": 116.4526753,
+      "latitude": 39.9107133,
+      "source": "https://www.openstreetmap.org/way/116944490",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "guomao3-footprint-3",
+      "longitude": 116.452674,
+      "latitude": 39.9112385,
+      "source": "https://www.openstreetmap.org/way/116944490",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.som.com/projects/china-world-trade-center-3a/",
+    "https://www.openstreetmap.org/way/116944490"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:China_World_Trade_Center_3a_and_3b_(20240315171104).jpg",
+      "fileTitle": "File:China World Trade Center 3a and 3b (20240315171104).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2024-03-15 17:11:04",
+      "view": "国贸三期3A和3B；相机在东侧，须区分两座塔楼",
+      "resolution": [
+        7148,
+        4765
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=146532058&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.911286,
+        "lon": 116.458983
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:China_World_Trade_Center_III.jpg",
+      "fileTitle": "File:China World Trade Center III.jpg",
+      "author": "Ian Holton from Beijing, China",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2008-09-01 10:58",
+      "view": "国贸三期3A；相机在东南侧，方位由GPS推断",
+      "resolution": [
+        2592,
+        3888
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=4737654&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.907843,
+        "lon": 116.456665
+      }
+    },
+    {
+      "url": "https://www.som.com/projects/china-world-trade-center-3a/",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 330,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/guomao3.blend",
+    "lod": {
+      "near": "./models/landmarks/guomao3-56cd407340.glb",
+      "medium": "./models/landmarks/guomao3-medium-744c2519df.glb",
+      "far": "./models/landmarks/guomao3-far-3633592276.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/guomao3-collision-496b788360.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

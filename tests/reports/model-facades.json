@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-10-02T12:23:05.031Z",
+  "assetVersion": "d3bd20956b7d",
+  "method": "Final Meshopt GLB decoded world vertices; checks structural layer presence, not as-built rod geometry or surveyed entrance dimensions.",
+  "errors": [],
+  "assets": [
+    {
+      "model": "cctv",
+      "level": "near",
+      "path": "public/models/landmarks/cctv-ca277f3a57.glb",
+      "cantileverSoffitSteelTriangles": 903,
+      "cantileverEastFaceSteelTriangles": 1612
+    },
+    {
+      "model": "cctv",
+      "level": "medium",
+      "path": "public/models/landmarks/cctv-medium-9668827718.glb",
+      "cantileverSoffitSteelTriangles": 664,
+      "cantileverEastFaceSteelTriangles": 981
+    },
+    {
+      "model": "watercube",
+      "level": "near",
+      "path": "public/models/landmarks/watercube-fa6b682d47.glb",
+      "pillowShellBoundsGLTF": {
+        "min": [
+          -88.5,
+          4.199484237189855,
+          -88.5
+        ],
+        "max": [
+          88.5,
+          31.000396740623188,
+          88.5
+        ]
+      },
+      "recessedGlazingBoundsGLTF": {
+        "min": [
+          -86.70120853297526,
+          -0.0003967406231879522,
+          -86.70120853297526
+        ],
+        "max": [
+          86.70120853297526,
+          4.199484237189855,
+          86.70120853297526
+        ]
+      },
+      "paleColumnBoundsGLTF": {
+        "min": [
+          -88.5,
+          -0.0003967406231879522,
+          -88.5
+        ],
+        "max": [
+          88.5,
+          4.199484237189855,
+          88.5
+        ]
+      },
+      "dimensionsInferred": {
+        "groundStoreyHeightM": 4.2,
+        "recessM": 1.8,
+        "columnSpacingM": 12
+      }
+    },
+    {
+      "model": "watercube",
+      "level": "medium",
+      "path": "public/models/landmarks/watercube-medium-5163b30b4d.glb",
+      "pillowShellBoundsGLTF": {
+        "min": [
+          -88.5,
+          4.199484237189855,
+          -88.5
+        ],
+        "max": [
+          88.5,
+          31.000396740623188,
+          88.5
+        ]
+      },
+      "recessedGlazingBoundsGLTF": {
+        "min": [
+          -86.70120853297526,
+          -0.0003967406231879522,
+          -86.70120853297526
+        ],
+        "max": [
+          86.70120853297526,
+          4.199484237189855,
+          86.70120853297526
+        ]
+      },
+      "paleColumnBoundsGLTF": {
+        "min": [
+          -88.5,
+          -0.0003967406231879522,
+          -88.5
+        ],
+        "max": [
+          88.5,
+          4.199484237189855,
+          88.5
+        ]
+      },
+      "dimensionsInferred": {
+        "groundStoreyHeightM": 4.2,
+        "recessM": 1.8,
+        "columnSpacingM": 12
+      }
+    }
+  ]
+}

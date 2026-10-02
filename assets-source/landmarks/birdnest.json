@@ -1,0 +1,448 @@
+{
+  "id": "birdnest",
+  "model": "birdnest",
+  "name": "鸟巢",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.99141485,
+    "longitude": 116.39028669999999,
+    "rotationDegrees": 86.29,
+    "elevationRelativeTo45mDatum": 2.449,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/152301551",
+      "url": "https://www.openstreetmap.org/way/152301551",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376713",
+      "url": "https://www.openstreetmap.org/way/1459376713",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376714",
+      "url": "https://www.openstreetmap.org/way/1459376714",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376715",
+      "url": "https://www.openstreetmap.org/way/1459376715",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376716",
+      "url": "https://www.openstreetmap.org/way/1459376716",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376699",
+      "url": "https://www.openstreetmap.org/way/1459376699",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376700",
+      "url": "https://www.openstreetmap.org/way/1459376700",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376701",
+      "url": "https://www.openstreetmap.org/way/1459376701",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376702",
+      "url": "https://www.openstreetmap.org/way/1459376702",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376703",
+      "url": "https://www.openstreetmap.org/way/1459376703",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376704",
+      "url": "https://www.openstreetmap.org/way/1459376704",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376705",
+      "url": "https://www.openstreetmap.org/way/1459376705",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376706",
+      "url": "https://www.openstreetmap.org/way/1459376706",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376707",
+      "url": "https://www.openstreetmap.org/way/1459376707",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376708",
+      "url": "https://www.openstreetmap.org/way/1459376708",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376709",
+      "url": "https://www.openstreetmap.org/way/1459376709",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376710",
+      "url": "https://www.openstreetmap.org/way/1459376710",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376711",
+      "url": "https://www.openstreetmap.org/way/1459376711",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459376712",
+      "url": "https://www.openstreetmap.org/way/1459376712",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "birdnest-footprint-0",
+      "longitude": 116.388509,
+      "latitude": 39.9913709,
+      "source": "https://www.openstreetmap.org/way/152301551",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "birdnest-footprint-1",
+      "longitude": 116.3885316,
+      "latitude": 39.9911333,
+      "source": "https://www.openstreetmap.org/way/152301551",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "birdnest-footprint-2",
+      "longitude": 116.3885526,
+      "latitude": 39.9910227,
+      "source": "https://www.openstreetmap.org/way/152301551",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "birdnest-footprint-3",
+      "longitude": 116.3886106,
+      "latitude": 39.9908532,
+      "source": "https://www.openstreetmap.org/way/152301551",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.herzogdemeuron.com/projects/226-national-stadium/",
+    "https://www.openstreetmap.org/way/152301551",
+    "https://www.openstreetmap.org/way/1459376713",
+    "https://www.openstreetmap.org/way/1459376714",
+    "https://www.openstreetmap.org/way/1459376715",
+    "https://www.openstreetmap.org/way/1459376716",
+    "https://www.openstreetmap.org/way/1459376699",
+    "https://www.openstreetmap.org/way/1459376700",
+    "https://www.openstreetmap.org/way/1459376701",
+    "https://www.openstreetmap.org/way/1459376702",
+    "https://www.openstreetmap.org/way/1459376703",
+    "https://www.openstreetmap.org/way/1459376704",
+    "https://www.openstreetmap.org/way/1459376705",
+    "https://www.openstreetmap.org/way/1459376706",
+    "https://www.openstreetmap.org/way/1459376707",
+    "https://www.openstreetmap.org/way/1459376708",
+    "https://www.openstreetmap.org/way/1459376709",
+    "https://www.openstreetmap.org/way/1459376710",
+    "https://www.openstreetmap.org/way/1459376711",
+    "https://www.openstreetmap.org/way/1459376712",
+    "https://www.arup.com/globalassets/downloads/arup-journal/the-arup-journal-2009-issue-1.pdf",
+    "https://www.engineering.org.cn/sscae/CN/1160100327263363612",
+    "https://www.n-s.cn/aboutindex.html",
+    "https://www.n-s.cn/article_8f40ed628459423285ef875561413fb1.html"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:20200109_Beijing_National_Stadium-15.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0 1.0",
+      "capturedAt": "2020-01-09",
+      "view": "steel lattice exterior",
+      "resolution": [
+        5760,
+        3840
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_National_Stadium_at_night.jpg",
+      "author": "Alex Needham",
+      "license": "Public domain dedication by author",
+      "capturedAt": "2008-08-19",
+      "view": "night exterior",
+      "resolution": [
+        1936,
+        1288
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "fileTitle": "File:Beijing Olympics Birds Nest Roof.jpg",
+      "author": "Tom Nguyen",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "capturedAt": "2008-08-22",
+      "view": "inside stadium: roof, seating and track; descriptive metadata confirmed, pixels not yet reviewed",
+      "resolution": [
+        4368,
+        2912
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_Olympics_Birds_Nest_Roof.jpg",
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference candidate only; no photo pixels embedded or redistributed",
+      "downloaded": false,
+      "verificationScope": "file-description author/licence/date/view metadata checked; no calibrated facade or roof survey",
+      "pixelViewsVerified": false
+    },
+    {
+      "fileTitle": "File:Beijing China Beijing-National-Stadium-03.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "capturedAt": "2009-06-02",
+      "view": "exterior roof/steel detail; descriptive metadata confirmed, pixels not yet reviewed",
+      "resolution": [
+        3901,
+        2601
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_China_Beijing-National-Stadium-03.jpg",
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference candidate only; no photo pixels embedded or redistributed",
+      "downloaded": false,
+      "verificationScope": "file-description author/licence/date/view metadata checked; no calibrated facade or roof survey",
+      "pixelViewsVerified": false
+    },
+    {
+      "url": "https://www.herzogdemeuron.com/projects/226-national-stadium/",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "steel structure envelope, official stadium text",
+      "lengthM": 333,
+      "widthM": 296,
+      "heightM": 69,
+      "source": "https://www.n-s.cn/aboutindex.html"
+    },
+    {
+      "part": "central elliptical roof opening",
+      "longDiameterM": 185.3,
+      "shortDiameterM": 127.5,
+      "source": "https://www.engineering.org.cn/sscae/CN/1160100327263363612"
+    },
+    {
+      "part": "external member visual width",
+      "widthM": 1.2,
+      "source": "https://www.arup.com/globalassets/downloads/arup-journal/the-arup-journal-2009-issue-1.pdf",
+      "page": 14
+    },
+    {
+      "part": "concrete bowl highest levels, east/west and north/south",
+      "heightsM": [
+        51,
+        45
+      ],
+      "source": "https://www.arup.com/globalassets/downloads/arup-journal/the-arup-journal-2009-issue-1.pdf",
+      "page": 32
+    },
+    {
+      "part": "football turf envelope, not surveyed painted pitch lines",
+      "lengthM": 110,
+      "widthM": 72,
+      "source": "https://www.n-s.cn/article_8f40ed628459423285ef875561413fb1.html"
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 69,
+    "heightEvidence": "primary textual height, export envelope calibrated",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/birdnest.blend",
+    "lod": {
+      "near": "./models/landmarks/birdnest-dc2e916fea.glb",
+      "medium": "./models/landmarks/birdnest-medium-f8983ab067.glb",
+      "far": "./models/landmarks/birdnest-far-7dff0eac0a.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/birdnest-collision-6e0545a771.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "referenceVerification": {
+    "drawings": [
+      {
+        "url": "https://picturepark.cdn.herzogdemeuron.com/v/nqHMqEjX/",
+        "part": "226_DR_190830_1-2000_ROOF_PLAN",
+        "resolution": [
+          1627,
+          2300
+        ],
+        "author": "Herzog & de Meuron",
+        "license": "Copyrighted architectural drawing; reference only, not included in published assets",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Qualitative roof/opening/three-tier bowl reconstruction; not digitized fabrication members or a surveyed control-point fit"
+      },
+      {
+        "url": "https://picturepark.cdn.herzogdemeuron.com/v/fFdUjzVh/",
+        "part": "226_DR_200206_1-2000_SECTION_S1",
+        "resolution": [
+          2300,
+          1627
+        ],
+        "author": "Herzog & de Meuron",
+        "license": "Copyrighted architectural drawing; reference only, not included in published assets",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Qualitative roof/opening/three-tier bowl reconstruction; not digitized fabrication members or a surveyed control-point fit"
+      },
+      {
+        "url": "https://picturepark.cdn.herzogdemeuron.com/v/YKhhi8rH/",
+        "part": "226_DR_200206_1-2000_SECTION_S2",
+        "resolution": [
+          2300,
+          1627
+        ],
+        "author": "Herzog & de Meuron",
+        "license": "Copyrighted architectural drawing; reference only, not included in published assets",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Qualitative roof/opening/three-tier bowl reconstruction; not digitized fabrication members or a surveyed control-point fit"
+      }
+    ],
+    "openPhotoScope": "Commons file metadata and author/licence/date checked. No assertion that the whole catalogue was viewed or that every facade is pixel-verified.",
+    "primaryEngineeringReferences": [
+      {
+        "url": "https://www.arup.com/globalassets/downloads/arup-journal/the-arup-journal-2009-issue-1.pdf",
+        "parts": [
+          "pp14–18: 24 primary supports, grey 1.2m member outlines",
+          "p32: concrete bowl heights and seating tiers",
+          "p36: upper ETFE / lower PTFE membranes, about13m separation"
+        ],
+        "verification": "technical text checked; no full fabricated member CAD obtained"
+      },
+      {
+        "url": "https://www.engineering.org.cn/sscae/CN/1160100327263363612",
+        "part": "沈世钊：现代空间结构与奥运场馆建设, 中国工程科学2008 10(8), §3.1 pp14–15",
+        "verification": "full paper text checked for185.3×127.5m central opening and12m structural roof depth"
+      }
+    ]
+  },
+  "sourceDimensionConflicts": {
+    "retainedReconstructionEnvelopeM": [
+      333,
+      294,
+      69
+    ],
+    "officialStadiumEnvelopeM": [
+      333,
+      296,
+      69
+    ],
+    "paperEnvelopeM": [
+      332.3,
+      296.4,
+      68.5
+    ],
+    "notes": "Published envelope width/height definitions differ. The retained model has333×294×69m target proportions; both alternative envelopes are within2%, but values are not asserted to be identical surveys."
+  },
+  "architecturalApproximation": {
+    "knownForm": [
+      "continuous saddle annulus with a genuinely open elliptical roof hole",
+      "upper roof ETFE and lower acoustic PTFE layer",
+      "24 main supports and rectangular grey steel members",
+      "three stepped seating tiers with varied E/W versus N/S top height",
+      "north/south-aligned110×72m turf and nine-lane athletics layout"
+    ],
+    "inferred": [
+      "specific irregular secondary-member routes, connection nodes and plate thickness",
+      "representative seating row counts, seat colour bands and access gaps",
+      "membrane optical transmission represented by opaque PBR surface for performance",
+      "400m track curves use World Athletics standard36.5m bends,84.39m straights and1.22m lanes; no as-built Birdnest track survey",
+      "105×68m pitch markings are standard layout inference distinct from official110×72m grass area"
+    ],
+    "trackSource": "https://worldathletics.org/responsive/download/downloaddirect?filename=7d39b677-8043-45f4-89f4-6c8814023057.pdf&urlslug=track+and+field+facilities+manual+2019+edition+-+chapters+1-3"
+  }
+}

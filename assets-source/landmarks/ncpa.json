@@ -1,0 +1,158 @@
+{
+  "id": "ncpa",
+  "model": "ncpa",
+  "name": "国家大剧院",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.90334165,
+    "longitude": 116.38354724999999,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": -0.821,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/4974233",
+      "url": "https://www.openstreetmap.org/way/4974233",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "ncpa-footprint-0",
+      "longitude": 116.3822484,
+      "latitude": 39.9032743,
+      "source": "https://www.openstreetmap.org/way/4974233",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ncpa-footprint-1",
+      "longitude": 116.3822537,
+      "latitude": 39.903233,
+      "source": "https://www.openstreetmap.org/way/4974233",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ncpa-footprint-2",
+      "longitude": 116.3822711,
+      "latitude": 39.903164,
+      "source": "https://www.openstreetmap.org/way/4974233",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ncpa-footprint-3",
+      "longitude": 116.3822906,
+      "latitude": 39.9031158,
+      "source": "https://www.openstreetmap.org/way/4974233",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/way/4974233"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:National_Centre_for_the_Performing_Arts.jpg",
+      "fileTitle": "File:National Centre for the Performing Arts.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2024-05-15 10:14:32",
+      "view": "国家大剧院北侧外观；方位由GPS推断",
+      "resolution": [
+        2560,
+        1707
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=163852250&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.904393,
+        "lon": 116.384893
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:National_Centre_for_the_Performing_Arts_in_2026_-_2.jpg",
+      "fileTitle": "File:National Centre for the Performing Arts in 2026 - 2.jpg",
+      "author": "Renek78",
+      "license": "CC0",
+      "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "capturedAt": "2026-09-06 19:57:18",
+      "view": "国家大剧院南侧夜景；方位由GPS推断",
+      "resolution": [
+        4096,
+        2304
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=199744174&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.901908,
+        "lon": 116.384083
+      }
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 46.68,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/ncpa.blend",
+    "lod": {
+      "near": "./models/landmarks/ncpa-b6094f5fa5.glb",
+      "medium": "./models/landmarks/ncpa-medium-ca6593a59e.glb",
+      "far": "./models/landmarks/ncpa-far-1119409b3d.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/ncpa-collision-9c39313569.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

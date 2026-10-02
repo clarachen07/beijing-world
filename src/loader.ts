@@ -1,218 +1,88 @@
-/**
- * 运行时数据加载器：manifest.json + gzip 压缩的二进制网格块。
- *
- * 网格块格式（小端）：
- *   u32 vertexCount, u32 indexCount
- *   f32 position × 3v
- *   u8 color × 3v
- *   u32 index × 3t
- *
- * 树木：u32 count, f32 (x,z,scale) × n
- * 车流路径：u32 pathCount, 每 path: u16 ptCount, f32 × 2 × ptCount
- */
-import { ORIGIN } from './geo';
+import type { Manifest, MeshChunk, DecodedMesh, DecodedTile, TileDescriptor, MeshLayer } from './data';
+import { fetchAssetBytes, fetchAssetJSON } from './asset-fetch';
+import type { FetchOptions } from './asset-fetch';
+import { decodeCarPaths, decodeMesh, decodeTrees, gunzip } from './decode';
 
-export interface MeshChunk {
-  file: string;
-  v: number;
-  i: number;
-  ox?: number;
-  oz?: number;
-  q?: 'f32' | 'i16c' | 'i16w';
-}
+export type { Manifest, MeshChunk, DecodedMesh, DecodedTile, TileDescriptor } from './data';
+export { resolveAsset, fetchAssetBytes, fetchAssetJSON } from './asset-fetch';
 
-export interface Manifest {
-  version: number;
-  buildings: { chunks: MeshChunk[] };
-  roads: MeshChunk;
-  water: MeshChunk;
-  green: MeshChunk;
-  streetlights: MeshChunk;
-  trees: { file: string; count: number };
-  cars: { file: string; count: number };
-  stats: Record<string, number>;
-}
-
-export interface DecodedMesh {
-  positions: Float32Array;
-  colors: Float32Array; // 归一化 0-1
-  indices: Uint32Array;
-}
-
-function isGzip(buf: ArrayBuffer): boolean {
-  if (buf.byteLength < 2) return false;
-  const u8 = new Uint8Array(buf, 0, 2);
-  return u8[0] === 0x1f && u8[1] === 0x8b;
-}
-
-/** 若为原始 gzip 字节流则手动解压（服务器透明解码过则直接返回） */
-async function maybeGunzip(buf: ArrayBuffer): Promise<ArrayBuffer> {
-  if (!isGzip(buf)) return buf;
-  const DS = (globalThis as any).DecompressionStream;
-  if (!DS) throw new Error('浏览器不支持 DecompressionStream');
-  const stream = new Blob([buf]).stream().pipeThrough(new DS('gzip'));
-  const reader = stream.getReader();
-  const chunks: Uint8Array[] = [];
-  for (;;) {
-    const { done, value } = (await reader.read()) as { done: boolean; value?: Uint8Array };
-    if (done) break;
-    if (value) chunks.push(value);
+export function validateManifest(value: unknown): Manifest {
+  const manifest = value as Manifest;
+  if (!manifest || manifest.version !== 2 || !Array.isArray(manifest.tiles) || !manifest.tiles.length || !manifest.revision) throw new Error('城市档案版本不匹配，请更新城市资源');
+  if (manifest.coverage?.verified !== true || Object.values(manifest.coverage.complete ?? {}).some(value=>value===false)) throw new Error('城市数据快照未通过完整性验证');
+  const ids = new Set<string>();
+  if (manifest.bounds?.length !== 4 || !manifest.bounds.every(Number.isFinite) || !Number.isFinite(manifest.origin?.lat) || !Number.isFinite(manifest.origin?.lon)) throw new Error('城市坐标档案无效');
+  for (const tile of manifest.tiles) {
+    if (!tile.id || ids.has(tile.id) || ![0, 1, 2].includes(tile.lod) || tile.bounds?.length !== 4 || !tile.bounds.every(Number.isFinite) || !Number.isFinite(tile.ox) || !Number.isFinite(tile.oz) || !tile.meshes || tile.complete === false) throw new Error('城市分块档案无效');
+    ids.add(tile.id);
   }
-  const total = chunks.reduce((s, c) => s + c.length, 0);
-  const out = new Uint8Array(total);
-  let off = 0;
-  for (const c of chunks) { out.set(c, off); off += c.length; }
-  return out.buffer;
+  for (const tile of manifest.tiles) if (tile.children?.some(id => !ids.has(id))) throw new Error('城市分块存在缺失的子块');
+  const byId = new Map(manifest.tiles.map(tile=>[tile.id,tile]));
+  const visited = new Set<string>(), active = new Set<string>(), parents = new Set<string>();
+  const visit = (id: string) => {
+    if (active.has(id)) throw new Error('城市分块层级存在循环'); if (visited.has(id)) return;
+    active.add(id);
+    const tile = byId.get(id)!;
+    for (const child of tile.children ?? []) {
+      if (parents.has(child) || byId.get(child)!.lod >= tile.lod) throw new Error('城市分块层级无效');
+      parents.add(child); visit(child);
+    }
+    active.delete(id); visited.add(id);
+  };
+  // Roots first avoids counting a child twice when the flat manifest lists it first.
+  const children = new Set(manifest.tiles.flatMap(tile=>tile.children ?? []));
+  for (const tile of manifest.tiles.filter(tile=>!children.has(tile.id))) visit(tile.id);
+  if (visited.size !== manifest.tiles.length) throw new Error('城市分块层级存在循环');
+  return manifest;
 }
 
-type MeshMode = 'f32' | 'i16c' | 'i16w';
-
-function decodeMesh(buffer: ArrayBuffer, mode: MeshMode = 'f32'): DecodedMesh {
-  const dv = new DataView(buffer);
-  let off = 0;
-  const vCount = dv.getUint32(off, true); off += 4;
-  const iCount = dv.getUint32(off, true); off += 4;
-  const scale = mode === 'i16c' ? 0.2 : 0.5;
-  const positions = new Float32Array(vCount * 3);
-  if (mode === 'f32') {
-    const src = new Float32Array(buffer, off, vCount * 3);
-    positions.set(src);
-    off += vCount * 12;
-  } else {
-    for (let k = 0; k < vCount * 3; k++) positions[k] = dv.getInt16(off + k * 2, true) * scale;
-    off += vCount * 6;
-  }
-  const colorBytes = new Uint8Array(buffer.slice(off, off + vCount * 3)); off += vCount * 3;
-  const indices = new Uint32Array(buffer.slice(off, off + iCount * 4));
-  const colors = new Float32Array(vCount * 3);
-  for (let i = 0; i < vCount * 3; i++) colors[i] = colorBytes[i] / 255;
-  return { positions, colors, indices };
-}
-
-// ── 下载线路: 同源优先, 慢则切换 jsDelivr CDN 镜像（国内可达性）──
-// 按 commit SHA 精确引用: 镜像内容永远与本页 JS 版本一致（jsDelivr 分支缓存有滞后）
-const JSD_REF = (typeof __DEPLOY_SHA__ !== 'undefined' && __DEPLOY_SHA__) || 'gh-pages';
-const JSD_BASES = [
-  `https://cdn.jsdelivr.net/gh/clarachen07/beijing-world@${JSD_REF}`,
-  `https://fastly.jsdelivr.net/gh/clarachen07/beijing-world@${JSD_REF}`,
-];
-let route: 'origin' | 'jsd' = 'origin';
-let probed = false;
-
-async function fetchWithTimeout(url: string, ms: number): Promise<Response> {
-  const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), ms);
-  try {
-    return await fetch(url, { signal: ctrl.signal });
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
-export function resolveAsset(path: string): string {
-  if (route === 'jsd') return JSD_BASES[0] + path.replace(/^\.\/|^\//, '/');
-  return path;
-}
-
-async function fetchAsset(path: string): Promise<Response> {
-  if (!probed) {
-    probed = true;
-    try {
-      const res = await fetchWithTimeout(path, 3500);
-      if (res.ok) return res;
-    } catch { /* 同源超时/失败 → 走镜像 */ }
-    route = 'jsd';
-  }
-  if (route === 'origin') return fetch(path);
-  let lastErr: unknown = null;
-  for (const base of JSD_BASES) {
-    try {
-      const res = await fetch(base + path);
-      if (res.ok) return res;
-      lastErr = new Error(`HTTP ${res.status}`);
-    } catch (e) {
-      lastErr = e;
+export class CityLoader {
+  private worker: Worker | null = null; private nextId = 0; private disposed = false;
+  private pending = new Map<number, { resolve: (data: DecodedMesh | Float32Array) => void; reject: (error: unknown) => void }>();
+  constructor() {
+    if (typeof Worker !== 'undefined') {
+      try { this.worker = new Worker(new URL('./decode.worker.ts', import.meta.url), { type: 'module' }); } catch { return; }
+      this.worker.onmessage = event => {
+        const { id, data, error } = event.data;
+        const job = this.pending.get(id); if (!job) return;
+        this.pending.delete(id); if (error) job.reject(new Error(error)); else job.resolve(data);
+      };
+      this.worker.onerror = () => {
+        for (const job of this.pending.values()) job.reject(new Error('城市解码失败，请重试'));
+        this.pending.clear(); this.worker?.terminate(); this.worker = null;
+      };
     }
   }
-  // 镜像全失败 → 回退同源
-  return fetch(path);
-}
-
-export interface LoadedData {
-  manifest: Manifest;
-  buildings: DecodedMesh[];
-  roads: DecodedMesh;
-  water: DecodedMesh;
-  green: DecodedMesh;
-  streetlights: DecodedMesh;
-  trees: Float32Array;
-  carPaths: Float32Array[];
-}
-
-export async function loadCityData(
-  onProgress: (frac: number, label: string) => void
-): Promise<LoadedData> {
-  onProgress(0.02, '读取城市档案…');
-  const res = await fetchAsset('./data/manifest.json');
-  if (!res.ok) throw new Error(`manifest.json 加载失败 (${res.status})`);
-  const manifest: Manifest = await res.json();
-
-  const files: { key: string; chunk: MeshChunk }[] = [];
-  manifest.buildings.chunks.forEach((c, i) => files.push({ key: `b${i}`, chunk: c }));
-  files.push({ key: 'roads', chunk: manifest.roads });
-  files.push({ key: 'water', chunk: manifest.water });
-  files.push({ key: 'green', chunk: manifest.green });
-  files.push({ key: 'streetlights', chunk: manifest.streetlights });
-  files.push({ key: 'trees', chunk: { file: manifest.trees.file, v: manifest.trees.count, i: 0 } });
-  files.push({ key: 'cars', chunk: { file: manifest.cars.file, v: manifest.cars.count, i: 0 } });
-
-  const results = new Map<string, ArrayBuffer>();
-  let done = 0;
-  const base = 0.05, span = 0.85;
-
-  await Promise.all(
-    files.map(async ({ key, chunk }) => {
-      const r = await fetchAsset(`./data/${chunk.file}`);
-      if (!r.ok) throw new Error(`${chunk.file} 加载失败 (${r.status})`);
-      const buf = await r.arrayBuffer();
-      const raw = await maybeGunzip(buf);
-      results.set(key, raw);
-      done++;
-      const mb = (buf.byteLength / 1048576).toFixed(1);
-      onProgress(
-        base + span * (done / files.length),
-        `加载城市网格 ${done}/${files.length}（${mb} MB）`
-      );
-    })
-  );
-
-  onProgress(0.93, '构建建筑几何…');
-  const buildings: DecodedMesh[] = manifest.buildings.chunks.map((c, i) =>
-    decodeMesh(results.get(`b${i}`)!, (c.q as MeshMode) || 'f32')
-  );
-  const roads = decodeMesh(results.get('roads')!, (manifest.roads.q as MeshMode) || 'f32');
-  const water = decodeMesh(results.get('water')!, (manifest.water.q as MeshMode) || 'f32');
-  const green = decodeMesh(results.get('green')!, (manifest.green.q as MeshMode) || 'f32');
-  const streetlights = decodeMesh(results.get('streetlights')!, (manifest.streetlights.q as MeshMode) || 'f32');
-
-  // 树木
-  const treeBuf = results.get('trees')!;
-  const trees = new Float32Array(treeBuf, 4, manifest.trees.count * 3);
-
-  // 车流路径
-  const carBuf = results.get('cars')!;
-  const cdv = new DataView(carBuf);
-  let off = 0;
-  const pathCount = cdv.getUint32(off, true); off += 4;
-  const carPaths: Float32Array[] = [];
-  for (let p = 0; p < pathCount; p++) {
-    const ptCount = cdv.getUint32(off, true); off += 4;
-    const pts = new Float32Array(carBuf.slice(off, off + ptCount * 8)); off += ptCount * 8;
-    carPaths.push(pts);
+  private async decode(buffer: ArrayBuffer, mode?: MeshChunk['q'], trees?: number): Promise<DecodedMesh | Float32Array> {
+    if (this.disposed) throw new Error('加载器已关闭');
+    if (!this.worker) { const raw = await gunzip(buffer); return trees === undefined ? decodeMesh(raw, mode) : decodeTrees(raw, trees); }
+    const id = ++this.nextId;
+    return new Promise((resolve, reject) => {
+      this.pending.set(id, { resolve, reject });
+      this.worker!.postMessage({ id, buffer, mode, trees }, [buffer]);
+    });
   }
-
-  onProgress(0.97, '种植树木与点亮路灯…');
-  return { manifest, buildings, roads, water, green, streetlights, trees, carPaths };
+  async loadMesh(chunk: MeshChunk, options: FetchOptions = {}): Promise<DecodedMesh> {
+    const mesh = await this.decode(await fetchAssetBytes(`data/${chunk.file}`, options), chunk.q) as DecodedMesh;
+    if (mesh.positions.length !== chunk.v * 3 || mesh.indices.length !== chunk.i) throw new Error(`网格档案计数不匹配: ${chunk.file}`);
+    return mesh;
+  }
+  async loadTile(descriptor: TileDescriptor, options: FetchOptions = {}): Promise<DecodedTile> {
+    const meshes: DecodedTile['meshes'] = {};
+    await Promise.all(Object.entries(descriptor.meshes).map(async ([layer, chunk]) => { if (chunk) meshes[layer as MeshLayer] = await this.loadMesh(chunk, options); }));
+    const [ground, trees] = await Promise.all([
+      descriptor.ground?.mesh ? this.loadMesh(descriptor.ground.mesh, options) : undefined,
+      descriptor.trees ? fetchAssetBytes(`data/${descriptor.trees.file}`, options).then(buffer => this.decode(buffer, undefined, descriptor.trees!.count) as Promise<Float32Array>) : undefined,
+    ]);
+    options.signal?.throwIfAborted(); return { descriptor, meshes, ground, trees };
+  }
+  async loadManifest(): Promise<Manifest> { return validateManifest(await fetchAssetJSON('data/manifest.json', { priority: 100 })); }
+  async loadCarPaths(manifest: Manifest): Promise<Float32Array[]> {
+    return manifest.cars ? decodeCarPaths(await gunzip(await fetchAssetBytes(`data/${manifest.cars.file}`))) : [];
+  }
+  dispose() {
+    this.disposed = true; this.worker?.terminate(); this.worker = null;
+    for (const job of this.pending.values()) job.reject(new Error('加载器已关闭'));
+    this.pending.clear();
+  }
 }
-
-export { ORIGIN };

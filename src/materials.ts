@@ -42,7 +42,10 @@ export function makeBuildingMaterial(): THREE.MeshLambertMaterial {
           float v = vWorldPos.y;
           vec2 cell = vec2(floor(u / 2.9), floor(v / 3.3));
           vec2 f = vec2(fract(u / 2.9), fract(v / 3.3));
-          float inWin = step(0.18, f.x) * step(f.x, 0.82) * step(0.22, f.y) * step(f.y, 0.78);
+          vec2 aa = max(fwidth(vec2(u / 2.9, v / 3.3)), vec2(0.002));
+          float inWin = smoothstep(0.18 - aa.x, 0.18 + aa.x, f.x) * (1.0 - smoothstep(0.82 - aa.x, 0.82 + aa.x, f.x))
+            * smoothstep(0.22 - aa.y, 0.22 + aa.y, f.y) * (1.0 - smoothstep(0.78 - aa.y, 0.78 + aa.y, f.y));
+          inWin *= 1.0 - smoothstep(0.35, 0.8, max(aa.x, aa.y));
           // 建筑指纹（位置粗哈希）→ 每栋楼亮灯模式不同
           float seed = floor((vWorldPos.x + vWorldPos.z) / 24.0);
           float lit = step(0.62, bhash(cell + vec2(seed * 3.3, seed * 1.7)));
@@ -59,6 +62,18 @@ export function makeBuildingMaterial(): THREE.MeshLambertMaterial {
         `#include <emissivemap_fragment>
         totalEmissiveRadiance += vec3(1.0, 0.72, 0.38) * winEmit * 1.35;`
       );
+  };
+  return mat;
+}
+
+/** Roof slopes and gables are solid surfaces; never add facade windows. */
+export function makeRoofMaterial(): THREE.MeshLambertMaterial {
+  const mat = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true });
+  mat.onBeforeCompile = shader => {
+    shader.uniforms.uNight = uniforms.uNight;
+    shader.fragmentShader = shader.fragmentShader
+      .replace('#include <common>', '#include <common>\nuniform float uNight;')
+      .replace('#include <color_fragment>', '#include <color_fragment>\ndiffuseColor.rgb *= mix(1.0, 0.4, uNight);');
   };
   return mat;
 }

@@ -1,0 +1,61 @@
+{
+  "views": [
+    {
+      "stage": "before",
+      "model": "taihedian",
+      "pos": [
+        -1553.368154796126,
+        99.92,
+        3620.2601807998985
+      ],
+      "look": [
+        -1637.368154796126,
+        16.688,
+        3512.2601807998985
+      ]
+    },
+    {
+      "stage": "before",
+      "model": "qiniandian",
+      "pos": [
+        -211.1473694607434,
+        93.77799999999999,
+        7350.30743400002
+      ],
+      "look": [
+        -288.1473694607434,
+        16.738,
+        7251.30743400002
+      ]
+    },
+    {
+      "stage": "before",
+      "model": "cctv",
+      "view": "north-west",
+      "pos": [
+        3493.5291975272107,
+        442.35,
+        3043.7703632000416
+      ],
+      "look": [
+        4093.5291975272107,
+        109.35,
+        3743.7703632000416
+      ],
+      "capturedAt": "2026-10-02T12:46:52.928Z",
+      "observed": {
+        "position": [
+          3493.5291975272107,
+          442.35,
+          3043.7703632000416
+        ],
+        "fov": 55,
+        "aspect": 1.6,
+        "pixelRatio": 1,
+        "loadingOpacity": 0.00974903
+      },
+      "pageErrors": []
+    }
+  ],
+  "note": "Matched WGS84 camera positions. Before uses source/assets committed in f966785, rebuilt using the current installed toolchain; after uses current static release. Renderer resolution/lighting differs; this is a visual comparison, not an original-version performance measurement."
+}

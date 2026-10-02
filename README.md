@@ -1,45 +1,27 @@
-# Beijing World · 北京世界
+# Beijing World
 
-**🌐 Live demo: <https://clarachen07.github.io/beijing-world/>** ·
-**🎬 Cinematic tour video: <https://clarachen07.github.io/beijing-world/video/beijing-world.mp4>** (1080p/30fps · 105s)
+A static Three.js view of Beijing inside its verified Fourth Ring Road and a 500 m visual buffer, with an Olympic Park extension. Real OSM/Overture footprints, inferred heights with feature-level provenance, Sentinel surface imagery, filtered Copernicus DSM terrain, and reference-informed Blender landmarks.
 
-English | [中文](README.zh-CN.md)
+[中文使用说明](README.zh-CN.md) · [Architecture](docs/architecture.md) · [Acceptance report](docs/acceptance.md)
 
-A near-real-time 3D virtual simulation of Beijing built entirely from **OpenStreetMap open data** — inspired by Matt Shumer's "Manhattan World".
+Use Node.js 22.12 or newer for the complete workflow, including browser checks. Vite alone also supports Node.js 20.19 or newer.
 
-## ✨ Features
-
-- 🏙️ **Real data**: ~36,000 buildings (real OSM footprints + inferred heights), road network, waterways (moats / Shichahai / Beihai), parks and plazas
-- 🏯 **20 procedurally-modeled landmarks** (Blender → glTF): Forbidden City (Taihe Dian, Meridian Gate, corner towers, gates), Temple of Heaven, Tiananmen, Zhengyangmen, Yongdingmen, Drum & Bell Towers, China Zun (528 m), CCTV HQ, Bird's Nest, Water Cube, National Grand Theatre, China World Tower…
-- 🌗 **Day / Night**: golden-hour cinematic lighting ↔ night mode (procedural window lights, street lamps, traffic light trails, bloom)
-- 🎬 **Four camera modes**: cinematic tour (along the Central Axis: Yongdingmen → Tiananmen → Forbidden City → Jingshan → Olympic Park → CBD), free flight (WASD + QE), first-person street walk, click-a-landmark-to-fly
-- 🚗 A living city: instanced traffic on arteries, park trees, street lamps, plaza paving
-- ⚡ Pure static site: data is baked to gzipped binaries at build time — zero API calls at runtime
-- 📦 **Performance**: Int16 vertex quantization, Service Worker caching (second visit loads in seconds), jsDelivr CDN mirror race for first loads
-
-## 🚀 Run locally
-
-```bash
-npm install
-npm run fetch:data   # download OSM data (~15 min, resumable)
-npm run bake         # bake binaries (buildings/roads/water/green/trees/ground texture)
-npm run dev          # http://localhost:5173
+```sh
+npm ci
+npm run dev
 ```
 
-Build & deploy:
+Start with controllable aerial browsing. Left drag pans, right drag rotates, wheel zooms; touch supports one-finger pan and two-finger zoom/rotate. Fly, walk and a finite cinematic tour are explicit modes. Manual input adopts the complete camera pose; blur clears input. Walking requires loaded collision and terrain.
 
-```bash
-npm run build        # output in dist/
-npm run video        # render frames + encode public/video/beijing-world.mp4 (needs local Chrome)
+```sh
+npm run check
+npm run preview
+BJW_URL=http://localhost:4173 npm run check:browser
+BJW_URL=http://localhost:4173 npm run check:performance
 ```
 
-## 🗺️ Data & credits
+Production builds use existing static resources and require neither geographic downloads nor Blender. Independent data and model production steps are documented in the Chinese README. The release remains local until explicitly published. Browser mobile emulation does not establish physical iOS/Android performance or network access from China.
 
-- Buildings / roads / water / greenery: © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, ODbL license
-- Overpass API: overpass-api.de and public mirrors
-- Rendering: [Three.js](https://threejs.org/) · Build: [Vite](https://vitejs.dev/) · Landmark models: Blender
-- Inspiration: ["Manhattan World" by @mattshumer_](https://x.com/mattshumer_/status/2095609734845927525)
+The release includes a separate `qa.html` page for physical phone measurements and local JSON export. See [mobile testing instructions](docs/mobile-testing.md).
 
-## 📐 Coverage
-
-Second-Ring old city (Forbidden City / Central Axis / Shichahai / Temple of Heaven) + Guomao CBD + Olympic Park, ~12.8 × 18.3 km.
+Attribution: © OpenStreetMap contributors, ODbL; Overture Buildings and original feature sources; modified Copernicus Sentinel data 2026; Copernicus DEM under its free/open licence. Official photos/drawings inform landmark shapes; published PBR textures are original procedural bakes. Height inference and geographic precision limits are documented with the assets.

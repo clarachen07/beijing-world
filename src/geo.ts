@@ -2,9 +2,11 @@
  * 地理坐标 → 场景坐标（米）。
  * 约定：x 向东，z 向南（北为 -z），y 向上。origin 与烘焙脚本保持一致。
  */
-export const ORIGIN = { lat: 39.9475, lon: 116.41 };
+import worldConfigData from '../config/world.json';
+const worldConfig = worldConfigData;
+export const ORIGIN = worldConfig.origin;
 
-const M_PER_DEG_LAT = 111132;
+const M_PER_DEG_LAT = worldConfig.projection.metresPerDegreeLat;
 const M_PER_DEG_LON = 111320 * Math.cos((ORIGIN.lat * Math.PI) / 180); // ≈ 85.3 km/°
 
 /** 经纬度 → 本地米坐标 */
@@ -18,9 +20,19 @@ export function localToLatLon(x: number, z: number): [number, number] {
 }
 
 /** 场景总范围（米） */
+const [west, south, east, north] = worldConfig.fetchBounds;
+function checkedBounds(values: number[]): [number, number, number, number] {
+  if (values.length !== 4 || !values.every(Number.isFinite)) throw new Error('Invalid world bounds');
+  return [values[0], values[1], values[2], values[3]];
+}
+export const WORLD_BOUNDS = checkedBounds(worldConfig.worldBounds ?? [
+  (west - ORIGIN.lon) * M_PER_DEG_LON, (ORIGIN.lat - north) * M_PER_DEG_LAT,
+  (east - ORIGIN.lon) * M_PER_DEG_LON, (ORIGIN.lat - south) * M_PER_DEG_LAT,
+]);
 export const WORLD = {
-  w: (116.48 - 116.34) * M_PER_DEG_LON, // ≈ 12.8 km
-  h: (40.03 - 39.865) * M_PER_DEG_LAT, // ≈ 18.3 km
+  w: WORLD_BOUNDS[2] - WORLD_BOUNDS[0],
+  h: WORLD_BOUNDS[3] - WORLD_BOUNDS[1],
+  bounds: WORLD_BOUNDS,
 };
 
 /** 简易 hash 随机（确定性） */

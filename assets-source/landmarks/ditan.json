@@ -1,0 +1,190 @@
+{
+  "id": "ditan",
+  "model": "ditan",
+  "name": "地坛",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.951456500000006,
+    "longitude": 116.40978799999999,
+    "rotationDegrees": 0,
+    "elevationRelativeTo45mDatum": 0.707,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/377843163",
+      "url": "https://www.openstreetmap.org/way/377843163",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269689",
+      "url": "https://www.openstreetmap.org/way/384269689",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269690",
+      "url": "https://www.openstreetmap.org/way/384269690",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "ditan-footprint-0",
+      "longitude": 116.4097547,
+      "latitude": 39.9505505,
+      "source": "https://www.openstreetmap.org/way/377843163",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ditan-footprint-1",
+      "longitude": 116.409765,
+      "latitude": 39.9504864,
+      "source": "https://www.openstreetmap.org/way/377843163",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ditan-footprint-2",
+      "longitude": 116.410029,
+      "latitude": 39.9505128,
+      "source": "https://www.openstreetmap.org/way/377843163",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ditan-footprint-3",
+      "longitude": 116.410022,
+      "latitude": 39.9505758,
+      "source": "https://www.openstreetmap.org/way/377843163",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.beijing.gov.cn/renwen/rwzyd/qgzdwwbhdw/dt/202210/t20221027_2846021.html",
+    "https://www.openstreetmap.org/way/377843163",
+    "https://www.openstreetmap.org/way/384269689",
+    "https://www.openstreetmap.org/way/384269690"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Altar_for_animal_sacrifice_at_the_Temple_of_Earth_in_Beijing.jpg",
+      "fileTitle": "File:Altar for animal sacrifice at the Temple of Earth in Beijing.jpg",
+      "author": "Bridget Coila",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+      "capturedAt": "2009",
+      "view": "园区祭牲辅助坛；不能当作方泽坛的尺寸依据",
+      "resolution": [
+        2000,
+        1333
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=42619632&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Erdaltar_01.jpg",
+      "fileTitle": "File:Erdaltar 01.jpg",
+      "author": "Leeluv",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": null,
+      "view": "地坛建筑外观；精确子建筑及拍摄日期未记录",
+      "resolution": [
+        3766,
+        2520
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=15510195&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "missingMetadata": [
+        "拍摄日期没有记录；不以上传日期冒充"
+      ]
+    },
+    {
+      "url": "https://www.beijing.gov.cn/renwen/rwzyd/qgzdwwbhdw/dt/202210/t20221027_2846021.html",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "lower altar",
+      "widthM": 35,
+      "depthM": 35,
+      "heightM": 1.25
+    },
+    {
+      "part": "upper altar",
+      "widthM": 20.5,
+      "depthM": 20.5,
+      "heightM": 1.28
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 11,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/ditan.blend",
+    "lod": {
+      "near": "./models/landmarks/ditan-03877f911e.glb",
+      "medium": "./models/landmarks/ditan-medium-e490f3ffa3.glb",
+      "far": "./models/landmarks/ditan-far-32b52a2d64.glb",
+      "distancesM": [
+        800,
+        2800
+      ]
+    },
+    "collision": "./models/landmarks/ditan-collision-96d0f368f0.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

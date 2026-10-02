@@ -1,0 +1,34 @@
+{
+  "model": "yuetan",
+  "view": "southeast",
+  "focus": null,
+  "projection": "orthographic",
+  "locationMeters": [
+    242.84242248535156,
+    -493.692138671875,
+    197.1873779296875
+  ],
+  "targetMeters": [
+    6.91949462890625,
+    -139.80772399902344,
+    5.5
+  ],
+  "orthographicScaleMeters": 545.57177734375,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -106.58528137207031,
+      -287.2595520019531,
+      0.0
+    ],
+    [
+      120.42427062988281,
+      7.644107341766357,
+      11.0
+    ]
+  ]
+}

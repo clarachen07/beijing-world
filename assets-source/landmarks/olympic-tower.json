@@ -1,0 +1,287 @@
+{
+  "id": "olympic-tower",
+  "model": "olympic-tower",
+  "name": "奥林匹克塔",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 40.006550649999994,
+    "longitude": 116.387873,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": -0.394,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/962658730",
+      "url": "https://www.openstreetmap.org/way/962658730",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392439",
+      "url": "https://www.openstreetmap.org/way/1459392439",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392440",
+      "url": "https://www.openstreetmap.org/way/1459392440",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392441",
+      "url": "https://www.openstreetmap.org/way/1459392441",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392443",
+      "url": "https://www.openstreetmap.org/way/1459392443",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392448",
+      "url": "https://www.openstreetmap.org/way/1459392448",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392450",
+      "url": "https://www.openstreetmap.org/way/1459392450",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392451",
+      "url": "https://www.openstreetmap.org/way/1459392451",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392442",
+      "url": "https://www.openstreetmap.org/way/1459392442",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392449",
+      "url": "https://www.openstreetmap.org/way/1459392449",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392438",
+      "url": "https://www.openstreetmap.org/way/1459392438",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392444",
+      "url": "https://www.openstreetmap.org/way/1459392444",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392445",
+      "url": "https://www.openstreetmap.org/way/1459392445",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392446",
+      "url": "https://www.openstreetmap.org/way/1459392446",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1459392447",
+      "url": "https://www.openstreetmap.org/way/1459392447",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "olympic-tower-footprint-0",
+      "longitude": 116.3875701,
+      "latitude": 40.0065672,
+      "source": "https://www.openstreetmap.org/way/962658730",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "olympic-tower-footprint-1",
+      "longitude": 116.387581,
+      "latitude": 40.0064868,
+      "source": "https://www.openstreetmap.org/way/962658730",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "olympic-tower-footprint-2",
+      "longitude": 116.3876271,
+      "latitude": 40.0064141,
+      "source": "https://www.openstreetmap.org/way/962658730",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "olympic-tower-footprint-3",
+      "longitude": 116.3877028,
+      "latitude": 40.0063579,
+      "source": "https://www.openstreetmap.org/way/962658730",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/way/962658730",
+    "https://www.openstreetmap.org/way/1459392439",
+    "https://www.openstreetmap.org/way/1459392440",
+    "https://www.openstreetmap.org/way/1459392441",
+    "https://www.openstreetmap.org/way/1459392443",
+    "https://www.openstreetmap.org/way/1459392448",
+    "https://www.openstreetmap.org/way/1459392450",
+    "https://www.openstreetmap.org/way/1459392451",
+    "https://www.openstreetmap.org/way/1459392442",
+    "https://www.openstreetmap.org/way/1459392449",
+    "https://www.openstreetmap.org/way/1459392438",
+    "https://www.openstreetmap.org/way/1459392444",
+    "https://www.openstreetmap.org/way/1459392445",
+    "https://www.openstreetmap.org/way/1459392446",
+    "https://www.openstreetmap.org/way/1459392447"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:20200109_Beijing_Olympic_Tower-3.jpg",
+      "fileTitle": "File:20200109 Beijing Olympic Tower-3.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0",
+      "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "capturedAt": "9 January 2020, 15:07",
+      "view": "奥林匹克塔地面近景；相机在西侧，方位由GPS推断",
+      "resolution": [
+        3840,
+        5760
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=128284679&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 40.00677,
+        "lon": 116.3866
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Olympic_Park_Observation_Tower,_Beijing.jpg",
+      "fileTitle": "File:Olympic Park Observation Tower, Beijing.jpg",
+      "author": "Yu Lou",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2016-02-06",
+      "view": "奥林匹克塔远景；相机在东侧，方位由GPS推断",
+      "resolution": [
+        2257,
+        3406
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=51196657&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 40.006634,
+        "lon": 116.395513
+      }
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 246.8,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/olympic-tower.blend",
+    "lod": {
+      "near": "./models/landmarks/olympic-tower-a6d87b0302.glb",
+      "medium": "./models/landmarks/olympic-tower-medium-fa60c29904.glb",
+      "far": "./models/landmarks/olympic-tower-far-ff4c0c4609.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/olympic-tower-collision-d273ea3650.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "architecturalApproximation": {
+    "observedForm": "Two upward completed views show five staggered round crowns, tree-like expanding supports below their rims, and links between the shafts.",
+    "implemented": "Each retained crown has eight representative main branches with three forks, and the shaft cluster has representative horizontal/diagonal crosslinks;246.8m maximum retained.",
+    "inferred": [
+      "Branch counts/routes,3.6/6/10.4m radial zones, sections and crown-part heights",
+      "Crosslinks at48/100/151m, their sizes/routes, roof surfaces and unshown sides remain inferred"
+    ],
+    "notClaimed": [
+      "Fabrication CAD or measured per-member copy",
+      "Complete facade/pixel registration or independent3m survey acceptance"
+    ]
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:20200109_Beijing_Olympic_Tower-3.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Upward complete tower group: tree-like crown undersides and shaft links, base partly tree-occluded."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Olympic_Park_Observation_Tower%2C_Beijing.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Another low-angle side: expanded radial branches, staggered crowns and links; no calibrated plan position."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/olympic-tower.png",
+    "postFixGeometryReport": "tests/reports/model-form.json",
+    "wholeFacadeSurveyed": false
+  }
+}

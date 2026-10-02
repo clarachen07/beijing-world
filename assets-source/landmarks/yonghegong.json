@@ -1,0 +1,360 @@
+{
+  "id": "yonghegong",
+  "model": "yonghegong",
+  "name": "雍和宫",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9467,
+    "longitude": 116.41096,
+    "rotationDegrees": 0,
+    "elevationRelativeTo45mDatum": 0.673,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/177053582",
+      "url": "https://www.openstreetmap.org/way/177053582",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/177053584",
+      "url": "https://www.openstreetmap.org/way/177053584",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/177053585",
+      "url": "https://www.openstreetmap.org/way/177053585",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/177053586",
+      "url": "https://www.openstreetmap.org/way/177053586",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/177053587",
+      "url": "https://www.openstreetmap.org/way/177053587",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/177053588",
+      "url": "https://www.openstreetmap.org/way/177053588",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/177053589",
+      "url": "https://www.openstreetmap.org/way/177053589",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843151",
+      "url": "https://www.openstreetmap.org/way/377843151",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843152",
+      "url": "https://www.openstreetmap.org/way/377843152",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843153",
+      "url": "https://www.openstreetmap.org/way/377843153",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843154",
+      "url": "https://www.openstreetmap.org/way/377843154",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843155",
+      "url": "https://www.openstreetmap.org/way/377843155",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843156",
+      "url": "https://www.openstreetmap.org/way/377843156",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843157",
+      "url": "https://www.openstreetmap.org/way/377843157",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843158",
+      "url": "https://www.openstreetmap.org/way/377843158",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843159",
+      "url": "https://www.openstreetmap.org/way/377843159",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843160",
+      "url": "https://www.openstreetmap.org/way/377843160",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843161",
+      "url": "https://www.openstreetmap.org/way/377843161",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/377843162",
+      "url": "https://www.openstreetmap.org/way/377843162",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269049",
+      "url": "https://www.openstreetmap.org/way/384269049",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269050",
+      "url": "https://www.openstreetmap.org/way/384269050",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269051",
+      "url": "https://www.openstreetmap.org/way/384269051",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269052",
+      "url": "https://www.openstreetmap.org/way/384269052",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269055",
+      "url": "https://www.openstreetmap.org/way/384269055",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269056",
+      "url": "https://www.openstreetmap.org/way/384269056",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269057",
+      "url": "https://www.openstreetmap.org/way/384269057",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269059",
+      "url": "https://www.openstreetmap.org/way/384269059",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269061",
+      "url": "https://www.openstreetmap.org/way/384269061",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269062",
+      "url": "https://www.openstreetmap.org/way/384269062",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269063",
+      "url": "https://www.openstreetmap.org/way/384269063",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/384269064",
+      "url": "https://www.openstreetmap.org/way/384269064",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/727049729",
+      "url": "https://www.openstreetmap.org/way/727049729",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1086037367",
+      "url": "https://www.openstreetmap.org/way/1086037367",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1021040698",
+      "url": "https://www.openstreetmap.org/way/1021040698",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1021040699",
+      "url": "https://www.openstreetmap.org/way/1021040699",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1021040700",
+      "url": "https://www.openstreetmap.org/way/1021040700",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "yonghegong-footprint-0",
+      "longitude": 116.4108363,
+      "latitude": 39.9460332,
+      "source": "https://www.openstreetmap.org/way/177053582",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yonghegong-footprint-1",
+      "longitude": 116.4108367,
+      "latitude": 39.9460168,
+      "source": "https://www.openstreetmap.org/way/177053582",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yonghegong-footprint-2",
+      "longitude": 116.4108379,
+      "latitude": 39.9459541,
+      "source": "https://www.openstreetmap.org/way/177053582",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yonghegong-footprint-3",
+      "longitude": 116.4108383,
+      "latitude": 39.9459335,
+      "source": "https://www.openstreetmap.org/way/177053582",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/copyright"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple%2C_Peking.jpg",
+      "author": "US Ambassador to the People’s Republic of China",
+      "license": "Public domain, US Department of State official work",
+      "capturedAt": "2023-11-11",
+      "view": "Hall of Ten Thousand Happinesses",
+      "resolution": [
+        2016,
+        1512
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple_entrance.jpg",
+      "fileTitle": "File:Yonghe Temple entrance.jpg",
+      "author": "Charlie fong冯成",
+      "license": "Public domain",
+      "licenseURL": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple_entrance.jpg",
+      "capturedAt": "2009-01",
+      "view": "雍和宫南入口牌坊；不同于万福阁",
+      "resolution": [
+        2700,
+        1800
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=6316559&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.943875,
+        "lon": 116.410297
+      }
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 25,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/yonghegong.blend",
+    "lod": {
+      "near": "./models/landmarks/yonghegong-0da2461197.glb",
+      "medium": "./models/landmarks/yonghegong-medium-31c479197b.glb",
+      "far": "./models/landmarks/yonghegong-far-d9b8c8d7e0.glb",
+      "distancesM": [
+        800,
+        2800
+      ]
+    },
+    "collision": "./models/landmarks/yonghegong-collision-d7df3948d3.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

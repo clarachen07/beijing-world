@@ -1,0 +1,43 @@
+{
+  "position": [
+    3705.600493955075,
+    73.08447884183418,
+    3783.9116255723416
+  ],
+  "rotation": [
+    0.02315971513495433,
+    -0.6694031524048675,
+    0.02088690170725316,
+    0.7422444236788613
+  ],
+  "mode": "browse",
+  "picker": "",
+  "flyToCalls": 1,
+  "initial": {
+    "position": [
+      -1127.0928298197998,
+      1150,
+      4283.978799999499
+    ],
+    "mode": "browse"
+  },
+  "release": {
+    "revision": "f379c023976b7b0f93a8",
+    "resources": 13019,
+    "totalBytes": 155313110
+  },
+  "identity": {
+    "city": "1d91e09a9c2e8b214a4d",
+    "bundle": "http://127.0.0.1:4173/assets/index-kvYwi1c0.js",
+    "devicePixelRatio": 1,
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  "screenshot": "artifacts/qa/desktop-cctv-ui-selection.png",
+  "scope": "Default browse → actual landmark picker selection; screenshot diagnosis only, no navigation/runtime modification.",
+  "pixelsActuallyViewed": true,
+  "visualDiagnosis": "CCTV双塔、悬挑与中部开口在画面中央完整可见；中国尊位于右侧，未挡住主体。默认鸟瞰通过实际UI选择CCTV这一路径未复现旧QA固定SE视角的遮挡。",
+  "pixelInspectionScope": "这一次默认鸟瞰→CCTV选择的保存截图；不推断所有起点或所有地标视角。"
+}

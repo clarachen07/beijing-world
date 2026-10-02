@@ -1,0 +1,164 @@
+{
+  "id": "donghuamen",
+  "model": "donghuamen",
+  "name": "东华门",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9137057,
+    "longitude": 116.39520175,
+    "rotationDegrees": 90,
+    "elevationRelativeTo45mDatum": 1.098,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/40343947",
+      "url": "https://www.openstreetmap.org/way/40343947",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "donghuamen-footprint-0",
+      "longitude": 116.3950516,
+      "latitude": 39.9139328,
+      "source": "https://www.openstreetmap.org/way/40343947",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "donghuamen-footprint-1",
+      "longitude": 116.3950597,
+      "latitude": 39.913721,
+      "source": "https://www.openstreetmap.org/way/40343947",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "donghuamen-footprint-2",
+      "longitude": 116.3950692,
+      "latitude": 39.91346,
+      "source": "https://www.openstreetmap.org/way/40343947",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "donghuamen-footprint-3",
+      "longitude": 116.3951871,
+      "latitude": 39.9134626,
+      "source": "https://www.openstreetmap.org/way/40343947",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.dpm.org.cn/explore/building/236502.html",
+    "https://www.openstreetmap.org/way/40343947"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:East_Glorious_Gate_(Forbidden_City)2022.jpg",
+      "fileTitle": "File:East Glorious Gate (Forbidden City)2022.jpg",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2022-03-27 11:47:06",
+      "view": "东华门外观；相机在门东侧，方位由GPS推断",
+      "resolution": [
+        3318,
+        1868
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=116441974&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.913758,
+        "lon": 116.396263
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:East_Glorious_Gate_2015_August.jpg",
+      "fileTitle": "File:East Glorious Gate 2015 August.jpg",
+      "author": "Morio",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "9 August 2015, Beijing, China",
+      "view": "东华门外观；准确方位未记录",
+      "resolution": [
+        3840,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=54826620&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://www.dpm.org.cn/explore/building/236502.html",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 25,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/donghuamen.blend",
+    "lod": {
+      "near": "./models/landmarks/donghuamen-1e95903a00.glb",
+      "medium": "./models/landmarks/donghuamen-medium-5ce0ff865f.glb",
+      "far": "./models/landmarks/donghuamen-far-8040783b56.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/donghuamen-collision-5288e41091.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

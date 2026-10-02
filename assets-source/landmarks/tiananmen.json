@@ -1,0 +1,266 @@
+{
+  "id": "tiananmen",
+  "model": "tiananmen",
+  "name": "天安门",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.907338550000006,
+    "longitude": 116.39126485,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": -0.152,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "relation/8847697",
+      "url": "https://www.openstreetmap.org/relation/8847697",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830181",
+      "url": "https://www.openstreetmap.org/way/637830181",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830191",
+      "url": "https://www.openstreetmap.org/way/637830191",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830205",
+      "url": "https://www.openstreetmap.org/way/637830205",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830229",
+      "url": "https://www.openstreetmap.org/way/637830229",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830242",
+      "url": "https://www.openstreetmap.org/way/637830242",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830255",
+      "url": "https://www.openstreetmap.org/way/637830255",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830304",
+      "url": "https://www.openstreetmap.org/way/637830304",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830305",
+      "url": "https://www.openstreetmap.org/way/637830305",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830311",
+      "url": "https://www.openstreetmap.org/way/637830311",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830317",
+      "url": "https://www.openstreetmap.org/way/637830317",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830318",
+      "url": "https://www.openstreetmap.org/way/637830318",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830905",
+      "url": "https://www.openstreetmap.org/way/637830905",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637830906",
+      "url": "https://www.openstreetmap.org/way/637830906",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/637953171",
+      "url": "https://www.openstreetmap.org/way/637953171",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "relation/8847696",
+      "url": "https://www.openstreetmap.org/relation/8847696",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "tiananmen-footprint-0",
+      "longitude": 116.3905678,
+      "latitude": 39.907495,
+      "source": "https://www.openstreetmap.org/relation/8847697",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "tiananmen-footprint-1",
+      "longitude": 116.3905809,
+      "latitude": 39.9071808,
+      "source": "https://www.openstreetmap.org/relation/8847697",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "tiananmen-footprint-2",
+      "longitude": 116.3905822,
+      "latitude": 39.9071482,
+      "source": "https://www.openstreetmap.org/relation/8847697",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "tiananmen-footprint-3",
+      "longitude": 116.3909442,
+      "latitude": 39.9071554,
+      "source": "https://www.openstreetmap.org/relation/8847697",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.dpm.org.cn/Uploads/File/pdf/21/37/8d/21378dd0b3131359d9cafc62a7a3369f.pdf",
+    "https://www.openstreetmap.org/relation/8847697",
+    "https://www.openstreetmap.org/way/637830181",
+    "https://www.openstreetmap.org/way/637830191",
+    "https://www.openstreetmap.org/way/637830205",
+    "https://www.openstreetmap.org/way/637830229",
+    "https://www.openstreetmap.org/way/637830242",
+    "https://www.openstreetmap.org/way/637830255",
+    "https://www.openstreetmap.org/way/637830304",
+    "https://www.openstreetmap.org/way/637830305",
+    "https://www.openstreetmap.org/way/637830311",
+    "https://www.openstreetmap.org/way/637830317",
+    "https://www.openstreetmap.org/way/637830318",
+    "https://www.openstreetmap.org/way/637830905",
+    "https://www.openstreetmap.org/way/637830906",
+    "https://www.openstreetmap.org/way/637953171",
+    "https://www.openstreetmap.org/relation/8847696"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Tiananmen_Tower_Gate%2C_Forbidden_City%2C_Beijing.jpg",
+      "author": "Steven Kevil",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-03-28",
+      "view": "front elevation",
+      "resolution": [
+        5095,
+        2865
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:North_end_of_Tiananmen_Square_and_Tiananmen_Gate.jpg",
+      "fileTitle": "File:North end of Tiananmen Square and Tiananmen Gate.jpg",
+      "author": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2014-03-29",
+      "view": "从天安门广场向北看天安门城楼的广角环境与轴线视图；原始描述明确，仍缺北立面和东西侧精确标定。",
+      "resolution": [
+        4854,
+        2034
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=32204922&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "url": "https://www.dpm.org.cn/Uploads/File/pdf/21/37/8d/21378dd0b3131359d9cafc62a7a3369f.pdf",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "overall",
+      "heightM": 34.7
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 34.7,
+    "heightEvidence": "primary textual height, export envelope calibrated",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/tiananmen.blend",
+    "lod": {
+      "near": "./models/landmarks/tiananmen-ce789a0804.glb",
+      "medium": "./models/landmarks/tiananmen-medium-7f86a126a6.glb",
+      "far": "./models/landmarks/tiananmen-far-39aedc540c.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/tiananmen-collision-83f53822af.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

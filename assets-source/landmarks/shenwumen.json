@@ -1,0 +1,192 @@
+{
+  "id": "shenwumen",
+  "model": "shenwumen",
+  "name": "神武门",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.92092505,
+    "longitude": 116.39057435,
+    "rotationDegrees": 180,
+    "elevationRelativeTo45mDatum": 2.393,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/638741722",
+      "url": "https://www.openstreetmap.org/way/638741722",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "shenwumen-footprint-0",
+      "longitude": 116.3898998,
+      "latitude": 39.9209552,
+      "source": "https://www.openstreetmap.org/way/638741722",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "shenwumen-footprint-1",
+      "longitude": 116.3899063,
+      "latitude": 39.9208254,
+      "source": "https://www.openstreetmap.org/way/638741722",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "shenwumen-footprint-2",
+      "longitude": 116.3899783,
+      "latitude": 39.9208275,
+      "source": "https://www.openstreetmap.org/way/638741722",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "shenwumen-footprint-3",
+      "longitude": 116.3901936,
+      "latitude": 39.9208338,
+      "source": "https://www.openstreetmap.org/way/638741722",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.dpm.org.cn/Uploads/File/2018/06/05/u5b164a2ba5129.pdf",
+    "https://www.openstreetmap.org/way/638741722"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_from_the_Jingshan_Temple_-_panoramio.jpg",
+      "fileTitle": "File:·˙·ChinaUli2010·.· Beijing - Shenwu Gate from the Jingshan Temple - panoramio.jpg",
+      "author": "·˙·ChinaUli2010·.·",
+      "license": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+      "capturedAt": "Taken on 11 January 2010",
+      "view": "从景山看神武门；北侧高视角，标题明确",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=53375764&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.923241,
+        "lon": 116.390778
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_of_the_Forbidden_Town_-_panoramio_(1).jpg",
+      "fileTitle": "File:·˙·ChinaUli2010·.· Beijing - Shenwu Gate of the Forbidden Town - panoramio (1).jpg",
+      "author": "·˙·ChinaUli2010·.·",
+      "license": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+      "capturedAt": "Taken on 11 January 2010",
+      "view": "神武门近景；相机在门北侧，方位由GPS推断",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=53375793&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize",
+      "cameraLocation": {
+        "lat": 39.921371,
+        "lon": 116.390511
+      }
+    },
+    {
+      "url": "https://www.dpm.org.cn/Uploads/File/2018/06/05/u5b164a2ba5129.pdf",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 31,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/shenwumen.blend",
+    "lod": {
+      "near": "./models/landmarks/shenwumen-533e054e6f.glb",
+      "medium": "./models/landmarks/shenwumen-medium-d20520d1ee.glb",
+      "far": "./models/landmarks/shenwumen-far-ebab511398.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/shenwumen-collision-545ba8cd43.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "architecturalApproximation": {
+    "observedForm": "North-facing high view shows three base arches beneath two yellow roof layers.",
+    "implemented": "Three physical through-gates in the render mesh and matching collision proxy.",
+    "inferred": [
+      "Door widths, arch spring heights and unshown door details"
+    ],
+    "notClaimed": [
+      "Full facade survey, camera registration or independently verified part dimensions",
+      "Centimetre or3m geospatial acceptance"
+    ]
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_from_the_Jingshan_Temple_-_panoramio.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "High north-facing facade: three base portals, partly tree-occluded surroundings."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/shenwumen.png",
+    "postFixGeometryReport": "tests/reports/model-gates.json",
+    "wholeFacadeSurveyed": false
+  }
+}

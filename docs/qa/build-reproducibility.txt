@@ -1,0 +1,18 @@
+
+> beijing-world@1.0.0 build
+> node scripts/build.mjs
+
+资产完整性通过：1575 城市分块、12889 数据资源、32 地标注册，88.9 MiB
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 53 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/assets/decode.worker-CxzzSVa6.js    1.77 kB
+dist/index.html                          3.82 kB │ gzip:   1.95 kB
+dist/assets/index-CUnMNSRK.css           7.15 kB │ gzip:   2.26 kB
+dist/assets/sha2-0dmcoPFZ.js             5.19 kB │ gzip:   2.59 kB
+dist/assets/index-kvYwi1c0.js          688.07 kB │ gzip: 128.53 kB
+dist/assets/three-BgMGqtJM.js          704.77 kB │ gzip: 181.72 kB
+✓ built in 2.58s
+可复现发布包 f379c023976b7b0f93a8：13019 项静态资源

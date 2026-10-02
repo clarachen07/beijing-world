@@ -11,7 +11,7 @@ import { readFileSync, existsSync as fsExists } from 'node:fs';
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
-const FRAME_DIR = path.join(ROOT, 'video/frames');
+const FRAME_DIR = path.join(ROOT, 'artifacts/video/frames');
 const PORT = 4173;
 
 const FPS = 30;
@@ -30,11 +30,10 @@ function serve() {
         let url = decodeURIComponent(new URL(req.url, 'http://x').pathname);
         if (url === '/') url = '/index.html';
         let file = path.join(DIST, url);
-        if (!fsExists(file)) file = path.join(DIST, 'index.html');
+        if (!fsExists(file)) { res.writeHead(404); res.end('nf'); return; }
         const data = readFileSync(file);
         const type = MIME[path.extname(file)] || 'application/octet-stream';
         const headers = { 'Content-Type': type, 'Cache-Control': 'no-store' };
-        if (path.extname(file) === '.gz') headers['Content-Encoding'] = 'gzip';
         res.writeHead(200, headers);
         res.end(req.method === 'HEAD' ? undefined : data);
       } catch (e) {
@@ -55,7 +54,7 @@ async function main() {
   const server = await serve();
 
   const launchOpts = {
-    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    executablePath: process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     headless: true,
     args: [
       `--window-size=${W},${H}`,

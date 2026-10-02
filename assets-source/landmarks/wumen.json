@@ -1,0 +1,593 @@
+{
+  "id": "wumen",
+  "model": "wumen",
+  "name": "午门",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9121195,
+    "longitude": 116.39100005,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": 1.379,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/638156366",
+      "url": "https://www.openstreetmap.org/way/638156366",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638206936",
+      "url": "https://www.openstreetmap.org/way/638206936",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638206937",
+      "url": "https://www.openstreetmap.org/way/638206937",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156379",
+      "url": "https://www.openstreetmap.org/way/638156379",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156391",
+      "url": "https://www.openstreetmap.org/way/638156391",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156402",
+      "url": "https://www.openstreetmap.org/way/638156402",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156417",
+      "url": "https://www.openstreetmap.org/way/638156417",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156431",
+      "url": "https://www.openstreetmap.org/way/638156431",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156444",
+      "url": "https://www.openstreetmap.org/way/638156444",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156455",
+      "url": "https://www.openstreetmap.org/way/638156455",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156470",
+      "url": "https://www.openstreetmap.org/way/638156470",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156484",
+      "url": "https://www.openstreetmap.org/way/638156484",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156495",
+      "url": "https://www.openstreetmap.org/way/638156495",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156505",
+      "url": "https://www.openstreetmap.org/way/638156505",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156517",
+      "url": "https://www.openstreetmap.org/way/638156517",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156530",
+      "url": "https://www.openstreetmap.org/way/638156530",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156542",
+      "url": "https://www.openstreetmap.org/way/638156542",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156553",
+      "url": "https://www.openstreetmap.org/way/638156553",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156565",
+      "url": "https://www.openstreetmap.org/way/638156565",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156579",
+      "url": "https://www.openstreetmap.org/way/638156579",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156594",
+      "url": "https://www.openstreetmap.org/way/638156594",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156605",
+      "url": "https://www.openstreetmap.org/way/638156605",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156617",
+      "url": "https://www.openstreetmap.org/way/638156617",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156629",
+      "url": "https://www.openstreetmap.org/way/638156629",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156643",
+      "url": "https://www.openstreetmap.org/way/638156643",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156655",
+      "url": "https://www.openstreetmap.org/way/638156655",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156665",
+      "url": "https://www.openstreetmap.org/way/638156665",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156677",
+      "url": "https://www.openstreetmap.org/way/638156677",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156683",
+      "url": "https://www.openstreetmap.org/way/638156683",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156686",
+      "url": "https://www.openstreetmap.org/way/638156686",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156700",
+      "url": "https://www.openstreetmap.org/way/638156700",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156717",
+      "url": "https://www.openstreetmap.org/way/638156717",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156736",
+      "url": "https://www.openstreetmap.org/way/638156736",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156753",
+      "url": "https://www.openstreetmap.org/way/638156753",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156765",
+      "url": "https://www.openstreetmap.org/way/638156765",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156786",
+      "url": "https://www.openstreetmap.org/way/638156786",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156804",
+      "url": "https://www.openstreetmap.org/way/638156804",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156817",
+      "url": "https://www.openstreetmap.org/way/638156817",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156830",
+      "url": "https://www.openstreetmap.org/way/638156830",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156846",
+      "url": "https://www.openstreetmap.org/way/638156846",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156871",
+      "url": "https://www.openstreetmap.org/way/638156871",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156886",
+      "url": "https://www.openstreetmap.org/way/638156886",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156898",
+      "url": "https://www.openstreetmap.org/way/638156898",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156914",
+      "url": "https://www.openstreetmap.org/way/638156914",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156932",
+      "url": "https://www.openstreetmap.org/way/638156932",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156955",
+      "url": "https://www.openstreetmap.org/way/638156955",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156970",
+      "url": "https://www.openstreetmap.org/way/638156970",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156983",
+      "url": "https://www.openstreetmap.org/way/638156983",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638156994",
+      "url": "https://www.openstreetmap.org/way/638156994",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638157005",
+      "url": "https://www.openstreetmap.org/way/638157005",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638206921",
+      "url": "https://www.openstreetmap.org/way/638206921",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638206922",
+      "url": "https://www.openstreetmap.org/way/638206922",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638206923",
+      "url": "https://www.openstreetmap.org/way/638206923",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638206924",
+      "url": "https://www.openstreetmap.org/way/638206924",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638206928",
+      "url": "https://www.openstreetmap.org/way/638206928",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/638206935",
+      "url": "https://www.openstreetmap.org/way/638206935",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/902495216",
+      "url": "https://www.openstreetmap.org/way/902495216",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "wumen-footprint-0",
+      "longitude": 116.3898849,
+      "latitude": 39.912459,
+      "source": "https://www.openstreetmap.org/way/638156366",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "wumen-footprint-1",
+      "longitude": 116.3898886,
+      "latitude": 39.9123833,
+      "source": "https://www.openstreetmap.org/way/638156366",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "wumen-footprint-2",
+      "longitude": 116.3898909,
+      "latitude": 39.9123368,
+      "source": "https://www.openstreetmap.org/way/638156366",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "wumen-footprint-3",
+      "longitude": 116.3899707,
+      "latitude": 39.9123391,
+      "source": "https://www.openstreetmap.org/way/638156366",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.dpm.org.cn/explore/building/236454.html",
+    "https://www.openstreetmap.org/way/638156366",
+    "https://www.openstreetmap.org/way/638206936",
+    "https://www.openstreetmap.org/way/638206937",
+    "https://www.openstreetmap.org/way/638156379",
+    "https://www.openstreetmap.org/way/638156391",
+    "https://www.openstreetmap.org/way/638156402",
+    "https://www.openstreetmap.org/way/638156417",
+    "https://www.openstreetmap.org/way/638156431",
+    "https://www.openstreetmap.org/way/638156444",
+    "https://www.openstreetmap.org/way/638156455",
+    "https://www.openstreetmap.org/way/638156470",
+    "https://www.openstreetmap.org/way/638156484",
+    "https://www.openstreetmap.org/way/638156495",
+    "https://www.openstreetmap.org/way/638156505",
+    "https://www.openstreetmap.org/way/638156517",
+    "https://www.openstreetmap.org/way/638156530",
+    "https://www.openstreetmap.org/way/638156542",
+    "https://www.openstreetmap.org/way/638156553",
+    "https://www.openstreetmap.org/way/638156565",
+    "https://www.openstreetmap.org/way/638156579",
+    "https://www.openstreetmap.org/way/638156594",
+    "https://www.openstreetmap.org/way/638156605",
+    "https://www.openstreetmap.org/way/638156617",
+    "https://www.openstreetmap.org/way/638156629",
+    "https://www.openstreetmap.org/way/638156643",
+    "https://www.openstreetmap.org/way/638156655",
+    "https://www.openstreetmap.org/way/638156665",
+    "https://www.openstreetmap.org/way/638156677",
+    "https://www.openstreetmap.org/way/638156683",
+    "https://www.openstreetmap.org/way/638156686",
+    "https://www.openstreetmap.org/way/638156700",
+    "https://www.openstreetmap.org/way/638156717",
+    "https://www.openstreetmap.org/way/638156736",
+    "https://www.openstreetmap.org/way/638156753",
+    "https://www.openstreetmap.org/way/638156765",
+    "https://www.openstreetmap.org/way/638156786",
+    "https://www.openstreetmap.org/way/638156804",
+    "https://www.openstreetmap.org/way/638156817",
+    "https://www.openstreetmap.org/way/638156830",
+    "https://www.openstreetmap.org/way/638156846",
+    "https://www.openstreetmap.org/way/638156871",
+    "https://www.openstreetmap.org/way/638156886",
+    "https://www.openstreetmap.org/way/638156898",
+    "https://www.openstreetmap.org/way/638156914",
+    "https://www.openstreetmap.org/way/638156932",
+    "https://www.openstreetmap.org/way/638156955",
+    "https://www.openstreetmap.org/way/638156970",
+    "https://www.openstreetmap.org/way/638156983",
+    "https://www.openstreetmap.org/way/638156994",
+    "https://www.openstreetmap.org/way/638157005",
+    "https://www.openstreetmap.org/way/638206921",
+    "https://www.openstreetmap.org/way/638206922",
+    "https://www.openstreetmap.org/way/638206923",
+    "https://www.openstreetmap.org/way/638206924",
+    "https://www.openstreetmap.org/way/638206928",
+    "https://www.openstreetmap.org/way/638206935",
+    "https://www.openstreetmap.org/way/902495216"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_IMG_4295_Meridian_Gate.jpg",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-07-10",
+      "view": "northwest-facing gate overview",
+      "resolution": [
+        3965,
+        2937
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_-_Meridian_Gate_View_from_North.jpg",
+      "fileTitle": "File:Forbidden City - Meridian Gate View from North.jpg",
+      "author": "Steven Kevil",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2017-03-28 09:19:38",
+      "view": "午门北立面，原始照片描述明确为 View from North，补充既有南侧视图。",
+      "resolution": [
+        5312,
+        2988
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=58579966&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata"
+    },
+    {
+      "url": "https://www.dpm.org.cn/explore/building/236454.html",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "podium",
+      "heightM": 12
+    },
+    {
+      "part": "main hall",
+      "widthM": 60.05,
+      "depthM": 25
+    },
+    {
+      "part": "overall",
+      "heightM": 35.6
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 35.6,
+    "heightEvidence": "primary textual height, export envelope calibrated",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/wumen.blend",
+    "lod": {
+      "near": "./models/landmarks/wumen-1ce2d9c917.glb",
+      "medium": "./models/landmarks/wumen-medium-b37fd08446.glb",
+      "far": "./models/landmarks/wumen-far-7892510b1d.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/wumen-collision-40938bde0d.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "architecturalApproximation": {
+    "observedForm": "North elevation has three central arches and one farther lateral arch on each side; southern frontal access has three visibly exposed central arches.",
+    "implemented": "Five north mouths, three southern central through-gates and two lateral passages that turn into the U-wing courtyard. Render and collision share the same masonry.",
+    "inferred": [
+      "Exact7m tunnel width,5m spring height and lateral mouth spacing",
+      "90-degree lateral corridor routing and depth; not an as-built tunnel survey"
+    ],
+    "notClaimed": [
+      "Full facade survey, camera registration or independently verified part dimensions",
+      "Centimetre or3m geospatial acceptance"
+    ]
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_IMG_4295_Meridian_Gate.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Wing pavilion and corridor detail only, not a full portal-count view."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_-_Meridian_Gate_View_from_North.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Full north facade: three central and two farther lateral mouths."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/wumen.png",
+    "postFixGeometryReport": "tests/reports/model-gates.json",
+    "wholeFacadeSurveyed": false
+  }
+}

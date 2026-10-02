@@ -1,0 +1,182 @@
+{
+  "id": "yongdingmen",
+  "model": "yongdingmen",
+  "name": "永定门",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.871061850000004,
+    "longitude": 116.39311269999999,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": -4.576,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/228041535",
+      "url": "https://www.openstreetmap.org/way/228041535",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "yongdingmen-footprint-0",
+      "longitude": 116.3927392,
+      "latitude": 39.8710901,
+      "source": "https://www.openstreetmap.org/way/228041535",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yongdingmen-footprint-1",
+      "longitude": 116.392744,
+      "latitude": 39.8710001,
+      "source": "https://www.openstreetmap.org/way/228041535",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yongdingmen-footprint-2",
+      "longitude": 116.3929481,
+      "latitude": 39.8710066,
+      "source": "https://www.openstreetmap.org/way/228041535",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "yongdingmen-footprint-3",
+      "longitude": 116.3929499,
+      "latitude": 39.8709733,
+      "source": "https://www.openstreetmap.org/way/228041535",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/way/228041535"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Yongdingmen,_Beijing.jpg",
+      "fileTitle": "File:Yongdingmen, Beijing.jpg",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2021-02-15 16:45:11",
+      "view": "永定门重建城楼当前外观；2021年",
+      "resolution": [
+        4000,
+        3000
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=100438065&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Yongdinggate.jpg",
+      "fileTitle": "File:Yongdinggate.jpg",
+      "author": "Charlie fong冯成",
+      "license": "Public domain",
+      "licenseURL": null,
+      "capturedAt": "10/2/2009",
+      "view": "重建后的永定门与广场；相机 GPS 在门东南侧（方位为 GPS 推断）。原始拍摄日期 10/2/2009 月日顺序不明确，保留原值。",
+      "resolution": [
+        4465,
+        2251
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7985422&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+      "cameraLocation": {
+        "lat": 39.869922,
+        "lon": 116.393739
+      },
+      "missingMetadata": [
+        "拍摄日期 10/2/2009 的月日顺序不明确，未转换为推断日期"
+      ]
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 26,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/yongdingmen.blend",
+    "lod": {
+      "near": "./models/landmarks/yongdingmen-ab62827d53.glb",
+      "medium": "./models/landmarks/yongdingmen-medium-eea4b46056.glb",
+      "far": "./models/landmarks/yongdingmen-far-a9c69abcf3.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/yongdingmen-collision-e58c4c602a.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "architecturalApproximation": {
+    "observedForm": "Three complete dark eaves and grey-brick podium with red upper timber body in the rebuilt gate exterior.",
+    "implemented": "Three eave layers, grey-brick podium and red upper body; existing26m registered height retained.",
+    "inferred": [
+      "Upper-storey heights and3m eave spacing",
+      "Reconstruction-era fine ornament and exact paint motifs"
+    ],
+    "notClaimed": [
+      "Full facade survey, camera registration or independently verified part dimensions",
+      "Centimetre or3m geospatial acceptance"
+    ]
+  },
+  "referenceVerification": {
+    "openPhotos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Yongdingmen%2C_Beijing.jpg",
+        "pixelsViewed": true,
+        "verifiedAt": "2026-10-02",
+        "scope": "Oblique exterior of the rebuilt gate: three eaves, grey podium and central arch."
+      }
+    ],
+    "sourcePreview": "assets-source/previews/yongdingmen.png",
+    "postFixGeometryReport": "tests/reports/model-gates.json",
+    "wholeFacadeSurveyed": false
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "verifiedAt": "2026-10-02",
+  "method": "File-description metadata and primary architectural text verified; not a photogrammetric image set",
+  "photos": [
+    {
+      "ids": [
+        "taihedian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_Forbidden_City.jpg",
+      "author": "Radosław Botev; licensor Fundacja Nomos",
+      "license": "CC BY 3.0 PL",
+      "capturedAt": "2009-07-16",
+      "view": "exterior overview",
+      "resolution": [
+        2237,
+        992
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "taihedian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:20200110_Hall_of_Supreme_Harmony_roof_art-3.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0 1.0",
+      "capturedAt": "2020-01-10",
+      "view": "roof ornament detail",
+      "resolution": [
+        5760,
+        3840
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "wumen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_IMG_4295_Meridian_Gate.jpg",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-07-10",
+      "view": "northwest-facing gate overview",
+      "resolution": [
+        3965,
+        2937
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "jiaolou-nw"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Corner_Tower_of_the_Forbidden_City%2C_Beijing.jpg",
+      "author": "Zheng Zhou",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2019-08-17",
+      "view": "northwest corner tower",
+      "resolution": [
+        4032,
+        3024
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "qiniandian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2013-04-27",
+      "view": "three-eave exterior",
+      "resolution": [
+        2560,
+        2382
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "qiniandian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_02.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2024-09-16",
+      "view": "portrait exterior",
+      "resolution": [
+        1783,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "tiananmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Tiananmen_Tower_Gate%2C_Forbidden_City%2C_Beijing.jpg",
+      "author": "Steven Kevil",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-03-28",
+      "view": "front elevation",
+      "resolution": [
+        5095,
+        2865
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "zhengyangmen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E9%98%B3%E9%97%A8%E5%9F%8E%E6%A5%BC_2024-05-15.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 4.0",
+      "capturedAt": "2024-05-15",
+      "view": "gate tower; not a survey of the arrow tower",
+      "resolution": [
+        1707,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "white-dagoba"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beihai_Park_IMG_4410_Beihai_Lake_-_Jade_Island_-_white_dagoba.jpg",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-07-10",
+      "view": "island/lake panorama",
+      "resolution": [
+        10066,
+        3808
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "birdnest"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:20200109_Beijing_National_Stadium-15.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0 1.0",
+      "capturedAt": "2020-01-09",
+      "view": "steel lattice exterior",
+      "resolution": [
+        5760,
+        3840
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "birdnest"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_National_Stadium_at_night.jpg",
+      "author": "Alex Needham",
+      "license": "Public domain dedication by author",
+      "capturedAt": "2008-08-19",
+      "view": "night exterior",
+      "resolution": [
+        1936,
+        1288
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "cctv"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_Beijing_-_Flickr.jpg",
+      "author": "Bjarke Liboriussen",
+      "license": "CC BY 2.0",
+      "capturedAt": "2012-06-03",
+      "view": "new CCTV headquarters inclined loop",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "gulou",
+        "zhonglou"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2016-08-22",
+      "view": "view from south of both towers",
+      "resolution": [
+        3264,
+        2448
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "yonghegong"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple%2C_Peking.jpg",
+      "author": "US Ambassador to the People’s Republic of China",
+      "license": "Public domain, US Department of State official work",
+      "capturedAt": "2023-11-11",
+      "view": "Hall of Ten Thousand Happinesses",
+      "resolution": [
+        2016,
+        1512
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "confucius-guozijian"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:BeijingConfuciusTemple1.jpg",
+      "author": "docsdl",
+      "license": "CC BY 2.0",
+      "capturedAt": "2007-09-01",
+      "view": "Confucius Temple exterior",
+      "resolution": [
+        2048,
+        1536
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    },
+    {
+      "ids": [
+        "taihemen"
+      ],
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_at_the_Forbidden_City.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2024-05-15",
+      "view": "front courtyard elevation",
+      "resolution": [
+        2560,
+        1707
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false
+    }
+  ],
+  "retainedOriginalFiles": {
+    "files": [
+      "qiniandian1.jpg",
+      "qiniandian2.jpg",
+      "taihedian1.jpg"
+    ],
+    "license": "unknown",
+    "use": "reference archive only; excluded from released assets"
+  }
+}

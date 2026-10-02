@@ -1,0 +1,431 @@
+{
+  "revision": "1d91e09a9c2e8b214a4d",
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "node": "v24.17.0"
+  },
+  "scope": "CPU-only; process heap includes all parsed tile candidates, not just collision tree memory.",
+  "report": [
+    {
+      "name": "palace-perimeter",
+      "buildMs": 1.0102090000000032,
+      "nodes": 9,
+      "references": 232,
+      "maxDepth": 1,
+      "heapMB": 36.696807861328125
+    },
+    {
+      "name": "model:taihedian",
+      "buildMs": 0.6045000000000016,
+      "nodes": 9,
+      "references": 348,
+      "maxDepth": 1,
+      "heapMB": 37.66279602050781
+    },
+    {
+      "name": "model:qiniandian",
+      "buildMs": 2.106125000000006,
+      "nodes": 85,
+      "references": 1761,
+      "maxDepth": 4,
+      "heapMB": 29.124923706054688
+    },
+    {
+      "name": "model:tiananmen",
+      "buildMs": 2.6102910000000037,
+      "nodes": 155,
+      "references": 6678,
+      "maxDepth": 4,
+      "heapMB": 25.89581298828125
+    },
+    {
+      "name": "model:zhengyangmen",
+      "buildMs": 0.24983300000000952,
+      "nodes": 25,
+      "references": 696,
+      "maxDepth": 2,
+      "heapMB": 27.480880737304688
+    },
+    {
+      "name": "model:jianlou",
+      "buildMs": 0.2465000000000117,
+      "nodes": 9,
+      "references": 640,
+      "maxDepth": 1,
+      "heapMB": 28.9482421875
+    },
+    {
+      "name": "model:yongdingmen",
+      "buildMs": 0.29162499999999625,
+      "nodes": 9,
+      "references": 568,
+      "maxDepth": 1,
+      "heapMB": 30.297630310058594
+    },
+    {
+      "name": "model:wumen",
+      "buildMs": 3.6690420000000046,
+      "nodes": 186,
+      "references": 5983,
+      "maxDepth": 5,
+      "heapMB": 28.720016479492188
+    },
+    {
+      "name": "model:shenwumen",
+      "buildMs": 0.9932909999999993,
+      "nodes": 145,
+      "references": 4256,
+      "maxDepth": 3,
+      "heapMB": 36.268768310546875
+    },
+    {
+      "name": "model:donghuamen",
+      "buildMs": 0.433749999999975,
+      "nodes": 9,
+      "references": 1200,
+      "maxDepth": 1,
+      "heapMB": 39.015960693359375
+    },
+    {
+      "name": "model:xihuamen",
+      "buildMs": 0.40508299999999053,
+      "nodes": 9,
+      "references": 1200,
+      "maxDepth": 1,
+      "heapMB": 27.707550048828125
+    },
+    {
+      "name": "model:taihemen",
+      "buildMs": 0.3685419999999908,
+      "nodes": 9,
+      "references": 1128,
+      "maxDepth": 1,
+      "heapMB": 30.23394775390625
+    },
+    {
+      "name": "model:jiaolou-sw",
+      "buildMs": 0.608458000000013,
+      "nodes": 97,
+      "references": 2288,
+      "maxDepth": 3,
+      "heapMB": 33.84191131591797
+    },
+    {
+      "name": "model:jiaolou-se",
+      "buildMs": 0.4986250000000041,
+      "nodes": 97,
+      "references": 2288,
+      "maxDepth": 3,
+      "heapMB": 37.43756866455078
+    },
+    {
+      "name": "model:jiaolou-nw",
+      "buildMs": 0.4964999999999975,
+      "nodes": 97,
+      "references": 2288,
+      "maxDepth": 3,
+      "heapMB": 41.043052673339844
+    },
+    {
+      "name": "model:jiaolou-ne",
+      "buildMs": 0.5587500000000034,
+      "nodes": 97,
+      "references": 2288,
+      "maxDepth": 3,
+      "heapMB": 28.679824829101562
+    },
+    {
+      "name": "model:gulou",
+      "buildMs": 0.608791999999994,
+      "nodes": 25,
+      "references": 978,
+      "maxDepth": 2,
+      "heapMB": 30.895736694335938
+    },
+    {
+      "name": "model:zhonglou",
+      "buildMs": 2.558583999999996,
+      "nodes": 233,
+      "references": 6262,
+      "maxDepth": 4,
+      "heapMB": 26.25019073486328
+    },
+    {
+      "name": "model:chinazun",
+      "buildMs": 0.042208000000016455,
+      "nodes": 9,
+      "references": 128,
+      "maxDepth": 1,
+      "heapMB": 26.480056762695312
+    },
+    {
+      "name": "model:guomao3",
+      "buildMs": 0.019417000000004236,
+      "nodes": 1,
+      "references": 28,
+      "maxDepth": 0,
+      "heapMB": 26.6043701171875
+    },
+    {
+      "name": "model:cctv",
+      "buildMs": 0.03900000000001569,
+      "nodes": 9,
+      "references": 184,
+      "maxDepth": 1,
+      "heapMB": 26.87787628173828
+    },
+    {
+      "name": "model:birdnest",
+      "buildMs": 1.0135829999999828,
+      "nodes": 349,
+      "references": 5252,
+      "maxDepth": 4,
+      "heapMB": 34.068809509277344
+    },
+    {
+      "name": "model:watercube",
+      "buildMs": 0.05966700000001879,
+      "nodes": 9,
+      "references": 160,
+      "maxDepth": 1,
+      "heapMB": 34.437583923339844
+    },
+    {
+      "name": "model:ncpa",
+      "buildMs": 4.386334000000005,
+      "nodes": 771,
+      "references": 12335,
+      "maxDepth": 6,
+      "heapMB": 30.447967529296875
+    },
+    {
+      "name": "model:white-dagoba",
+      "buildMs": 0.233791999999994,
+      "nodes": 67,
+      "references": 1061,
+      "maxDepth": 3,
+      "heapMB": 32.10352325439453
+    },
+    {
+      "name": "model:monument",
+      "buildMs": 2.983791999999994,
+      "nodes": 627,
+      "references": 8472,
+      "maxDepth": 7,
+      "heapMB": 37.90281677246094
+    },
+    {
+      "name": "model:olympic-tower",
+      "buildMs": 4.2464999999999975,
+      "nodes": 522,
+      "references": 13894,
+      "maxDepth": 4,
+      "heapMB": 31.789016723632812
+    },
+    {
+      "name": "model:linglong",
+      "buildMs": 0.7740829999999903,
+      "nodes": 128,
+      "references": 5171,
+      "maxDepth": 4,
+      "heapMB": 38.72428894042969
+    },
+    {
+      "name": "model:yonghegong",
+      "buildMs": 0.20137500000001296,
+      "nodes": 107,
+      "references": 1578,
+      "maxDepth": 3,
+      "heapMB": 40.46217346191406
+    },
+    {
+      "name": "model:confucius-guozijian",
+      "buildMs": 0.13749999999998863,
+      "nodes": 71,
+      "references": 1056,
+      "maxDepth": 3,
+      "heapMB": 41.570213317871094
+    },
+    {
+      "name": "model:ditan",
+      "buildMs": 0.022333000000003267,
+      "nodes": 7,
+      "references": 92,
+      "maxDepth": 1,
+      "heapMB": 41.739479064941406
+    },
+    {
+      "name": "model:ritan",
+      "buildMs": 0.056541999999979,
+      "nodes": 24,
+      "references": 264,
+      "maxDepth": 2,
+      "heapMB": 42.052154541015625
+    },
+    {
+      "name": "model:yuetan",
+      "buildMs": 0.14708299999998076,
+      "nodes": 53,
+      "references": 1037,
+      "maxDepth": 6,
+      "heapMB": 31.033546447753906
+    },
+    {
+      "name": "tile:l0_x-4_z6:collision/50bfd30be6f569364927.json.gz:edges=7173",
+      "buildMs": 46.20079199999998,
+      "nodes": 857,
+      "references": 127522,
+      "maxDepth": 5,
+      "heapMB": 166.60953521728516,
+      "capsuleQueries": {
+        "p95Ms": 0.08687499999996362,
+        "max": {
+          "ms": 0.2551250000000209,
+          "x": -1998,
+          "z": 3002
+        },
+        "samples": 81
+      },
+      "rayQueries": {
+        "p95Ms": 0.2736250000000382,
+        "max": {
+          "ms": 0.5747920000000022,
+          "x": -1936,
+          "z": 3436
+        },
+        "samples": 81
+      }
+    },
+    {
+      "name": "tile:l0_x-5_z11:collision/cde8bcdc07f2e6d056a2.json.gz:edges=4930",
+      "buildMs": 21.701167000000055,
+      "nodes": 617,
+      "references": 115478,
+      "maxDepth": 5,
+      "heapMB": 191.8305892944336,
+      "capsuleQueries": {
+        "p95Ms": 0.03295900000000529,
+        "max": {
+          "ms": 0.04975000000001728,
+          "x": -2374,
+          "z": 5812
+        },
+        "samples": 81
+      },
+      "rayQueries": {
+        "p95Ms": 0.15199999999992997,
+        "max": {
+          "ms": 0.25462499999991905,
+          "x": -2436,
+          "z": 5998
+        },
+        "samples": 81
+      }
+    },
+    {
+      "name": "tile:l0_x-5_z12:collision/fa88843eb5d14f88004c.json.gz:edges=4616",
+      "buildMs": 25.007833000000005,
+      "nodes": 748,
+      "references": 110278,
+      "maxDepth": 5,
+      "heapMB": 205.89781188964844,
+      "capsuleQueries": {
+        "p95Ms": 0.06929100000002109,
+        "max": {
+          "ms": 0.11883299999999508,
+          "x": -2312,
+          "z": 6064
+        },
+        "samples": 81
+      },
+      "rayQueries": {
+        "p95Ms": 0.1149159999999938,
+        "max": {
+          "ms": 0.19454099999995833,
+          "x": -2312,
+          "z": 6436
+        },
+        "samples": 81
+      }
+    },
+    {
+      "name": "tile:l0_x-6_z12:collision/e5e9a4d91fd3ac9ebfff.json.gz:edges=4526",
+      "buildMs": 19.989000000000033,
+      "nodes": 668,
+      "references": 107126,
+      "maxDepth": 5,
+      "heapMB": 216.76382446289062,
+      "capsuleQueries": {
+        "p95Ms": 0.0402920000000222,
+        "max": {
+          "ms": 0.06666599999994105,
+          "x": -2564,
+          "z": 6312
+        },
+        "samples": 81
+      },
+      "rayQueries": {
+        "p95Ms": 0.15850000000000364,
+        "max": {
+          "ms": 0.24933399999997619,
+          "x": -2750,
+          "z": 6498
+        },
+        "samples": 81
+      }
+    },
+    {
+      "name": "tile:l0_x-3_z2:collision/d83c2389aeb24403d449.json.gz:edges=4285",
+      "buildMs": 19.01637500000004,
+      "nodes": 633,
+      "references": 136438,
+      "maxDepth": 4,
+      "heapMB": 230.04210662841797,
+      "capsuleQueries": {
+        "p95Ms": 0.03208299999994324,
+        "max": {
+          "ms": 0.053417000000081316,
+          "x": -1126,
+          "z": 1188
+        },
+        "samples": 81
+      },
+      "rayQueries": {
+        "p95Ms": 0.1210839999999962,
+        "max": {
+          "ms": 0.15991599999995287,
+          "x": -1436,
+          "z": 1312
+        },
+        "samples": 81
+      }
+    },
+    {
+      "name": "tile:l0_x-4_z1:collision/db48ef5db440032782b5.json.gz:edges=3825",
+      "buildMs": 17.357374999999934,
+      "nodes": 736,
+      "references": 140182,
+      "maxDepth": 4,
+      "heapMB": 242.98563385009766,
+      "capsuleQueries": {
+        "p95Ms": 0.03554199999996399,
+        "max": {
+          "ms": 0.05920899999989615,
+          "x": -1812,
+          "z": 812
+        },
+        "samples": 81
+      },
+      "rayQueries": {
+        "p95Ms": 0.12516699999991943,
+        "max": {
+          "ms": 0.17312500000002728,
+          "x": -1936,
+          "z": 688
+        },
+        "samples": 81
+      }
+    }
+  ]
+}

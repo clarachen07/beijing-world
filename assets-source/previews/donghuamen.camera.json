@@ -1,0 +1,32 @@
+{
+  "model": "donghuamen",
+  "projection": "orthographic",
+  "locationMeters": [
+    35.20000076293945,
+    -52.79999923706055,
+    41.099998474121094
+  ],
+  "targetMeters": [
+    0.0,
+    0.0,
+    12.5
+  ],
+  "orthographicScaleMeters": 81.4000015258789,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -22.0,
+      -12.0,
+      0.0
+    ],
+    [
+      22.0,
+      12.0,
+      25.0
+    ]
+  ]
+}

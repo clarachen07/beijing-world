@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import { uniforms } from './materials';
 
 export class Environment {
-  sun = new THREE.DirectionalLight(0xffd9a8, 2.6);
+  sun = new THREE.DirectionalLight(0xfff4df, 2.3);
   moon = new THREE.DirectionalLight(0x8fa4d0, 0.0);
   hemi = new THREE.HemisphereLight(0xbfd0e8, 0x6b6052, 0.85);
   ambient = new THREE.AmbientLight(0x606878, 0.25);
@@ -15,6 +15,10 @@ export class Environment {
 
   nightT = 0;
   target = 0; // 目标昼夜状态
+  private dayFog = new THREE.Color(0xc6d3db);
+  private nightFog = new THREE.Color(0x070b14);
+  private nightSky = new THREE.Color(0x2a3654);
+  private nightGround = new THREE.Color(0x14161c);
 
   constructor() {
     // 午后太阳：偏西（金色暖调）
@@ -44,8 +48,8 @@ export class Environment {
         void main() {
           float h = clamp(vDir.y, 0.0, 1.0); // 注意：pow 不接受负底数，必须 clamp 到 0
           // 白天：暖金地平线 → 蓝天
-          vec3 dayH = vec3(0.94, 0.78, 0.60);
-          vec3 dayT = vec3(0.35, 0.55, 0.82);
+          vec3 dayH = vec3(0.73, 0.82, 0.89);
+          vec3 dayT = vec3(0.25, 0.48, 0.74);
           // 夜晚：深蓝夜幕
           vec3 nightH = vec3(0.028, 0.038, 0.075);
           vec3 nightT = vec3(0.002, 0.004, 0.012);
@@ -70,23 +74,22 @@ export class Environment {
   /** 每帧更新（nightT 向 target 平滑过渡） */
   update(dt: number) {
     const speed = 0.5;
-    this.nightT += (this.target - this.nightT) * Math.min(1, dt * speed);
+    this.nightT += (this.target - this.nightT) * (1 - Math.exp(-Math.max(0, dt) * speed));
     if (Math.abs(this.target - this.nightT) < 0.001) this.nightT = this.target;
     const n = this.nightT;
 
-    this.sun.intensity = 2.6 * (1 - n);
-    this.sun.color.setHSL(0.085, 0.75, 0.62 - n * 0.05);
+    this.sun.intensity = 2.3 * (1 - n);
+    this.sun.color.set(0xfff4df);
     this.moon.intensity = 0.5 * n;
     this.hemi.intensity = 0.85 * (1 - n) + 0.16 * n;
-    this.hemi.color.set(0xbfd0e8).lerp(new THREE.Color(0x2a3654), n);
-    this.hemi.groundColor.set(0x6b6052).lerp(new THREE.Color(0x14161c), n);
+    this.hemi.color.set(0xbfd0e8).lerp(this.nightSky, n);
+    this.hemi.groundColor.set(0x827865).lerp(this.nightGround, n);
     this.ambient.intensity = 0.25 * (1 - n) + 0.12 * n;
 
-    const dayFog = new THREE.Color(0xd8c4a8);
-    const nightFog = new THREE.Color(0x070b14);
-    this.fog.color.copy(dayFog).lerp(nightFog, n);
-    this.fog.density = 0.000029 + n * 0.000014;
+    this.fog.color.copy(this.dayFog).lerp(this.nightFog, n);
+    this.fog.density = 0.000024 + n * 0.000014;
 
     uniforms.uNight.value = n;
   }
+  dispose() { this.sky.geometry.dispose(); (this.sky.material as THREE.Material).dispose(); }
 }

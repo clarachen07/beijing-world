@@ -1,0 +1,2023 @@
+{
+  "generatedAt": "2026-10-02T12:23:05.296Z",
+  "assetVersion": "d3bd20956b7d",
+  "method": "Decoded Meshopt world triangles: connected large grey roof layers, masonry materials and explicit portal rays for render/medium/collision. Mouth counts and visible macro forms are photo-grounded; corridor dimensions, stair detail and unsourced part heights remain inferred.",
+  "errors": [],
+  "assets": [
+    {
+      "model": "yongdingmen",
+      "level": "near",
+      "path": "public/models/landmarks/yongdingmen-ab62827d53.glb",
+      "checks": [],
+      "materialEvidence": [
+        {
+          "name": "grey_brick",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_brick-basecolor",
+          "embeddedBaseColorKTX2SHA256": "780c764780f09fec0b47b940af914b8b1025292405017fdd8bef32e95916346b"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "wood_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wood_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "242499fff5315ed90e0f557157507e9465459dd974f737c4f0dddc92687c61e7"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "painted_beams",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "painted_beams-basecolor",
+          "embeddedBaseColorKTX2SHA256": "b8ba340ef947ef9bc9c8f482be86746c0c2390d946beeb4eac9467bbeeaa3154"
+        },
+        {
+          "name": "wall_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wall_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "cb5e7244dbabb05dc14d7e4f33ba0c11794289541f839f15360b6dd87aec4c87"
+        }
+      ],
+      "roofComponents": [
+        {
+          "min": [
+            -14.51396656036377,
+            14.381101298514846,
+            -9.022338790714851
+          ],
+          "max": [
+            14.513965606689453,
+            16.660051324447778,
+            9.022338790714851
+          ],
+          "planAreaM2": 523.7996768100874
+        },
+        {
+          "min": [
+            -13.864609759971607,
+            17.38116515189556,
+            -8.373867879545598
+          ],
+          "max": [
+            13.86460880629729,
+            19.66011517782849,
+            8.373867879545598
+          ],
+          "planAreaM2": 464.4016253539571
+        },
+        {
+          "min": [
+            -13.215252959579443,
+            20.382114894499175,
+            -7.725396968376343
+          ],
+          "max": [
+            13.215252005905127,
+            24.40006546500212,
+            7.725396968376343
+          ],
+          "planAreaM2": 408.3722858660207
+        }
+      ],
+      "expectedEaveLayers": 3
+    },
+    {
+      "model": "yongdingmen",
+      "level": "medium",
+      "path": "public/models/landmarks/yongdingmen-medium-eea4b46056.glb",
+      "checks": [],
+      "materialEvidence": [
+        {
+          "name": "grey_brick",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_brick-basecolor",
+          "embeddedBaseColorKTX2SHA256": "780c764780f09fec0b47b940af914b8b1025292405017fdd8bef32e95916346b"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "wood_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wood_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "242499fff5315ed90e0f557157507e9465459dd974f737c4f0dddc92687c61e7"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "painted_beams",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "painted_beams-basecolor",
+          "embeddedBaseColorKTX2SHA256": "b8ba340ef947ef9bc9c8f482be86746c0c2390d946beeb4eac9467bbeeaa3154"
+        },
+        {
+          "name": "wall_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wall_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "cb5e7244dbabb05dc14d7e4f33ba0c11794289541f839f15360b6dd87aec4c87"
+        }
+      ],
+      "roofComponents": [
+        {
+          "min": [
+            -14.51396656036377,
+            14.383316021572119,
+            -9.022338790714851
+          ],
+          "max": [
+            14.513965606689453,
+            16.660051324447778,
+            9.022338790714851
+          ],
+          "planAreaM2": 523.7996768100874
+        },
+        {
+          "min": [
+            -13.864609759971607,
+            17.38337987495283,
+            -8.373867879545598
+          ],
+          "max": [
+            13.86460880629729,
+            19.66011517782849,
+            8.373867879545598
+          ],
+          "planAreaM2": 464.4016253539571
+        },
+        {
+          "min": [
+            -13.215252959579443,
+            20.384329617556446,
+            -7.725396968376343
+          ],
+          "max": [
+            13.215252005905127,
+            24.40006546500212,
+            7.725396968376343
+          ],
+          "planAreaM2": 408.3722858660207
+        }
+      ],
+      "expectedEaveLayers": 3
+    },
+    {
+      "model": "yongdingmen",
+      "level": "collision",
+      "path": "public/models/landmarks/yongdingmen-collision-e58c4c602a.glb",
+      "checks": [],
+      "materialEvidence": []
+    },
+    {
+      "model": "wumen",
+      "level": "near",
+      "path": "public/models/landmarks/wumen-1ce2d9c917.glb",
+      "checks": [
+        {
+          "name": "north arch mouth -52",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth -17.5",
+          "originGLTFMetres": [
+            -17.5,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 17.5",
+          "originGLTFMetres": [
+            17.5,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 52",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch -17.5",
+          "originGLTFMetres": [
+            -17.5,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch 17.5",
+          "originGLTFMetres": [
+            17.5,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south lateral wing closed -1",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": false,
+          "firstHitM": 10.499385977168288,
+          "passed": true
+        },
+        {
+          "name": "lateral courtyard turn -1",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            25
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "maxDistanceM": 14,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south lateral wing closed 1",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": false,
+          "firstHitM": 10.499385977168288,
+          "passed": true
+        },
+        {
+          "name": "lateral courtyard turn 1",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            25
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistanceM": 14,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        }
+      ],
+      "materialEvidence": [
+        {
+          "name": "wall_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wall_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "cb5e7244dbabb05dc14d7e4f33ba0c11794289541f839f15360b6dd87aec4c87"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "wood_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wood_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "242499fff5315ed90e0f557157507e9465459dd974f737c4f0dddc92687c61e7"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "painted_beams",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "painted_beams-basecolor",
+          "embeddedBaseColorKTX2SHA256": "b8ba340ef947ef9bc9c8f482be86746c0c2390d946beeb4eac9467bbeeaa3154"
+        },
+        {
+          "name": "glazed_gold",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "glazed_gold-basecolor",
+          "embeddedBaseColorKTX2SHA256": "04deaa900a8553011ba73c43e847f2725adb5587f0104a920220c19490f7538d"
+        }
+      ]
+    },
+    {
+      "model": "wumen",
+      "level": "medium",
+      "path": "public/models/landmarks/wumen-medium-b37fd08446.glb",
+      "checks": [
+        {
+          "name": "north arch mouth -52",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth -17.5",
+          "originGLTFMetres": [
+            -17.5,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 17.5",
+          "originGLTFMetres": [
+            17.5,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 52",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch -17.5",
+          "originGLTFMetres": [
+            -17.5,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch 17.5",
+          "originGLTFMetres": [
+            17.5,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south lateral wing closed -1",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": false,
+          "firstHitM": 10.499385977168288,
+          "passed": true
+        },
+        {
+          "name": "lateral courtyard turn -1",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            25
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "maxDistanceM": 14,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south lateral wing closed 1",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": false,
+          "firstHitM": 10.499385977168288,
+          "passed": true
+        },
+        {
+          "name": "lateral courtyard turn 1",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            25
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistanceM": 14,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        }
+      ],
+      "materialEvidence": [
+        {
+          "name": "wall_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wall_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "cb5e7244dbabb05dc14d7e4f33ba0c11794289541f839f15360b6dd87aec4c87"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "wood_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wood_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "242499fff5315ed90e0f557157507e9465459dd974f737c4f0dddc92687c61e7"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "painted_beams",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "painted_beams-basecolor",
+          "embeddedBaseColorKTX2SHA256": "b8ba340ef947ef9bc9c8f482be86746c0c2390d946beeb4eac9467bbeeaa3154"
+        },
+        {
+          "name": "glazed_gold",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "glazed_gold-basecolor",
+          "embeddedBaseColorKTX2SHA256": "04deaa900a8553011ba73c43e847f2725adb5587f0104a920220c19490f7538d"
+        }
+      ]
+    },
+    {
+      "model": "wumen",
+      "level": "collision",
+      "path": "public/models/landmarks/wumen-collision-40938bde0d.glb",
+      "checks": [
+        {
+          "name": "north arch mouth -52",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth -17.5",
+          "originGLTFMetres": [
+            -17.5,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 17.5",
+          "originGLTFMetres": [
+            17.5,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "north arch mouth 52",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            -20
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistanceM": 10,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch -17.5",
+          "originGLTFMetres": [
+            -17.5,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south central through arch 17.5",
+          "originGLTFMetres": [
+            17.5,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 100,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south lateral wing closed -1",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": false,
+          "firstHitM": 10.499412518692594,
+          "passed": true
+        },
+        {
+          "name": "lateral courtyard turn -1",
+          "originGLTFMetres": [
+            -52,
+            1.75,
+            25
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "maxDistanceM": 14,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "south lateral wing closed 1",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            80
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": false,
+          "firstHitM": 10.499412518692594,
+          "passed": true
+        },
+        {
+          "name": "lateral courtyard turn 1",
+          "originGLTFMetres": [
+            52,
+            1.75,
+            25
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistanceM": 14,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        }
+      ],
+      "materialEvidence": []
+    },
+    {
+      "model": "shenwumen",
+      "level": "near",
+      "path": "public/models/landmarks/shenwumen-533e054e6f.glb",
+      "checks": [
+        {
+          "name": "through gate -15",
+          "originGLTFMetres": [
+            -15,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "through gate 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "through gate 15",
+          "originGLTFMetres": [
+            15,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        }
+      ],
+      "materialEvidence": [
+        {
+          "name": "wall_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wall_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "cb5e7244dbabb05dc14d7e4f33ba0c11794289541f839f15360b6dd87aec4c87"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "wood_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wood_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "242499fff5315ed90e0f557157507e9465459dd974f737c4f0dddc92687c61e7"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "painted_beams",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "painted_beams-basecolor",
+          "embeddedBaseColorKTX2SHA256": "b8ba340ef947ef9bc9c8f482be86746c0c2390d946beeb4eac9467bbeeaa3154"
+        },
+        {
+          "name": "glazed_gold",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "glazed_gold-basecolor",
+          "embeddedBaseColorKTX2SHA256": "04deaa900a8553011ba73c43e847f2725adb5587f0104a920220c19490f7538d"
+        }
+      ]
+    },
+    {
+      "model": "shenwumen",
+      "level": "medium",
+      "path": "public/models/landmarks/shenwumen-medium-d20520d1ee.glb",
+      "checks": [
+        {
+          "name": "through gate -15",
+          "originGLTFMetres": [
+            -15,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "through gate 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "through gate 15",
+          "originGLTFMetres": [
+            15,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        }
+      ],
+      "materialEvidence": [
+        {
+          "name": "wall_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wall_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "cb5e7244dbabb05dc14d7e4f33ba0c11794289541f839f15360b6dd87aec4c87"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "wood_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wood_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "242499fff5315ed90e0f557157507e9465459dd974f737c4f0dddc92687c61e7"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "painted_beams",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "painted_beams-basecolor",
+          "embeddedBaseColorKTX2SHA256": "b8ba340ef947ef9bc9c8f482be86746c0c2390d946beeb4eac9467bbeeaa3154"
+        },
+        {
+          "name": "glazed_gold",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "glazed_gold-basecolor",
+          "embeddedBaseColorKTX2SHA256": "04deaa900a8553011ba73c43e847f2725adb5587f0104a920220c19490f7538d"
+        }
+      ]
+    },
+    {
+      "model": "shenwumen",
+      "level": "collision",
+      "path": "public/models/landmarks/shenwumen-collision-545ba8cd43.glb",
+      "checks": [
+        {
+          "name": "through gate -15",
+          "originGLTFMetres": [
+            -15,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "through gate 0",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "through gate 15",
+          "originGLTFMetres": [
+            15,
+            1.75,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 60,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        }
+      ],
+      "materialEvidence": []
+    },
+    {
+      "model": "gulou",
+      "level": "near",
+      "path": "public/models/landmarks/gulou-61bd887883.glb",
+      "checks": [],
+      "materialEvidence": [
+        {
+          "name": "wall_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wall_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "cb5e7244dbabb05dc14d7e4f33ba0c11794289541f839f15360b6dd87aec4c87"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "wood_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wood_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "242499fff5315ed90e0f557157507e9465459dd974f737c4f0dddc92687c61e7"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "painted_beams",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "painted_beams-basecolor",
+          "embeddedBaseColorKTX2SHA256": "b8ba340ef947ef9bc9c8f482be86746c0c2390d946beeb4eac9467bbeeaa3154"
+        }
+      ],
+      "roofComponents": [
+        {
+          "min": [
+            -24.00854518265328,
+            32.3805494094552,
+            -14.513992736594746
+          ],
+          "max": [
+            24.00854518265328,
+            34.66040414135009,
+            14.513992736594746
+          ],
+          "planAreaM2": 1393.839401588946
+        },
+        {
+          "min": [
+            -23.35911130100406,
+            35.38076303902153,
+            -13.864558854945525
+          ],
+          "max": [
+            23.35911130100406,
+            37.659763252651096,
+            13.864558854945525
+          ],
+          "planAreaM2": 1295.4550937279757
+        },
+        {
+          "min": [
+            -22.708822901089512,
+            38.38183118685319,
+            -13.215124973296305
+          ],
+          "max": [
+            22.708822901089512,
+            45.10005378886131,
+            13.215124973296305
+          ],
+          "planAreaM2": 1200.3997305374041
+        }
+      ],
+      "expectedEaveLayers": 3
+    },
+    {
+      "model": "gulou",
+      "level": "medium",
+      "path": "public/models/landmarks/gulou-medium-77db28d28a.glb",
+      "checks": [],
+      "materialEvidence": [
+        {
+          "name": "wall_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wall_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "cb5e7244dbabb05dc14d7e4f33ba0c11794289541f839f15360b6dd87aec4c87"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "wood_red",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "wood_red-basecolor",
+          "embeddedBaseColorKTX2SHA256": "242499fff5315ed90e0f557157507e9465459dd974f737c4f0dddc92687c61e7"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "painted_beams",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "painted_beams-basecolor",
+          "embeddedBaseColorKTX2SHA256": "b8ba340ef947ef9bc9c8f482be86746c0c2390d946beeb4eac9467bbeeaa3154"
+        }
+      ],
+      "roofComponents": [
+        {
+          "min": [
+            -24.00854518265328,
+            32.382258445985855,
+            -14.513992736594746
+          ],
+          "max": [
+            24.00854518265328,
+            34.66040414135009,
+            14.513992736594746
+          ],
+          "planAreaM2": 1393.839401588946
+        },
+        {
+          "min": [
+            -23.35911130100406,
+            35.38247207555219,
+            -13.864558854945525
+          ],
+          "max": [
+            23.35911130100406,
+            37.659763252651096,
+            13.864558854945525
+          ],
+          "planAreaM2": 1295.4550937279757
+        },
+        {
+          "min": [
+            -22.708822901089512,
+            38.384394741649174,
+            -13.215124973296305
+          ],
+          "max": [
+            22.708822901089512,
+            45.10005378886131,
+            13.215124973296305
+          ],
+          "planAreaM2": 1200.3997305374041
+        }
+      ],
+      "expectedEaveLayers": 3
+    },
+    {
+      "model": "gulou",
+      "level": "collision",
+      "path": "public/models/landmarks/gulou-collision-72d5c01bd4.glb",
+      "checks": [],
+      "materialEvidence": []
+    },
+    {
+      "model": "zhonglou",
+      "level": "near",
+      "path": "public/models/landmarks/zhonglou-5e60cb1b76.glb",
+      "checks": [
+        {
+          "name": "lower central gate",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            25
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper room central large arch",
+          "originGLTFMetres": [
+            0,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper recessed side arch front -9.2",
+          "originGLTFMetres": [
+            -9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 8.95,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper closed side shutter -9.2",
+          "originGLTFMetres": [
+            -9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": false,
+          "firstHitM": 9.710131817357048,
+          "passed": true
+        },
+        {
+          "name": "upper recessed side arch front 9.2",
+          "originGLTFMetres": [
+            9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 8.95,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper closed side shutter 9.2",
+          "originGLTFMetres": [
+            9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": false,
+          "firstHitM": 9.710131817357048,
+          "passed": true
+        }
+      ],
+      "materialEvidence": [
+        {
+          "name": "grey_brick",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_brick-basecolor",
+          "embeddedBaseColorKTX2SHA256": "780c764780f09fec0b47b940af914b8b1025292405017fdd8bef32e95916346b"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "glazed_green",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "glazed_green-basecolor",
+          "embeddedBaseColorKTX2SHA256": "7d5172c15e5f5b73d5aad032184e50f31a8224ad644b3816cee0efaeff35841f"
+        }
+      ],
+      "roofComponents": [
+        {
+          "min": [
+            -17.0121240198192,
+            35.383025206248234,
+            -13.514679833574952
+          ],
+          "max": [
+            17.0121240198192,
+            38.49966094504562,
+            13.514679833574952
+          ],
+          "planAreaM2": 919.6536376677064
+        },
+        {
+          "min": [
+            -15.513010534764458,
+            38.88339306579342,
+            -12.015566348520208
+          ],
+          "max": [
+            15.513010534764458,
+            46.30002131194188,
+            12.015566348520208
+          ],
+          "planAreaM2": 745.5904293830212
+        }
+      ],
+      "expectedEaveLayers": 2
+    },
+    {
+      "model": "zhonglou",
+      "level": "medium",
+      "path": "public/models/landmarks/zhonglou-medium-27338b3453.glb",
+      "checks": [
+        {
+          "name": "lower central gate",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            25
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper room central large arch",
+          "originGLTFMetres": [
+            0,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper recessed side arch front -9.2",
+          "originGLTFMetres": [
+            -9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 8.95,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper closed side shutter -9.2",
+          "originGLTFMetres": [
+            -9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": false,
+          "firstHitM": 9.710131817357048,
+          "passed": true
+        },
+        {
+          "name": "upper recessed side arch front 9.2",
+          "originGLTFMetres": [
+            9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 8.95,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper closed side shutter 9.2",
+          "originGLTFMetres": [
+            9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": false,
+          "firstHitM": 9.710131817357048,
+          "passed": true
+        }
+      ],
+      "materialEvidence": [
+        {
+          "name": "grey_brick",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_brick-basecolor",
+          "embeddedBaseColorKTX2SHA256": "780c764780f09fec0b47b940af914b8b1025292405017fdd8bef32e95916346b"
+        },
+        {
+          "name": "grey_roof_tiles",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "grey_roof_tiles-basecolor",
+          "embeddedBaseColorKTX2SHA256": "507578e2282549032e4266aeed14b335b7b9eac79403b60ccf0606a3f38220bb"
+        },
+        {
+          "name": "carved_marble",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "carved_marble-basecolor",
+          "embeddedBaseColorKTX2SHA256": "64effb944df4a47005503d5adb52c35ee985f6bf8c056f5f88bafbea194e7e25"
+        },
+        {
+          "name": "glazed_green",
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": "glazed_green-basecolor",
+          "embeddedBaseColorKTX2SHA256": "7d5172c15e5f5b73d5aad032184e50f31a8224ad644b3816cee0efaeff35841f"
+        }
+      ],
+      "roofComponents": [
+        {
+          "min": [
+            -17.0121240198192,
+            35.38521796122394,
+            -13.514679833574952
+          ],
+          "max": [
+            17.0121240198192,
+            38.49966094504562,
+            13.514679833574952
+          ],
+          "planAreaM2": 919.6536376677064
+        },
+        {
+          "min": [
+            -15.513010534764458,
+            38.88412398411866,
+            -12.015566348520208
+          ],
+          "max": [
+            15.513010534764458,
+            46.30002131194188,
+            12.015566348520208
+          ],
+          "planAreaM2": 745.5904293830212
+        }
+      ],
+      "expectedEaveLayers": 2
+    },
+    {
+      "model": "zhonglou",
+      "level": "collision",
+      "path": "public/models/landmarks/zhonglou-collision-985f9be723.glb",
+      "checks": [
+        {
+          "name": "lower central gate",
+          "originGLTFMetres": [
+            0,
+            1.75,
+            25
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 50,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper room central large arch",
+          "originGLTFMetres": [
+            0,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper recessed side arch front -9.2",
+          "originGLTFMetres": [
+            -9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 8.95,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper closed side shutter -9.2",
+          "originGLTFMetres": [
+            -9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": false,
+          "firstHitM": 9.710131817357048,
+          "passed": true
+        },
+        {
+          "name": "upper recessed side arch front 9.2",
+          "originGLTFMetres": [
+            9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 8.95,
+          "expectedClear": true,
+          "firstHitM": null,
+          "passed": true
+        },
+        {
+          "name": "upper closed side shutter 9.2",
+          "originGLTFMetres": [
+            9.2,
+            26.5,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistanceM": 40,
+          "expectedClear": false,
+          "firstHitM": 9.710131817357048,
+          "passed": true
+        }
+      ],
+      "materialEvidence": []
+    }
+  ]
+}

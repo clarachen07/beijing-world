@@ -85,6 +85,9 @@ html, body {
   text-align: center;
   padding-bottom: 12px;
   transition: opacity 0.25s;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
 }
 .landmark-label .dot {
   width: 6px; height: 6px;
@@ -158,13 +161,53 @@ html, body {
 
 /* ── 署名 ─────────────────────────── */
 #hud-attr {
-  bottom: 12px;
+  bottom: 4px;
   right: 14px;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.38);
   letter-spacing: 0.4px;
   pointer-events: auto;
 }
+
+[hidden] { display: none !important; }
+button, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, a:focus-visible, select:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+#destination { top: 100px; left: 26px; display: flex; align-items: center; gap: 10px; font-size: 12px; }
+#destination label { opacity: .7; }
+#landmark-picker { max-width: 220px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--text); background: var(--ink); }
+#landmark-picker option { background: #172434; }
+#hud-controls .actions { display: flex; gap: 2px; }
+#hud-controls button { min-height: 42px; }
+.panel { bottom: 94px; right: 24px; max-width: min(390px, calc(100vw - 32px)); border-radius: 12px; padding: 22px; background: rgba(10, 19, 31, .96); border: 1px solid var(--line); box-shadow: 0 8px 35px #0005; }
+.panel h2 { font-size: 18px; letter-spacing: 2px; margin-bottom: 16px; }
+.panel p { font-size: 13px; line-height: 1.8; margin-bottom: 12px; color: #dde2e6; }
+.panel a { font-size: 12px; color: var(--gold); }
+#status { top: 72px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; align-items: center; max-width: calc(100vw - 32px); padding: 10px 14px; border-radius: 8px; background: var(--ink); border: 1px solid var(--line); font-size: 12px; }
+#status button, #btn-retry-boot { border: 1px solid #e8b64c66; background: #e8b64c20; color: var(--gold); border-radius: 5px; padding: 7px 12px; }
+#btn-retry-boot { margin-top: 18px; }
+#walk-pad { bottom: 130px; left: 24px; width: 112px; height: 112px; border: 1px solid #ffffff50; border-radius: 50%; background: #10213299; touch-action: none; display: grid; place-items: center; text-align: center; }
+#walk-pad span { color: #e1e6ec88; line-height: 28px; font-size: 18px; }
+#walk-knob { position: absolute; top: 38px; left: 38px; width: 34px; height: 34px; border-radius: 50%; background: #e8b64c99; }
+@media (pointer: fine) { #walk-pad { display: none; } }
+@media (max-width: 680px) {
+  #hud-title { top: max(18px, env(safe-area-inset-top)); left: 18px; }
+  #hud-title h1 { font-size: 24px; letter-spacing: 6px; }
+  #hud-title .sub { font-size: 9px; letter-spacing: 2px; }
+  #destination { top: 84px; left: 18px; }
+  #destination label { display: none; }
+  #landmark-picker { max-width: 190px; font-size: 12px; }
+  #hud-controls { flex-direction: column; width: calc(100% - 24px); max-width: 440px; bottom: max(26px, env(safe-area-inset-bottom)); gap: 3px; padding: 5px; }
+  #hud-controls .seg { width: 100%; }
+  #hud-controls .seg button { flex: 1; padding: 8px 4px; font-size: 12px; letter-spacing: 0; }
+  #hud-controls .actions { width: 100%; justify-content: center; }
+  #hud-controls .actions button { font-size: 12px; padding: 6px 16px; }
+  #hud-attr { width: 100%; text-align: center; right: 0; bottom: 5px; font-size: 8px; }
+  .panel { bottom: 134px; right: 12px; }
+  #status { top: 138px; width: max-content; }
+  .landmark-label .en { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { #loading .glyph { animation: none; } #loading, .landmark-label { transition: none; } }
 #hud-attr a { color: rgba(255, 255, 255, 0.55); text-decoration: none; }
 #hud-attr a:hover { color: var(--gold); }
 
@@ -179,3 +222,4 @@ html, body {
 body.video-mode #hud-controls,
 body.video-mode #hint,
 body.video-mode #hud-attr { display: none !important; }
+body.video-mode #destination, body.video-mode #status, body.video-mode #walk-pad { display: none !important; }

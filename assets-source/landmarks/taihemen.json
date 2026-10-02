@@ -1,0 +1,150 @@
+{
+  "id": "taihemen",
+  "model": "taihemen",
+  "name": "太和门",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.913967799999995,
+    "longitude": 116.39088805,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": 1.401,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/638308745",
+      "url": "https://www.openstreetmap.org/way/638308745",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "taihemen-footprint-0",
+      "longitude": 116.390468,
+      "latitude": 39.9138585,
+      "source": "https://www.openstreetmap.org/way/638308745",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "taihemen-footprint-1",
+      "longitude": 116.390469,
+      "latitude": 39.9138323,
+      "source": "https://www.openstreetmap.org/way/638308745",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "taihemen-footprint-2",
+      "longitude": 116.3905705,
+      "latitude": 39.9138347,
+      "source": "https://www.openstreetmap.org/way/638308745",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "taihemen-footprint-3",
+      "longitude": 116.3905711,
+      "latitude": 39.9138204,
+      "source": "https://www.openstreetmap.org/way/638308745",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/way/638308745"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_at_the_Forbidden_City.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2024-05-15",
+      "view": "front courtyard elevation",
+      "resolution": [
+        2560,
+        1707
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_20160826-3.jpg",
+      "fileTitle": "File:Gate of Supreme Harmony 20160826-3.jpg",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2016-08-26 13:13:59",
+      "view": "太和门近距离外观；相机 GPS 在门南侧（方位为 GPS 推断，尚未逐立面标定）。",
+      "resolution": [
+        3241,
+        2431
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=52233761&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+      "cameraLocation": {
+        "lat": 39.913383,
+        "lon": 116.390931
+      }
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 23.8,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/taihemen.blend",
+    "lod": {
+      "near": "./models/landmarks/taihemen-0d29a38899.glb",
+      "medium": "./models/landmarks/taihemen-medium-22955ce7ea.glb",
+      "far": "./models/landmarks/taihemen-far-d7b214ee4c.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/taihemen-collision-db77b66421.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

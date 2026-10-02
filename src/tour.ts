@@ -1,5 +1,5 @@
 /**
- * 电影漫游：沿中轴线的确定性相机路径（同名关键帧供页面循环与视频渲染共用）。
+ * 单次电影漫游：确定性相机路径，终点保持，不隐式循环。
  * pos/look/night 三条曲线，t ∈ [0,1] 均匀映射到总时长。
  */
 import * as THREE from 'three';
@@ -68,7 +68,7 @@ function curves(): { posCurve: THREE.CatmullRomCurve3; lookCurve: THREE.CatmullR
 
 export function tourPose(t: number, outPos: THREE.Vector3, outLook: THREE.Vector3): number {
   const { posCurve, lookCurve } = curves();
-  const tc = Math.min(0.9999, Math.max(0, t));
+  const tc = Math.min(1, Math.max(0, Number.isFinite(t) ? t : 0));
   posCurve.getPoint(tc, outPos);
   lookCurve.getPoint(tc, outLook);
   // 夜晚状态插值（关键帧线性）

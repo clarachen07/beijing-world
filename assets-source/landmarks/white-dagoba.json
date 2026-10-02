@@ -1,0 +1,165 @@
+{
+  "id": "white-dagoba",
+  "model": "white-dagoba",
+  "name": "北海白塔",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.9244219,
+    "longitude": 116.38302254999999,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": -0.43,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/561193504",
+      "url": "https://www.openstreetmap.org/way/561193504",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "white-dagoba-footprint-0",
+      "longitude": 116.3829107,
+      "latitude": 39.9244944,
+      "source": "https://www.openstreetmap.org/way/561193504",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "white-dagoba-footprint-1",
+      "longitude": 116.3829197,
+      "latitude": 39.9243419,
+      "source": "https://www.openstreetmap.org/way/561193504",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "white-dagoba-footprint-2",
+      "longitude": 116.3830122,
+      "latitude": 39.9243451,
+      "source": "https://www.openstreetmap.org/way/561193504",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "white-dagoba-footprint-3",
+      "longitude": 116.3831344,
+      "latitude": 39.9243494,
+      "source": "https://www.openstreetmap.org/way/561193504",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048483.html",
+    "https://www.openstreetmap.org/way/561193504"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Beihai_Park_IMG_4410_Beihai_Lake_-_Jade_Island_-_white_dagoba.jpg",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "capturedAt": "2017-07-10",
+      "view": "island/lake panorama",
+      "resolution": [
+        10066,
+        3808
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Beihai_Park,_Beijing_(5062734513).jpg",
+      "fileTitle": "File:Beihai Park, Beijing (5062734513).jpg",
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2010-10-08 13:13",
+      "view": "琼华岛白塔与登塔阶梯的近距离视图；相机 GPS 在塔南侧（方位为 GPS 推断），补充既有湖面全景。",
+      "resolution": [
+        1800,
+        1350
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "Commons file-level metadata: title, description, author, license and capture date checked; category/search hit alone not accepted; no surveyed facade accuracy claimed",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=24200961&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+      "cameraLocation": {
+        "lat": 39.924115,
+        "lon": 116.382969
+      }
+    },
+    {
+      "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048483.html",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "overall",
+      "heightM": 35.9
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 35.9,
+    "heightEvidence": "primary textual height, export envelope calibrated",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/white-dagoba.blend",
+    "lod": {
+      "near": "./models/landmarks/white-dagoba-42a36984d1.glb",
+      "medium": "./models/landmarks/white-dagoba-medium-1f49428c90.glb",
+      "far": "./models/landmarks/white-dagoba-far-b98feb0a24.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/white-dagoba-collision-d18afb212b.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="referrer" content="same-origin">
+  <title>北京世界 · 手机实测</title>
+  <style>
+    :root{color-scheme:light;font:15px/1.55 system-ui,sans-serif;color:#23313a}
+    *{box-sizing:border-box}body{margin:0;background:#ebe7dc}iframe{position:fixed;inset:0;width:100%;height:100%;height:100dvh;border:0;background:#ebe7dc}
+    .panel{position:fixed;z-index:2;top:max(8px,env(safe-area-inset-top));left:max(8px,env(safe-area-inset-left));width:min(430px,calc(100% - 16px));background:#fcfbf7;border:1px solid #c8c4b9;border-radius:12px;box-shadow:0 3px 18px #0002}
+    summary{cursor:pointer;min-height:46px;padding:11px 14px;font-weight:650;touch-action:manipulation}summary span{font-size:12px;font-weight:400;color:#53616a;margin-left:6px}
+    .body{max-height:calc(100vh - 80px);max-height:calc(100dvh - 80px);overflow:auto;overscroll-behavior:contain;padding:0 14px 16px}
+    h1{font-size:19px;margin:4px 0 8px}h2{font-size:15px;margin:22px 0 8px}p{margin:8px 0}.hint{font-size:12px;color:#53616a}.notice{padding:10px;background:#f0ead8;border-radius:7px;font-size:13px}
+    label{display:block;margin:10px 0 4px}input,select,textarea,button,.download{font:inherit;font-size:16px}input:not([type=checkbox]),select,textarea{display:block;width:100%;padding:8px;border:1px solid #bcbfb8;border-radius:6px;background:white;color:inherit}textarea{resize:vertical;min-height:54px}
+    input[type=checkbox]{width:19px;height:19px;vertical-align:middle;margin-right:6px}button,.download{padding:9px 12px;border:1px solid #b5b8ae;border-radius:7px;background:#f4f3ed;color:#23313a;cursor:pointer;touch-action:manipulation;text-decoration:none;display:inline-block}button:disabled{opacity:.45;cursor:default}.primary{background:#304f45;color:white;border-color:#304f45}.row{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.row>*{flex:1;white-space:nowrap}.manual{border-top:1px solid #dedfd7;margin-top:12px;padding-top:4px}.manual select{font-size:14px}
+    output{display:block;white-space:pre-line;border-left:3px solid #8da294;padding:6px 10px;margin:10px 0;font-size:13px}progress{width:100%;height:13px}.download[hidden]{display:none}a{color:#304f45}.danger{color:#964328}button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #9a6f34;outline-offset:2px}
+  </style>
+</head>
+<body>
+  <iframe id="world" title="北京世界实际场景" allow="fullscreen" src="about:blank"></iframe>
+  <details class="panel" id="panel" open>
+    <summary>手机实测 <span id="compact-status">正在加载场景</span></summary>
+    <div class="body">
+      <h1>北京世界 · 实测记录</h1>
+      <p class="hint">这是独立测试入口。折叠面板后可正常触控场景；结果仅保留在本页，导出到设备，不会上传。</p>
+      <p class="notice">局域网测试不证明国内公网加载。HTTP 局域网没有 Service Worker；离线缓存测试需正式 HTTPS。</p>
+      <form id="context-form">
+        <label for="execution">运行环境（必须选择）</label>
+        <select id="execution" required><option value="">请选择</option><option value="physical_device">物理设备上实际运行</option><option value="browser_emulation">浏览器设备／触控仿真</option><option value="other_simulation">其他仿真环境</option></select>
+        <label for="device-model">机型</label><input id="device-model" placeholder="例如 iPhone 15 / 小米 14；不知道请写未知" autocomplete="off">
+        <label for="os">系统及版本</label><input id="os" placeholder="例如 iOS 18 / Android 15" autocomplete="off">
+        <label for="browser">浏览器及版本</label><input id="browser" placeholder="例如 Safari / Chrome 及版本" autocomplete="off">
+        <label for="network">所在地区与网络（用户填写）</label><input id="network" placeholder="例如北京，中国移动 5G；或海外家中 Wi-Fi" autocomplete="off">
+        <label for="access-path">访问路径</label><select id="access-path"><option value="unknown">不确定</option><option value="local_network">电脑局域网预览</option><option value="public_internet">公网网站</option></select>
+        <label for="cache-state">本次缓存状态（用户声明）</label><select id="cache-state"><option value="unknown">未控制／未知</option><option value="cold_declared">已自行清缓存，尝试冷启动</option><option value="warm_declared">再次访问，可能使用缓存</option></select>
+      </form>
+      <h2>加载与连续路线</h2>
+      <output id="load-status" aria-live="polite">正在等待项目首屏可操作…</output>
+      <p class="hint">保持前台，不触碰画面。真实路线约105秒，再停留到总计180秒，包含回起点过渡。被接管、失焦或切后台会记为中断，不能当作有效完整路线。</p>
+      <div class="row"><button id="start" class="primary" disabled>开始180秒实测</button><button id="stop" disabled>停止记录</button></div>
+      <progress id="progress" max="180" value="0" aria-label="路线进度"></progress>
+      <output id="route-status" aria-live="polite">尚未运行路线</output>
+      <div class="row"><button id="reload">重新载入场景</button><a id="download" class="download" href="#">导出当前 JSON</a></div>
+      <p class="hint">结束时会尝试自动下载初稿；浏览器拦截时请点击导出。完成下方人工检查后再次导出，结果才包含检查结论。</p>
+      <h2>人工交互检查</h2>
+      <p class="hint">在连续路线结束后操作。勾选表示已实际测试，并另选结果；没有操作的项目保持“未测”。</p>
+      <div class="row"><button data-mode="browse">鸟瞰</button><button data-mode="fly">飞行</button><button data-mode="walk">漫步</button><button data-mode="tour">游览</button></div>
+      <label for="landmark">跳转至场景现有地标</label><select id="landmark" disabled><option value="">场景载入后可选择</option></select>
+      <div id="manual-checks"></div>
+      <label for="notes">其他观察</label><textarea id="notes" placeholder="卡顿、发热、失败资源、画面或网络问题；也可记录离线复测条件"></textarea>
+      <output id="action-status" aria-live="polite">请直接触控场景完成交互检查。</output>
+      <p class="hint">手机以30 FPS为目标，已确认的 P95 帧间隔验收门槛为40毫秒；33.3毫秒仅为30 FPS理论帧间隔。此项不能代替人工交互检查、实机验证或公网网络验证。</p>
+      <p class="hint"><a href="./index.html">打开主产品</a> · 测试页使用同源场景和已有运行指标，不创建额外 WebGL 画布。</p>
+    </div>
+  </details>
+  <script>
+  (() => {
+    'use strict';
+    const $ = id => document.getElementById(id);
+    const frame=$('world'), panel=$('panel'), startedAt=new Date().toISOString();
+    const checks=[
+      ['mode_switch','模式切换','切换鸟瞰、飞行、游览，检查位置连续、没有突跳或失控。'],
+      ['takeover','游览接管','进入游览后触摸拖动，确认立即接管；停止触摸后视角受控。'],
+      ['focus_recovery','失焦与返回','有移动输入时切后台或离开场景再返回，检查没有持续移动、卡住或突然冲出。'],
+      ['walk','漫步','使用场景摇杆移动并查看地面、建筑和水域；尚未就绪应得到提示。'],
+      ['landmark_jump','地标跳转','连续选择两个地标，检查过渡、落点、模型载入和触控恢复。']
+    ];
+    for (const [id,title,description] of checks) {
+      const container=document.createElement('div'); container.className='manual';
+      const label=document.createElement('label'), checkbox=document.createElement('input'); checkbox.type='checkbox'; checkbox.id=`tested-${id}`;
+      label.append(checkbox,document.createTextNode(`已测试：${title}`));
+      const hint=document.createElement('p'); hint.className='hint'; hint.textContent=description;
+      const result=document.createElement('select'); result.id=`result-${id}`; result.setAttribute('aria-label',`${title}结果`);
+      for (const [value,text] of [['unrated','未判定'],['pass','通过'],['fail','失败'],['unable','当前条件无法完成']]) result.add(new Option(text,value));
+      const note=document.createElement('input'); note.id=`note-${id}`; note.placeholder='观察说明（可选）'; note.setAttribute('aria-label',`${title}说明`);
+      container.append(label,hint,result,note); $('manual-checks').append(container);
+    }
+    let ready=false, currentLoad=null, lastExportURL=null, run=null, timer=null, poll=null;
+    const loads=[], runs=[], events=[]; let webgl=null, errors=[];
+    const now=()=>performance.now();
+    const round=value=>Math.round(value*10)/10;
+    const log=(type,detail={})=>events.push({at:new Date().toISOString(),type,...detail});
+    const appWindow=()=>frame.contentWindow;
+    const safeMetrics=()=>{try{return appWindow().__bjw.metrics();}catch(error){return {unavailable:String(error)};}};
+    const byteLabel=value=>`${(value/1024/1024).toFixed(2)} MiB`;
+    function transferRecord(entry) {
+      const raw=entry.transferSize, measured=Number.isFinite(raw)&&raw>0;
+      return {name:entry.name,entryType:entry.entryType,initiatorType:entry.initiatorType||'navigation',startTimeMs:round(entry.startTime),responseEndMs:round(entry.responseEnd),durationMs:round(entry.duration),
+        transferSize:measured?raw:null,observedTransferSize:Number.isFinite(raw)?raw:null,transferMeasured:measured,
+        unmeasuredReason:measured?null:'zero_or_unavailable: cache, Service Worker, cross-origin timing restrictions or unsupported API; cause not inferred',
+        encodedBodySize:entry.encodedBodySize||null,decodedBodySize:entry.decodedBodySize||null,deliveryType:entry.deliveryType||null};
+    }
+    function resourceSnapshot(cutoff=Infinity) {
+      try {
+        const performance=appWindow().performance;
+        const entries=[...performance.getEntriesByType('navigation'),...performance.getEntriesByType('resource')].filter(entry=>entry.startTime<=cutoff&&(!entry.responseEnd||entry.responseEnd<=cutoff)).map(transferRecord);
+        const measured=entries.filter(entry=>entry.transferMeasured), unknown=entries.length-measured.length;
+        return {coverage:'Document plus exposed ResourceTiming entries only; worker, blocked or unexposed requests may be absent. This is not a network capture.',entries,
+          knownTransferSubtotalBytes:measured.reduce((sum,entry)=>sum+entry.transferSize,0),measuredEntryCount:measured.length,unmeasuredEntryCount:unknown,
+          totalForVisibleEntriesBytes:entries.length&&unknown===0?measured.reduce((sum,entry)=>sum+entry.transferSize,0):null,fullNetworkTransferBytes:null,
+          resourceTimingBufferFull:Boolean(currentLoad&&currentLoad.bufferFull)};
+      } catch(error) {return {unavailable:String(error),fullNetworkTransferBytes:null};}
+    }
+    function graphicsInfo() {
+      try {
+        const renderer=appWindow().__dbg.renderer, gl=renderer.getContext(), extension=gl.getExtension('WEBGL_debug_renderer_info'), rect=renderer.domElement.getBoundingClientRect();
+        return {contextType:gl.constructor.name,version:gl.getParameter(gl.VERSION),shadingLanguage:gl.getParameter(gl.SHADING_LANGUAGE_VERSION),
+          vendor:gl.getParameter(gl.VENDOR),renderer:gl.getParameter(gl.RENDERER),unmaskedVendor:extension?gl.getParameter(extension.UNMASKED_VENDOR_WEBGL):null,
+          unmaskedRenderer:extension?gl.getParameter(extension.UNMASKED_RENDERER_WEBGL):null,unmaskedInfoAvailable:Boolean(extension),contextAttributes:gl.getContextAttributes(),
+          drawingBuffer:{width:gl.drawingBufferWidth,height:gl.drawingBufferHeight},canvasCss:{width:round(rect.width),height:round(rect.height)},
+          pixelRatio:renderer.getPixelRatio(),maxTextureSize:gl.getParameter(gl.MAX_TEXTURE_SIZE),maxRenderbufferSize:gl.getParameter(gl.MAX_RENDERBUFFER_SIZE),contextLost:gl.isContextLost()};
+      } catch(error) {return {unavailable:String(error)};}
+    }
+    function viewportInfo(target=window) {
+      const viewport=target.visualViewport;
+      return {width:target.innerWidth,height:target.innerHeight,devicePixelRatio:target.devicePixelRatio,visualViewport:viewport?{width:round(viewport.width),height:round(viewport.height),scale:viewport.scale}:null};
+    }
+    function environmentInfo() {
+      return {userAgent:navigator.userAgent,userAgentData:navigator.userAgentData?{brands:navigator.userAgentData.brands,mobile:navigator.userAgentData.mobile,platform:navigator.userAgentData.platform}:null,
+        platform:navigator.platform,languages:navigator.languages,maxTouchPoints:navigator.maxTouchPoints,hardwareConcurrency:navigator.hardwareConcurrency||null,deviceMemoryGiB:navigator.deviceMemory||null,
+        timezone:Intl.DateTimeFormat().resolvedOptions().timeZone,screen:{width:screen.width,height:screen.height,orientation:screen.orientation?{type:screen.orientation.type,angle:screen.orientation.angle}:null},
+        wrapperViewport:viewportInfo(),sceneViewport:ready?viewportInfo(appWindow()):null,webgl,
+        connection:navigator.connection?{effectiveType:navigator.connection.effectiveType,downlink:navigator.connection.downlink,rtt:navigator.connection.rtt,saveData:navigator.connection.saveData}:null,
+        secureContext:isSecureContext,serviceWorkerAvailable:'serviceWorker' in navigator,sceneServiceWorkerControlled:ready&&'serviceWorker' in appWindow().navigator?Boolean(appWindow().navigator.serviceWorker.controller):null};
+    }
+    function userContext() {
+      return {execution:$('execution').value||'not_declared',deviceModel:$('device-model').value.trim()||null,os:$('os').value.trim()||null,browser:$('browser').value.trim()||null,
+        locationAndNetwork:$('network').value.trim()||null,accessPath:$('access-path').value,cacheState:$('cache-state').value,
+        declarationsAreUserSupplied:true,lanTestProvesPublicDomesticLoading:false};
+    }
+    function manualResults() {
+      return checks.map(([id,title])=>({id,title,tested:$(`tested-${id}`).checked,result:$(`tested-${id}`).checked?$(`result-${id}`).value:'not_tested',notes:$(`note-${id}`).value.trim()||null}));
+    }
+    function report() {
+      return {schemaVersion:1,project:'beijing-world',startedAt,exportedAt:new Date().toISOString(),testPage:location.href,version:currentLoad?.version||null,context:userContext(),device:environmentInfo(),loads,runs,events,errors,
+        currentMetrics:ready?safeMetrics():null,manualChecks:manualResults(),notes:$('notes').value.trim()||null,
+        limitations:['Physical device versus emulation is a user declaration, not an automatically verified fact.','LAN access does not prove public Internet accessibility in China.','Zero transferSize is unmeasured, never zero network cost. Visible ResourceTiming totals may omit requests.','Uninterrupted 180-second route and manual interaction checks are separate measurements.','HTTP LAN cannot validate Service Worker offline caching. No report is sent to a server.']};
+    }
+    function prepareDownload() {
+      if (lastExportURL) URL.revokeObjectURL(lastExportURL);
+      lastExportURL=URL.createObjectURL(new Blob([JSON.stringify(report(),null,2)+'\n'],{type:'application/json'}));
+      const anchor=$('download'); anchor.href=lastExportURL; anchor.download=`bjw-mobile-${new Date().toISOString().replace(/[:.]/g,'-')}-${$('execution').value||'undeclared'}.json`;
+    }
+    function markInterruption(type,detail={}) {
+      log(type,detail);
+      if (run&&run.status==='running') run.interruptions.push({type,elapsedMs:round(now()-run.startClockMs),...detail});
+    }
+    function attachScene() {
+      const win=appWindow(), attachedLoad=currentLoad;
+      try {win.performance.setResourceTimingBufferSize(10000);win.performance.addEventListener('resourcetimingbufferfull',()=>{attachedLoad.bufferFull=true;});}catch(error){log('resource_timing_setup_unavailable',{message:String(error)});}
+      win.addEventListener('blur',()=>markInterruption('scene_blur'));
+      win.addEventListener('focus',()=>log('scene_focus'));
+      win.addEventListener('error',event=>errors.push({at:new Date().toISOString(),kind:'scene_error',message:event.message||'Resource or script error',filename:event.filename||null}));
+      win.addEventListener('unhandledrejection',event=>errors.push({at:new Date().toISOString(),kind:'scene_rejection',message:String(event.reason)}));
+      win.document.addEventListener('visibilitychange',()=>{if(win.document.hidden)markInterruption('scene_hidden');});
+    }
+    function populateLandmarks() {
+      const target=$('landmark'), source=appWindow().document.getElementById('landmark-picker');target.replaceChildren(new Option('选择地标',''));
+      if (source) for(const option of source.options) if(option.value)target.add(new Option(option.text,option.value));
+      target.disabled=target.options.length<2;
+    }
+    async function captureVersion(load) {
+      const win=appWindow(), releaseURL=new URL('./release.json',location.href).href;
+      load.version={city:{revision:win.__dbg?.city?.manifest?.revision||null},bundleURL:win.document.querySelector('script[type="module"][src]')?.src||null,
+        release:{url:releaseURL,status:'pending',revision:null},note:'Observed release metadata, actual loaded bundle URL, and loaded city revision are separate evidence; cached shell consistency is not assumed.'};
+      try {
+        const response=await fetch(releaseURL,{cache:'no-store',credentials:'same-origin'});
+        if(!response.ok)throw new Error(`HTTP ${response.status}`);
+        const release=await response.json();
+        load.version.release={url:releaseURL,status:'read',revision:release.revision||null,resources:release.resources??null,totalBytes:release.totalBytes??null,observedAt:new Date().toISOString(),etag:response.headers.get('etag')};
+      }catch(error){load.version.release={url:releaseURL,status:'unavailable',revision:null,error:String(error)};}
+    }
+    function pollReady() {
+      try {
+        const win=appWindow();
+        if (!currentLoad||win.location.href!==currentLoad.sceneURL) return;
+        if (!win.__bjw||!win.document.getElementById('loading')?.classList.contains('done')) {
+          const retry=win.document.getElementById('btn-retry-boot'), detail=win.document.getElementById('load-detail');
+          if(retry&&!retry.hidden) {
+            currentLoad.bootFailure=detail?.textContent||'场景启动失败';currentLoad.resourcesOnFailure=resourceSnapshot();
+            $('load-status').textContent=`未完成首屏：${currentLoad.bootFailure}\n可直接在场景重试，或导出失败记录。`;$('compact-status').textContent='场景未完成加载';
+          }
+          return;
+        }
+        ready=true;clearInterval(poll);poll=null;webgl=graphicsInfo();populateLandmarks();
+        const canvas=win.__dbg.renderer.domElement;
+        canvas.addEventListener('webglcontextlost',()=>markInterruption('webgl_context_lost'));
+        canvas.addEventListener('webglcontextrestored',()=>log('webgl_context_restored'));
+        currentLoad.readyAt=new Date().toISOString();currentLoad.projectReadyMs=round(win.performance.now());currentLoad.wrapperElapsedMs=round(now()-currentLoad.startClockMs);
+        currentLoad.readinessMethod='Existing __bjw API plus loading.done; polled every 100ms, not first-pixel or network-idle timing';
+        currentLoad.firstScreen=resourceSnapshot(currentLoad.projectReadyMs);currentLoad.metrics=safeMetrics();currentLoad.webgl=webgl;
+        void captureVersion(currentLoad);
+        const network=currentLoad.firstScreen;
+        $('load-status').textContent=`首屏可操作：${(currentLoad.projectReadyMs/1000).toFixed(2)} 秒（100ms采样）\n可见请求已测传输小计：${network.knownTransferSubtotalBytes===undefined?'未测':byteLabel(network.knownTransferSubtotalBytes)}\n未测大小：${network.unmeasuredEntryCount??'未知'} 项；非全链路网络抓包。`;
+        $('compact-status').textContent='场景已就绪';$('start').disabled=false;log('scene_ready',{loadId:currentLoad.id});
+      }catch(error){$('load-status').textContent=`无法读取同源场景：${String(error)}。请用同源 HTTP/HTTPS 地址打开。`;}
+    }
+    function loadScene() {
+      if(run&&run.status==='running')finishRun('scene_reload',false);
+      clearInterval(poll);ready=false;$('start').disabled=true;$('landmark').disabled=true;$('compact-status').textContent='正在加载场景';$('load-status').textContent='正在等待项目首屏可操作…';
+      const url=new URL('./index.html',location.href);url.searchParams.set('qa',String(Date.now()));
+      currentLoad={id:loads.length+1,sceneURL:url.href,startedAt:new Date().toISOString(),startClockMs:now(),cacheDeclaration:$('cache-state').value,bufferFull:false};loads.push(currentLoad);
+      frame.src=url.href;poll=setInterval(pollReady,100);
+    }
+    frame.addEventListener('load',()=>{try{if(appWindow().location.href===currentLoad?.sceneURL)attachScene();}catch(error){log('cross_origin_scene',{message:String(error)});}});
+    function tick() {
+      if(!run||run.status!=='running')return;
+      const elapsed=now()-run.startClockMs, controls=appWindow().__dbg?.controls;
+      if(!controls){finishRun('scene_interface_unavailable',false);return;}
+      if(controls.mode!=='tour'&&!run.modeChanged){run.modeChanged=true;markInterruption('route_taken_over',{mode:controls.mode});}
+      if(controls.tourFinished&&run.routeFinishedAtMs===null)run.routeFinishedAtMs=round(elapsed);
+      if(elapsed-run.lastSampleMs>=5000){run.lastSampleMs=elapsed;run.samples.push({elapsedMs:round(elapsed),mode:controls.mode,tourProgress:controls.tourT,tourFinished:controls.tourFinished,documentVisible:!document.hidden,sceneFocused:appWindow().document.hasFocus(),metrics:safeMetrics()});}
+      $('progress').value=Math.min(180,elapsed/1000);$('compact-status').textContent=`实测 ${Math.min(180,Math.floor(elapsed/1000))}/180秒`;
+      $('route-status').textContent=`已记录 ${Math.floor(elapsed/1000)} 秒；${controls.tourFinished?'路线已结束，正在停尾':'路线运行中'}${run.interruptions.length?'\n已检测中断；本次不能作为有效完整路线。':''}`;
+      if(elapsed>=180000)finishRun('duration_complete',true);
+    }
+    function finishRun(reason,autoExport) {
+      if(!run||run.status!=='running')return;
+      clearInterval(timer);timer=null;tickFinal();run.status=reason==='duration_complete'?'completed':'stopped';run.endReason=reason;run.endedAt=new Date().toISOString();run.elapsedMs=round(now()-run.startClockMs);
+      run.finalMetrics=safeMetrics();run.tourFinished=Boolean(appWindow().__dbg?.controls.tourFinished);run.finalGraphics=graphicsInfo();run.resourcesAtEnd=resourceSnapshot();
+      run.protocolValid=reason==='duration_complete'&&run.interruptions.length===0&&run.tourFinished&&run.finalMetrics.frames>0&&run.finalGraphics.contextLost!==true;
+      run.p95MeetsConfirmedMobileThreshold=run.protocolValid&&run.finalMetrics.frames>0?run.finalMetrics.p95<=40:null;
+      $('start').disabled=!ready;$('stop').disabled=true;$('compact-status').textContent=run.protocolValid?'180秒记录完成':'记录结束（含未完成或中断）';
+      $('route-status').textContent=`记录结束：${(run.elapsedMs/1000).toFixed(1)} 秒\n${run.protocolValid?'完整路线有效':'本次未达到不中断的完整路线条件'}；P95 ${run.finalMetrics.frames>0?run.finalMetrics.p95.toFixed(1)+' ms':'未测'}（验收门槛40 ms）\n结果只代表所声明设备与访问条件。`;
+      panel.open=true;prepareDownload();if(autoExport)$('download').click();
+    }
+    function tickFinal(){if(run&&run.status==='running'){const controls=appWindow().__dbg?.controls;if(controls&&controls.mode!=='tour'&&!run.modeChanged){run.modeChanged=true;markInterruption('route_taken_over',{mode:controls.mode});}}}
+    $('start').addEventListener('click',()=>{
+      if(!ready||!$('context-form').reportValidity())return;
+      try {
+        const win=appWindow(), controls=win.__dbg.controls;win.__bjw.resume();
+        if(!controls.setMode('tour'))throw new Error('项目未接受游览模式');controls.replayTour();
+        panel.open=false;frame.focus();win.focus();win.__bjw.resetMetrics();
+        run={id:runs.length+1,loadId:currentLoad.id,status:'running',startedAt:new Date().toISOString(),startClockMs:now(),requestedDurationMs:180000,
+          sourceRouteDurationSeconds:win.__bjw.totalFrames/win.__bjw.fps,includesReturnToStartTransition:true,targetFps:30,p95ThresholdMs:40,theoretical30FpsFrameIntervalMs:1000/30,version:currentLoad.version,contextAtStart:userContext(),deviceAtStart:environmentInfo(),
+          routeFinishedAtMs:null,lastSampleMs:0,modeChanged:false,interruptions:[],samples:[]};runs.push(run);
+        if(!win.document.hasFocus())markInterruption('scene_not_focused_at_start');
+        $('start').disabled=true;$('stop').disabled=false;$('progress').value=0;timer=setInterval(tick,250);tick();
+      }catch(error){$('route-status').textContent=`无法开始：${String(error)}`;panel.open=true;}
+    });
+    $('stop').addEventListener('click',()=>finishRun('user_stop',false));$('reload').addEventListener('click',loadScene);
+    $('download').addEventListener('click',prepareDownload);
+    document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{
+      if(!ready)return;const win=appWindow(),mode=button.dataset.mode, productButton=win.document.querySelector(`#mode-seg [data-mode="${mode}"]`);
+      if(!productButton){$('action-status').textContent='主产品模式按钮不可用，请直接在场景操作。';return;}
+      productButton.click();if(mode==='tour')win.document.getElementById('btn-replay')?.click();
+      log('manual_mode_request',{mode,via:'main_product_button',immediateMode:win.__dbg.controls.mode});
+      $('action-status').textContent=`已通过主产品按钮请求${button.textContent}模式，请观察实际响应。漫步会先准备附近地面。`;
+      panel.open=false;frame.focus();win.focus();
+    }));
+    $('landmark').addEventListener('change',()=>{if(!ready||!$('landmark').value)return;const win=appWindow(),source=win.document.getElementById('landmark-picker');source.value=$('landmark').value;source.dispatchEvent(new win.Event('change',{bubbles:true}));log('manual_landmark_request',{id:$('landmark').value});$('action-status').textContent='已请求地标跳转。折叠面板检查实际过渡与落点。';$('landmark').value='';panel.open=false;frame.focus();win.focus();});
+    document.addEventListener('visibilitychange',()=>{if(document.hidden)markInterruption('test_page_hidden');else log('test_page_visible');});
+    window.addEventListener('resize',()=>log('viewport_change',{viewport:viewportInfo()}));
+    if(/^(localhost|127\.|10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(location.hostname)||location.hostname.endsWith('.local'))$('access-path').value='local_network';
+    log('test_page_opened');loadScene();
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+{
+  "id": "qiniandian",
+  "model": "qiniandian",
+  "name": "祈年殿",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.8822505,
+    "longitude": 116.4066236,
+    "rotationDegrees": -1.5,
+    "elevationRelativeTo45mDatum": 2.018,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/43921139",
+      "url": "https://www.openstreetmap.org/way/43921139",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "qiniandian-footprint-0",
+      "longitude": 116.406456,
+      "latitude": 39.8822706,
+      "source": "https://www.openstreetmap.org/way/43921139",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "qiniandian-footprint-1",
+      "longitude": 116.4064562,
+      "latitude": 39.8822301,
+      "source": "https://www.openstreetmap.org/way/43921139",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "qiniandian-footprint-2",
+      "longitude": 116.4064728,
+      "latitude": 39.8821915,
+      "source": "https://www.openstreetmap.org/way/43921139",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "qiniandian-footprint-3",
+      "longitude": 116.4065041,
+      "latitude": 39.8821588,
+      "source": "https://www.openstreetmap.org/way/43921139",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+    "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+    "https://gygl.beijing.gov.cn/whgy/whgy_wsgc/201912/t20191206_885633.html",
+    "https://www.tiantanpark.cn/scenic_spot_list_g7yU_96/p/1.html",
+    "https://whc.unesco.org/uploads/nominations/881.pdf",
+    "https://www.openstreetmap.org/way/43921139"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2013-04-27",
+      "view": "three-eave exterior",
+      "resolution": [
+        2560,
+        2382
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_02.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "capturedAt": "2024-09-16",
+      "view": "portrait exterior",
+      "resolution": [
+        1783,
+        2560
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "inherited file-level source check from refs/sources.json; no surveyed facade accuracy claimed"
+    },
+    {
+      "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [
+    {
+      "part": "hall above altar",
+      "heightM": 31.6,
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html"
+    },
+    {
+      "part": "overall, including altar",
+      "heightM": 36.8,
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html"
+    },
+    {
+      "part": "lower/middle/upper altar discs",
+      "diametersM": [
+        90.3,
+        79.3,
+        68.2
+      ],
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html"
+    },
+    {
+      "part": "three-tier altar",
+      "heightM": 5.2,
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html"
+    },
+    {
+      "part": "central dragon-well columns",
+      "heightM": 19.2,
+      "diameterM": 1.2,
+      "source": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html"
+    },
+    {
+      "part": "outer column centre ring",
+      "diameterM": 24,
+      "approximate": true,
+      "source": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html"
+    },
+    {
+      "part": "diameter described without precise part definition; mapped to largest roof eave in this reconstruction",
+      "diameterM": 32,
+      "source": "https://gygl.beijing.gov.cn/whgy/whgy_wsgc/201912/t20191206_885633.html",
+      "measurementDefinitionVerified": false
+    }
+  ],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 36.8,
+    "heightEvidence": "primary textual height, export envelope calibrated",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/qiniandian.blend",
+    "lod": {
+      "near": "./models/landmarks/qiniandian-fc98b3a600.glb",
+      "medium": "./models/landmarks/qiniandian-medium-18677e182b.glb",
+      "far": "./models/landmarks/qiniandian-far-4d6167adfb.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/qiniandian-collision-89cf5e91f3.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ],
+  "sourceDimensionConflicts": {
+    "chosenDetailedSource": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+    "chosen": {
+      "altarHeightM": 5.2,
+      "hallAboveAltarHeightM": 31.6,
+      "overallHeightM": 36.8
+    },
+    "alternatives": [
+      {
+        "source": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+        "overallHeightM": 38,
+        "approximate": true
+      },
+      {
+        "source": "https://gygl.beijing.gov.cn/whgy/whgy_wsgc/201912/t20191206_885633.html",
+        "altarHeightM": 6,
+        "hallHeightAsDescribedM": 38,
+        "heightIncludesAltar": null
+      }
+    ],
+    "notes": "Official sources use different stated values. The older summary says 殿高38米 but does not explicitly define whether its separately stated altar is included. The detailed component dimensions are the reconstruction basis; 36.8 and 38 are not asserted to be identical or an independently reconciled survey."
+  }
+}

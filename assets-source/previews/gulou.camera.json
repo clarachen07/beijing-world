@@ -1,0 +1,33 @@
+{
+  "model": "gulou",
+  "view": "southeast",
+  "projection": "orthographic",
+  "locationMeters": [
+    44.79999923706055,
+    -67.19999694824219,
+    59.75
+  ],
+  "targetMeters": [
+    0.0,
+    0.0,
+    23.350000381469727
+  ],
+  "orthographicScaleMeters": 103.5999984741211,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -28.0,
+      -16.5,
+      0.0
+    ],
+    [
+      28.0,
+      16.5,
+      46.70000076293945
+    ]
+  ]
+}

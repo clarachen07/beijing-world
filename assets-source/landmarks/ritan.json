@@ -1,0 +1,208 @@
+{
+  "id": "ritan",
+  "model": "ritan",
+  "name": "日坛",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.914472149999995,
+    "longitude": 116.43813315,
+    "rotationDegrees": 0,
+    "elevationRelativeTo45mDatum": -1.639,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/478407386",
+      "url": "https://www.openstreetmap.org/way/478407386",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/478407387",
+      "url": "https://www.openstreetmap.org/way/478407387",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/478407388",
+      "url": "https://www.openstreetmap.org/way/478407388",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1451040725",
+      "url": "https://www.openstreetmap.org/way/1451040725",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1551951784",
+      "url": "https://www.openstreetmap.org/way/1551951784",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1551951802",
+      "url": "https://www.openstreetmap.org/way/1551951802",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1551953162",
+      "url": "https://www.openstreetmap.org/way/1551953162",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "way/1429665519",
+      "url": "https://www.openstreetmap.org/way/1429665519",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "ritan-footprint-0",
+      "longitude": 116.4365648,
+      "latitude": 39.915341,
+      "source": "https://www.openstreetmap.org/way/478407386",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ritan-footprint-1",
+      "longitude": 116.4365728,
+      "latitude": 39.915275,
+      "source": "https://www.openstreetmap.org/way/478407386",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ritan-footprint-2",
+      "longitude": 116.4366878,
+      "latitude": 39.9152832,
+      "source": "https://www.openstreetmap.org/way/478407386",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "ritan-footprint-3",
+      "longitude": 116.4366798,
+      "latitude": 39.9153492,
+      "source": "https://www.openstreetmap.org/way/478407386",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202310/t20231006_3270320.html",
+    "https://www.openstreetmap.org/way/478407386",
+    "https://www.openstreetmap.org/way/478407387",
+    "https://www.openstreetmap.org/way/478407388",
+    "https://www.openstreetmap.org/way/1451040725",
+    "https://www.openstreetmap.org/way/1551951784",
+    "https://www.openstreetmap.org/way/1551951802",
+    "https://www.openstreetmap.org/way/1551953162"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_Sun_Temple_Park.jpg",
+      "fileTitle": "File:Beijing Sun Temple Park.jpg",
+      "author": "kevindooley",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "capturedAt": "2007-06-01",
+      "view": "日坛公园环境；准确朝向未记录",
+      "resolution": [
+        12601,
+        1315
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=6769785&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:The_Pavilion_of_Animal_Sacrifice(Temple_of_the_Sun).JPG",
+      "fileTitle": "File:The Pavilion of Animal Sacrifice(Temple of the Sun).JPG",
+      "author": "Dirrival",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2009-07-18",
+      "view": "日坛宰牲亭；园区附属建筑",
+      "resolution": [
+        2592,
+        1944
+      ],
+      "verifiedAt": "2026-10-02",
+      "use": "visual reference only; not embedded in product textures",
+      "downloaded": false,
+      "verificationScope": "file-level license and specific site checked against Commons description/categories; GPS-derived directions are explicitly marked",
+      "pixelViewsVerified": false,
+      "metadataURL": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=7332212&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize"
+    },
+    {
+      "url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202310/t20231006_3270320.html",
+      "author": "Institution / individual photographer not independently identified",
+      "license": "No redistribution license verified; copyrighted unless stated otherwise",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Institutional exterior images and/or architectural drawings",
+      "use": "reference only; not embedded or redistributed; local inspection scope recorded separately where available"
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 11,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/ritan.blend",
+    "lod": {
+      "near": "./models/landmarks/ritan-75c7face84.glb",
+      "medium": "./models/landmarks/ritan-medium-fafb903087.glb",
+      "far": "./models/landmarks/ritan-far-46e8967f03.glb",
+      "distancesM": [
+        800,
+        2800
+      ]
+    },
+    "collision": "./models/landmarks/ritan-collision-98f8f59f62.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}

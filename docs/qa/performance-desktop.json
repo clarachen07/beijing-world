@@ -1,0 +1,1797 @@
+{
+  "profile": "desktop",
+  "simulated": false,
+  "device": {
+    "cpu": "Apple M5",
+    "memoryGiB": 24,
+    "note": "Local desktop hardware"
+  },
+  "browser": "Chrome/154.0.8037.93",
+  "release": {
+    "revision": "f379c023976b7b0f93a8",
+    "resources": 13019,
+    "totalBytes": 155313110
+  },
+  "identity": {
+    "city": "1d91e09a9c2e8b214a4d",
+    "bundle": "http://127.0.0.1:4173/assets/index-kvYwi1c0.js",
+    "devicePixelRatio": 1,
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  "url": "http://127.0.0.1:4173",
+  "startedAt": "2026-10-02T12:31:56.765Z",
+  "coldLoad": {
+    "milliseconds": 3443,
+    "transferredBytes": 2480011,
+    "networkCapture": {
+      "completedEncodedBytes": 2482916,
+      "observedEncodedBytesIncludingPartialBodies": 3256244,
+      "requests": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "type": "Document",
+          "completed": true,
+          "encodedBytes": 2273,
+          "receivedBodyBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-kvYwi1c0.js",
+          "type": "Script",
+          "completed": true,
+          "encodedBytes": 129032,
+          "receivedBodyBytes": 128636
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/three-BgMGqtJM.js",
+          "type": "Script",
+          "completed": true,
+          "encodedBytes": 182276,
+          "receivedBodyBytes": 181880
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-CUnMNSRK.css",
+          "type": "Stylesheet",
+          "completed": true,
+          "encodedBytes": 2660,
+          "receivedBodyBytes": 2268
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/manifest.json",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 828998,
+          "receivedBodyBytes": 828652
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/terrain/b5447a1b8fe6f997db95.json.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 369657,
+          "receivedBodyBytes": 369316
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/32febe68e4b1aaec5985.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 709522,
+          "receivedBodyBytes": 709173
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/d54c5df9b6af1c4a0839.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 21646,
+          "receivedBodyBytes": 21299
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/1e688597b2ab18ea3dbb.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 8974,
+          "receivedBodyBytes": 8629
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/7455760b3513419ce578.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 24088,
+          "receivedBodyBytes": 23741
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/884aa524bf67637f14df.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 3167,
+          "receivedBodyBytes": 2822
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/imagery/48c36a033205ab06f409.jpg",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 95131,
+          "receivedBodyBytes": 94822
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/traffic/677dedf8e6474e28aa77.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 28844,
+          "receivedBodyBytes": 28497
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/965f516fc7e85eac6adb.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 15359,
+          "receivedBodyBytes": 15012
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/6123d7e9195381949055.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 5934,
+          "receivedBodyBytes": 5589
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/bac31d479470fd581f24.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 32141,
+          "receivedBodyBytes": 31794
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/eb4d62d62d5f88f8c806.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 23214,
+          "receivedBodyBytes": 22867
+        }
+      ],
+      "inFlightRequests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/decode.worker-CxzzSVa6.js",
+          "type": "Script",
+          "completed": false,
+          "encodedBytes": 0,
+          "receivedBodyBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/landmarks/taihedian-medium-a3c51904e5.glb",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 750022,
+          "receivedBodyBytes": 749704
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/landmarks/qiniandian-medium-18677e182b.glb",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 902714,
+          "receivedBodyBytes": 902396
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/landmarks/tiananmen-medium-7f86a126a6.glb",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 693338,
+          "receivedBodyBytes": 693020
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/7ed3e1beb3d7e2e0bc57.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 564388,
+          "receivedBodyBytes": 564039
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/7ed0ffcf8601bbf17a31.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 375481,
+          "receivedBodyBytes": 375132
+        },
+        {
+          "url": "http://127.0.0.1:4173/data/tiles/0bf21e11cfa59ca4fcb2.bin.gz",
+          "type": "Fetch",
+          "completed": true,
+          "encodedBytes": 4505,
+          "receivedBodyBytes": 4160
+        }
+      ],
+      "scope": "Chrome page CDP through scene-ready detection: completed responses include document and headers; in-flight received encoded body bytes are added separately. In-flight headers, worker-target script traffic and transport overhead are not counted. Worker only decodes buffers and makes no city/model downloads."
+    },
+    "network": "10 Mbps / 100 ms CDP simulation",
+    "entries": [
+      {
+        "name": "http://127.0.0.1:4173/assets/index-kvYwi1c0.js",
+        "transfer": 128832,
+        "end": 421.7999999523163
+      },
+      {
+        "name": "http://127.0.0.1:4173/assets/index-CUnMNSRK.css",
+        "transfer": 2556,
+        "end": 217.79999995231628
+      },
+      {
+        "name": "http://127.0.0.1:4173/assets/three-BgMGqtJM.js",
+        "transfer": 182023,
+        "end": 464.90000009536743
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/manifest.json",
+        "transfer": 828230,
+        "end": 1255.7000000476837
+      },
+      {
+        "name": "http://127.0.0.1:4173/assets/decode.worker-CxzzSVa6.js",
+        "transfer": 1209,
+        "end": 580.2000000476837
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/terrain/b5447a1b8fe6f997db95.json.gz",
+        "transfer": 369616,
+        "end": 2015.2000000476837
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/32febe68e4b1aaec5985.bin.gz",
+        "transfer": 709473,
+        "end": 2288.7999999523163
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/d54c5df9b6af1c4a0839.bin.gz",
+        "transfer": 21599,
+        "end": 1455.9000000953674
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/1e688597b2ab18ea3dbb.bin.gz",
+        "transfer": 8929,
+        "end": 1413
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/7455760b3513419ce578.bin.gz",
+        "transfer": 24041,
+        "end": 1464.4000000953674
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/884aa524bf67637f14df.bin.gz",
+        "transfer": 3122,
+        "end": 2404
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/imagery/48c36a033205ab06f409.jpg",
+        "transfer": 95122,
+        "end": 2605.7000000476837
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/traffic/677dedf8e6474e28aa77.bin.gz",
+        "transfer": 28797,
+        "end": 2860
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/965f516fc7e85eac6adb.bin.gz",
+        "transfer": 15312,
+        "end": 2808.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/6123d7e9195381949055.bin.gz",
+        "transfer": 5889,
+        "end": 2933.4000000953674
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/bac31d479470fd581f24.bin.gz",
+        "transfer": 32094,
+        "end": 3103.600000143051
+      },
+      {
+        "name": "http://127.0.0.1:4173/data/tiles/eb4d62d62d5f88f8c806.bin.gz",
+        "transfer": 23167,
+        "end": 3319.5
+      }
+    ],
+    "longTasks": []
+  },
+  "views": [
+    {
+      "id": "taihedian",
+      "pos": [
+        -1459.918154796126,
+        189.302,
+        3744.3101807998987
+      ],
+      "look": [
+        -1637.368154796126,
+        16.688,
+        3512.2601807998985
+      ],
+      "frames": 302,
+      "p95": 16.700000000000728,
+      "p50": 16.699999999999818,
+      "p99": 16.800000000000182,
+      "max": 33.30000000000018,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 301,
+        "textures": 66
+      },
+      "render": {
+        "frame": 996,
+        "calls": 279,
+        "triangles": 741879,
+        "points": 20,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 39,
+        "pending": 0,
+        "visible": 35,
+        "meshBytes": 37000592,
+        "triangles": 686343,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 31,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "qiniandian",
+      "pos": [
+        -110.69736946074337,
+        188.968,
+        7483.3574340000205
+      ],
+      "look": [
+        -288.1473694607434,
+        16.738,
+        7251.30743400002
+      ],
+      "frames": 301,
+      "p95": 16.700000000000728,
+      "p50": 16.69999999999891,
+      "p99": 16.799999999999272,
+      "max": 16.80000000000109,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 462,
+        "textures": 102
+      },
+      "render": {
+        "frame": 1620,
+        "calls": 195,
+        "triangles": 753747,
+        "points": 123,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 62,
+        "pending": 0,
+        "visible": 25,
+        "meshBytes": 56454294,
+        "triangles": 692585,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "cctv",
+      "pos": [
+        3443.5291975272107,
+        342.35,
+        3843.7703632000416
+      ],
+      "look": [
+        4093.5291975272107,
+        121.05000000000001,
+        3743.7703632000416
+      ],
+      "frames": 300,
+      "p95": 16.700000000000728,
+      "p50": 16.699999999999818,
+      "p99": 16.80000000000109,
+      "max": 16.80000000000109,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 630,
+        "textures": 136
+      },
+      "render": {
+        "frame": 1098,
+        "calls": 172,
+        "triangles": 118122,
+        "points": 0,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 112,
+        "pending": 0,
+        "visible": 35,
+        "meshBytes": 58190443,
+        "triangles": 149099,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "tiananmen",
+      "pos": [
+        -1463.6876285281196,
+        148.94800000000004,
+        4640.022261399141
+      ],
+      "look": [
+        -1598.8876285281196,
+        13.728000000000003,
+        4463.222261399141
+      ],
+      "frames": 300,
+      "p95": 16.700000000000728,
+      "p50": 16.700000000000728,
+      "p99": 16.799999999999272,
+      "max": 16.80000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 677,
+        "textures": 145
+      },
+      "render": {
+        "frame": 2878,
+        "calls": 234,
+        "triangles": 712110,
+        "points": 89,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 102,
+        "pending": 0,
+        "visible": 25,
+        "meshBytes": 68344728,
+        "triangles": 634145,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "birdnest",
+      "pos": [
+        -1462.6645120256637,
+        257.349,
+        -4593.045110200019
+      ],
+      "look": [
+        -1682.3645120256638,
+        30.049,
+        -4880.345110200019
+      ],
+      "frames": 301,
+      "p95": 16.700000000000728,
+      "p50": 16.700000000000728,
+      "p99": 16.80000000000291,
+      "max": 16.80000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 793,
+        "textures": 173
+      },
+      "render": {
+        "frame": 3506,
+        "calls": 133,
+        "triangles": 166252,
+        "points": 30,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 123,
+        "pending": 0,
+        "visible": 22,
+        "meshBytes": 68952100,
+        "triangles": 103411,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "watercube",
+      "pos": [
+        -2064.7308397677293,
+        149.64900000000003,
+        -4716.206862000533
+      ],
+      "look": [
+        -2204.1558397677295,
+        13.074,
+        -4898.531862000533
+      ],
+      "frames": 300,
+      "p95": 16.700000000004366,
+      "p50": 16.69999999999709,
+      "p99": 16.80000000000291,
+      "max": 16.80000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 666,
+        "textures": 150
+      },
+      "render": {
+        "frame": 4134,
+        "calls": 82,
+        "triangles": 37846,
+        "points": 16,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 98,
+        "pending": 0,
+        "visible": 15,
+        "meshBytes": 54012112,
+        "triangles": 82472,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "white-dagoba",
+      "pos": [
+        -2200.8986767785436,
+        121.27000000000001,
+        2697.315409199925
+      ],
+      "look": [
+        -2302.2986767785437,
+        13.93,
+        2564.715409199925
+      ],
+      "frames": 300,
+      "p95": 16.799999999995634,
+      "p50": 16.69999999999709,
+      "p99": 16.80000000000291,
+      "max": 16.80000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 584,
+        "textures": 107
+      },
+      "render": {
+        "frame": 4760,
+        "calls": 78,
+        "triangles": 295598,
+        "points": 0,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 85,
+        "pending": 0,
+        "visible": 12,
+        "meshBytes": 39408883,
+        "triangles": 288435,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "chinazun",
+      "pos": [
+        4591.390617426925,
+        770.0810000000001,
+        4398.435311399972
+      ],
+      "look": [
+        4287.190617426925,
+        195.88100000000003,
+        4000.6353113999726
+      ],
+      "frames": 301,
+      "p95": 16.700000000004366,
+      "p50": 16.69999999999709,
+      "p99": 16.80000000000291,
+      "max": 16.80000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 558,
+        "textures": 109
+      },
+      "render": {
+        "frame": 5382,
+        "calls": 123,
+        "triangles": 329553,
+        "points": 0,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 83,
+        "pending": 0,
+        "visible": 22,
+        "meshBytes": 44262765,
+        "triangles": 295397,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "yonghegong",
+      "pos": [
+        272.05293350452166,
+        186.548,
+        337.5305999997928
+      ],
+      "look": [
+        81.92793350452165,
+        10.673,
+        88.9055999997928
+      ],
+      "frames": 294,
+      "p95": 16.799999999995634,
+      "p50": 16.69999999999709,
+      "p99": 16.80000000000291,
+      "max": 133.29999999999563,
+      "over50ms": 1,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 659,
+        "textures": 158
+      },
+      "render": {
+        "frame": 5998,
+        "calls": 261,
+        "triangles": 761897,
+        "points": 68,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 101,
+        "pending": 0,
+        "visible": 41,
+        "meshBytes": 54390643,
+        "triangles": 406749,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "confucius-guozijian",
+      "pos": [
+        -6.160674019203242,
+        188.045,
+        493.1153999994302
+      ],
+      "look": [
+        -196.28567401920324,
+        12.17,
+        244.4903999994302
+      ],
+      "frames": 300,
+      "p95": 16.799999999995634,
+      "p50": 16.69999999999709,
+      "p99": 16.80000000000291,
+      "max": 16.80000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 635,
+        "textures": 154
+      },
+      "render": {
+        "frame": 6628,
+        "calls": 264,
+        "triangles": 752917,
+        "points": 68,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 96,
+        "pending": 0,
+        "visible": 42,
+        "meshBytes": 52257267,
+        "triangles": 406082,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "ditan",
+      "pos": [
+        150.90758135079676,
+        154.707,
+        -218.69375800090393
+      ],
+      "look": [
+        -18.092418649203232,
+        5.107,
+        -439.6937580009039
+      ],
+      "frames": 301,
+      "p95": 16.700000000004366,
+      "p50": 16.69999999999709,
+      "p99": 16.80000000000291,
+      "max": 16.80000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 577,
+        "textures": 154
+      },
+      "render": {
+        "frame": 7258,
+        "calls": 221,
+        "triangles": 398625,
+        "points": 69,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 82,
+        "pending": 0,
+        "visible": 35,
+        "meshBytes": 48621731,
+        "triangles": 366481,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    {
+      "id": "ritan",
+      "pos": [
+        2569.9279608935526,
+        152.361,
+        3891.451026200379
+      ],
+      "look": [
+        2400.9279608935526,
+        2.761,
+        3670.451026200379
+      ],
+      "frames": 300,
+      "p95": 16.79999999998836,
+      "p50": 16.69999999999709,
+      "p99": 16.80000000000291,
+      "max": 16.80000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 691,
+        "textures": 149
+      },
+      "render": {
+        "frame": 7888,
+        "calls": 257,
+        "triangles": 929082,
+        "points": 0,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 103,
+        "pending": 0,
+        "visible": 37,
+        "meshBytes": 59046627,
+        "triangles": 838831,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    }
+  ],
+  "errors": [],
+  "route": {
+    "durationSeconds": 180,
+    "start": 71922.5,
+    "end": 251938.79999995232,
+    "frames": 10800,
+    "p95": 16.70000000001164,
+    "p50": 16.699999999982538,
+    "p99": 16.800000000017462,
+    "max": 33.30000000000291,
+    "over50ms": 0,
+    "over250ms": 0,
+    "resources": {
+      "geometries": 340,
+      "textures": 69
+    },
+    "render": {
+      "frame": 132255,
+      "calls": 294,
+      "triangles": 1352052,
+      "points": 363,
+      "lines": 0
+    },
+    "tiles": {
+      "loaded": 29,
+      "pending": 0,
+      "visible": 26,
+      "meshBytes": 56433249,
+      "triangles": 1294043,
+      "failed": 0
+    },
+    "landmarks": {
+      "cached": 37,
+      "pending": 0,
+      "failed": 0,
+      "visible": 32
+    },
+    "quality": 0
+  },
+  "determinism": {
+    "a": {
+      "camera": [
+        -1820.300761493122,
+        135.7131282127596,
+        4150.418381286615
+      ],
+      "quaternion": [
+        -0.04110870654050211,
+        -0.07038186173116658,
+        -0.0029029786581182136,
+        0.99666847070665
+      ],
+      "night": 0,
+      "trafficMatrices": 739715444,
+      "trafficCount": 240
+    },
+    "b": {
+      "camera": [
+        -1820.300761493122,
+        135.7131282127596,
+        4150.418381286615
+      ],
+      "quaternion": [
+        -0.04110870654050211,
+        -0.07038186173116658,
+        -0.0029029786581182136,
+        0.99666847070665
+      ],
+      "night": 0,
+      "trafficMatrices": 739715444,
+      "trafficCount": 240
+    },
+    "equal": true
+  },
+  "resourceCycles": {
+    "visits": 20,
+    "baseline": {
+      "frames": 11791,
+      "p95": 16.70000000001164,
+      "p50": 16.699999999982538,
+      "p99": 16.800000000017462,
+      "max": 33.30000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 764,
+        "textures": 177
+      },
+      "render": {
+        "frame": 134273,
+        "calls": 150,
+        "triangles": 350118,
+        "points": 0,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 105,
+        "pending": 0,
+        "visible": 28,
+        "meshBytes": 56175829,
+        "triangles": 308927,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    "snapshots": [
+      {
+        "frames": 11808,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 757,
+          "textures": 158
+        },
+        "render": {
+          "frame": 134309,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11824,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 754,
+          "textures": 153
+        },
+        "render": {
+          "frame": 134343,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11840,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134377,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11855,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 755,
+          "textures": 155
+        },
+        "render": {
+          "frame": 134409,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11870,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134441,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11885,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 760,
+          "textures": 167
+        },
+        "render": {
+          "frame": 134473,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11900,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134505,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11916,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 754,
+          "textures": 153
+        },
+        "render": {
+          "frame": 134539,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11931,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134571,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11946,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 755,
+          "textures": 155
+        },
+        "render": {
+          "frame": 134603,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11962,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134637,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11977,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 760,
+          "textures": 167
+        },
+        "render": {
+          "frame": 134669,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 11992,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134701,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 12000,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 754,
+          "textures": 153
+        },
+        "render": {
+          "frame": 134735,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 12000,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134767,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 12000,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 755,
+          "textures": 155
+        },
+        "render": {
+          "frame": 134801,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 12000,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134833,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 12000,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 760,
+          "textures": 167
+        },
+        "render": {
+          "frame": 134867,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 12000,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 753,
+          "textures": 148
+        },
+        "render": {
+          "frame": 134901,
+          "calls": 279,
+          "triangles": 741879,
+          "points": 20,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 35,
+          "meshBytes": 61773694,
+          "triangles": 686343,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      },
+      {
+        "frames": 12000,
+        "p95": 16.70000000001164,
+        "p50": 16.699999999982538,
+        "p99": 16.800000000017462,
+        "max": 33.30000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 754,
+          "textures": 153
+        },
+        "render": {
+          "frame": 134933,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 107,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 61773694,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      }
+    ],
+    "afterCleanup": {
+      "frames": 12000,
+      "p95": 16.70000000001164,
+      "p50": 16.699999999982538,
+      "p99": 16.800000000017462,
+      "max": 33.30000000000291,
+      "over50ms": 0,
+      "over250ms": 0,
+      "resources": {
+        "geometries": 555,
+        "textures": 116
+      },
+      "render": {
+        "frame": 136917,
+        "calls": 150,
+        "triangles": 350118,
+        "points": 0,
+        "lines": 0
+      },
+      "tiles": {
+        "loaded": 68,
+        "pending": 0,
+        "visible": 28,
+        "meshBytes": 42138460,
+        "triangles": 308927,
+        "failed": 0
+      },
+      "landmarks": {
+        "cached": 37,
+        "pending": 0,
+        "failed": 0,
+        "visible": 32
+      },
+      "quality": 0
+    },
+    "heapBefore": 24202924,
+    "heapAfter": 22302216,
+    "interpretation": "20 warm repeated visits followed by 16.5s cleanup, matched final view; not 20 complete cold unload/reload cycles."
+  },
+  "longTasks": [
+    {
+      "start": 66448.20000004768,
+      "duration": 64
+    }
+  ],
+  "completedAt": "2026-10-02T12:36:50.307Z",
+  "viewSupplements": [
+    {
+      "id": "cctv",
+      "reason": "Original automated SE view intersected China Zun and did not represent CCTV; replaced with the inspected west view.",
+      "scope": "Only this 5-second view and its screenshot were remeasured. Other 11 views, original cold load, 180-second route, determinism, resource visits, overall long tasks and completion timestamp remain unchanged.",
+      "startedAt": "2026-10-02T12:56:53.112Z",
+      "completedAt": "2026-10-02T12:56:58.318Z",
+      "durationSeconds": 5.0025,
+      "release": {
+        "revision": "f379c023976b7b0f93a8",
+        "resources": 13019,
+        "totalBytes": 155313110
+      },
+      "identity": {
+        "city": "1d91e09a9c2e8b214a4d",
+        "bundle": "http://127.0.0.1:4173/assets/index-kvYwi1c0.js",
+        "devicePixelRatio": 1,
+        "viewport": [
+          1440,
+          900
+        ]
+      },
+      "pose": {
+        "pos": [
+          3443.5291975272107,
+          342.35,
+          3843.7703632000416
+        ],
+        "look": [
+          4093.5291975272107,
+          121.05000000000001,
+          3743.7703632000416
+        ],
+        "view": "west"
+      },
+      "screenshot": "artifacts/qa/desktop-view-03-cctv.png",
+      "longTasks": [],
+      "errors": [],
+      "retainedSectionsSHA256": "70983abfe6e4209fe84b73cf9f4110fa7999560850b9ee837bdbc1b88453e135",
+      "otherViewsSHA256": "f76de2fa026354b6045b0200eb35dcd8ea84cbe7a6dc384b3152df0a619324de",
+      "previousView": {
+        "id": "cctv",
+        "pos": [
+          4313.22919752721,
+          412.25,
+          4031.070363200042
+        ],
+        "look": [
+          4093.5291975272103,
+          85.95,
+          3743.7703632000416
+        ],
+        "frames": 300,
+        "p95": 16.700000000000728,
+        "p50": 16.69999999999709,
+        "p99": 16.799999999999272,
+        "max": 16.80000000000291,
+        "over50ms": 0,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 598,
+          "textures": 139
+        },
+        "render": {
+          "frame": 2246,
+          "calls": 150,
+          "triangles": 350118,
+          "points": 0,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 93,
+          "pending": 0,
+          "visible": 28,
+          "meshBytes": 67085066,
+          "triangles": 308927,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      }
+    }
+  ]
+}

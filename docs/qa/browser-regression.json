@@ -1,0 +1,889 @@
+{
+  "startedAt": "2026-10-02T12:44:26.104Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "browser": "Chrome/154.0.8037.93",
+  "profiles": [
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "checks": [
+        {
+          "name": "boot and default browse",
+          "passed": true,
+          "durationMs": 1269,
+          "detail": {
+            "position": [
+              -1127.0928298197998,
+              1150,
+              4283.978799999499
+            ]
+          }
+        },
+        {
+          "name": "left drag pans without rotating",
+          "passed": true,
+          "durationMs": 237,
+          "detail": {
+            "movementM": 133.6615087347855
+          }
+        },
+        {
+          "name": "right drag rotates",
+          "passed": true,
+          "durationMs": 231,
+          "detail": {
+            "rotationRadians": 0.551287521893418
+          }
+        },
+        {
+          "name": "wheel zoom keeps its target",
+          "passed": true,
+          "durationMs": 170,
+          "detail": {
+            "beforeM": 1561.3867054673801,
+            "afterM": 1423.6819100667367
+          }
+        },
+        {
+          "name": "continuous landmarks and pointer takeover",
+          "passed": true,
+          "durationMs": 249,
+          "detail": {
+            "before": {
+              "position": [
+                -1789.8857193491474,
+                1189.594461420907,
+                4166.44634300989
+              ],
+              "rotation": [
+                -0.47691496684492907,
+                0.010635922577813582,
+                0.005771562323542091,
+                0.8788661335030292
+              ],
+              "mode": "browse",
+              "flying": true,
+              "groundM": null
+            },
+            "after": {
+              "position": [
+                -1789.8857193491474,
+                1189.594461420907,
+                4166.44634300989
+              ],
+              "rotation": [
+                -0.47691496684492907,
+                0.010635922577813582,
+                0.005771562323542091,
+                0.8788661335030292
+              ],
+              "mode": "browse",
+              "flying": false,
+              "groundM": null
+            }
+          }
+        },
+        {
+          "name": "tour keyboard takeover",
+          "passed": true,
+          "durationMs": 168,
+          "detail": {
+            "before": {
+              "position": [
+                -1784.5823945694906,
+                1203.8335693189051,
+                4279.441730066247
+              ],
+              "rotation": [
+                -0.47424396143072634,
+                0.010414918494035643,
+                0.005610739216432227,
+                0.8803139861008115
+              ],
+              "mode": "tour",
+              "flying": true,
+              "groundM": null
+            },
+            "after": {
+              "position": [
+                -1784.5823945694906,
+                1203.8335693189051,
+                4279.441730066247
+              ],
+              "rotation": [
+                -0.47424396143072634,
+                0.010414918494035643,
+                0.005610739216432227,
+                0.8803139861008115
+              ],
+              "mode": "fly",
+              "flying": false,
+              "groundM": null
+            }
+          }
+        },
+        {
+          "name": "walk preparation freezes moving views and respects later requests",
+          "passed": true,
+          "durationMs": 1021,
+          "detail": [
+            {
+              "source": "landmark",
+              "before": {
+                "position": [
+                  -1783.7873202846126,
+                  1190.3303637333372,
+                  4264.233298508005
+                ],
+                "rotation": [
+                  -0.46987332634302853,
+                  0.00982570937720872,
+                  0.005230575254798953,
+                  0.8826636696438096
+                ],
+                "mode": "fly",
+                "flying": true
+              },
+              "after": {
+                "position": [
+                  -1783.7873202846126,
+                  1190.3303637333372,
+                  4264.233298508005
+                ],
+                "rotation": [
+                  -0.46987332634302853,
+                  0.00982570937720872,
+                  0.005230575254798953,
+                  0.8826636696438096
+                ],
+                "mode": "browse",
+                "flying": false
+              },
+              "latestMode": "browse"
+            },
+            {
+              "source": "tour",
+              "before": {
+                "position": [
+                  -1780.960251018363,
+                  1187.267714344557,
+                  4368.744094166059
+                ],
+                "rotation": [
+                  -0.4575558503477737,
+                  0.010386333004697485,
+                  0.005345073919966424,
+                  0.8891041548007924
+                ],
+                "mode": "tour",
+                "flying": true
+              },
+              "after": {
+                "position": [
+                  -1780.960251018363,
+                  1187.267714344557,
+                  4368.744094166059
+                ],
+                "rotation": [
+                  -0.4575558503477737,
+                  0.010386333004697485,
+                  0.005345073919966424,
+                  0.8891041548007924
+                ],
+                "mode": "browse",
+                "flying": false
+              },
+              "latestMode": "fly"
+            }
+          ]
+        },
+        {
+          "name": "rapid mode requests retain the latest intent",
+          "passed": true,
+          "durationMs": 367
+        },
+        {
+          "name": "street descent allows takeover without dropping",
+          "passed": true,
+          "durationMs": 35,
+          "detail": {
+            "before": {
+              "position": [
+                -1127.2589608803355,
+                1148.649972136357,
+                4287.626157741754
+              ],
+              "rotation": [
+                -0.387054438245471,
+                0.24805917447191939,
+                0.10893715647037311,
+                0.8813558893744015
+              ],
+              "mode": "walk",
+              "flying": true,
+              "groundM": 1.5447438857333884
+            },
+            "after": {
+              "position": [
+                -1127.2589608803355,
+                1148.649972136357,
+                4287.626157741754
+              ],
+              "rotation": [
+                -0.387054438245471,
+                0.24805917447191939,
+                0.10893715647037311,
+                0.8813558893744015
+              ],
+              "mode": "fly",
+              "flying": false,
+              "groundM": 1.5447438857333884
+            }
+          }
+        },
+        {
+          "name": "loaded safe street landing",
+          "passed": true,
+          "durationMs": 1628,
+          "detail": {
+            "position": [
+              -1127.2589608803355,
+              3.244743885733442,
+              4287.626157741754
+            ],
+            "groundM": 1.5447438857333884
+          }
+        },
+        {
+          "name": "blur clears held keys pointers and momentum",
+          "passed": true,
+          "durationMs": 849
+        },
+        {
+          "name": "visibility clears held keys",
+          "passed": true,
+          "durationMs": 560
+        },
+        {
+          "name": "tour end holds and explicit replay returns smoothly",
+          "passed": true,
+          "durationMs": 2090,
+          "detail": {
+            "endPosition": [
+              426.7079870007458,
+              1750.0000000000002,
+              -55.56600000026447
+            ],
+            "initialReplayMovementM": 0
+          }
+        },
+        {
+          "name": "capture resume keeps the externally placed pose",
+          "passed": true,
+          "durationMs": 223,
+          "detail": {
+            "movementM": 1.0419570787589327e-12,
+            "rotationRadians": 0
+          }
+        },
+        {
+          "name": "WebGL context recovers without camera drift",
+          "passed": true,
+          "durationMs": 1311
+        },
+        {
+          "name": "no uncaught runtime errors or unexpected reloads",
+          "passed": true,
+          "durationMs": 2
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "assetErrors": [],
+      "navigations": [
+        "http://127.0.0.1:4173/"
+      ],
+      "initial": {
+        "position": [
+          -1127.0928298197998,
+          1150,
+          4283.978799999499
+        ],
+        "rotation": [
+          -0.3871763558556337,
+          0.2481813440595309,
+          0.10903755561635202,
+          0.8812555255953674
+        ],
+        "target": [
+          -1678.2449035525187,
+          0,
+          3383.057141013323
+        ],
+        "mode": "browse",
+        "flying": false,
+        "tourT": 0,
+        "finished": false
+      },
+      "build": {
+        "cityRevision": "1d91e09a9c2e8b214a4d",
+        "scripts": [
+          "http://127.0.0.1:4173/assets/index-kvYwi1c0.js"
+        ]
+      },
+      "metrics": {
+        "frames": 577,
+        "p95": 16.700000000000728,
+        "p50": 16.699999999999818,
+        "p99": 16.800000000000182,
+        "max": 133.39999999999964,
+        "over50ms": 1,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 260,
+          "textures": 40
+        },
+        "render": {
+          "frame": 525,
+          "calls": 291,
+          "triangles": 1351145,
+          "points": 363,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 93,
+          "pending": 0,
+          "visible": 26,
+          "meshBytes": 82191947,
+          "triangles": 1294043,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 37,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      }
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "checks": [
+        {
+          "name": "boot and default browse",
+          "passed": true,
+          "durationMs": 1044,
+          "detail": {
+            "position": [
+              -1127.0928298197998,
+              1150,
+              4283.978799999499
+            ]
+          }
+        },
+        {
+          "name": "single touch pans without rotating",
+          "passed": true,
+          "durationMs": 414,
+          "detail": {
+            "movementM": 88.01160668250377
+          }
+        },
+        {
+          "name": "two touches zoom and rotate",
+          "passed": true,
+          "durationMs": 414,
+          "detail": {
+            "beforeM": 1561.3867054673804,
+            "afterM": 926.2463507009886,
+            "rotationRadians": 0.1610127630757254
+          }
+        },
+        {
+          "name": "continuous landmarks and pointer takeover",
+          "passed": true,
+          "durationMs": 262,
+          "detail": {
+            "before": {
+              "position": [
+                -1532.3475685878864,
+                753.3118541975907,
+                3857.3769585376376
+              ],
+              "rotation": [
+                -0.4473072305614117,
+                0.20066658710376908,
+                0.10372219896163255,
+                0.8653848090590502
+              ],
+              "mode": "browse",
+              "flying": true,
+              "groundM": null
+            },
+            "after": {
+              "position": [
+                -1532.3475685878864,
+                753.3118541975907,
+                3857.3769585376376
+              ],
+              "rotation": [
+                -0.4473072305614117,
+                0.20066658710376908,
+                0.10372219896163255,
+                0.8653848090590502
+              ],
+              "mode": "browse",
+              "flying": false,
+              "groundM": null
+            }
+          }
+        },
+        {
+          "name": "tour keyboard takeover",
+          "passed": true,
+          "durationMs": 160,
+          "detail": {
+            "before": {
+              "position": [
+                -1531.0722438160763,
+                774.3745971186892,
+                3975.206314772539
+              ],
+              "rotation": [
+                -0.44543825835882234,
+                0.19712071074489104,
+                0.10122122409120297,
+                0.8674574613081418
+              ],
+              "mode": "tour",
+              "flying": true,
+              "groundM": null
+            },
+            "after": {
+              "position": [
+                -1531.0722438160763,
+                774.3745971186892,
+                3975.206314772539
+              ],
+              "rotation": [
+                -0.44543825835882234,
+                0.19712071074489104,
+                0.10122122409120297,
+                0.8674574613081418
+              ],
+              "mode": "fly",
+              "flying": false,
+              "groundM": null
+            }
+          }
+        },
+        {
+          "name": "walk preparation freezes moving views and respects later requests",
+          "passed": true,
+          "durationMs": 1060,
+          "detail": [
+            {
+              "source": "landmark",
+              "before": {
+                "position": [
+                  -1532.5696178212904,
+                  765.9412486764461,
+                  3963.5629405373757
+                ],
+                "rotation": [
+                  -0.441642222691631,
+                  0.1951541439356159,
+                  0.09905689794816806,
+                  0.8700889254608629
+                ],
+                "mode": "fly",
+                "flying": true
+              },
+              "after": {
+                "position": [
+                  -1532.5696178212904,
+                  765.9412486764461,
+                  3963.5629405373757
+                ],
+                "rotation": [
+                  -0.441642222691631,
+                  0.1951541439356159,
+                  0.09905689794816806,
+                  0.8700889254608629
+                ],
+                "mode": "browse",
+                "flying": false
+              },
+              "latestMode": "browse"
+            },
+            {
+              "source": "tour",
+              "before": {
+                "position": [
+                  -1539.7336142521283,
+                  778.5692748567485,
+                  4056.4511331293365
+                ],
+                "rotation": [
+                  -0.4329168106078064,
+                  0.1882093856309456,
+                  0.09294320084829807,
+                  0.8766537649891545
+                ],
+                "mode": "tour",
+                "flying": true
+              },
+              "after": {
+                "position": [
+                  -1539.7336142521283,
+                  778.5692748567485,
+                  4056.4511331293365
+                ],
+                "rotation": [
+                  -0.4329168106078064,
+                  0.1882093856309456,
+                  0.09294320084829807,
+                  0.8766537649891545
+                ],
+                "mode": "browse",
+                "flying": false
+              },
+              "latestMode": "fly"
+            }
+          ]
+        },
+        {
+          "name": "rapid mode requests retain the latest intent",
+          "passed": true,
+          "durationMs": 381
+        },
+        {
+          "name": "street descent allows takeover without dropping",
+          "passed": true,
+          "durationMs": 31,
+          "detail": {
+            "before": {
+              "position": [
+                -1127.2569836117957,
+                1149.7327339516064,
+                4287.582747402386
+              ],
+              "rotation": [
+                -0.38710825554633455,
+                0.2480541554498362,
+                0.10895308975476461,
+                0.8813316961762084
+              ],
+              "mode": "walk",
+              "flying": true,
+              "groundM": 1.5449240808774944
+            },
+            "after": {
+              "position": [
+                -1127.2569836117957,
+                1149.7327339516064,
+                4287.582747402386
+              ],
+              "rotation": [
+                -0.38710825554633455,
+                0.2480541554498362,
+                0.10895308975476461,
+                0.8813316961762084
+              ],
+              "mode": "fly",
+              "flying": false,
+              "groundM": 1.5449240808774944
+            }
+          }
+        },
+        {
+          "name": "loaded safe street landing",
+          "passed": true,
+          "durationMs": 1634,
+          "detail": {
+            "position": [
+              -1127.2569836117957,
+              3.244924080877581,
+              4287.582747402386
+            ],
+            "groundM": 1.5449240808774944
+          }
+        },
+        {
+          "name": "blur clears held keys pointers and momentum",
+          "passed": true,
+          "durationMs": 834
+        },
+        {
+          "name": "visibility clears held keys",
+          "passed": true,
+          "durationMs": 559
+        },
+        {
+          "name": "tour end holds and explicit replay returns smoothly",
+          "passed": true,
+          "durationMs": 2092,
+          "detail": {
+            "endPosition": [
+              426.7079870007458,
+              1750.0000000000002,
+              -55.56600000026447
+            ],
+            "initialReplayMovementM": 0
+          }
+        },
+        {
+          "name": "capture resume keeps the externally placed pose",
+          "passed": true,
+          "durationMs": 232,
+          "detail": {
+            "movementM": 5.084229945850415e-13,
+            "rotationRadians": 0
+          }
+        },
+        {
+          "name": "WebGL context recovers without camera drift",
+          "passed": true,
+          "durationMs": 1193
+        },
+        {
+          "name": "no uncaught runtime errors or unexpected reloads",
+          "passed": true,
+          "durationMs": 0
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "assetErrors": [],
+      "navigations": [
+        "http://127.0.0.1:4173/"
+      ],
+      "initial": {
+        "position": [
+          -1127.0928298197998,
+          1150,
+          4283.978799999499
+        ],
+        "rotation": [
+          -0.3871763558556337,
+          0.2481813440595309,
+          0.10903755561635202,
+          0.8812555255953674
+        ],
+        "target": [
+          -1678.2449035525187,
+          0,
+          3383.057141013323
+        ],
+        "mode": "browse",
+        "flying": false,
+        "tourT": 0,
+        "finished": false
+      },
+      "build": {
+        "cityRevision": "1d91e09a9c2e8b214a4d",
+        "scripts": [
+          "http://127.0.0.1:4173/assets/index-kvYwi1c0.js"
+        ]
+      },
+      "metrics": {
+        "frames": 575,
+        "p95": 16.700000000000728,
+        "p50": 16.699999999999818,
+        "p99": 16.800000000000182,
+        "max": 99.89999999999964,
+        "over50ms": 1,
+        "over250ms": 0,
+        "resources": {
+          "geometries": 169,
+          "textures": 28
+        },
+        "render": {
+          "frame": 496,
+          "calls": 201,
+          "triangles": 859408,
+          "points": 243,
+          "lines": 0
+        },
+        "tiles": {
+          "loaded": 49,
+          "pending": 0,
+          "visible": 14,
+          "meshBytes": 56722994,
+          "triangles": 811370,
+          "failed": 0
+        },
+        "landmarks": {
+          "cached": 33,
+          "pending": 0,
+          "failed": 0,
+          "visible": 32
+        },
+        "quality": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Mobile uses real Chrome touch events on an emulated viewport; it does not measure a physical phone GPU."
+  ],
+  "mobileTestPage": {
+    "url": "http://172.23.205.56:4173/qa.html",
+    "profile": "browser_emulation",
+    "checks": [
+      {
+        "name": "start focuses the scene and advances the real tour",
+        "passed": true,
+        "durationMs": 2452,
+        "detail": {
+          "iframeFocused": true,
+          "sceneFocused": true,
+          "tourT": 0.005239047619047621
+        }
+      },
+      {
+        "name": "stopping exports an honest incomplete run and observed version",
+        "passed": true,
+        "durationMs": 269,
+        "detail": {
+          "status": "stopped",
+          "elapsedMs": 2527.9,
+          "protocolValid": false,
+          "secureContext": false,
+          "serviceWorkerControlled": null,
+          "cityRevision": "1d91e09a9c2e8b214a4d"
+        }
+      },
+      {
+        "name": "manual walk reaches the main product button and prepares a safe landing",
+        "passed": true,
+        "durationMs": 1764,
+        "detail": {
+          "mainProductClicks": 1,
+          "mode": "walk",
+          "heightAboveGroundM": 1.7,
+          "frameFocused": true,
+          "wrapperStatus": "已通过主产品按钮请求漫步模式，请观察实际响应。漫步会先准备附近地面。",
+          "setup": "Returned to the observed initial camera before requesting walk through the test-page product button."
+        }
+      }
+    ],
+    "pageErrors": [],
+    "passed": true,
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "userAgentData": null,
+      "platform": "MacIntel",
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "maxTouchPoints": 1,
+      "hardwareConcurrency": 10,
+      "deviceMemoryGiB": null,
+      "timezone": "America/Los_Angeles",
+      "screen": {
+        "width": 390,
+        "height": 844,
+        "orientation": {
+          "type": "portrait-primary",
+          "angle": 0
+        }
+      },
+      "wrapperViewport": {
+        "width": 390,
+        "height": 844,
+        "devicePixelRatio": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        }
+      },
+      "sceneViewport": {
+        "width": 390,
+        "height": 844,
+        "devicePixelRatio": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        }
+      },
+      "webgl": {
+        "contextType": "WebGL2RenderingContext",
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "shadingLanguage": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+        "vendor": "WebKit",
+        "renderer": "WebKit WebGL",
+        "unmaskedVendor": "Google Inc. (Apple)",
+        "unmaskedRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+        "unmaskedInfoAvailable": true,
+        "contextAttributes": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        },
+        "drawingBuffer": {
+          "width": 390,
+          "height": 844
+        },
+        "canvasCss": {
+          "width": 390,
+          "height": 844
+        },
+        "pixelRatio": 1,
+        "maxTextureSize": 16384,
+        "maxRenderbufferSize": 16384,
+        "contextLost": false
+      },
+      "connection": {
+        "effectiveType": "4g",
+        "downlink": 1.45,
+        "rtt": 100,
+        "saveData": false
+      },
+      "secureContext": false,
+      "serviceWorkerAvailable": false,
+      "sceneServiceWorkerControlled": null
+    },
+    "version": {
+      "city": {
+        "revision": "1d91e09a9c2e8b214a4d"
+      },
+      "bundleURL": "http://172.23.205.56:4173/assets/index-kvYwi1c0.js",
+      "release": {
+        "url": "http://172.23.205.56:4173/release.json",
+        "status": "read",
+        "revision": "f379c023976b7b0f93a8",
+        "resources": 13019,
+        "totalBytes": 155313110,
+        "observedAt": "2026-10-02T12:44:47.591Z",
+        "etag": "W/\"90-1790943824400\""
+      },
+      "note": "Observed release metadata, actual loaded bundle URL, and loaded city revision are separate evidence; cached shell consistency is not assumed."
+    }
+  },
+  "completedAt": "2026-10-02T12:44:52.454Z",
+  "passed": true
+}

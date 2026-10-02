@@ -1,0 +1,34 @@
+{
+  "model": "linglong",
+  "view": "southeast",
+  "focus": null,
+  "projection": "orthographic",
+  "locationMeters": [
+    105.5999984741211,
+    -158.39999389648438,
+    151.8000030517578
+  ],
+  "targetMeters": [
+    0.0,
+    0.0,
+    66.0
+  ],
+  "orthographicScaleMeters": 244.1999969482422,
+  "resolution": [
+    1024,
+    768
+  ],
+  "samples": 16,
+  "boundsBlenderXYZ": [
+    [
+      -15.980613708496094,
+      -15.980613708496094,
+      0.0
+    ],
+    [
+      15.980613708496094,
+      15.980613708496094,
+      132.0
+    ]
+  ]
+}

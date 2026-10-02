@@ -1,0 +1,970 @@
+{
+  "generatedAt": "2026-10-02",
+  "assetVersion": "d3bd20956b7d",
+  "registrySHA256": "ea87dd4d4c6c5b72e716b91b039cc78706753644791261536c44d2fbb193f668",
+  "scope": "15 modern/park models; all30 obtained reference photos actually viewed. Partial visible-form review, not full facade or surveyed acceptance.",
+  "method": "Downloaded only already individually licensed reference photos using documented standard960px Commons thumbnails; static local pixels viewed, no new GPU screenshots, no photogrammetric inference. Two specific facade omissions were repaired after direct evidence and separately validated.",
+  "downloadedPhotoCount": 30,
+  "actuallyViewedPhotoCount": 30,
+  "models": [
+    {
+      "model": "chinazun",
+      "name": "中国尊",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:China_Zun.jpg",
+          "fileTitle": "File:China Zun.jpg",
+          "author": "維基小霸王",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2019-07-23 17:31:31",
+          "localPath": "artifacts/model-references/photos/chinazun/01.jpg",
+          "sha256": "53d6d0661b5c19d8cb6094f82be90e72fa428b2aabd5a0cceaf958059dde8645",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2019 daytime full exterior: waist narrows, crown flares, vertical fins and gently curved/rounded crown; foreground construction partly hides base.",
+          "actualSubject": "chinazun",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:CITIC_Tower_2021.jpg",
+          "fileTitle": "File:CITIC Tower 2021.jpg",
+          "author": "N509FZ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2021-10-16 13:27:12",
+          "localPath": "artifacts/model-references/photos/chinazun/02.jpg",
+          "sha256": "4cbb96ba9b6516f9f57c5068000356f64d5e119ef6c706d3d3485564f8f13976",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2021 distant full-height view: concave crown rim and waist visible; surrounding high-rises obscure lower floors.",
+          "actualSubject": "chinazun",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:chinazun()",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "两张照片支持收腰、上扩冠部与竖向线条。源使用七段四角截面，细部冠缘凹曲及圆角尚未按图纸校准；不能据此宣称精确立面复刻。",
+        "limitations": [
+          "全冠部曲率与转角截面",
+          "基座与街面入口",
+          "各立面逐层细部"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d"
+    },
+    {
+      "model": "guomao3",
+      "name": "国贸三期3A",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:China_World_Trade_Center_3a_and_3b_(20240315171104).jpg",
+          "fileTitle": "File:China World Trade Center 3a and 3b (20240315171104).jpg",
+          "author": "N509FZ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2024-03-15 17:11:04",
+          "localPath": "artifacts/model-references/photos/guomao3/01.jpg",
+          "sha256": "31538c135f2bfe123eedc71f1e751673a5437030c52871ed88149f8e73a92c7d",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2024 street view includes distinct3A and3B: model comparison uses rear slender square3A only; foreground rounded3B excluded.",
+          "actualSubject": "guomao3",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:China_World_Trade_Center_III.jpg",
+          "fileTitle": "File:China World Trade Center III.jpg",
+          "author": "Ian Holton from Beijing, China",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "capturedAt": "2008-09-01 10:58",
+          "localPath": "artifacts/model-references/photos/guomao3/02.jpg",
+          "sha256": "17e9bb2c99afd708e4facba88db4c251917d300153022f3cf8ce2d1616754bc0",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2008 construction-stage two-facade upward view: shaft taper and vertical fins; unfinished crown cannot verify final3A crown.",
+          "actualSubject": "guomao3",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:BUILDERS[guomao3]",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "2024照片同时包含3A/3B，本记录只以较后方的方形3A作为对象；另一张为2008施工态。源模型的收分塔身与方形塔冠具有宏观对应，最终竣工冠部和竖向金属肋没有充分校核。",
+        "limitations": [
+          "施工照不能证明竣工塔冠",
+          "低层裙房与入口",
+          "未获立面尺寸控制点"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d"
+    },
+    {
+      "model": "cctv",
+      "name": "央视总部",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_Beijing_-_Flickr.jpg",
+          "fileTitle": "File:CCTV Headquarters Beijing - Flickr.jpg",
+          "author": "Bjarke Liboriussen",
+          "license": "CC BY 2.0",
+          "licenseURL": null,
+          "capturedAt": "2012-06-03",
+          "localPath": "artifacts/model-references/photos/cctv/01.jpg",
+          "sha256": "329c72a838996dedd64be991ec28d33ffbbc281a4f5e68f46637f469ab1b0176",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "Upward exterior overall: inclined continuous loop, large opening, variable diagonal steel density and grid continuity around cantilever.",
+          "actualSubject": "cctv",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_1.jpg",
+          "fileTitle": "File:CCTV Headquarters 1.jpg",
+          "author": "EditQ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2023-06-10",
+          "localPath": "artifacts/model-references/photos/cctv/02.jpg",
+          "sha256": "3ba16824faf64dec128379fce11c2273e33f299616539792080082dfa6528ae1",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2023 close upward view: cantilever exterior and underside diagonal mesh, variable density, soffit circular openings; other elevations not covered.",
+          "actualSubject": "cctv",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:cctv()",
+        "savedPreview": "assets-source/previews/cctv.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "两张实际查看照片确认连续斜网覆盖塔体、悬挑外侧及底面。此前仅两塔前后面有网，已补四侧与悬挑/底面代表性网格，并在上下端调整疏密；最终源预览已查看，最终GLB层存在检查通过。",
+        "limitations": [
+          "逐杆走向、密度、截面与接点均为推断",
+          "底面圆窗未建构",
+          "75m自由悬挑端点仍未标定"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "已查看对应固定源模型预览；不是浏览器最终GLB截图或摄影测量。",
+        "previews": [
+          {
+            "path": "assets-source/previews/cctv.png",
+            "sha256": "2ddb7e2b80d17f5c973c2217a9f87e92f21f3969336649e5d1a152fbe57e81ba",
+            "camera": "assets-source/previews/cctv.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      }
+    },
+    {
+      "model": "birdnest",
+      "name": "鸟巢",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beijing_Olympics_Birds_Nest_Roof.jpg",
+          "fileTitle": "File:Beijing Olympics Birds Nest Roof.jpg",
+          "author": "Tom Nguyen",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "capturedAt": "2008-08-22",
+          "localPath": "artifacts/model-references/photos/birdnest/01.jpg",
+          "sha256": "fd21acdb799c95719262b51f8896cf42bc4817a1bb01fc36fe996837b69e85d8",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2008 interior stadium overview: true elliptical roof opening, broad underside membrane/trusses, stepped seating, athletics track and grass.",
+          "actualSubject": "birdnest",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beijing_China_Beijing-National-Stadium-03.jpg",
+          "fileTitle": "File:Beijing China Beijing-National-Stadium-03.jpg",
+          "author": "CEphoto, Uwe Aranas",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "capturedAt": "2009-06-02",
+          "localPath": "artifacts/model-references/photos/birdnest/02.jpg",
+          "sha256": "a332d9890006d294c4bfc08f6b793fa5b3d94afcea105e9afe18aa813a95e07e",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "Close Olympic torch on roof: rectangular grey steel sections and adjacent translucent membrane. This is NOT a full exterior lattice view.",
+          "actualSubject": "birdnest",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/birdnest.py:build()",
+        "savedPreview": "assets-source/previews/birdnest.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "室内全景支持真实椭圆洞口、宽屋面膜层、看台层级与跑道草坪；第二张实际是屋顶奥运火炬近景，只能支持灰钢矩形截面与邻接膜层。设计方屋顶平面及两剖面的既有实际查看记录支持宏观屋面。不能将两份开放文件记成两个完整外墙视角。",
+        "limitations": [
+          "本轮未取得完整开放外墙双视角像素核验",
+          "次杆线路、节点、排数/色带为推断",
+          "膜透射以不透明PBR近似"
+        ],
+        "sourceSHA256": "9bbebf8684936dca2c334224374bd12f9226f90727ea72f972e73640f5ce2d72"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "已查看对应固定源模型预览；不是浏览器最终GLB截图或摄影测量。",
+        "previews": [
+          {
+            "path": "assets-source/previews/birdnest.png",
+            "sha256": "80c38be885776ebb78384907f6e114080751f068eb2d9cf9c9016e785e8a30fb",
+            "camera": "assets-source/previews/birdnest.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      }
+    },
+    {
+      "model": "watercube",
+      "name": "水立方",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Beijing_National_Aquatics_Center_(Water_Cube)_(4475631690).jpg",
+          "fileTitle": "File:Lascar The Beijing National Aquatics Center (Water Cube) (4475631690).jpg",
+          "author": "Jorge Láscar from Australia",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "capturedAt": "2008-11-24 19:51",
+          "localPath": "artifacts/model-references/photos/watercube/01.jpg",
+          "sha256": "cc7c192de2584b380bd7dece529f2f3af3d276d524809fdf20d61eee7d21a7b1",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "Daylight exterior: irregular inflated ETFE cells/seams and recessed glazed ground storey with pale columns.",
+          "actualSubject": "watercube",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Water_Cube_(red_dots_version)_%26_Bird%27s_Nest.jpg",
+          "fileTitle": "File:Water Cube (red dots version) & Bird's Nest.jpg",
+          "author": "Alberto Alerigi",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "capturedAt": "2008-01-02 03:43:50",
+          "localPath": "artifacts/model-references/photos/watercube/02.jpg",
+          "sha256": "2be00482fd3e358dcb492e2f87225c08f0754f96c0915eef454b71c69244bb63",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2008 illuminated facade: recessed glazed base and pale columns; red/pink event colours not treated as current normal facade colour.",
+          "actualSubject": "watercube",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:watercube()",
+        "savedPreview": "assets-source/previews/watercube.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "两张实际照片支持米级不规则气枕、接缝/膨胀外观，以及下方凹入玻璃入口和白柱。此前全高泡格方盒缺该底层，现已补齐；最终源预览和GLB层检查通过，177×177×31m包络保留。",
+        "limitations": [
+          "4.2m入口层高、1.8m凹入及12m柱距为推断",
+          "未展示立面的连续入口带布置为推断",
+          "具体Weaire–Phelan竣工单元及光学透射未复刻",
+          "2008彩灯非当前普通立面颜色"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "已查看对应固定源模型预览；不是浏览器最终GLB截图或摄影测量。",
+        "previews": [
+          {
+            "path": "assets-source/previews/watercube.png",
+            "sha256": "b1bcfb5e8dc3b1cb0029fbd283614838b6b9e1c1e2d93a1b2a6c4c2c10912af6",
+            "camera": "assets-source/previews/watercube.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      }
+    },
+    {
+      "model": "ncpa",
+      "name": "国家大剧院",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:National_Centre_for_the_Performing_Arts.jpg",
+          "fileTitle": "File:National Centre for the Performing Arts.jpg",
+          "author": "xiquinhosilva",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "capturedAt": "2024-05-15 10:14:32",
+          "localPath": "artifacts/model-references/photos/ncpa/01.jpg",
+          "sha256": "f01a143955376b3bae67aadba4d0aa75004728b06831990d6b09c9c3f5b6c55b",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2024 daylight north-side exterior: low titanium ellipsoid, curved glass seam, glazed end and artificial-lake reflection; opposite elevation and entrance not covered.",
+          "actualSubject": "ncpa",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:National_Centre_for_the_Performing_Arts_in_2026_-_2.jpg",
+          "fileTitle": "File:National Centre for the Performing Arts in 2026 - 2.jpg",
+          "author": "Renek78",
+          "license": "CC0",
+          "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "capturedAt": "2026-09-06 19:57:18",
+          "localPath": "artifacts/model-references/photos/ncpa/02.jpg",
+          "sha256": "0fa91334b3d8e2577aeae2c687eefd7c7a8c94cf9d8d3b7f4e2835399cb192ce",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "2026南侧夜间近景（南侧为GPS推断）：低扁椭球、连续金属板水平接缝及下宽上窄的弧形玻璃区域；右侧树遮挡，不提供标定尺寸。",
+          "actualSubject": "ncpa",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:ncpa()",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "两张实际视图支持低扁椭球、钛板和弧形玻璃界面；源采用半椭球与中央材质分区，玻璃边界形状和入口仍未按图纸/控制点校准。",
+        "limitations": [
+          "玻璃界面曲线及入口",
+          "内部/全部侧面未核验"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d"
+    },
+    {
+      "model": "white-dagoba",
+      "name": "北海白塔",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beihai_Park_IMG_4410_Beihai_Lake_-_Jade_Island_-_white_dagoba.jpg",
+          "fileTitle": "File:Beihai Park IMG 4410 Beihai Lake - Jade Island - white dagoba.jpg",
+          "author": "Bjoertvedt",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": null,
+          "capturedAt": "2017-07-10",
+          "localPath": "artifacts/model-references/photos/white-dagoba/01.jpg",
+          "sha256": "a8819402216d93c6d9f07d515b99402f9f5510599dc1482970d63f0810dfad25",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "湖面/石桥/琼华岛全景：远处白塔的白色鼓腹塔身、细长塔刹及小暗龛可辨，塔下部树遮挡，不能检验近景细部。",
+          "actualSubject": "white-dagoba",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beihai_Park,_Beijing_(5062734513).jpg",
+          "fileTitle": "File:Beihai Park, Beijing (5062734513).jpg",
+          "author": "David Stanley from Nanaimo, Canada",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "capturedAt": "2010-10-08 13:13",
+          "localPath": "artifacts/model-references/photos/white-dagoba/02.jpg",
+          "sha256": "de2e94a6c48c549e1a77179b40f5ea6dae2f45e9b607aedc942697afe84eba44",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "实际画面只拍白塔南侧登塔台阶和绿瓦彩绘牌坊，白塔塔身/塔刹不在画面；不作为白塔第二立面证据。",
+          "actualSubject": "beihai-south-paifang-and-stairs",
+          "subjectSupportsPermanentModelForm": false
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:white_dagoba()",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "湖面远景支持白色鼓腹塔身和塔刹；第二图实际只有登塔阶梯/牌坊，塔不在画面，不能作为白塔第二个完整视角。源回转塔身宏观类别可对应，近景比例未验证。",
+        "limitations": [
+          "仅1张远处白塔像素",
+          "第二图为南侧牌坊/阶梯",
+          "暗龛/塔刹细部/基座未标定"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "source_read_only_photo_pixels_pending",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d"
+    },
+    {
+      "model": "monument",
+      "name": "人民英雄纪念碑",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Monument_to_the_People%27s_Heroes,_Beijing,_from_southwest.jpg",
+          "fileTitle": "File:Monument to the People's Heroes, Beijing, from southwest.jpg",
+          "author": "Daniel Case",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "capturedAt": "2014-03-29",
+          "localPath": "artifacts/model-references/photos/monument/01.jpg",
+          "sha256": "0b36bb95fcc3d04903aeea0de45a1af1b20a9c0a5376778edc6c04b34b9ed903",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "西南斜视全碑：浅灰石碑身、顶部挑檐冠饰、逐级退台、栏杆及两侧阶梯可见；文字/浮雕只辨存在，未逐字/逐面验证。",
+          "actualSubject": "monument",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Monument_to_the_People%27s_Heroes_in_Beijing,_18_April_2011.jpg",
+          "fileTitle": "File:Monument to the People's Heroes in Beijing, 18 April 2011.jpg",
+          "author": "Huangdan2060",
+          "license": "CC0",
+          "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "capturedAt": "2011-04-18 22:30:50",
+          "localPath": "artifacts/model-references/photos/monument/02.jpg",
+          "sha256": "cd529d39a5c63c79bd399360a7fdab7ee7256dc9e45b8a9b912cda789116769d",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "近正面远景：高直碑身、碑冠、平台中央宽阶梯和白石栏杆可见；光照偏暗，没有测量控制点。",
+          "actualSubject": "monument",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:monument()",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "两张全碑照片支持浅灰碑身、顶部冠饰、逐级石台、栏杆和阶梯；源简化碑身/顶盖/退台具备对应。碑铭、浮雕、栏杆和实际踏步细节没有精确重建。",
+        "limitations": [
+          "碑铭与浮雕未复刻",
+          "源未精确重建栏杆/阶梯",
+          "绝对比例无独立控制点"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "source_read_only_photo_pixels_pending",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d"
+    },
+    {
+      "model": "olympic-tower",
+      "name": "奥林匹克塔",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:20200109_Beijing_Olympic_Tower-3.jpg",
+          "fileTitle": "File:20200109 Beijing Olympic Tower-3.jpg",
+          "author": "Balon Greyjoy",
+          "license": "CC0",
+          "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "capturedAt": "9 January 2020, 15:07",
+          "localPath": "artifacts/model-references/photos/olympic-tower/01.jpg",
+          "sha256": "1d5ef3887a574825ff68a7c96ec2dca487d5b06372465765c83f050775b712e4",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "向上全塔群视图：错落五圆冠、冠底展开的树枝承托和各竖塔间跨接可见；树与标牌遮挡部分基座。",
+          "actualSubject": "olympic-tower",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Olympic_Park_Observation_Tower,_Beijing.jpg",
+          "fileTitle": "File:Olympic Park Observation Tower, Beijing.jpg",
+          "author": "Yu Lou",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2016-02-06",
+          "localPath": "artifacts/model-references/photos/olympic-tower/02.jpg",
+          "sha256": "70bdcc0b54731b78d68d8d166cafb7aadce98a272a3ad123de1431dfa3eefe48",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "另一侧向上近景：树枝向圆形檐口展开、圆冠高低关系与塔间横向构件可见；不提供杆件尺度、准确塔位或屋顶俯视。",
+          "actualSubject": "olympic-tower",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:olympic_tower()",
+        "savedPreview": "assets-source/previews/olympic-tower.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "两张低角度照片明确冠底树枝状承托和塔间跨接。原只建五柱/圆台冠，现定向补各冠八主枝三叉及塔间平斜跨接；真实层级有据，杆件路线/尺寸为代表性推断。",
+        "limitations": [
+          "未展示屋顶俯视",
+          "各支塔相对坐标/杆件尺寸未标定",
+          "圆冠表面和内部细节简化"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "source_read_only_photo_pixels_pending",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "新增冠下分枝/跨接后的已实看固定源预览，保存于最后内部梁端内收调整之前；当前版本接头由最终GLB门禁证明。不是最终浏览器GLB截图。",
+        "previews": [
+          {
+            "path": "assets-source/previews/olympic-tower.png",
+            "sha256": "3e01dc854d0abff02aa71c3d70d1a87ce8f97cda6635547a8468b46403a22440",
+            "camera": "assets-source/previews/olympic-tower.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17",
+        "previewAssetVersion": "0199454695d5"
+      }
+    },
+    {
+      "model": "linglong",
+      "name": "玲珑塔",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:%E7%8E%B2%E7%8F%91%E5%A1%94_Linglong_Tower_-_panoramio.jpg",
+          "fileTitle": "File:玲珑塔 Linglong Tower - panoramio.jpg",
+          "author": "Weixi Zeng",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "capturedAt": "Taken on 22 July 2012",
+          "localPath": "artifacts/model-references/photos/linglong/01.jpg",
+          "sha256": "7618c3525e918e7207c7676201fcb3f5f22582a12de884e5e5e3cc4d1e5964bc",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "已竣工上部仰视近景：白色外框立柱、横梁和大斜撑包围玻璃转播舱，舱下钢构可辨；画面裁掉底部，无法独立数全六舱。",
+          "actualSubject": "linglong",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:%E7%94%B5%E8%A7%86%E8%BD%AC%E6%92%AD%E5%A1%94_-_panoramio.jpg",
+          "fileTitle": "File:电视转播塔 - panoramio.jpg",
+          "author": "wuqiang_beijing",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "capturedAt": "Taken on 18 May 2008",
+          "localPath": "artifacts/model-references/photos/linglong/02.jpg",
+          "sha256": "3fe9c764745e814c97552349b40e590be527862741fef39d9ecdc2b1e77d03c1",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "Sunset construction-stage tower with crane and incomplete scaffold/pod plates. Not sufficient to verify finished pod count or exterior frame.",
+          "actualSubject": "linglong",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:linglong()",
+        "savedPreview": "assets-source/previews/linglong.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "竣工近景明确白色外钢框/斜撑包围转播舱。原仅六舱/中央柱，现补四角外框、水平梁与大斜撑；施工态照片不能数竣工舱数或验证完整外立面。",
+        "limitations": [
+          "竣工近景裁掉基座与下部",
+          "六舱大小/转角未独立核准",
+          "外框路线/截面/节点为推断"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "已查看对应固定源模型预览；不是浏览器最终GLB截图或摄影测量。",
+        "previews": [
+          {
+            "path": "assets-source/previews/linglong.png",
+            "sha256": "c29bc2920cb00dc8452d9e76f2ebd8f1da76778faef6c561ffaf27f4adb56cbc",
+            "camera": "assets-source/previews/linglong.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      }
+    },
+    {
+      "model": "yonghegong",
+      "name": "雍和宫",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple%2C_Peking.jpg",
+          "fileTitle": "File:Yonghe Temple, Peking.jpg",
+          "author": "US Ambassador to the People’s Republic of China",
+          "license": "Public domain, US Department of State official work",
+          "licenseURL": null,
+          "capturedAt": "2023-11-11",
+          "localPath": "artifacts/model-references/photos/yonghegong/01.jpg",
+          "sha256": "f5127190ab5f31626a87c5b0bd4ef29113c8f0d6a044176d5dd3288020547ce7",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "万福阁斜正面近景：金瓦三层檐、红木楼层/窗格、回廊及相连侧楼可辨；人群/树遮挡底部，非园区全部建筑视角。",
+          "actualSubject": "yonghegong",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple_entrance.jpg",
+          "fileTitle": "File:Yonghe Temple entrance.jpg",
+          "author": "Charlie fong冯成",
+          "license": "Public domain",
+          "licenseURL": "https://commons.wikimedia.org/wiki/File:Yonghe_Temple_entrance.jpg",
+          "capturedAt": "2009-01",
+          "localPath": "artifacts/model-references/photos/yonghegong/02.jpg",
+          "sha256": "ac4cb88d21525afe3abef73635e68c6a05c7ee81585befd9018c03a11e5ba813",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "雍和宫南入口牌坊与红围墙：多组金瓦牌坊、彩绘、红柱及院门可辨；不能验证法轮殿/万福阁反面或内部。",
+          "actualSubject": "yonghegong-entrance-paifang",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:complex_layout()",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "万福阁照片支持金瓦三层檐和红木楼层；源万福阁已作三层屋面。第二图为南入口牌坊，不覆盖主殿背面，园区通用殿屋不等于逐殿精确还原。",
+        "limitations": [
+          "入口牌坊和连廊未精确重建",
+          "法轮殿/其余主殿没有本轮匹配像素",
+          "通用屋顶/楼层细部仍推断"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "source_read_only_photo_pixels_pending",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d"
+    },
+    {
+      "model": "confucius-guozijian",
+      "name": "孔庙与国子监",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:BeijingConfuciusTemple1.jpg",
+          "fileTitle": "File:BeijingConfuciusTemple1.jpg",
+          "author": "docsdl",
+          "license": "CC BY 2.0",
+          "licenseURL": null,
+          "capturedAt": "2007-09-01",
+          "localPath": "artifacts/model-references/photos/confucius-guozijian/01.jpg",
+          "sha256": "5f8132ffcf7a75053384db621f3bd202fcb44ea58881fb1b4261452fba895401",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "树遮挡的孔庙大成门正面：单层金瓦屋面、红柱、白石阶梯/栏杆及孔子雕像；不作为大成殿主体屋面证据。",
+          "actualSubject": "confucius-dacheng-gate",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Guozijian_building_1.jpg",
+          "fileTitle": "File:Guozijian building 1.jpg",
+          "author": "Peiyu Liu",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "capturedAt": "2009-03-16",
+          "localPath": "artifacts/model-references/photos/confucius-guozijian/02.jpg",
+          "sha256": "f6ec5f47537b6ff4784dadc5b45ef5447b972b91219b3d45a8073b6652711dcf",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "国子监辟雍正面：两层金色攒尖屋檐、圆形金顶、红柱及白石台基/栏杆；视角未展示环池和完整侧立面。",
+          "actualSubject": "confucius-guozijian",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:complex_layout()",
+        "savedPreview": "assets-source/previews/confucius-guozijian.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "大成门图只支持门屋、阶梯和红柱；辟雍正面明确重檐攒尖和圆形宝顶。源辟雍此前单檐，现增加上下两层攒尖屋面及中间层；未拿门屋图验证大成殿。",
+        "limitations": [
+          "大成殿没有本轮主殿像素",
+          "环池/桥与其他园区屋面未完整核验",
+          "辟雍各部高度/屋面曲率仍推断"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "source_read_only_photo_pixels_pending",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "已查看对应固定源模型预览；不是浏览器最终GLB截图或摄影测量。",
+        "previews": [
+          {
+            "path": "assets-source/previews/confucius-guozijian.png",
+            "sha256": "4927d3d9fbe6ffe24aa3efd385140a179f0356b1b3f395e5c294cffd61eb8b71",
+            "camera": "assets-source/previews/confucius-guozijian.camera.json"
+          },
+          {
+            "path": "assets-source/previews/confucius-guozijian-biyong.png",
+            "sha256": "c6dddf9c7627665b316d68479f07dcaf1d5c22c3a0ae41d2dcf181ecfe7928b6",
+            "camera": "assets-source/previews/confucius-guozijian-biyong.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      }
+    },
+    {
+      "model": "ditan",
+      "name": "地坛",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Altar_for_animal_sacrifice_at_the_Temple_of_Earth_in_Beijing.jpg",
+          "fileTitle": "File:Altar for animal sacrifice at the Temple of Earth in Beijing.jpg",
+          "author": "Bridget Coila",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "capturedAt": "2009",
+          "localPath": "artifacts/model-references/photos/ditan/01.jpg",
+          "sha256": "8aeee41620be16cb48daf1f6119e543e343fd77320a7f6b7e6072f4993162d93",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "祭礼活动近景：临时黄色棚和祭桌/牌位及人群遮挡永久祭坛结构，不能用来证明方泽坛层数、尺寸或附殿。",
+          "actualSubject": "ditan-temporary-ritual-setup",
+          "subjectSupportsPermanentModelForm": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Erdaltar_01.jpg",
+          "fileTitle": "File:Erdaltar 01.jpg",
+          "author": "Leeluv",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "capturedAt": null,
+          "localPath": "artifacts/model-references/photos/ditan/02.jpg",
+          "sha256": "abca0cb903640cdeb3b1bc94630c8cafc5a49d872e4b94d0a0cc46e3b8683d34",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "穿过单孔石门看祭坛：前景石门、红墙上金黄色瓦帽、后方坛台中央阶梯及局部白栏可见；视域窄，不能推作完整双层平台测量。",
+          "actualSubject": "ditan",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:complex_layout()",
+        "savedPreview": "assets-source/previews/ditan.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "活动照片被临时棚/人群遮挡，不支持永久平台形制；另一图穿过石门可见红墙黄瓦帽、台阶和部分坛台。源两层方坛与红围墙宏观可对应，石门、墙帽和台阶未精确重建。",
+        "limitations": [
+          "皇祇室及完整坛台未获充分近景",
+          "活动照片不是平台尺寸依据",
+          "围墙金瓦帽/石门/台阶细节尚简化"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "source_read_only_photo_pixels_pending",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "已查看对应固定源模型预览；不是浏览器最终GLB截图或摄影测量。",
+        "previews": [
+          {
+            "path": "assets-source/previews/ditan.png",
+            "sha256": "d45c5ef919992c42db8c17420ff875a1808c9f5daf365b3bbc75086b72e16e60",
+            "camera": "assets-source/previews/ditan.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      }
+    },
+    {
+      "model": "ritan",
+      "name": "日坛",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beijing_Sun_Temple_Park.jpg",
+          "fileTitle": "File:Beijing Sun Temple Park.jpg",
+          "author": "kevindooley",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "capturedAt": "2007-06-01",
+          "localPath": "artifacts/model-references/photos/ritan/01.jpg",
+          "sha256": "08d91c53129940150f979ae47d0464e8d0f838fe421f05ea689ef8a5355ec186",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "窄幅长全景：红色环坛围墙、多个石门、铺地与远树可见；投影/尺度未标定，主祭坛台面在画面外或不可辨。",
+          "actualSubject": "ritan",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Pavilion_of_Animal_Sacrifice(Temple_of_the_Sun).JPG",
+          "fileTitle": "File:The Pavilion of Animal Sacrifice(Temple of the Sun).JPG",
+          "author": "Dirrival",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "capturedAt": "2009-07-18",
+          "localPath": "artifacts/model-references/photos/ritan/02.jpg",
+          "sha256": "314523b3ec35b3e0c07b1bf8647acfeaee2427fa1f234f2e5c4c41726c8315f7",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "宰牲亭斜正面：两层绿/灰瓦屋檐、红墙灰砖墙脚、开门；树木遮挡。此辅助亭不能代表主坛/具服殿/钟楼，尚未与命名OSM单体精确匹配。",
+          "actualSubject": "ritan-animal-sacrifice-pavilion",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:complex_layout()",
+        "savedPreview": "assets-source/previews/ritan.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "全景支持红色环坛围墙和多石门；宰牲亭图仅支持该辅助亭两层绿瓦与红灰墙，并未与现七个命名单体精确定位匹配。源保留祭坛/七建筑布局，不能把两图当主坛或全部附殿验证。",
+        "limitations": [
+          "主坛台面没有充分像素",
+          "宰牲亭不等于具服殿/钟楼，精确OSM匹配未完成",
+          "墙帽/石门及园区屋面层次简化"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "source_read_only_photo_pixels_pending",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "已查看对应固定源模型预览；不是浏览器最终GLB截图或摄影测量。",
+        "previews": [
+          {
+            "path": "assets-source/previews/ritan.png",
+            "sha256": "f529d38658b4a3b9863e1fa21a90dcc300ff1bf44f7f22879b1fa372766dcf71",
+            "camera": "assets-source/previews/ritan.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      }
+    },
+    {
+      "model": "yuetan",
+      "name": "月坛",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Bell_Tower(Temple_of_Moon).JPG",
+          "fileTitle": "File:Bell Tower(Temple of Moon).JPG",
+          "author": "Dirrival",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "capturedAt": "2009-07-11",
+          "localPath": "artifacts/model-references/photos/yuetan/01.jpg",
+          "sha256": "d57b145e1bc3644703fa746bfd004a777bfe2f5b209e93d27f011037040f36eb",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "钟楼近正面：两层绿色瓦檐、红色砌体、上层闭窗和下层贯通拱洞；洞后树/台阶可见，细部未标定。",
+          "actualSubject": "yuetan",
+          "subjectSupportsPermanentModelForm": true
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Bell_Tower2(Temple_of_Moon).JPG",
+          "fileTitle": "File:Bell Tower2(Temple of Moon).JPG",
+          "author": "Dirrival",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "capturedAt": "2009-07-14",
+          "localPath": "artifacts/model-references/photos/yuetan/02.jpg",
+          "sha256": "cb688ef2d2f2273ad38bba41a12d52bca2fc87131a93c2718247396cb2289fa1",
+          "pixelsViewed": true,
+          "pixelsViewedAt": "2026-10-02",
+          "actualInspectionScope": "同一钟楼斜侧视：两层绿檐与红墙体、底部拱洞和灰砖墙脚支持前一视图；树遮挡侧墙，不涵盖园区另外三建筑。",
+          "actualSubject": "yuetan",
+          "subjectSupportsPermanentModelForm": true
+        }
+      ],
+      "modelComparison": {
+        "source": "blender/build_all.py:complex_layout()",
+        "savedPreview": "assets-source/previews/yuetan.png",
+        "previewActuallyViewed": true,
+        "scope": "source construction and listed saved preview only; no photogrammetric registration",
+        "finding": "两张同钟楼实景明确双绿檐、红砌体和贯通拱。原把该映射钟楼做成单檐柱殿，现定向改双绿屋面/红墙/拱洞，并为碰撞保留贯通；其余三个单体及旧祭坛未扩造。",
+        "limitations": [
+          "钟楼屋面/墙体分部尺寸未标定",
+          "另外三建筑没有本轮像素",
+          "旧祭坛位置及外观证据不足"
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      },
+      "status": "source_read_only_photo_pixels_pending",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "finalAssetVersion": "d3bd20956b7d",
+      "finalSourcePreviewInspection": {
+        "actuallyViewed": true,
+        "scope": "已查看对应固定源模型预览；不是浏览器最终GLB截图或摄影测量。",
+        "previews": [
+          {
+            "path": "assets-source/previews/yuetan.png",
+            "sha256": "8f6aada8e26632f20003452f2f35cdf15519cda302de3d155a90a9a80565e531",
+            "camera": "assets-source/previews/yuetan.camera.json"
+          },
+          {
+            "path": "assets-source/previews/yuetan-yuetan-clock.png",
+            "sha256": "75bfca59970d8ff47a69641c3cd2f4f22e0ec6fb7c63c6b74aee3f78d96dcf60",
+            "camera": "assets-source/previews/yuetan-yuetan-clock.camera.json"
+          }
+        ],
+        "sourceSHA256": "e0c96f01b8b4f8fd52b9101686ddc5a4b0935d13beb666ea29ad7facc27ced17"
+      }
+    }
+  ]
+}

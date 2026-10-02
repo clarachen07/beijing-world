@@ -1,0 +1,1757 @@
+{
+  "generatedAt": "2026-10-02T11:43:54.212392+00:00",
+  "assetVersionAtSourceReview": "45b5e16e7057 (before separately authorised traditional fixes)",
+  "sourceSHA256": "0e197bc2518ba62828f9c521f390743077d000e55de20831ef965acea77b816e",
+  "helperSHA256": "72658f18553c211108531de2a2bbe5cb941c9d81aee1ae25fecaa172c63ec45b",
+  "scope": "14传统模型；17本地照片实际查看、5既存预览实际查看。不是全立面通过，不是摄影测量或3m位置验收。",
+  "method": "已实际查看17张本地像素；对照源和5个保存预览。文件元数据与下载成功不替代pixelsViewed；两箭楼标题误导照片以实际城楼身份拒绝其箭楼匹配。无新GPU渲染。",
+  "selectedPhotoCount": 28,
+  "downloadedPhotoCount": 17,
+  "actuallyViewedPhotoCount": 17,
+  "uniqueViewedLocalPhotoCount": 17,
+  "downloadFailedPhotoCount": 11,
+  "wrongSubjectPhotoCount": 2,
+  "matchingSelectedViewedPhotoCount": 15,
+  "modelsWithMatchingPixelEvidence": 10,
+  "modelsWithNoMatchingPixelEvidence": [
+    "jianlou",
+    "xihuamen",
+    "taihemen",
+    "jiaolou"
+  ],
+  "actuallyViewedPreviewCount": 5,
+  "networkLimitations": "一次metadata API403后停止该端点；原图一次后备/标准960px缩图一次低并发请求仍有429或超时条目，没有重复盲请求。父agent要求冻结，停止进一步发现。",
+  "photoPublication": "开放参考JPEG只在artifacts供建模对照，不嵌入产品纹理或发布模型；作者/许可保留sidecar。",
+  "sourceSnapshotCaveat": "问题记录描述定向修复前源配置。永定门/午门/神武门/鼓楼/钟楼已另行授权修复；本JSON只交付已完成17照片查看范围，不宣称修复后GLB再次像素核验。",
+  "noFullFacadeOrSurveyAcceptance": true,
+  "models": [
+    {
+      "model": "taihedian",
+      "name": "太和殿",
+      "referenceID": "taihedian",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "matchingViewedPhotoCount": 2,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_Forbidden_City.jpg",
+          "fileTitle": "File:Hall of Supreme Harmony Forbidden City.jpg",
+          "author": "Radosław Botev; licensor Fundacja Nomos",
+          "license": "CC BY 3.0 PL",
+          "licenseURL": null,
+          "capturedAt": "2009-07-16",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Hall_of_Supreme_Harmony_Forbidden_City.jpg",
+          "sha256": "336fd9e3c5afd2bf0e2fdb2081dcd49621aaf19001fc1c06b2917cb127b114f0",
+          "localPath": "artifacts/model-references/photos/taihedian/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "南向正面整体：两层黄色庑殿屋檐、十一间正面柱网、三层白石台基可见；照片无尺度控制点。",
+          "pixelInspectionScope": "南向正面整体：两层黄色庑殿屋檐、十一间正面柱网、三层白石台基可见；照片无尺度控制点。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "taihedian",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:20200110_Hall_of_Supreme_Harmony_roof_art-3.jpg",
+          "fileTitle": "File:20200110 Hall of Supreme Harmony roof art-3.jpg",
+          "author": "Balon Greyjoy",
+          "license": "CC0 1.0",
+          "licenseURL": null,
+          "capturedAt": "2020-01-10",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/8/83/20200110_Hall_of_Supreme_Harmony_roof_art-3.jpg",
+          "sha256": "743fdc18912112aa4b72d13408ee873a73f21d9e4464f9e17005fc5f2e01c2f0",
+          "localPath": "artifacts/model-references/photos/taihedian/02.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "屋角近景：金黄色瓦坡、脊兽队列、檐下彩画与斗拱；不能据此校核完整建筑比例。",
+          "pixelInspectionScope": "屋角近景：金黄色瓦坡、脊兽队列、檐下彩画与斗拱；不能据此校核完整建筑比例。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "taihedian",
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "双层黄色庑殿屋檐",
+        "十一间正面柱网",
+        "三层白石台基"
+      ],
+      "majorIssues": [],
+      "limitations": [
+        "背面和侧面未完整覆盖",
+        "装饰、瓦作、屋面曲率与绝对比例未按控制点标定"
+      ],
+      "sourceComparison": "源结构及已存预览的双檐、十一间殿身和三层白石台基与可见正面对应。近景只证明脊兽/斗拱/彩画存在，不证明简化装饰精确。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 61,
+        "end": 72,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:61–72",
+        "savedPreview": "assets-source/previews/taihedian.png",
+        "previewActuallyViewed": true,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "源结构及已存预览的双檐、十一间殿身和三层白石台基与可见正面对应。近景只证明脊兽/斗拱/彩画存在，不证明简化装饰精确。",
+        "limitations": [
+          "背面和侧面未完整覆盖",
+          "装饰、瓦作、屋面曲率与绝对比例未按控制点标定"
+        ],
+        "previewSHA256": "ed42acc1dafb5892657ea893dbd8f325b49766956a65f938048426c7dd5147f3"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "qiniandian",
+      "name": "祈年殿",
+      "referenceID": "qiniandian",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "matchingViewedPhotoCount": 2,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests.jpg",
+          "fileTitle": "File:Temple of Heaven - Hall of Prayer for Good Harvests.jpg",
+          "author": "xiquinhosilva",
+          "license": "CC BY 2.0",
+          "licenseURL": null,
+          "capturedAt": "2013-04-27",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests.jpg",
+          "sha256": "6ddd481032f90bd10dc57faa604d10237d4f74da36a4739b6e752a20d7749100",
+          "localPath": "artifacts/model-references/photos/qiniandian/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "正面整体：三层蓝色圆形攒尖屋檐、红色圆殿、金色顶饰、三层白石圆台。",
+          "pixelInspectionScope": "正面整体：三层蓝色圆形攒尖屋檐、红色圆殿、金色顶饰、三层白石圆台。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "qiniandian",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_02.jpg",
+          "fileTitle": "File:Temple of Heaven - Hall of Prayer for Good Harvests 02.jpg",
+          "author": "xiquinhosilva",
+          "license": "CC BY 2.0",
+          "licenseURL": null,
+          "capturedAt": "2024-09-16",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_02.jpg/960px-Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_02.jpg",
+          "sha256": "7e48c977f2bcb3ee2cfd96e2d0fbb64c5154644c8f8d3172798057ee72f1eed0",
+          "localPath": "artifacts/model-references/photos/qiniandian/02.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/2/23/Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_02.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests (f061ab2)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "另一时段竖幅整体：同样的三层圆形蓝檐与白石圆台；视角仍接近正面，不能算完整多立面覆盖。",
+          "pixelInspectionScope": "另一时段竖幅整体：同样的三层圆形蓝檐与白石圆台；视角仍接近正面，不能算完整多立面覆盖。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "qiniandian",
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "三层蓝色圆形攒尖屋檐",
+        "红色圆殿",
+        "三层白石圆台"
+      ],
+      "majorIssues": [],
+      "limitations": [
+        "两图视向相近，不是完整多立面标定",
+        "宝顶为简化圆锥，葫芦曲线及彩画窗格未校准"
+      ],
+      "sourceComparison": "源和预览中的三圆台、三个圆锥曲面蓝顶与圆殿对应已看照片宏观类型。照片不能独立证明既用官方尺寸。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 74,
+        "end": 92,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:74–92",
+        "savedPreview": "assets-source/previews/qiniandian.png",
+        "previewActuallyViewed": true,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "源和预览中的三圆台、三个圆锥曲面蓝顶与圆殿对应已看照片宏观类型。照片不能独立证明既用官方尺寸。",
+        "limitations": [
+          "两图视向相近，不是完整多立面标定",
+          "宝顶为简化圆锥，葫芦曲线及彩画窗格未校准"
+        ],
+        "previewSHA256": "c575691e1a3be1ddf006932307f1fdfde636d6459e78fd361f3a59efa41fbc2c"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "tiananmen",
+      "name": "天安门",
+      "referenceID": "tiananmen",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 1,
+      "actuallyViewedPhotoCount": 1,
+      "matchingViewedPhotoCount": 1,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Tiananmen_Tower_Gate%2C_Forbidden_City%2C_Beijing.jpg",
+          "fileTitle": "File:Tiananmen Tower Gate, Forbidden City, Beijing.jpg",
+          "author": "Steven Kevil",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": null,
+          "capturedAt": "2017-03-28",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Tiananmen_Tower_Gate%2C_Forbidden_City%2C_Beijing.jpg/960px-Tiananmen_Tower_Gate%2C_Forbidden_City%2C_Beijing.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "The read operation timed out",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Tiananmen_Tower_Gate%2C_Forbidden_City%2C_Beijing.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests (f061ab2)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:North_end_of_Tiananmen_Square_and_Tiananmen_Gate.jpg",
+          "fileTitle": "File:North end of Tiananmen Square and Tiananmen Gate.jpg",
+          "author": "Daniel Case",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "capturedAt": "2014-03-29",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/8/83/North_end_of_Tiananmen_Square_and_Tiananmen_Gate.jpg",
+          "sha256": "e053fdbb09fcfdf2e8e6f76a65de5a2ebe4a57fd5a54cbc9e6e5709952e728c3",
+          "localPath": "artifacts/model-references/photos/tiananmen/02.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "广场向北的远正面：两层黄色屋檐、宽红色台座；五个门户部分受人群和前景遮挡。",
+          "pixelInspectionScope": "广场向北的远正面：两层黄色屋檐、宽红色台座；五个门户部分受人群和前景遮挡。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "tiananmen",
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "两层黄色屋檐",
+        "宽红色台座",
+        "部分可见的五门户排列"
+      ],
+      "majorIssues": [],
+      "limitations": [
+        "仅一张匹配照片",
+        "部分门户被前景遮挡",
+        "无该模型保存预览",
+        "标语肖像彩画及背立面未核验"
+      ],
+      "sourceComparison": "源配置双檐、五孔，宏观类型与远正面可见部分对应；前景遮挡妨碍门洞净尺寸核验。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 288,
+        "end": 288,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:288–288",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "源配置双檐、五孔，宏观类型与远正面可见部分对应；前景遮挡妨碍门洞净尺寸核验。",
+        "limitations": [
+          "仅一张匹配照片",
+          "部分门户被前景遮挡",
+          "无该模型保存预览",
+          "标语肖像彩画及背立面未核验"
+        ]
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "zhengyangmen",
+      "name": "正阳门城楼",
+      "referenceID": "zhengyangmen",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 1,
+      "actuallyViewedPhotoCount": 1,
+      "matchingViewedPhotoCount": 1,
+      "borrowedMatchingViewedPhotoCount": 2,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E9%98%B3%E9%97%A8%E5%9F%8E%E6%A5%BC_2024-05-15.jpg",
+          "fileTitle": "File:正阳门城楼 2024-05-15.jpg",
+          "author": "xiquinhosilva",
+          "license": "CC BY 4.0",
+          "licenseURL": null,
+          "capturedAt": "2024-05-15",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%E6%AD%A3%E9%98%B3%E9%97%A8%E5%9F%8E%E6%A5%BC_2024-05-15.jpg/960px-%E6%AD%A3%E9%98%B3%E9%97%A8%E5%9F%8E%E6%A5%BC_2024-05-15.jpg",
+          "sha256": "ea09c35252af9eefa15578736e199a6357509b861b0e2e5cb689aae8ebd65667",
+          "localPath": "artifacts/model-references/photos/zhengyangmen/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/6/6e/%E6%AD%A3%E9%98%B3%E9%97%A8%E5%9F%8E%E6%A5%BC_2024-05-15.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests (f061ab2)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "城楼侧前近景：三层深色屋檐、宽灰砖台座；侧屋面和局部屋檐可见。",
+          "pixelInspectionScope": "城楼侧前近景：三层深色屋檐、宽灰砖台座；侧屋面和局部屋檐可见。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "zhengyangmen",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Zhengyangmen_gatehouse.jpg",
+          "fileTitle": "File:Zhengyangmen gatehouse.jpg",
+          "author": "TarnishedPath",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2019-02-02 13:16:15",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Zhengyangmen_gatehouse.jpg/960px-Zhengyangmen_gatehouse.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Too many requests (f061ab2)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Zhengyangmen_gatehouse.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests (f061ab2)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Qian_Men_IMG_4273_Zhengyang_Gate_Arrow_Tower.jpg",
+          "fileTitle": "File:Qian Men IMG 4273 Zhengyang Gate Arrow Tower.jpg",
+          "author": "Bjoertvedt",
+          "license": "CC BY-SA 4.0",
+          "localPath": "artifacts/model-references/photos/jianlou/01.jpg",
+          "sha256": "705404f9948fa98092eef390a52b429278336b7e14d840c25e0a1a8bf9555ecc",
+          "pixelsViewed": true,
+          "subjectAccepted": true,
+          "actualSubject": "zhengyangmen",
+          "pixelInspectionScope": "实际是正阳门城楼白天正面：三层完整屋檐，中心白石阳台、两侧对称台阶；没有箭楼成排箭窗。原文件名含 Arrow Tower，但像素对象不符合箭楼。",
+          "reusedFrom": "jianlou/01.jpg",
+          "originalAssignmentRejected": "jianlou"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_(4476344474).jpg",
+          "fileTitle": "File:Lascar The Qianmen archery tower - Tiananmen Square (4476344474).jpg",
+          "author": "Jorge Láscar from Australia",
+          "license": "CC BY 2.0",
+          "localPath": "artifacts/model-references/photos/jianlou/02.jpg",
+          "sha256": "1b8c3193fff12c6a54b0db89f7f6e9073188ba514e453c20f703c87401c3c489",
+          "pixelsViewed": true,
+          "subjectAccepted": true,
+          "actualSubject": "zhengyangmen",
+          "pixelInspectionScope": "实际是正阳门城楼夜间正面：三层完整屋檐、中心白石阳台和两侧对称灰色台阶与城楼一致；没有箭楼成排箭窗。原文件名 archery tower 误导对象分类。",
+          "reusedFrom": "jianlou/02.jpg",
+          "originalAssignmentRejected": "jianlou"
+        }
+      ],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "三层深色屋檐",
+        "宽基座及轴线城楼"
+      ],
+      "majorIssues": [
+        {
+          "severity": "major",
+          "feature": "基座材质",
+          "evidence": "侧前照片与两张误归箭楼的正面照片均为灰砖台座。",
+          "sourceFinding": "默认gray=False生成red台座，已看预览也为红台座。"
+        },
+        {
+          "severity": "major",
+          "feature": "正面台阶和中央白石阳台",
+          "evidence": "两张实际城楼正面照片均有对称外台阶与中央白石阳台。",
+          "sourceFinding": "通用gate_model仅矩形拱台与连续栏杆，未生成该布局。"
+        }
+      ],
+      "limitations": [
+        "原选仅一张成功，正面证据为被纠正对象的复用",
+        "保存预览未匹配本轮新GLB版本",
+        "全体比例未测量"
+      ],
+      "sourceComparison": "源已有三檐，但红基座与照片灰砖不符。两张误名箭楼候选实际提供城楼正面证据，原文件名照录。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 289,
+        "end": 289,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:289–289",
+        "savedPreview": "assets-source/previews/zhengyangmen.png",
+        "previewActuallyViewed": true,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "源已有三檐，但红基座与照片灰砖不符。两张误名箭楼候选实际提供城楼正面证据，原文件名照录。",
+        "limitations": [
+          "原选仅一张成功，正面证据为被纠正对象的复用",
+          "保存预览未匹配本轮新GLB版本",
+          "全体比例未测量"
+        ],
+        "previewSHA256": "23fcc77dd8db7956e800eeb799be946e5729df647976b8f2e1d9cfb9bdf54368"
+      },
+      "status": "issues_found",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "jianlou",
+      "name": "正阳门箭楼",
+      "referenceID": "jianlou",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "matchingViewedPhotoCount": 0,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Qian_Men_IMG_4273_Zhengyang_Gate_Arrow_Tower.jpg",
+          "fileTitle": "File:Qian Men IMG 4273 Zhengyang Gate Arrow Tower.jpg",
+          "author": "Bjoertvedt",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2017-07-10 10:08:58",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/2/28/Qian_Men_IMG_4273_Zhengyang_Gate_Arrow_Tower.jpg",
+          "sha256": "705404f9948fa98092eef390a52b429278336b7e14d840c25e0a1a8bf9555ecc",
+          "localPath": "artifacts/model-references/photos/jianlou/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "实际是正阳门城楼白天正面：三层完整屋檐，中心白石阳台、两侧对称台阶；没有箭楼成排箭窗。原文件名含 Arrow Tower，但像素对象不符合箭楼。",
+          "pixelInspectionScope": "实际是正阳门城楼白天正面：三层完整屋檐，中心白石阳台、两侧对称台阶；没有箭楼成排箭窗。原文件名含 Arrow Tower，但像素对象不符合箭楼。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": false,
+          "actualSubject": "zhengyangmen",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_(4476344474).jpg",
+          "fileTitle": "File:Lascar The Qianmen archery tower - Tiananmen Square (4476344474).jpg",
+          "author": "Jorge Láscar from Australia",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "capturedAt": "2008-11-24 06:22",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_%284476344474%29.jpg/960px-Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_%284476344474%29.jpg",
+          "sha256": "1b8c3193fff12c6a54b0db89f7f6e9073188ba514e453c20f703c87401c3c489",
+          "localPath": "artifacts/model-references/photos/jianlou/02.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/3/33/Lascar_The_Qianmen_archery_tower_-_Tiananmen_Square_%284476344474%29.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests (f061ab2)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "实际是正阳门城楼夜间正面：三层完整屋檐、中心白石阳台和两侧对称灰色台阶与城楼一致；没有箭楼成排箭窗。原文件名 archery tower 误导对象分类。",
+          "pixelInspectionScope": "实际是正阳门城楼夜间正面：三层完整屋檐、中心白石阳台和两侧对称灰色台阶与城楼一致；没有箭楼成排箭窗。原文件名 archery tower 误导对象分类。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": false,
+          "actualSubject": "zhengyangmen",
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [],
+      "majorIssues": [
+        {
+          "severity": "evidence_error",
+          "feature": "照片对象身份",
+          "evidence": "两张选图均为三檐正阳门城楼，有中央白石阳台、对称外台阶，没有箭楼成排箭窗。",
+          "sourceFinding": "城楼照片不能校核箭楼。"
+        }
+      ],
+      "limitations": [
+        "零张匹配箭楼像素参考",
+        "Arrow Tower/archery tower文件标题不等于对象身份确认",
+        "仅源结构阅读"
+      ],
+      "sourceComparison": "两张实际查看候选均拒绝为箭楼证据。源为通用双檐gate_model，零张匹配像素，不能认证具体形制。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 290,
+        "end": 290,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:290–290",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "两张实际查看候选均拒绝为箭楼证据。源为通用双檐gate_model，零张匹配像素，不能认证具体形制。",
+        "limitations": [
+          "零张匹配箭楼像素参考",
+          "Arrow Tower/archery tower文件标题不等于对象身份确认",
+          "仅源结构阅读"
+        ]
+      },
+      "status": "no_matching_pixel_evidence",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "yongdingmen",
+      "name": "永定门",
+      "referenceID": "yongdingmen",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 1,
+      "actuallyViewedPhotoCount": 1,
+      "matchingViewedPhotoCount": 1,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Yongdingmen,_Beijing.jpg",
+          "fileTitle": "File:Yongdingmen, Beijing.jpg",
+          "author": "钉钉",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2021-02-15 16:45:11",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Yongdingmen%2C_Beijing.jpg/960px-Yongdingmen%2C_Beijing.jpg",
+          "sha256": "b57da4a250731736db03287ba0b00f2229f799b25bd45b30141a55c8afdf1fb2",
+          "localPath": "artifacts/model-references/photos/yongdingmen/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/2/23/Yongdingmen%2C_Beijing.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "重建永定门斜正面：灰砖台座及中央拱洞，三个完整深色屋檐层次可见；只支持拍摄时的重建外观。",
+          "pixelInspectionScope": "重建永定门斜正面：灰砖台座及中央拱洞，三个完整深色屋檐层次可见；只支持拍摄时的重建外观。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "yongdingmen",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Yongdinggate.jpg",
+          "fileTitle": "File:Yongdinggate.jpg",
+          "author": "Charlie fong冯成",
+          "license": "Public domain",
+          "licenseURL": null,
+          "capturedAt": "10/2/2009",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Yongdinggate.jpg/960px-Yongdinggate.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Too many requests (f061ab2)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/9/94/Yongdinggate.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "中央拱洞",
+        "深色屋顶城楼"
+      ],
+      "majorIssues": [
+        {
+          "severity": "major",
+          "feature": "屋檐层数",
+          "evidence": "重建实景斜正面照片可见三个完整屋檐层次。",
+          "sourceFinding": "eaves=2。"
+        },
+        {
+          "severity": "major",
+          "feature": "基座材质",
+          "evidence": "照片为灰砖基座。",
+          "sourceFinding": "gray=False生成red基座。"
+        }
+      ],
+      "limitations": [
+        "仅一张匹配照片",
+        "无保存预览",
+        "背立面和横断面未覆盖"
+      ],
+      "sourceComparison": "配置双檐红台座与所看重建实景直接不符；不把重建照片当作历史时期全貌。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 291,
+        "end": 291,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:291–291",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "配置双檐红台座与所看重建实景直接不符；不把重建照片当作历史时期全貌。",
+        "limitations": [
+          "仅一张匹配照片",
+          "无保存预览",
+          "背立面和横断面未覆盖"
+        ]
+      },
+      "status": "issues_found",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "wumen",
+      "name": "午门",
+      "referenceID": "wumen",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "matchingViewedPhotoCount": 2,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_IMG_4295_Meridian_Gate.jpg",
+          "fileTitle": "File:Forbidden City IMG 4295 Meridian Gate.jpg",
+          "author": "Bjoertvedt",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": null,
+          "capturedAt": "2017-07-10",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Forbidden_City_IMG_4295_Meridian_Gate.jpg/960px-Forbidden_City_IMG_4295_Meridian_Gate.jpg",
+          "sha256": "8ebbb313330694c3dc1a095a185a2d6e7c5c77b5fffbb2a2ac186a95785ebdca",
+          "localPath": "artifacts/model-references/photos/wumen/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/4/40/Forbidden_City_IMG_4295_Meridian_Gate.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "午门外侧翼角局部：方形翼亭的重檐攒尖顶、红墙和连廊，未覆盖全正面门户。",
+          "pixelInspectionScope": "午门外侧翼角局部：方形翼亭的重檐攒尖顶、红墙和连廊，未覆盖全正面门户。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "wumen",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_-_Meridian_Gate_View_from_North.jpg",
+          "fileTitle": "File:Forbidden City - Meridian Gate View from North.jpg",
+          "author": "Steven Kevil",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2017-03-28 09:19:38",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Forbidden_City_-_Meridian_Gate_View_from_North.jpg/960px-Forbidden_City_-_Meridian_Gate_View_from_North.jpg",
+          "sha256": "3e1d5b4535944c72cb487a828886a8a03bd594c7a40b93f224ffe663d80c7f04",
+          "localPath": "artifacts/model-references/photos/wumen/02.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Forbidden_City_-_Meridian_Gate_View_from_North.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "午门北向完整正面：主殿和四翼亭、宽红台座可见，三中央门孔及左右更远的两个侧孔共五孔；外侧门孔不与中央三孔等距。",
+          "pixelInspectionScope": "午门北向完整正面：主殿和四翼亭、宽红台座可见，三中央门孔及左右更远的两个侧孔共五孔；外侧门孔不与中央三孔等距。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "wumen",
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "主殿和四翼亭共五亭",
+        "红色基座",
+        "U形翼廊大体组合",
+        "主殿双层黄色屋檐"
+      ],
+      "majorIssues": [
+        {
+          "severity": "major",
+          "feature": "北側远端两个门孔",
+          "evidence": "北正面照片有中央三孔和左右较远两个孔，共五孔。",
+          "sourceFinding": "主arch_podium仅三孔，U shaped wing podium实心；不能将中央等距三孔直接改为等距五孔。"
+        }
+      ],
+      "limitations": [
+        "南正面完整门孔视角缺失",
+        "翼长/进深与复杂屋顶未量测",
+        "预览未匹配最新GLB"
+      ],
+      "sourceComparison": "源/预览的五亭与U形组合有宏观对应，北侧外门孔缺失。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 94,
+        "end": 107,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:94–107",
+        "savedPreview": "assets-source/previews/wumen.png",
+        "previewActuallyViewed": true,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "源/预览的五亭与U形组合有宏观对应，北侧外门孔缺失。",
+        "limitations": [
+          "南正面完整门孔视角缺失",
+          "翼长/进深与复杂屋顶未量测",
+          "预览未匹配最新GLB"
+        ],
+        "previewSHA256": "90161551fc6c9ce09d89c2347e15d9b6a841f51435cbcb9dfcab4b8eb7fd8c23"
+      },
+      "status": "issues_found",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "shenwumen",
+      "name": "神武门",
+      "referenceID": "shenwumen",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 1,
+      "actuallyViewedPhotoCount": 1,
+      "matchingViewedPhotoCount": 1,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_from_the_Jingshan_Temple_-_panoramio.jpg",
+          "fileTitle": "File:·˙·ChinaUli2010·.· Beijing - Shenwu Gate from the Jingshan Temple - panoramio.jpg",
+          "author": "·˙·ChinaUli2010·.·",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "capturedAt": "Taken on 11 January 2010",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_from_the_Jingshan_Temple_-_panoramio.jpg/960px-%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_from_the_Jingshan_Temple_-_panoramio.jpg",
+          "sha256": "a0206d75a7e9d9bf151f3a9b07236113ae24a86165aa4df2cae0a49b792fec9c",
+          "localPath": "artifacts/model-references/photos/shenwumen/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/9/90/%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_from_the_Jingshan_Temple_-_panoramio.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "景山方向高视角向南：神武门两层黄色屋檐；北侧基座中央较大门及左右两个门，共三孔，部分周边被树木遮挡。",
+          "pixelInspectionScope": "景山方向高视角向南：神武门两层黄色屋檐；北侧基座中央较大门及左右两个门，共三孔，部分周边被树木遮挡。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "shenwumen",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_of_the_Forbidden_Town_-_panoramio_(1).jpg",
+          "fileTitle": "File:·˙·ChinaUli2010·.· Beijing - Shenwu Gate of the Forbidden Town - panoramio (1).jpg",
+          "author": "·˙·ChinaUli2010·.·",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "capturedAt": "Taken on 11 January 2010",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_of_the_Forbidden_Town_-_panoramio_%281%29.jpg/960px-%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_of_the_Forbidden_Town_-_panoramio_%281%29.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Too many requests (f061ab2)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Beijing_-_Shenwu_Gate_of_the_Forbidden_Town_-_panoramio_%281%29.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "两层黄色屋檐",
+        "红基座与轴线楼阁"
+      ],
+      "majorIssues": [
+        {
+          "severity": "major",
+          "feature": "北側门孔数量",
+          "evidence": "景山方向高视角照片可见中央及左右两个门，共三孔。",
+          "sourceFinding": "未传openings，默认只一孔。"
+        }
+      ],
+      "limitations": [
+        "仅一张匹配像素",
+        "树遮挡局部，侧/背立面未覆盖",
+        "无保存预览",
+        "屋顶末端类型不能凭正面核准"
+      ],
+      "sourceComparison": "双檐对应已看层数，缺照片中的侧门。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 292,
+        "end": 292,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:292–292",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "双檐对应已看层数，缺照片中的侧门。",
+        "limitations": [
+          "仅一张匹配像素",
+          "树遮挡局部，侧/背立面未覆盖",
+          "无保存预览",
+          "屋顶末端类型不能凭正面核准"
+        ]
+      },
+      "status": "issues_found",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "donghuamen",
+      "name": "东华门",
+      "referenceID": "donghuamen",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "matchingViewedPhotoCount": 2,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:East_Glorious_Gate_(Forbidden_City)2022.jpg",
+          "fileTitle": "File:East Glorious Gate (Forbidden City)2022.jpg",
+          "author": "Charlie fong",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2022-03-27 11:47:06",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/East_Glorious_Gate_%28Forbidden_City%292022.jpg/960px-East_Glorious_Gate_%28Forbidden_City%292022.jpg",
+          "sha256": "4e6ecb9d804ab70cd1d2174d8912eb0296ce4746ccb7c01e52b433e3caf02b44",
+          "localPath": "artifacts/model-references/photos/donghuamen/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/1/1c/East_Glorious_Gate_%28Forbidden_City%292022.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "东华门正面：两层黄色屋檐、红色门体、三孔及五间上部柱网；非完整屋顶平面证据。",
+          "pixelInspectionScope": "东华门正面：两层黄色屋檐、红色门体、三孔及五间上部柱网；非完整屋顶平面证据。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "donghuamen",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:East_Glorious_Gate_2015_August.jpg",
+          "fileTitle": "File:East Glorious Gate 2015 August.jpg",
+          "author": "Morio",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "9 August 2015, Beijing, China",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/East_Glorious_Gate_2015_August.jpg/960px-East_Glorious_Gate_2015_August.jpg",
+          "sha256": "b6dbadb5ad9421291fe3627d6bb49e9c785ce483944ec76093a38f0fefe92207",
+          "localPath": "artifacts/model-references/photos/donghuamen/02.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/f/f2/East_Glorious_Gate_2015_August.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "另一期近正面：双檐、三孔、红体和五间轮廓；不能据正面图反推出全部背立面。",
+          "pixelInspectionScope": "另一期近正面：双檐、三孔、红体和五间轮廓；不能据正面图反推出全部背立面。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "donghuamen",
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "两层黄色屋檐",
+        "三孔",
+        "五间上部柱网",
+        "红色主体"
+      ],
+      "majorIssues": [],
+      "limitations": [
+        "两图視向近似，背面缺失",
+        "屋顶末端只有限角度可见",
+        "窗格斗拱彩画简化",
+        "预览未匹配最新GLB"
+      ],
+      "sourceComparison": "双檐、三孔、五间源配置与已看正面/保存预览的宏观布局对应；不宣称全部屋顶平面或完整立面通过。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 293,
+        "end": 293,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:293–293",
+        "savedPreview": "assets-source/previews/donghuamen.png",
+        "previewActuallyViewed": true,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "双檐、三孔、五间源配置与已看正面/保存预览的宏观布局对应；不宣称全部屋顶平面或完整立面通过。",
+        "limitations": [
+          "两图視向近似，背面缺失",
+          "屋顶末端只有限角度可见",
+          "窗格斗拱彩画简化",
+          "预览未匹配最新GLB"
+        ],
+        "previewSHA256": "cc8043900d6b497b0ccab322f47a0598d6321a1dd451c1d4e8e48801e101514e"
+      },
+      "status": "partial_local_form_review",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "xihuamen",
+      "name": "西华门",
+      "referenceID": "xihuamen",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 0,
+      "actuallyViewedPhotoCount": 0,
+      "matchingViewedPhotoCount": 0,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:West_Glorious_Gate_(20220213150635).jpg",
+          "fileTitle": "File:West Glorious Gate (20220213150635).jpg",
+          "author": "N509FZ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2022-02-13 15:06:35",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/West_Glorious_Gate_%2820220213150635%29.jpg/960px-West_Glorious_Gate_%2820220213150635%29.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Too many requests (f061ab2)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/0/01/West_Glorious_Gate_%2820220213150635%29.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:West_Glorious_Gate_(20220213150647).jpg",
+          "fileTitle": "File:West Glorious Gate (20220213150647).jpg",
+          "author": "N509FZ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2022-02-13 15:06:47",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/West_Glorious_Gate_%2820220213150647%29.jpg/960px-West_Glorious_Gate_%2820220213150647%29.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/3/35/West_Glorious_Gate_%2820220213150647%29.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "仅源结构；没有本轮可得像素。",
+      "shapeSupported": [],
+      "majorIssues": [],
+      "limitations": [
+        "两张下载限流失败，像素未看",
+        "无保存预览",
+        "未认证实景形制"
+      ],
+      "sourceComparison": "只能读到双檐、三孔、五间配置。东华门近似配置不能替代西华门实景像素。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 294,
+        "end": 294,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:294–294",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "只能读到双檐、三孔、五间配置。东华门近似配置不能替代西华门实景像素。",
+        "limitations": [
+          "两张下载限流失败，像素未看",
+          "无保存预览",
+          "未认证实景形制"
+        ]
+      },
+      "status": "no_pixel_evidence",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "taihemen",
+      "name": "太和门",
+      "referenceID": "taihemen",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 0,
+      "actuallyViewedPhotoCount": 0,
+      "matchingViewedPhotoCount": 0,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_at_the_Forbidden_City.jpg",
+          "fileTitle": "File:Gate of Supreme Harmony at the Forbidden City.jpg",
+          "author": "xiquinhosilva",
+          "license": "CC BY 2.0",
+          "licenseURL": null,
+          "capturedAt": "2024-05-15",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Gate_of_Supreme_Harmony_at_the_Forbidden_City.jpg/960px-Gate_of_Supreme_Harmony_at_the_Forbidden_City.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Gate_of_Supreme_Harmony_at_the_Forbidden_City.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Supreme_Harmony_20160826-3.jpg",
+          "fileTitle": "File:Gate of Supreme Harmony 20160826-3.jpg",
+          "author": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2016-08-26 13:13:59",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Gate_of_Supreme_Harmony_20160826-3.jpg/960px-Gate_of_Supreme_Harmony_20160826-3.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/7/74/Gate_of_Supreme_Harmony_20160826-3.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "仅源结构；没有本轮可得像素。",
+      "shapeSupported": [],
+      "majorIssues": [],
+      "limitations": [
+        "两张下载限流失败，像素未看",
+        "无保存预览",
+        "台基/门孔/屋面本轮未获实景对照"
+      ],
+      "sourceComparison": "仅源双檐三孔通用gate_model结构阅读；元数据不代表像素核验。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 295,
+        "end": 295,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:295–295",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "仅源双檐三孔通用gate_model结构阅读；元数据不代表像素核验。",
+        "limitations": [
+          "两张下载限流失败，像素未看",
+          "无保存预览",
+          "台基/门孔/屋面本轮未获实景对照"
+        ]
+      },
+      "status": "no_pixel_evidence",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "jiaolou",
+      "name": "故宫西南角楼",
+      "referenceID": "jiaolou-sw",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 0,
+      "actuallyViewedPhotoCount": 0,
+      "matchingViewedPhotoCount": 0,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Forbidden_City_-_Southwest_Tower_-_panoramio.jpg",
+          "fileTitle": "File:Forbidden City - Southwest Tower - panoramio.jpg",
+          "author": "Ytse-Jam",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "capturedAt": "Taken on 25 February 2007",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Forbidden_City_-_Southwest_Tower_-_panoramio.jpg/960px-Forbidden_City_-_Southwest_Tower_-_panoramio.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Forbidden_City_-_Southwest_Tower_-_panoramio.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:South-western_corner_tower_of_the_Forbidden_City.jpg",
+          "fileTitle": "File:South-western corner tower of the Forbidden City.jpg",
+          "author": "EditQ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2023-05-24",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/South-western_corner_tower_of_the_Forbidden_City.jpg/960px-South-western_corner_tower_of_the_Forbidden_City.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "HTTP Error 429: Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/4/4d/South-western_corner_tower_of_the_Forbidden_City.jpg",
+              "downloadStatus": "failed",
+              "error": "<urlopen error _ssl.c:1112: The handshake operation timed out>"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "仅源结构；没有本轮可得像素。",
+      "shapeSupported": [],
+      "majorIssues": [],
+      "limitations": [
+        "两张下载限流失败，像素未看",
+        "不以其他角位替代西南角楼",
+        "无保存预览",
+        "十字翼和复杂重叠屋顶未核验"
+      ],
+      "sourceComparison": "源为灰台座、三层交叉屋面与简化厅体；未取得西南角楼像素，不能认证复杂形制。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 109,
+        "end": 116,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:109–116",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "源为灰台座、三层交叉屋面与简化厅体；未取得西南角楼像素，不能认证复杂形制。",
+        "limitations": [
+          "两张下载限流失败，像素未看",
+          "不以其他角位替代西南角楼",
+          "无保存预览",
+          "十字翼和复杂重叠屋顶未核验"
+        ]
+      },
+      "status": "no_pixel_evidence",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "gulou",
+      "name": "鼓楼",
+      "referenceID": "gulou",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 1,
+      "actuallyViewedPhotoCount": 1,
+      "matchingViewedPhotoCount": 1,
+      "borrowedMatchingViewedPhotoCount": 1,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+          "fileTitle": "File:Beijing Drum Tower and Beijing Bell Tower 20160822.jpg",
+          "author": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": null,
+          "capturedAt": "2016-08-22",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg/960px-Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+          "sha256": null,
+          "localPath": null,
+          "downloadStatus": "failed",
+          "downloadError": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/7/76/Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+              "downloadStatus": "failed",
+              "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+            }
+          ],
+          "pixelsViewed": false,
+          "pixelInspected": false,
+          "observedView": null,
+          "pixelInspectionScope": "未取得本地图片像素，仅保留许可元数据和下载失败事实。",
+          "pixelsViewedAt": null,
+          "subjectAccepted": false,
+          "actualSubject": null,
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower.jpg",
+          "fileTitle": "File:Beijing Drum Tower.jpg",
+          "author": "Toadspike",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2023-06",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Beijing_Drum_Tower.jpg/960px-Beijing_Drum_Tower.jpg",
+          "sha256": "6e67093ac1f325c157488955973f3b79b71d38b65982b354f79a442fd6b705a9",
+          "localPath": "artifacts/model-references/photos/gulou/02.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Beijing_Drum_Tower.jpg",
+              "downloadStatus": "failed",
+              "error": "<urlopen error _ssl.c:1112: The handshake operation timed out>"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "钟楼上向鼓楼的北侧整体：鼓楼三个完整屋檐层次、红色高台与红色主体，中段有开放廊层；檐下三个大拱形开口。",
+          "pixelInspectionScope": "钟楼上向鼓楼的北侧整体：鼓楼三个完整屋檐层次、红色高台与红色主体，中段有开放廊层；檐下三个大拱形开口。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "gulou",
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+          "fileTitle": "File:Beijing Drum Tower and Beijing Bell Tower 20160822.jpg",
+          "author": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "localPath": "artifacts/model-references/photos/zhonglou/01.jpg",
+          "sha256": "6b6a75df6b9e45890503b0dff11e2bd73b311b29d32e109d879630e5a7788da4",
+          "pixelsViewed": true,
+          "subjectAccepted": true,
+          "actualSubject": "gulou (foreground); zhonglou (background)",
+          "pixelInspectionScope": "轴线侧斜远景：前景为红色三檐鼓楼，后景为灰色钟楼；钟楼只够辨认整体和屋檐层次，立面细节不足。",
+          "reusedFrom": "zhonglou/01.jpg",
+          "originalAssignmentRejected": null
+        }
+      ],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "高台上的深色屋顶楼阁"
+      ],
+      "majorIssues": [
+        {
+          "severity": "major",
+          "feature": "屋檐层数",
+          "evidence": "钟楼向鼓楼正面及轴线侧视前景均见三个完整屋檐层次。",
+          "sourceFinding": "eaves=2。"
+        },
+        {
+          "severity": "major",
+          "feature": "主体材料及廊层",
+          "evidence": "照片为红色高台/主体且中段为开放廊层。",
+          "sourceFinding": "gray=True使基座为灰，通用body/upper storey未生成独立开放廊层。"
+        }
+      ],
+      "limitations": [
+        "无保存预览",
+        "开放廊与拱口净尺寸未量测",
+        "仅有限轴线视角"
+      ],
+      "sourceComparison": "双檐灰台座与照片三檐红体不符。原鼓楼01下载失败，同URL钟楼01成功且实际看过，可复用前景而不改独立失败事实。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 296,
+        "end": 296,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:296–296",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "双檐灰台座与照片三檐红体不符。原鼓楼01下载失败，同URL钟楼01成功且实际看过，可复用前景而不改独立失败事实。",
+        "limitations": [
+          "无保存预览",
+          "开放廊与拱口净尺寸未量测",
+          "仅有限轴线视角"
+        ]
+      },
+      "status": "issues_found",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    },
+    {
+      "model": "zhonglou",
+      "name": "钟楼",
+      "referenceID": "zhonglou",
+      "selectedPhotoCount": 2,
+      "downloadedPhotoCount": 2,
+      "actuallyViewedPhotoCount": 2,
+      "matchingViewedPhotoCount": 2,
+      "borrowedMatchingViewedPhotoCount": 0,
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+          "fileTitle": "File:Beijing Drum Tower and Beijing Bell Tower 20160822.jpg",
+          "author": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": null,
+          "capturedAt": "2016-08-22",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg/960px-Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+          "sha256": "6b6a75df6b9e45890503b0dff11e2bd73b311b29d32e109d879630e5a7788da4",
+          "localPath": "artifacts/model-references/photos/zhonglou/01.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/7/76/Beijing_Drum_Tower_and_Beijing_Bell_Tower_20160822.jpg",
+              "downloadStatus": "failed",
+              "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "轴线侧斜远景：前景为红色三檐鼓楼，后景为灰色钟楼；钟楼只够辨认整体和屋檐层次，立面细节不足。",
+          "pixelInspectionScope": "轴线侧斜远景：前景为红色三檐鼓楼，后景为灰色钟楼；钟楼只够辨认整体和屋檐层次，立面细节不足。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "zhonglou",
+          "publishedInProduct": false
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Beijing_2006_1-15.jpg",
+          "fileTitle": "File:Beijing 2006 1-15.jpg",
+          "author": "G41rn8",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "capturedAt": "2006",
+          "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Beijing_2006_1-15.jpg/960px-Beijing_2006_1-15.jpg",
+          "sha256": "441affee1a7155a912f944749ffef4fcb82bde73c6597259b39c46bc52e6c1ef",
+          "localPath": "artifacts/model-references/photos/zhonglou/02.jpg",
+          "downloadStatus": "ok",
+          "downloadError": null,
+          "downloadAttempts": [
+            {
+              "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/9/99/Beijing_2006_1-15.jpg",
+              "downloadStatus": "failed",
+              "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+            }
+          ],
+          "pixelsViewed": true,
+          "pixelInspected": true,
+          "observedView": "鼓楼向钟楼的近正面：钟楼灰砖高基座与上层钟室，双层灰绿屋檐，上层中央大拱口和两个较小侧拱口，台阶与平台可见。",
+          "pixelInspectionScope": "鼓楼向钟楼的近正面：钟楼灰砖高基座与上层钟室，双层灰绿屋檐，上层中央大拱口和两个较小侧拱口，台阶与平台可见。",
+          "pixelsViewedAt": "2026-10-02T11:42:25.924592+00:00",
+          "subjectAccepted": true,
+          "actualSubject": "zhonglou",
+          "publishedInProduct": false
+        }
+      ],
+      "borrowedPixelEvidence": [],
+      "pixelInspectionScope": "只核对照片实际可见宏观屋檐/门户/材料/组合；非全立面或尺寸标定。",
+      "shapeSupported": [
+        "灰色高台上的独立楼阁",
+        "深色屋顶"
+      ],
+      "majorIssues": [
+        {
+          "severity": "major",
+          "feature": "屋檐层数",
+          "evidence": "鼓楼向钟楼近正面可见双层屋檐。",
+          "sourceFinding": "eaves=1。"
+        },
+        {
+          "severity": "major",
+          "feature": "上层灰砖钟室与拱口",
+          "evidence": "近正面上层灰砖钟室有中央大拱和侧小拱。",
+          "sourceFinding": "gate_model上层redwood hall_body与普通窗格，未生成灰砖钟室/拱口。"
+        }
+      ],
+      "limitations": [
+        "远景钟楼太小，细节主要凭一张近正面",
+        "无保存预览",
+        "台阶/侧立面无尺寸标定"
+      ],
+      "sourceComparison": "单檐红木上层与双檐灰砖钟室不符；下方灰基座类型有宏观对应。",
+      "sourceLines": {
+        "file": "blender/build_all.py",
+        "start": 297,
+        "end": 297,
+        "gateHelper": [
+          33,
+          59
+        ],
+        "roofHelper": {
+          "file": "blender/cnroof.py",
+          "start": 49,
+          "end": 76
+        },
+        "hallBodyHelper": {
+          "file": "blender/cnroof.py",
+          "start": 104,
+          "end": 128
+        }
+      },
+      "modelComparison": {
+        "source": "blender/build_all.py:297–297",
+        "savedPreview": null,
+        "previewActuallyViewed": false,
+        "previewVersionMatchedToCurrentGLB": false,
+        "scope": "既存预览与源结构；无本轮新GPU渲染或摄影测量注册。",
+        "finding": "单檐红木上层与双檐灰砖钟室不符；下方灰基座类型有宏观对应。",
+        "limitations": [
+          "远景钟楼太小，细节主要凭一张近正面",
+          "无保存预览",
+          "台阶/侧立面无尺寸标定"
+        ]
+      },
+      "status": "issues_found",
+      "independentMetricSurveyAcceptance": false,
+      "threeMetrePositionAcceptance": false,
+      "postFixAssetVerification": false
+    }
+  ]
+}

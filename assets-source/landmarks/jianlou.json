@@ -1,0 +1,121 @@
+{
+  "id": "jianlou",
+  "model": "jianlou",
+  "name": "前门箭楼",
+  "method": "source-calibrated or OSM-footprint architectural reconstruction; no photogrammetry",
+  "modelUnit": "metre",
+  "placement": {
+    "latitude": 39.8979717,
+    "longitude": 116.39165885,
+    "rotationDegrees": 180,
+    "elevationRelativeTo45mDatum": -0.879,
+    "origin": {
+      "lat": 39.9475,
+      "lon": 116.41
+    }
+  },
+  "footprintEvidence": [
+    {
+      "id": "way/439956436",
+      "url": "https://www.openstreetmap.org/way/439956436",
+      "license": "ODbL 1.0",
+      "verifiedAt": "2026-10-02"
+    }
+  ],
+  "controlPoints": [
+    {
+      "id": "jianlou-footprint-0",
+      "longitude": 116.3913005,
+      "latitude": 39.8981224,
+      "source": "https://www.openstreetmap.org/way/439956436",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "jianlou-footprint-1",
+      "longitude": 116.391311,
+      "latitude": 39.8978038,
+      "source": "https://www.openstreetmap.org/way/439956436",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "jianlou-footprint-2",
+      "longitude": 116.3914568,
+      "latitude": 39.8978085,
+      "source": "https://www.openstreetmap.org/way/439956436",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    },
+    {
+      "id": "jianlou-footprint-3",
+      "longitude": 116.3914986,
+      "latitude": 39.89781,
+      "source": "https://www.openstreetmap.org/way/439956436",
+      "kind": "mapped footprint vertex, not a surveyed ground-control point",
+      "horizontalAccuracyMeters": null
+    }
+  ],
+  "positionAccuracy": {
+    "surveyed": false,
+    "claimedMeters": null,
+    "notes": "OSM vertices calibrate current mapping only. No independent centimetre/3m accuracy acceptance is claimed."
+  },
+  "primarySources": [
+    "https://www.openstreetmap.org/way/439956436"
+  ],
+  "photoReferences": [
+    {
+      "url": "https://www.openstreetmap.org/way/439956436",
+      "author": "OpenStreetMap contributors",
+      "license": "ODbL 1.0 for geometry; no photograph license inferred",
+      "verifiedAt": "2026-10-02",
+      "capturedAt": null,
+      "view": "Mapped footprint; additional photo-reference coverage pending",
+      "use": "geometry reference; not a licensed texture photograph"
+    }
+  ],
+  "verifiedDimensions": [],
+  "unverifiedDimensions": {
+    "exportedEnvelopeHeightM": 35.37,
+    "heightEvidence": "OSM or architectural approximation; not a measured façade survey",
+    "items": [
+      "roof pitch and eave curvature",
+      "all unsourced body widths and facade heights",
+      "dougong and lattice motifs",
+      "individual beam member sections",
+      "floor terrain intersection beyond sampled datum",
+      "sculptures and inscriptions"
+    ]
+  },
+  "textures": {
+    "source": "Original procedural materials baked in Blender Cycles",
+    "channels": [
+      "baseColor",
+      "normal",
+      "roughness"
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "photoPixelsEmbedded": false,
+    "accuracy": "generic material appearance; not scanned historic paintwork"
+  },
+  "assets": {
+    "sourceBlend": "assets-source/blend/jianlou.blend",
+    "lod": {
+      "near": "./models/landmarks/jianlou-94efeeba98.glb",
+      "medium": "./models/landmarks/jianlou-medium-cd3d183987.glb",
+      "far": "./models/landmarks/jianlou-far-3e8bcfafb4.glb",
+      "distancesM": [
+        650,
+        2400
+      ]
+    },
+    "collision": "./models/landmarks/jianlou-collision-ca9bbadd52.glb"
+  },
+  "limitations": [
+    "Roof and massing reconstruction; fine carving, signs, interior and exact facade paint motifs remain unverified."
+  ]
+}
