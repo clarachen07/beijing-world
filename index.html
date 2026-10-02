@@ -2,60 +2,46 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>北京世界 · Beijing World — 3D 虚拟仿真北京</title>
-    <meta name="description" content="基于 OpenStreetMap 开放数据构建的北京 3D 虚拟城市：中轴线、故宫、国贸CBD、鸟巢水立方。数据 © OpenStreetMap contributors (ODbL)。" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23161c2a'/%3E%3Cpath d='M6 26V14l4-3v15zM12 26V9l4-3v20zM18 26V16l4-3v13zM24 26V12l2-1v15z' fill='%23e8b64c'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index-CZZ4wMUa.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/three-C1b1RCaD.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-CS4eRmNF.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#142335" />
+    <title>北京世界 · Beijing World</title>
+    <meta name="description" content="探索真实建筑轮廓与实景资料构建的四环北京，漫游故宫、天坛、中轴线与奥林匹克公园。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142335'/%3E%3Ctext x='16' y='24' font-size='24' fill='%23e8b64c' text-anchor='middle'%3E京%3C/text%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="./assets/index-kvYwi1c0.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-BgMGqtJM.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CUnMNSRK.css">
   </head>
   <body>
-    <div id="app">
-      <canvas id="scene"></canvas>
-
-      <!-- 标题 -->
-      <header id="hud-title" class="hud">
-        <h1>北京世界</h1>
-        <div class="sub">BEIJING&nbsp;WORLD&nbsp;·&nbsp;3D 虚拟仿真北京</div>
-      </header>
-
-      <!-- 地标标签层 -->
-      <div id="labels"></div>
-
-      <!-- 底部控制栏 -->
-      <nav id="hud-controls" class="hud">
-        <div class="seg" id="mode-seg">
-          <button data-mode="tour" class="active" title="自动电影漫游">🎬 电影漫游</button>
-          <button data-mode="fly" title="自由飞行（WASD/方向键 + 鼠标）">✈ 自由飞行</button>
-          <button data-mode="walk" title="第一人称街景（WASD + 鼠标拖动）">🚶 街景漫步</button>
-        </div>
-        <div class="divider"></div>
-        <button id="btn-daynight" title="切换白天/夜景">🌙 夜景</button>
-        <button id="btn-replay" title="重新播放电影漫游">↺ 重播</button>
-        <div class="divider"></div>
-        <a id="btn-video" href="./video/beijing-world.mp4" download="beijing-world.mp4" title="下载漫游视频" style="display:none">⬇ 视频</a>
-      </nav>
-
-      <!-- 加载屏 -->
-      <div id="loading">
-        <div class="box">
-          <div class="glyph">京</div>
-          <h2>北京世界 <span>BEIJING WORLD</span></h2>
-          <p class="tip">基于 OpenStreetMap 开放数据实时构建 3D 北京…</p>
-          <div class="bar"><div id="load-bar"></div></div>
-          <p id="load-detail" class="detail">正在准备…</p>
-        </div>
+    <main id="app">
+      <canvas id="scene" aria-label="北京三维城市，可用鼠标或触控浏览" tabindex="0"></canvas>
+      <header id="hud-title" class="hud"><h1>北京世界</h1><div class="sub">BEIJING WORLD · 四环实景</div></header>
+      <div id="labels" aria-label="地标"></div>
+      <div id="destination" class="hud">
+        <label for="landmark-picker">去往</label><select id="landmark-picker"><option value="">选择一处北京地标</option></select>
       </div>
-
-      <!-- 提示 -->
-      <div id="hint" class="hud">点击地标名称可自动飞往 · 拖动/滚轮随时接管视角</div>
-
-      <!-- 数据署名 -->
-      <footer id="hud-attr" class="hud">
-        数据 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors (ODbL)
-        · <a href="https://x.com/mattshumer_/status/2095609734845927525" target="_blank" rel="noopener">Inspired by Manhattan World</a>
-      </footer>
-    </div>
+      <nav id="hud-controls" class="hud" aria-label="浏览控制">
+        <div class="seg" id="mode-seg">
+          <button data-mode="browse" class="active" aria-pressed="true">鸟瞰</button>
+          <button data-mode="fly" aria-pressed="false">自由飞行</button>
+          <button data-mode="tour" aria-pressed="false">电影漫游</button>
+          <button data-mode="walk" aria-pressed="false">街景漫步</button>
+        </div>
+        <div class="actions"><button id="btn-daynight" aria-pressed="false">夜景</button><button id="btn-replay" title="从头播放电影漫游">↺ 重播</button><button id="btn-help" aria-expanded="false" aria-controls="help-panel">操作说明</button></div>
+      </nav>
+      <aside id="help-panel" class="panel hud" hidden>
+        <h2>自在探索北京</h2>
+        <p><strong>鸟瞰</strong> 左键拖动平移，右键旋转，滚轮缩放。手机单指平移，双指缩放和旋转。</p>
+        <p><strong>飞行 / 漫步</strong> 拖动查看，WASD 或方向键移动。飞行用 Q / E 升降；漫步按 Shift 快走，手机使用方向盘。</p>
+        <p>拖动或键盘移动可随时接管漫游；地标名称和上方选单可带你抵达景点。</p>
+        <a id="btn-video" href="./video/beijing-world.mp4" download="beijing-world.mp4">下载已录制漫游视频</a>
+      </aside>
+      <div id="walk-pad" class="hud" hidden aria-label="漫步方向盘"><span aria-hidden="true">↑<br>← &nbsp; →<br>↓</span><div id="walk-knob"></div></div>
+      <div id="hint" class="hud">左拖平移 · 右拖旋转 · 滚轮缩放</div>
+      <div id="status" class="hud" role="status" hidden><span id="status-text"></span><button id="btn-retry-assets" hidden>重试</button></div>
+      <div id="loading" role="status" aria-live="polite">
+        <div class="box"><div class="glyph">京</div><h2>北京世界 <span>BEIJING WORLD</span></h2><p class="tip">载入北京，细节随你的视线展开</p><div class="bar"><div id="load-bar"></div></div><p id="load-detail" class="detail">正在准备…</p><button id="btn-retry-boot" hidden>重新载入</button></div>
+      </div>
+      <footer id="hud-attr" class="hud"><a href="./sources.html" target="_blank" rel="noopener">数据与实景资料</a> · © OSM contributors · Overture · Copernicus</footer>
+    </main>
   </body>
 </html>

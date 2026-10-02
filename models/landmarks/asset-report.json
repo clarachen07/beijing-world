@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-10-02T12:20:21.099Z",
+  "compression": "EXT_meshopt_compression + KHR_texture_basisu (ETC1S base/ORM; UASTC normal), embedded mipmaps",
+  "assets": [
+    {
+      "file": "olympic-tower-collision.glb",
+      "bytes": 94608,
+      "originalBytes": 273988,
+      "triangles": 3900,
+      "textures": 0,
+      "bounds": {
+        "min": [
+          -21.516451784146078,
+          0,
+          -23.364165455078364
+        ],
+        "max": [
+          23.999232240689047,
+          246.8000030517578,
+          23.364165455078364
+        ]
+      }
+    },
+    {
+      "file": "olympic-tower-far.glb",
+      "bytes": 15544,
+      "originalBytes": 55740,
+      "triangles": 512,
+      "textures": 0,
+      "bounds": {
+        "min": [
+          -21.76130826647792,
+          0,
+          -23.539215067517322
+        ],
+        "max": [
+          24.168634011106825,
+          246.8000030517578,
+          23.490394571911853
+        ]
+      }
+    },
+    {
+      "file": "olympic-tower-medium.glb",
+      "bytes": 536264,
+      "originalBytes": 2520276,
+      "triangles": 2418,
+      "textures": 10,
+      "bounds": {
+        "min": [
+          -21.527776483933977,
+          0,
+          -23.378575549758846
+        ],
+        "max": [
+          24.100887064378313,
+          246.8000030517578,
+          23.342223392166073
+        ]
+      }
+    },
+    {
+      "file": "olympic-tower.glb",
+      "bytes": 552640,
+      "originalBytes": 2580388,
+      "triangles": 3900,
+      "textures": 10,
+      "bounds": {
+        "min": [
+          -21.516451784146078,
+          0,
+          -23.364165455078364
+        ],
+        "max": [
+          23.999232240689047,
+          246.8000030517578,
+          23.364165455078364
+        ]
+      }
+    }
+  ]
+}

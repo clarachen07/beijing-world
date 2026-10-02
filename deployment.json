@@ -1,0 +1,8 @@
+{
+  "sourceCommit": "e38e861f6718fa841bb443523f33da497e51da7c",
+  "releaseRevision": "f379c023976b7b0f93a8",
+  "cityRevision": "1d91e09a9c2e8b214a4d",
+  "modelVersion": "d3bd20956b7d",
+  "preparedAt": "2026-10-02T14:30:03.528514+00:00",
+  "artifact": "Exact previously validated dist; no rebuild or runtime edits during publishing"
+}

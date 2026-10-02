@@ -1,0 +1,378 @@
+{
+  "revision": "1d91e09a9c2e8b214a4d",
+  "checks": {
+    "boundary_closed_and_valid": {
+      "passed": true,
+      "detail": null
+    },
+    "both_carriageways_closed": {
+      "passed": true,
+      "detail": null
+    },
+    "boundary_contains_inner_city": {
+      "passed": true,
+      "detail": null
+    },
+    "boundary_way_ids_in_source_pbf": {
+      "passed": true,
+      "detail": {
+        "expected": 384,
+        "found": 384
+      }
+    },
+    "all_boundary_edges_real_osm_nodes": {
+      "passed": true,
+      "detail": null
+    },
+    "exported_boundary_matches_node_coordinates": {
+      "passed": true,
+      "detail": null
+    },
+    "landmark_masks_match_frozen_model_registry": {
+      "passed": true,
+      "detail": null
+    },
+    "landmark_mask_audit_matches_registry": {
+      "passed": true,
+      "detail": null
+    },
+    "metric_500m_visual_buffer": {
+      "passed": true,
+      "detail": null
+    },
+    "boundary_unique_nodes": {
+      "passed": true,
+      "detail": null
+    },
+    "boundary_area_reasonable": {
+      "passed": true,
+      "detail": {
+        "areaKm2": 301.36
+      }
+    },
+    "unique_tile_ids": {
+      "passed": true,
+      "detail": null
+    },
+    "hierarchy_children_exist": {
+      "passed": true,
+      "detail": null
+    },
+    "complete_leaf_spatial_coverage": {
+      "passed": true,
+      "detail": {
+        "expected": 1461,
+        "actual": 1461
+      }
+    },
+    "required_source_acquisition_complete": {
+      "passed": true,
+      "detail": {
+        "osm": true,
+        "dem": true,
+        "imagery": true,
+        "overture": true
+      }
+    },
+    "required_sources_include_visual_buffer": {
+      "passed": true,
+      "detail": null
+    },
+    "pinned_source_dates": {
+      "passed": true,
+      "detail": null
+    },
+    "synthetic_buildings_absent": {
+      "passed": true,
+      "detail": null
+    },
+    "all_tiles_complete": {
+      "passed": true,
+      "detail": null
+    },
+    "streetlights_match_actual_osm_nodes": {
+      "passed": true,
+      "detail": null
+    },
+    "streetlight_heights_have_confidence": {
+      "passed": true,
+      "detail": null
+    },
+    "streetlight_chunks_are_points": {
+      "passed": true,
+      "detail": null
+    },
+    "streetlight_lod_coverage": {
+      "passed": true,
+      "detail": {
+        "1": 196,
+        "0": 196
+      }
+    },
+    "collision_and_provenance_counts": {
+      "passed": true,
+      "detail": {
+        "collisionRecords": 201945,
+        "sourceRecords": 201945,
+        "sources": {
+          "osm": 46180,
+          "overture": 155765
+        }
+      }
+    },
+    "no_identical_building_volume_duplicates": {
+      "passed": true,
+      "detail": {
+        "identicalFootprintAndVerticalExtent": 0
+      }
+    },
+    "no_city_volumes_overlap_registered_models": {
+      "passed": true,
+      "detail": {
+        "overlaps": [],
+        "exactFootprints": 32,
+        "collisionToleranceM2": 1e-05
+      }
+    },
+    "replaced_osm_ids_absent": {
+      "passed": true,
+      "detail": null
+    },
+    "taihe_roof_body_and_terrace_duplicates_absent": {
+      "passed": true,
+      "detail": {
+        "verifiedSourceParts": [
+          "way/638449346",
+          "way/638449348",
+          "way/638449349",
+          "way/638449350",
+          "way/638449352",
+          "way/638449353",
+          "way/638449354",
+          "way/638449447"
+        ]
+      }
+    },
+    "taihe_unmodelled_neighbors_retained": {
+      "passed": true,
+      "detail": null
+    },
+    "all_lod_meshes_clear_model_interiors": {
+      "passed": true,
+      "detail": {
+        "overlaps": [],
+        "candidateTrianglesByLod": {
+          "2": 153,
+          "1": 446,
+          "0": 525
+        },
+        "boundaryEncodingAllowanceM": 0.3
+      }
+    },
+    "baohe_zhonghe_source_roof_examples_exist": {
+      "passed": true,
+      "detail": null
+    },
+    "pitched_roof_way/638473470": {
+      "passed": true,
+      "detail": {
+        "1": {
+          "pitchedRoofTriangles": 5,
+          "windowWallTrianglesAboveEaves": 0,
+          "lowestRoofY": 29.0,
+          "highestRoofY": 37.0
+        },
+        "0": {
+          "pitchedRoofTriangles": 5,
+          "windowWallTrianglesAboveEaves": 0,
+          "lowestRoofY": 29.0,
+          "highestRoofY": 37.0
+        }
+      }
+    },
+    "pitched_roof_relation/8854351": {
+      "passed": true,
+      "detail": {
+        "1": {
+          "pitchedRoofTriangles": 8,
+          "windowWallTrianglesAboveEaves": 0,
+          "lowestRoofY": 21.8,
+          "highestRoofY": 33.800000000000004
+        },
+        "0": {
+          "pitchedRoofTriangles": 8,
+          "windowWallTrianglesAboveEaves": 0,
+          "lowestRoofY": 21.8,
+          "highestRoofY": 33.800000000000004
+        }
+      }
+    },
+    "far_tile_budget": {
+      "passed": true,
+      "detail": [
+        {
+          "id": "l2_x-2_z-1",
+          "bytes": 323958
+        },
+        {
+          "id": "l2_x-2_z0",
+          "bytes": 518600
+        },
+        {
+          "id": "l2_x-2_z1",
+          "bytes": 336495
+        },
+        {
+          "id": "l2_x-1_z-1",
+          "bytes": 722090
+        },
+        {
+          "id": "l2_x-1_z0",
+          "bytes": 860486
+        },
+        {
+          "id": "l2_x-1_z1",
+          "bytes": 572345
+        },
+        {
+          "id": "l2_x0_z-1",
+          "bytes": 355759
+        },
+        {
+          "id": "l2_x0_z0",
+          "bytes": 746215
+        },
+        {
+          "id": "l2_x0_z1",
+          "bytes": 511407
+        }
+      ]
+    },
+    "all_collision_polygons_and_ground_samples_valid": {
+      "passed": true,
+      "detail": 201945
+    },
+    "height_inference_values_recalculate_rendered_heights": {
+      "passed": true,
+      "detail": 201945
+    }
+  },
+  "warnings": [
+    "Missing source heights are marked estimated; this is not a surveyed city-wide height database.",
+    "Sentinel 10m imagery cannot provide facade detail.",
+    "Smoothed Copernicus DSM is estimated ground, not a bare-earth survey."
+  ],
+  "summary": {
+    "tilesByLod": {
+      "2": 9,
+      "1": 105,
+      "0": 1461
+    },
+    "sourceBuildingCounts": {
+      "osm": 46180,
+      "overture": 155765
+    },
+    "heightConfidence": {
+      "typology_estimate_low_confidence": 187634,
+      "floor_count_estimate": 12429,
+      "provided_height": 1826,
+      "invalid_source_height_corrected_estimate": 5,
+      "provided_height:base_under_elevated_parts": 2,
+      "typology_estimate_low_confidence:base_under_elevated_parts": 47,
+      "floor_count_estimate:base_under_elevated_parts": 2
+    },
+    "sourceAttributeCounts": {
+      "floorsNull": 189288,
+      "useNull": 189970,
+      "usePresent": 11975,
+      "floorsPresent": 12657
+    },
+    "courtyardHoles": 476,
+    "waterIslandHoles": 44,
+    "roofShapeCounts": {
+      "flat": 200337,
+      "gabled": 763,
+      "hipped": 331,
+      "pyramidal": 33,
+      "dome": 8,
+      "saltbox": 1,
+      "round": 2,
+      "skillion": 460,
+      "side_half-hipped": 1,
+      "hipped-and-gabled": 6,
+      "onion": 1,
+      "rounded": 1,
+      "orange": 1
+    },
+    "roofExamples": {
+      "way/638473470": {
+        "1": {
+          "pitchedRoofTriangles": 5,
+          "windowWallTrianglesAboveEaves": 0,
+          "lowestRoofY": 29.0,
+          "highestRoofY": 37.0
+        },
+        "0": {
+          "pitchedRoofTriangles": 5,
+          "windowWallTrianglesAboveEaves": 0,
+          "lowestRoofY": 29.0,
+          "highestRoofY": 37.0
+        }
+      },
+      "relation/8854351": {
+        "1": {
+          "pitchedRoofTriangles": 8,
+          "windowWallTrianglesAboveEaves": 0,
+          "lowestRoofY": 21.8,
+          "highestRoofY": 33.800000000000004
+        },
+        "0": {
+          "pitchedRoofTriangles": 8,
+          "windowWallTrianglesAboveEaves": 0,
+          "lowestRoofY": 21.8,
+          "highestRoofY": 33.800000000000004
+        }
+      }
+    },
+    "farTileBytes": [
+      {
+        "id": "l2_x-2_z-1",
+        "bytes": 323958
+      },
+      {
+        "id": "l2_x-2_z0",
+        "bytes": 518600
+      },
+      {
+        "id": "l2_x-2_z1",
+        "bytes": 336495
+      },
+      {
+        "id": "l2_x-1_z-1",
+        "bytes": 722090
+      },
+      {
+        "id": "l2_x-1_z0",
+        "bytes": 860486
+      },
+      {
+        "id": "l2_x-1_z1",
+        "bytes": 572345
+      },
+      {
+        "id": "l2_x0_z-1",
+        "bytes": 355759
+      },
+      {
+        "id": "l2_x0_z0",
+        "bytes": 746215
+      },
+      {
+        "id": "l2_x0_z1",
+        "bytes": 511407
+      }
+    ],
+    "manifestBytes": 3012643,
+    "largestFarTileBytes": 860486
+  }
+}
